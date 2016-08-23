@@ -1,2 +1,117 @@
 // footer
 //-----------------------------------------------------------------------------------
+.footer
+  padding: 50px 0 35px
+  background-color: #4a4a4a
+
+  .programs, .contact
+    display: inline-block
+    float: left
+    width: 20%
+
+  .social
+    margin-top: 40px
+    li
+      float: left
+      margin-left: 10px
+      &:first-child
+        margin-left: 0
+    a
+      display: inline-block
+      width: 25px
+      height: 25px
+      border-radius: 100%
+      color: white
+      text-align: center
+      font-size: 16px
+      line-height: 25px
+      transition: all .12s ease
+
+  .copywriter
+    margin-top: 20px
+    color: white
+    font: 400 14px/45px $open
+    a
+      padding-left: 10px
+
+  .search
+    position: relative
+    display: inline-block
+    width: 100%
+
+    input
+      box-sizing: border-box
+      padding-right: 25px
+      width: 100%
+      border: none
+      border-bottom: 1px solid #9b9b9b
+      background: none
+      box-shadow: none
+      color: white
+      font: 400 14px/36px $open
+
+    button
+      position: absolute
+      top: 10px
+      right: 0
+      color: #9b9b9b
+      font-size: 18px
+
+  .item-programs
+    margin-top: 10px
+    .name
+      color: rgba(white, .4)
+      text-decoration: none
+      font: 400 14px/20px $open
+      &:hover
+        text-decoration: underline
+    p
+      color: white
+      font: 400 12px/16px $open
+
+  h3 .title
+    color: white
+    font: 400 16px/20px $open
+
+  .contact-link
+    @extend %clear-fix
+    margin-top: 10px
+
+    li
+      display: block
+
+    a
+      color: white
+      text-decoration: none
+      font: 400 14px/36px $open
+      &:hover
+        text-decoration: underline
+
+  .navigation-list
+    display: inline-block
+    float: left
+    @extend %clear-fix
+    width: 60%
+
+    ul
+      float: left
+      box-sizing: border-box
+      padding-right: 20px
+      width: 33.333%
+
+    li
+      display: block
+
+    a
+      color: white
+      text-decoration: none
+      font: 400 14px/36px $open
+      &:hover
+        text-decoration: underline
+
+    .title
+      display: block
+      margin-bottom: 10px
+      color: white
+      font: 400 16px/20px $open
+

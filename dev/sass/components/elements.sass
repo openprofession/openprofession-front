@@ -1,3 +1,46 @@
 // elements
 //-----------------------------------------------------------------------------------
 
+
+
+
+// btn style
+//-----------------------------------------------------------------------------------
+.el-btn
+  display: inline-block
+  box-sizing: border-box
+  padding: 0 20px
+  height: 40px
+  border: 2px solid white
+  border-radius: 20px
+  color: white
+  text-align: center
+  text-decoration: none
+  font: 700 13px/36px $open
+  transition: all .12s ease
+  &:hover
+    background: white
+    color: black
+
+
+  &.blue-style
+    border-color: $color-blue
+    background-color: $color-blue
+    &:hover
+      background: none
+      color: $color-blue
+
+    &.inverse
+      background: none
+      color: $color-blue
+      &:hover
+        background: $color-blue
+        color: white
+
+  &.fiol-style
+    border-color: $color-fiol
+    background: none
+    color: $color-fiol
+    &:hover
+      background-color: $color-fiol
+      color: white
