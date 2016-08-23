@@ -1,0 +1,96 @@
+@widthSidebarLeft: 200px;
+@offsetSidebarLeft: 20px;
+@widthSidebarRight: 300px;
+@offsetSidebarRight: 20px;
+
+.container {
+  width: @widthContent;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  &:extend(.clear-fix all);
+  .pr;
+}
+
+/* Has sidebar
+-----------------------------------------------------------------------------*/
+[class|=has-sidebar], [class*=has-sidebar] {
+  .pr;
+  .middle-container {
+    width: 100%;
+    .fl;
+    .middle-content {
+      padding: 0;
+    }
+  }
+  &.has-sidebar {
+    &-left {
+      .middle-content {
+        padding: 0 0 0 @widthSidebarLeft+@offsetSidebarLeft;
+      }
+    }
+    &-right {
+      .middle-content {
+        padding: 0 @widthSidebarRight+@offsetSidebarRight 0 0;
+      }
+    }
+    &-both {
+      .middle-content {
+        padding: 0 @widthSidebarRight+@offsetSidebarRight 0 @widthSidebarLeft+@offsetSidebarLeft;
+      }
+    }
+    &-both-right {
+      .middle-content {
+        padding: 0 @widthSidebarLeft+@widthSidebarRight+@offsetSidebarRight 0 0;
+      }
+      .sidebar-left {
+        margin-left: -(@widthSidebarLeft+@widthSidebarRight);
+        &.before-content {
+          left: 100%;
+        }
+      }
+    }
+    &-both-left {
+      .middle-content {
+        padding: 0 0 0 @widthSidebarLeft+@widthSidebarRight+@offsetSidebarLeft;
+      }
+      .sidebar-right {
+        margin-left: -100%;
+        left: @widthSidebarLeft;
+        &.before-content {
+          .fl;
+          margin-left: 0;
+          + .middle-container {
+            margin-left: -@widthSidebarRight;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* sidebars
+-----------------------------------------------------------------------------*/
+[class|=sidebar], [class*=sidebar-] {
+  .fl;
+  .pr;
+}
+.sidebar {
+  &-left {
+    width: @widthSidebarLeft;
+    margin-left: -100%;
+    &.before-content {
+      margin-left: 0;
+      margin-right: -@widthSidebarLeft;
+    }
+  }
+  &-right {
+    width: @widthSidebarRight;
+    margin-right: -3px;
+    margin-left: -@widthSidebarRight;
+    &.before-content {
+      margin-right: 0;
+      .fr;
+    }
+  }
+}

@@ -1,0 +1,107 @@
+// font default
+//-----------------------------------------------------------------------------------
+body, input, button, select, textarea
+  font-family: $default-font
+
+// Common classes
+//-----------------------------------------------------------------------------------
+.clear
+  clear: both
+
+%clear-fix:after
+  content: ''
+  clear: both
+  display: table
+  width: 100%
+
+// positioning
+//-----------------------------------------------------------------------------------
+.pa
+  position: absolute
+
+.pr
+  position: relative
+
+.fl
+  float: left
+
+.fr
+  float: right
+
+// text align -- registration
+//-----------------------------------------------------------------------------------
+.text
+  &-left
+    text-align: left
+
+  &-center
+    text-align: center
+
+  &-right
+    text-align: right
+
+pre, code
+  font-family: monospace
+
+// link
+//-----------------------------------------------------------------------------------
+a
+  color: $color-link
+  outline: none
+  text-decoration: underline
+
+  &:hover
+    text-decoration: none
+
+img
+  border: none
+  vertical-align: top
+  max-width: 100%
+  height: auto
+
+// form
+//-----------------------------------------------------------------------------------
+input
+  vertical-align: middle
+  margin: 0
+  padding: 0
+
+  ::-ms-clear,
+  ::-ms-reveal
+    display: none
+    width: 0
+    height: 0
+
+button,
+a.button,
+input[type='reset'],
+input[type='submit'],
+input[type='button'],
+input[type='image']
+  display: inline-block
+  width: auto
+  margin: 0
+  padding: 0
+  overflow: visible
+  background: none
+  outline: 0
+  border: 0
+  cursor: pointer
+  vertical-align: middle
+  text-align: center
+  text-decoration: none
+
+// WebKit/Blink Browsers
+//-----------------------------------------------------------------------------------
+::selection
+  background: $color-selection
+
+
+// vertical align middle
+//-----------------------------------------------------------------------------------
+%vafix:before
+  display: inline-block
+  margin-right: -0.25em
+  height: 100%
+  content: ''
+  vertical-align: middle
