@@ -9,14 +9,15 @@
 .el-btn
   display: inline-block
   box-sizing: border-box
-  padding: 0 20px
+  padding: 11px 20px
   height: 40px
   border: 2px solid white
   border-radius: 20px
   color: white
   text-align: center
   text-decoration: none
-  font: 700 13px/36px $open
+  box-sizing: border-box
+  font: 700 13px/13px $open
   transition: all .12s ease
   &:hover
     background: white
@@ -44,3 +45,133 @@
     &:hover
       background-color: $color-fiol
       color: white
+
+  &.pur-style
+    border-color: $color-pure
+    background-color: $color-pure
+    &:hover
+      background: none
+      color: $color-pure
+
+  &.grey-style
+    border-color: $color-grey
+    background-color: $color-grey
+    &:hover
+      background: none
+      color: $color-grey
+
+    &.inverse
+      background: none
+      color: $color-grey
+      &:hover
+        background: $color-grey
+        color: white
+
+
+// select
+//-----------------------------------------------------------------------------------
+
+.el-select
+  position: relative
+  display: block
+  margin: 0 auto
+  margin-bottom: 15px
+  max-width: 220px
+  width: 100%
+  color: rgba(black,.7)
+  vertical-align: middle
+  text-align: left
+  user-select: none
+  -webkit-touch-callout: none
+  .hide
+    position: absolute
+    height: 0
+    border: none
+    color: rgba(0,0,0,0)
+
+  .placeholder
+    position: relative
+    display: block
+    overflow: hidden
+    padding: 11px 22px 11px 15px
+    height: 20px
+    border: 1px solid rgba(22, 26, 44, 0.1)
+    border-radius: 22px
+    background-color: white
+    color: rgba(black,.7)
+    text-overflow: ellipsis
+    white-space: nowrap
+    font: 700 13px $open
+    cursor: pointer
+    transition: background .2s ease
+
+    &:hover
+      color: black
+    //&:after
+    //  position: absolute
+    //  top: 16px
+    //  right: 15px
+    //  z-index: 5
+    //  width: 11px
+    //  height: 6px
+    //  //background: url(../images/arow.svg)
+    //  content: ''
+    //  transform: rotate(180deg)
+    //  @media (max-width: $screen-xs-max)
+    //    width: 18px
+    //    height: 10px
+    //    top: 19px
+
+  &.is-open
+    z-index: 2
+    label.error
+      display: none
+    .placeholder
+      padding-bottom: 10px
+      border-radius: 22px 22px 0 0
+      &:after
+        top: 15px
+        right: 15px
+        transform: rotate(0deg)
+    .wraper-list
+      visibility: visible
+      opacity: 1
+  .wraper-list
+    position: absolute
+    top: 100%
+    left: 0
+    z-index: 0
+    visibility: hidden
+    overflow: hidden
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+    width: 100%
+    border: 1px solid #f5f5f5
+    border: 1px solid rgba(22, 26, 44, 0.1)
+    border-top: none
+    border-radius: 0 0 22px 22px
+    background-color: white
+    list-style: none
+    opacity: 0
+  ul
+    overflow: hidden
+    overflow-y: auto
+    margin-bottom: 5px
+    min-height: 20px
+    max-height: 222px
+    li
+      display: block
+      margin-right: 15px
+      margin-left: 15px
+      padding: 10px 5px 10px 5px
+      border-bottom: 1px solid #e0e0e0
+      color: rgba(black,.7)
+      text-align: left
+      font: 700 13px $open
+      cursor: pointer
+      transition: all .2s ease
+      &:last-child
+        border-bottom: none
+      &:hover
+        color: black

@@ -3,24 +3,33 @@
 .header
   padding: 20px 0
   background-color: black
+  @media (max-width: $screen-xs-max)
+    text-align: center
 
-  .el-btn.login
+  .login-wrap-btn
+    text-align: right
     margin-top: 5px
-    border-color: $color-pure
+    @media (max-width: $screen-xs-max)
+      text-align: center
+      margin-top: 15px
 
-    &:hover
-      background-color: $color-pure
-      color: white
+  .logo-site
+    @media (max-width: $screen-xs-max)
+      display: inline-block
+      margin-bottom: 10px
 
   .wrap-search
     position: relative
     padding-left: 190px
     margin-top: 5px
+    @media (max-width: $screen-sm-max)
+      padding-left: 140px
 
   .search
     position: relative
     display: inline-block
     width: 100%
+    margin-top: 3px
 
   input
     box-sizing: border-box
@@ -36,7 +45,7 @@
   button
     position: absolute
     top: 10px
-    right: 0
+    right: -5px
     color: white
     font-size: 18px
 
@@ -46,6 +55,9 @@
     left: 0
 
   .catalog-btn .el-btn
-    width: 150px
+    width: 140px
+    @media (max-width: $screen-sm-max)
+      width: 130px
 
-
+  .catalog-btn .el-btn .icon-rectangle
+    margin-right: 5px

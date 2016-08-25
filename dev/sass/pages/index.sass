@@ -1,2 +1,477 @@
 // index/home page
 //-----------------------------------------------------------------------------------
+
+.home-page
+
+  .home-banner
+    background: url(../images/bg-banner-1.jpg) no-repeat center/cover
+    @media (max-width: $screen-xs-max)
+      padding-top: 30px
+    h1
+      margin-top: 63px
+      margin-bottom: 120px
+      max-width: 760px
+      color: white
+      font: 400 36px/44px $open
+      @media (max-width: $screen-xs-max)
+        margin-top: 0
+        font-size: 20px
+        line-height: 22px
+        text-align: center
+
+
+  .page-content
+    padding: 0 0 80px
+    min-height: 700px
+    background-color: #f5f7ff
+
+  .catalog-list
+    width: 100%
+    background-color: white
+    box-shadow: 0 6px 30px rgba(22, 26, 44, 0.1)
+
+    ul
+      margin-top: -60px
+
+    li
+      border-bottom: 1px solid rgba(#4a72f5, .2)
+
+      &.title
+        height: 60px
+        background-color: #4a72f5
+        border-bottom: none
+
+        a
+          padding: 20px 30px
+          color: white
+          font: 700 14px/20px $open
+      a
+        display: block
+        padding: 14.8px 30px
+        color: black
+        text-decoration: none
+        font: 400 14px/20px $open
+        @media (max-width: $screen-xs-max)
+          text-align: center
+
+  .section
+    overflow: hidden
+    .title-section
+      @extend %clear-fix
+      margin-bottom: 25px
+
+      h2
+        float: left
+        display: block
+        width: 100%
+        padding-right: 180px
+        color: black
+        font: 300 24px/40px $open
+        box-sizing: border-box
+        @media (max-width: $screen-xs-max)
+          float: none
+          padding-right: 0
+          font-size: 16px
+          line-height: 20px
+        a
+          text-decoration: none
+        .yandex
+          color: #9b9b9b
+        .mailru
+          color: #4a72f5
+
+
+      .el-btn
+        position: relative
+        float: right
+        margin-top: -40px
+        z-index: 1
+        @media (max-width: $screen-xs-max)
+          float: none
+          margin-top: 20px
+
+  .section-1
+    overflow: inherit
+    margin-bottom: 45px
+
+    .style-text-1
+      margin-top: 30px
+      color: #4a4a4a
+      font: 400 18px/27px $open
+      @media (max-width: $screen-sm-max)
+        font-size: 14px
+        line-height: 25px
+
+
+    .tab-catalog
+      margin-top: 24px
+      @extend %clear-fix
+
+      li
+        float: left
+        margin-left: 58px
+        @media (max-width: $screen-sm-max)
+          margin-bottom: 20px
+        @media (max-width: $screen-xs-max)
+          margin-left: 0
+          display: block
+          float: none
+
+        &:first-child
+          margin-left: 0
+      a
+        display: inline-block
+        text-decoration: none
+        color: #171b2d
+        font: 400 14px/20px $open
+        border-bottom: 2px dotted rgba(#171b2d, .5)
+
+    .wrap-drop
+      @extend %clear-fix
+      margin-top: 95px
+      @media (max-width: $screen-sm-max)
+        margin-top: 20px
+
+    .css-filter
+      float: left
+      @media (max-width: $screen-xs-max)
+        float: none
+
+    .css-sort
+      float: right
+      @media (max-width: $screen-xs-max)
+        float: none
+
+    .css-filter, .css-sort
+      position: relative
+      max-width: 180px
+
+      .placeholder
+        padding-left: 38px
+        &:after
+          position: absolute
+          z-index: 3
+          top: 0
+          left: 0
+          width: 100%
+          height: 100%
+          cursor: pointer
+          content: ''
+
+      .icon
+        position: absolute
+        z-index: 2
+        left: 12px
+        top: 16px
+        font-size: 13px
+
+      .icon-up-dir
+        position: absolute
+        z-index: 2
+        right: 9px
+        top: 12px
+        font-size: 14px
+
+      .icon-down-dir
+        position: absolute
+        z-index: 2
+        right: 9px
+        top: 19px
+        font-size: 14px
+
+  .section-2, .section-3, .section-4
+    margin-bottom: 55px
+
+  .section-4
+    .wrap-banner
+      position: relative
+      margin: 0 15px
+      @extend %clear-fix
+      +gradient-horizontal(#7572ec, #cf72da)
+      @media (max-width: $screen-sm-max)
+        text-align: center
+      @media (max-width: $screen-xs-max)
+        padding-top: 40px
+      &:before
+        position: absolute
+        bottom: 0
+        left: 30px
+        width: 202px
+        height: 248px
+        opacity: 0.2
+        background: url(../images/combined.svg) no-repeat center
+        content: ''
+        @media (max-width: $screen-sm-max)
+          display: none
+
+      .style-text-2
+        margin-top: 60px
+        margin-bottom: 25px
+        color: white
+        font: 300 24px/33px $open
+        @media (max-width: $screen-xs-max)
+          font-size: 18px
+          line-height: 30px
+          margin-top: 0
+        b
+          margin-bottom: 15px
+          display: block
+          font-weight: 700
+
+      .el-btn
+        margin-bottom: 60px
+        height: 60px
+        font: 700 18px/18px $open
+        padding: 17px 60px
+        border-radius: 30px
+        color: #9835ef
+        background-color: white
+        @media (max-width: $screen-xs-max)
+          padding: 11px 25px
+          height: 44px
+          font-size: 13px
+        &:hover
+          color: white
+          background: none
+
+
+  .section-5
+    margin-bottom: 20px
+
+  .section-6
+    padding-top: 41px
+    background-color: white
+    .title-section
+      margin-bottom: 40px
+    .btn-wraps
+      margin: 20px 0 80px
+
+
+  .section-7
+    margin-top: 50px
+    .btn-wraps
+      margin: 20px 0 80px
+
+    .title-section h2
+      padding-right: 340px
+      @media (max-width: $screen-xs-max)
+        padding-right: 0
+
+    .list-el-btn
+      float: right
+      position: relative
+      margin-top: -45px
+      z-index: 1
+      @media (max-width: $screen-xs-max)
+        float: none
+        margin-top: 20px
+
+      li
+        display: inline-block
+        float: left
+        margin-right: 5px
+        @media (max-width: $screen-xs-max)
+          float: none
+          display: block
+          margin-bottom: 5px
+
+        &:last-child
+          margin-right: 0
+        .el-btn
+          float: none
+          margin-top: 0
+        .grey-style
+          border-width: 1px
+          padding: 12px 20px
+
+
+  .section-8
+    margin: 40px 0 50px
+    .item-serves
+      text-align: center
+      @media (max-width: $screen-xs-max)
+        margin-bottom: 70px
+        &:last-child
+          margin-bottom: 0
+      img
+        width: 100%
+        max-width: 151px
+        height: auto
+        margin-bottom: 27px
+      p
+        color: black
+        font: 400 18px/24px $open
+        display: block
+        max-width: 290px
+        margin: 0 auto
+        @media (max-width: $screen-sm-max)
+          font-size: 14px
+          line-height: 20px
+
+
+  .carousel
+    .owl-controls
+      position: absolute
+      left: -90px
+      right: -90px
+      top: 50%
+      height: 0
+      margin-top: -28px
+
+    .owl-nav
+      @extend %clear-fix
+      height: 0
+
+    .owl-prev, .owl-next
+      width: 56px
+      height: 56px
+      border-radius: 100%
+      border: 1px solid #4a72f5
+      line-height: 54px
+      text-align: center
+      font-size: 20px
+      color: #4a72f5
+      cursor: pointer
+      opacity: 0.3
+      transition: all .12s ease
+      &:hover
+        opacity: 1
+
+    .owl-prev
+      float: left
+    .owl-next
+      float: right
+      .icon-arrow-l:before
+        transform: rotate(180deg)
+
+    .owl-stage-outer
+      padding-bottom: 10px
+
+    .item
+      position: relative
+      background-color: white
+      box-shadow: 0 3px 10px rgba(22, 26, 44, 0.1)
+      margin-top: 32px
+      padding: 0 30px 30px
+      height: 460px
+      box-sizing: border-box
+
+      &:hover .hover-block
+        opacity: 1
+        visibility: visible
+
+      .stock
+        position: absolute
+        height: 32px
+        top: -32px
+        left: 0
+        width: 100%
+        background-color: #9b9b9b
+        border-radius: 20px 20px 0 0
+        overflow: hidden
+        text-align: left
+        color: white
+        padding: 0 30px
+        font: 700 12px/32px $open
+        box-sizing: border-box
+
+        &.css-color-yel
+          background-color: #f9be6b
+        &.css-color-pur
+          background-color: #fb5570
+
+      .img-wrap
+        display: block
+        margin: 0 -30px 15px
+        height: 220px
+        background: #9b9b9b no-repeat center/cover
+
+      .tags
+        margin-bottom: 19px
+        li
+          display: inline-block
+          &:last-child a:after
+            display: none
+        a
+          display: inline-block
+          text-decoration: none
+          color: #9b9b9b
+          font: 400 13px/18px $open
+          &:after
+            content: ','
+
+      .name
+        color: black
+        font: 400 16px/22px $open
+        text-decoration: none
+        display: block
+
+      .announce
+        color: #4a4a4a
+        font: 400 13px/18px $open
+        margin-top: 10px
+
+      .bottom-item
+        position: absolute
+        bottom: 30px
+        left: 30px
+        height: 35px
+
+      .data
+        position: relative
+        padding-left: 22px
+        color: black
+        font: 400 13px/18px $open
+        &.css-color-yel:before
+          background-color: #f9be6b
+        &:before
+          position: absolute
+          top: 3px
+          left: 0
+          width: 12px
+          height: 12px
+          border-radius: 100%
+          overflow: hidden
+          background-color: #61e7d6
+          content: ''
+
+      .group
+        margin-top: 2px
+        color: #4a72f5
+        font: 400 13px/18px $open
+
+      .hover-block
+        position: absolute
+        z-index: 1
+        top: 0
+        left: 0
+        padding: 30px
+        height: 100%
+        width: 100%
+        opacity: 0
+        visibility: hidden
+        background: #7a34b8 no-repeat center/cover
+        transition: all .12s ease
+        cursor: pointer
+        box-sizing: border-box
+
+        .wraper-text
+          position: absolute
+          bottom: 0
+          left: 0px
+          width: 100%
+          padding: 30px
+          box-sizing: border-box
+
+        .title
+          margin-bottom: 15px
+          color: white
+          font: 700 24px/33px $open
+
+        .announce
+          margin-bottom: 30px
+          color: white
+          font: 400 15px/20px $open
+
+        .el-btn
+          padding: 11px 35px
