@@ -80,6 +80,8 @@
           line-height: 20px
         a
           text-decoration: none
+          &:hover
+            text-decoration: underline
         .yandex
           color: #9b9b9b
         .mailru
@@ -126,8 +128,8 @@
           margin-left: 0
       a
         display: inline-block
-        border-bottom: 2px dotted rgba(#171b2d, .5)
-        color: #171b2d
+        border-bottom: 2px dotted rgba(#9b9b9b, .3)
+        color: #9b9b9b
         text-decoration: none
         font: 400 14px/20px $open
         transition: all .2s ease
@@ -238,7 +240,7 @@
         padding: 19px 60px
         height: 60px
         border-radius: 6px
-        background-color: #9835ef
+        background-color: #FB5570
         border: none
         box-shadow: 0 3px 6px rgba(38, 13, 16, 0.3)
         color: white
@@ -250,7 +252,7 @@
           font-size: 13px
         &:hover
           color: white
-          background-color: rgba(#9835ef, .5)
+          background-color: #CC455C
 
 
   .section-5
@@ -423,6 +425,8 @@
           font: 400 13px/18px $open
           &:after
             content: ','
+          &:hover
+            text-decoration: underline
 
       .name
         display: block
@@ -461,8 +465,10 @@
 
       .group
         margin-top: 2px
-        color: #4a72f5
+        color: #9b9b9b
         font: 400 13px/18px $open
+        &:hover
+          text-decoration: underline
 
       .hover-block
         position: absolute
