@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="12px" viewBox="0 0 16 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Youtube</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Copy-3" transform="translate(-503.000000, -4972.000000)" fill="#FFFFFF">
+            <g id="Group-13" transform="translate(0.000000, 4835.000000)">
+                <g id="Group-7" transform="translate(391.000000, 136.000000)">
+                    <path d="M114,1 C113.0704,1 112,2.14761905 112,3.18181818 L112,10.8181818 C112,11.852381 113.0704,13 114,13 L126,13 C126.9296,13 128,11.852381 128,10.8181818 L128,3.18181818 C128,2.14761905 126.9296,1 126,1 L114,1 Z M118,4 L123,7 L118,10 L118,4 Z" id="Youtube"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

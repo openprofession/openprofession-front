@@ -34,23 +34,28 @@
       margin-top: -60px
 
     li
-      border-bottom: 1px solid rgba(#4a72f5, .2)
+      border-bottom: 1px solid #f5f7ff
 
       &.title
         height: 60px
-        background-color: #4a72f5
         border-bottom: none
+        background-color: #4a72f5
 
         a
           padding: 20px 30px
           color: white
           font: 700 14px/20px $open
+          &:hover
+            background-color: #4a72f5
       a
         display: block
         padding: 14.8px 30px
         color: black
         text-decoration: none
         font: 400 14px/20px $open
+        transition: background .2s ease
+        &:hover
+          background-color: #f5f7ff
         @media (max-width: $screen-xs-max)
           text-align: center
 
@@ -61,13 +66,13 @@
       margin-bottom: 25px
 
       h2
-        float: left
         display: block
-        width: 100%
+        float: left
+        box-sizing: border-box
         padding-right: 180px
+        width: 100%
         color: black
         font: 300 24px/40px $open
-        box-sizing: border-box
         @media (max-width: $screen-xs-max)
           float: none
           padding-right: 0
@@ -78,14 +83,14 @@
         .yandex
           color: #9b9b9b
         .mailru
-          color: #4a72f5
+          color: #9b9b9b
 
 
       .el-btn
         position: relative
+        z-index: 1
         float: right
         margin-top: -40px
-        z-index: 1
         @media (max-width: $screen-xs-max)
           float: none
           margin-top: 20px
@@ -121,10 +126,14 @@
           margin-left: 0
       a
         display: inline-block
-        text-decoration: none
-        color: #171b2d
-        font: 400 14px/20px $open
         border-bottom: 2px dotted rgba(#171b2d, .5)
+        color: #171b2d
+        text-decoration: none
+        font: 400 14px/20px $open
+        transition: all .2s ease
+        &:hover
+          border-color: #4a72f5
+          color: #4a72f5
 
     .wrap-drop
       @extend %clear-fix
@@ -150,44 +159,50 @@
         padding-left: 38px
         &:after
           position: absolute
-          z-index: 3
           top: 0
           left: 0
+          z-index: 3
           width: 100%
           height: 100%
-          cursor: pointer
           content: ''
+          cursor: pointer
 
       .icon
         position: absolute
-        z-index: 2
-        left: 12px
         top: 16px
+        left: 12px
+        z-index: 2
         font-size: 13px
 
       .icon-up-dir
         position: absolute
-        z-index: 2
-        right: 9px
         top: 12px
+        right: 9px
+        z-index: 2
         font-size: 14px
 
       .icon-down-dir
         position: absolute
-        z-index: 2
-        right: 9px
         top: 19px
+        right: 9px
+        z-index: 2
         font-size: 14px
 
-  .section-2, .section-3, .section-4
-    margin-bottom: 55px
+  .section-2
+    margin-bottom: 15px
+
+  .section-3
+    margin-bottom: 15px
+
+  .section-4
+    margin-bottom: 75px
 
   .section-4
     .wrap-banner
       position: relative
       margin: 0 15px
       @extend %clear-fix
-      +gradient-horizontal(#7572ec, #cf72da)
+      background-image: linear-gradient(45deg, #181b2e 0%, #172825 100%)
       @media (max-width: $screen-sm-max)
         text-align: center
       @media (max-width: $screen-xs-max)
@@ -198,8 +213,8 @@
         left: 30px
         width: 202px
         height: 248px
-        opacity: 0.2
-        background: url(../images/combined.svg) no-repeat center
+        //opacity: 0.2
+        background: url(../images/icons/Profession_icon.svg) no-repeat center
         content: ''
         @media (max-width: $screen-sm-max)
           display: none
@@ -214,43 +229,46 @@
           line-height: 30px
           margin-top: 0
         b
-          margin-bottom: 15px
           display: block
+          margin-bottom: 15px
           font-weight: 700
 
       .el-btn
         margin-bottom: 60px
+        padding: 19px 60px
         height: 60px
+        border-radius: 6px
+        background-color: #9835ef
+        border: none
+        box-shadow: 0 3px 6px rgba(38, 13, 16, 0.3)
+        color: white
         font: 700 18px/18px $open
-        padding: 17px 60px
-        border-radius: 30px
-        color: #9835ef
-        background-color: white
+
         @media (max-width: $screen-xs-max)
           padding: 11px 25px
           height: 44px
           font-size: 13px
         &:hover
           color: white
-          background: none
+          background-color: rgba(#9835ef, .5)
 
 
   .section-5
-    margin-bottom: 20px
+    margin-bottom: 0
 
   .section-6
     padding-top: 41px
     background-color: white
     .title-section
-      margin-bottom: 40px
+      margin-bottom: 25px
     .btn-wraps
-      margin: 20px 0 80px
+      margin: 0 0 80px
 
 
   .section-7
     margin-top: 50px
     .btn-wraps
-      margin: 20px 0 80px
+      margin: 0 0 80px
 
     .title-section h2
       padding-right: 340px
@@ -258,10 +276,10 @@
         padding-right: 0
 
     .list-el-btn
-      float: right
       position: relative
-      margin-top: -45px
       z-index: 1
+      float: right
+      margin-top: -45px
       @media (max-width: $screen-xs-max)
         float: none
         margin-top: 20px
@@ -281,8 +299,9 @@
           float: none
           margin-top: 0
         .grey-style
-          border-width: 1px
           padding: 12px 20px
+          border-width: 1px
+          font-weight: 300
 
 
   .section-8
@@ -294,16 +313,16 @@
         &:last-child
           margin-bottom: 0
       img
-        width: 100%
-        max-width: 151px
-        height: auto
         margin-bottom: 27px
+        max-width: 151px
+        width: 100%
+        height: auto
       p
+        display: block
+        margin: 0 auto
+        max-width: 290px
         color: black
         font: 400 18px/24px $open
-        display: block
-        max-width: 290px
-        margin: 0 auto
         @media (max-width: $screen-sm-max)
           font-size: 14px
           line-height: 20px
@@ -312,11 +331,11 @@
   .carousel
     .owl-controls
       position: absolute
-      left: -90px
-      right: -90px
       top: 50%
-      height: 0
+      right: -90px
+      left: -90px
       margin-top: -28px
+      height: 0
 
     .owl-nav
       @extend %clear-fix
@@ -325,14 +344,14 @@
     .owl-prev, .owl-next
       width: 56px
       height: 56px
-      border-radius: 100%
       border: 1px solid #4a72f5
-      line-height: 54px
+      border-radius: 100%
+      color: #4a72f5
       text-align: center
       font-size: 20px
-      color: #4a72f5
-      cursor: pointer
+      line-height: 54px
       opacity: 0.3
+      cursor: pointer
       transition: all .12s ease
       &:hover
         opacity: 1
@@ -345,40 +364,45 @@
         transform: rotate(180deg)
 
     .owl-stage-outer
-      padding-bottom: 10px
+      margin: 0 -20px
+      padding: 0 20px 50px
 
     .item
       position: relative
-      background-color: white
-      box-shadow: 0 3px 10px rgba(22, 26, 44, 0.1)
+      box-sizing: border-box
       margin-top: 32px
       padding: 0 30px 30px
       height: 460px
-      box-sizing: border-box
+      background-color: white
+      box-shadow: 0 3px 10px rgba(22, 26, 44, 0.1)
+      transition: all .12s ease
 
-      &:hover .hover-block
-        opacity: 1
-        visibility: visible
+      &:hover
+        box-shadow: 0 5px 40px rgba(22, 26, 44, 0.25)
+        cursor: pointer
+        //.hover-block
+        //  opacity: 1
+        //  visibility: visible
 
       .stock
         position: absolute
-        height: 32px
         top: -32px
         left: 0
-        width: 100%
-        background-color: #9b9b9b
-        border-radius: 20px 20px 0 0
         overflow: hidden
-        text-align: left
-        color: white
-        padding: 0 30px
-        font: 700 12px/32px $open
         box-sizing: border-box
+        padding: 0 30px
+        width: 100%
+        height: 32px
+        border-radius: 3px 3px 0 0
+        background-color: #61e7d6
+        color: white
+        text-align: left
+        font: 700 12px/32px $open
 
         &.css-color-yel
-          background-color: #f9be6b
+          background-color: #61e7d6
         &.css-color-pur
-          background-color: #fb5570
+          background-color: #61e7d6
 
       .img-wrap
         display: block
@@ -394,22 +418,22 @@
             display: none
         a
           display: inline-block
-          text-decoration: none
           color: #9b9b9b
+          text-decoration: none
           font: 400 13px/18px $open
           &:after
             content: ','
 
       .name
-        color: black
-        font: 400 16px/22px $open
-        text-decoration: none
         display: block
+        color: black
+        text-decoration: none
+        font: 400 16px/22px $open
 
       .announce
+        margin-top: 10px
         color: #4a4a4a
         font: 400 13px/18px $open
-        margin-top: 10px
 
       .bottom-item
         position: absolute
@@ -428,10 +452,10 @@
           position: absolute
           top: 3px
           left: 0
+          overflow: hidden
           width: 12px
           height: 12px
           border-radius: 100%
-          overflow: hidden
           background-color: #61e7d6
           content: ''
 
@@ -442,26 +466,44 @@
 
       .hover-block
         position: absolute
-        z-index: 1
         top: 0
         left: 0
-        padding: 30px
-        height: 100%
-        width: 100%
-        opacity: 0
-        visibility: hidden
-        background: #7a34b8 no-repeat center/cover
-        transition: all .12s ease
-        cursor: pointer
+        z-index: 1
         box-sizing: border-box
+        padding: 30px
+        width: 100%
+        //opacity: 0
+        //visibility: hidden
+        height: 100%
+        transition: all .12s ease
+        background: #7a34b8 no-repeat center/cover
+        cursor: pointer
+        &:hover
+          &:after
+            opacity: 0.9
+            height: 100%
+          .el-btn
+            background: white
+            color: #fb5570
+
+        &:after
+          position: absolute
+          top: 0
+          left: 0
+          width: 100%
+          height: 3px
+          background-color: #fb5570
+          content: ''
+          transition: all .3s ease
 
         .wraper-text
           position: absolute
           bottom: 0
           left: 0px
-          width: 100%
-          padding: 30px
           box-sizing: border-box
+          padding: 30px
+          width: 100%
+          z-index: 2
 
         .title
           margin-bottom: 15px

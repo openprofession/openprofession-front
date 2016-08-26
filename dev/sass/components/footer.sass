@@ -36,6 +36,15 @@
       line-height: 25px
       transition: all .12s ease
 
+      &.facebook:hover
+        color: #4867aa
+      &.tw:hover
+        color: #4a90e2
+      &.gplus:hover
+        color: #fb5570
+      &.youtube:hover
+        color: #d0021b
+
   .copywriter
     margin-top: 50px
     color: white
@@ -63,6 +72,14 @@
       box-shadow: none
       color: white
       font: 300 13px/36px $open
+      &:focus::-webkit-input-placeholder
+        color: transparent
+      &:focus::-moz-placeholder
+        color: transparent
+      &:focus:-moz-placeholder
+        color: transparent
+      &:focus:-ms-input-placeholder
+        color: transparent
 
     button
       position: absolute
@@ -84,12 +101,20 @@
     p
       color: white
       font: 300 13px/15px $open
+      a
+        color: white
+        text-decoration: none
+        &:hover
+          text-decoration: underline
 
   h3 .title
     display: inline-block
     margin-bottom: 8px
     color: white
+    text-decoration: none
     font: 300 13px/15px $open
+    &:hover
+      text-decoration: underline
 
   .contact-link
     @extend %clear-fix
@@ -110,12 +135,17 @@
       &.css-color
         @extend %clear-fix
         color: #f9be6b
+        img
+          float: left
+          margin-right: 5px
+          margin-top: 4px
         i
           float: left
           margin-right: 5px
           font-size: 20px
         span
           display: block
+          margin-left: 26px
 
   .navigation-list
     display: inline-block

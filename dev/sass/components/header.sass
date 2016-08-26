@@ -20,7 +20,7 @@
 
   .wrap-search
     position: relative
-    padding-left: 190px
+    padding-left: 135px
     margin-top: 5px
     @media (max-width: $screen-sm-max)
       padding-left: 140px
@@ -29,33 +29,41 @@
     position: relative
     display: inline-block
     width: 100%
-    margin-top: 3px
 
   input
     box-sizing: border-box
-    padding-right: 25px
+    height: 40px
     width: 100%
     border: none
     border-bottom: 1px solid white
-    background: none
+    background: white
     box-shadow: none
-    color: white
+    color: black
+    padding: 11px 20px
+    padding-right: 50px
+    border-radius: 0 3px 3px 0
     font: 400 14px/36px $open
 
   button
     position: absolute
     top: 10px
-    right: -5px
-    color: white
+    right: 10px
+    color: #4a72f5
     font-size: 18px
 
   .catalog-btn
     position: absolute
+    z-index: 2
     top: 0
     left: 0
 
   .catalog-btn .el-btn
     width: 140px
+    border-radius: 3px 0 0 3px
+    &:hover
+      background-color: $color-blue
+      color: white
+
     @media (max-width: $screen-sm-max)
       width: 130px
 
