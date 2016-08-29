@@ -3,25 +3,30 @@
 .specialization-page
 
 .section-banner
-  min-height: 760px
-  background: url(../images/bg-banner.jpg) no-repeat center/cover
+  min-height: 590px
+  background: #171b2d url(../images/bg-1.png) no-repeat center/cover
 
   .img-play
-    color: $color-pure
-    margin-top: 150px
-    font-size: 140px
-  .text-style-1
+    margin: 140px auto 40px
+    max-width: 140px
+    width: 100%
+    img
+      width: 100%
+      height: auto
 
-    color: $color-blue
-    font: 400 20px/36px $open
+  .text-style-1
+    margin-bottom: -5px
+    color: white
+    font: 400 36px $open
 
   .text-style-2
+    margin-bottom: 20px
     color: white
-    font: 400 20px/36px $open
+    font: 300 36px $open
 
   .text-style-3
     color: white
-    font: 400 14px/36px $open
+    font: 400 18px/1 $open
 
 .page-content
   padding: 80px 0
@@ -29,7 +34,7 @@
 
   &.right-sidebar .content-wrap
     position: relative
-    padding-right: 290px
+    padding-right: 390px
 
     .sidebar
       position: absolute
@@ -41,10 +46,10 @@
     min-height: 320px
 
   .section-content
-    padding: 30px
     margin-bottom: 30px
     box-sizing: border-box
     &.css-shadow
+      padding: 20px 30px
       border-radius: 3px
       background-color: white
       box-shadow: 0 2px 10px rgba(black, .1)
@@ -55,13 +60,434 @@
   .title-section
     margin-bottom: 10px
     color: black
-    font: 300 30px/36px $open
+    font: 300 24px/36px $open
 
   .sidebar
-    width: 260px
+    width: 360px
     min-height: 320px
     padding: 30px
     box-sizing: border-box
     border-radius: 3px
     background-color: white
     box-shadow: 0 2px 10px rgba(black, .1)
+
+  .style-text-3
+    margin-bottom: 25px
+    color: black
+    font: 400 16px/24px $open
+    a
+      color: #9b9b9b
+      text-decoration: none
+      border-bottom: 1px dashed rgba(#9b9b9b, .5)
+      &:hover
+        border-bottom: none
+
+  .style-text-4
+    color: black
+    font: 400 16px/30px $open
+    span
+      color: #9b9b9b
+
+  .partner-section
+    margin-bottom: 63px
+
+  .partner
+    @extend %clear-fix
+    padding-top: 25px
+    margin-bottom: 10px
+    li
+      display: inline-block
+      float: left
+      margin-right: 30px
+      &:last-child
+        margin-right: 0
+    a
+      text-decoration: none
+      display: inline-block
+      height: 56px
+      line-height: 56px
+      img
+        vertical-align: middle
+
+  .section-spikier
+    position: relative
+    margin-bottom: 55px
+
+  .slide-lengs
+    position: absolute
+    top: 22px
+    right: 80px
+    color: #9b9b9b
+    font: 400 14px $open
+
+  .spikier
+    padding-top: 12px
+
+    .owl-controls
+      position: absolute
+      top: -40px
+      right: 0
+
+      .owl-nav
+      .owl-prev, .owl-next
+        width: 8px
+        height: 12px
+        float: left
+
+      .owl-prev
+        background: url(../images/icons/arrow-lef.svg) no-repeat center
+        margin-right: 19px
+      .owl-next
+        background: url(../images/icons/arrow-rig.svg) no-repeat center
+
+    .photos
+      width: 80px
+      height: 80px
+      overflow: hidden
+      border-radius: 100%
+      float: left
+      opacity: 0.5
+      transition: all .12s ease
+      &:hover
+        opacity: 1
+    .text
+      display: block
+      margin-left: 90px
+      margin-bottom: 0
+
+    .name-person
+      color: black
+      padding-top: 15px
+      margin-bottom: 5px
+      font: 400 14px $open
+
+    .dolsh-person
+      color: #9b9b9b
+      font: 400 13px $open
+
+  .list-style-1
+    @extend %clear-fix
+    margin-top: 33px
+    li
+      padding-left: 35px
+      padding-right: 30px
+      margin-bottom: 25px
+      position: relative
+      float: left
+      width: 50%
+      color: black
+      font: 400 15px/15px $open
+      box-sizing: border-box
+      &:before
+        content: ''
+        position: absolute
+        left: 0
+        top: 2px
+        width: 24px
+        height: 24px
+        background: url(../images/icons/list-style.svg) no-repeat center
+
+  .colon-section
+    @extend %clear-fix
+
+  .col-left
+    width: 50%
+    float: left
+    box-sizing: border-box
+    padding-right: 15px
+    ul
+      margin-top: 16px
+
+    li
+      position: relative
+      width: 100%
+      text-align: left
+      a
+        width: 140px
+        margin-right: 30px
+        display: inline-block
+        color: black
+        font: 400 14px/34px $open
+        text-decoration: none
+
+    .progress
+      display: inline-block
+      width: 117px
+      height: 6px
+      background-color: #61e7d6
+      border-radius: 2px
+    p a
+      margin-top: 22px
+
+  .col-right
+    width: 50%
+    float: left
+    box-sizing: border-box
+    padding-left: 15px
+
+    ul
+      margin-top: 25px
+
+    li
+      padding-left: 40px
+      padding-right: 30px
+      margin-bottom: 12px
+      position: relative
+      color: black
+      font: 400 13px/20px $open
+      box-sizing: border-box
+      &:before
+        content: ''
+        position: absolute
+        left: 0
+
+      &.time:before
+        top: 2px
+        width: 32px
+        height: 32px
+        background: url(../images/icons/time-icon.svg) no-repeat center
+
+      &.doc:before
+        top: 7px
+        left: 2px
+        width: 28px
+        height: 29px
+        background: url(../images/icons/doc-icon.svg) no-repeat center
+
+    p a
+      margin-top: 10px
+
+  .col-center
+    width: 100%
+    float: left
+    padding-top: 25px
+    margin-top: 30px
+    position: relative
+    &:before
+      position: absolute
+      height: 1px
+      top: 7px
+      right: -30px
+      left: -30px
+      background-color: #ececec
+      content: ''
+
+    .list-style-2
+      margin: 15px -15px
+
+    .list-style-2 > li
+      @extend %clear-fix
+      color: black
+      padding: 0 15px
+      font: 400 13px/40px $open
+      transition: all .12s ease
+      margin-bottom: 10px
+      &:hover
+        cursor: pointer
+        background-color: rgba(#4a72f5, .1)
+
+    .specif
+      color: $color-blue
+
+    .tags
+      float: right
+      li
+        display: inline-block
+        &:last-child a:after
+          display: none
+      a
+        display: inline-block
+        color: #9b9b9b
+        text-decoration: none
+        font: 400 13px/18px $open
+        &:after
+          content: ','
+        &:hover
+          text-decoration: underline
+
+    p a
+      margin-top: 10px
+      margin-bottom: 10px
+
+  p a
+    display: inline-block
+    text-decoration: none
+    color: #9b9b9b
+    font: 400 14px $open
+    &:hover
+      text-decoration: underline
+
+  .connect
+    margin: 35px auto 53px
+    .el-btn
+      width: 240px
+      text-align: center
+      font-size: 16px
+      height: 44px
+      padding: 13px 20px
+
+  .list-dropdown-section
+    position: relative
+
+    .title-btn
+      position: absolute
+      right: 43px
+      top: 17px
+
+    .show-all
+      color: #9b9b9b
+      font: 400 14px/20px $open
+      text-decoration: none
+      &.js-open
+        img
+          transform: rotate(180deg)
+        .show
+          display: none
+        .hide
+          display: inline-block
+
+      .show
+        display: inline-block
+      .hide
+        display: none
+      img
+        margin-left: 8px
+        vertical-align: middle
+
+    .download
+      margin-left: 30px
+      img
+        vertical-align: bottom
+
+  .list-dropdown
+    margin-top: 25px
+    display: block
+    &.js-open
+      display: none
+
+  .dropdown-item
+    position: relative
+    padding: 30px 0
+    &:last-child
+      padding-bottom: 10px
+      &:after
+        display: none
+    &:after
+      content: ''
+      position: absolute
+      bottom: 0px
+      left: -30px
+      right: -30px
+      height: 1px
+      opacity: 0.1
+      background-color: #4a72f5
+    &.js-open
+      .title-item:after
+        transform: rotate(180deg)
+      .content-item
+        display: block
+
+    .title-item
+      cursor: pointer
+      padding-left: 125px
+      padding-right: 40px
+      position: relative
+      color: black
+      font: 400 14px/21px $open
+      &:after
+        content: ''
+        position: absolute
+        right: 0
+        top: 7px
+        width: 11px
+        height: 7px
+        background: url(../images/icons/arrow-down-pure.svg)
+      .purpur
+        position: absolute
+        left: 0
+        color: #fb5570
+        width: 110px
+        font: 700 14px/21px $open
+
+    .content-item
+      display: none
+      padding: 20px 0
+      color: black
+      font: 400 14px/21px $open
+
+  .rating-section
+    @extend %clear-fix
+    margin-top: 50px
+
+    .title-section
+      float: left
+
+    .title-rating
+      float: right
+      margin-top: -5px
+
+    .el-rating, .rating-text, .count-comment
+      display: inline-block
+      vertical-align: bottom
+    .rating-text
+      margin-bottom: -4px
+      color: black
+      margin-left: 10px
+      margin-right: 10px
+      font: 400 24px/36px $open
+    .count-comment
+      margin-bottom: -7px
+      color: #9b9b9b
+      font: 400 14px/36px $open
+
+  .link-more-show
+    margin: 25px 0 5px
+    float: left
+    width: 100%
+    text-align: right
+
+  .comment-wrap
+    position: relative
+    float: left
+    width: 100%
+    @extend %clear-fix
+    &:before
+      content: ""
+      position: absolute
+      top: 10px
+      left: -30px
+      right: -30px
+      height: 1px
+      opacity: 0.1
+      background-color: #4a72f5
+
+  .comment-item
+    position: relative
+    margin-top: 40px
+    &:last-child:after
+      display: none
+    &:after
+      content: ""
+      position: absolute
+      bottom: -20px
+      left: 0
+      right: 0
+      height: 1px
+      opacity: 0.1
+      background-color: #4a72f5
+
+  .comment-title
+    margin-bottom: 15px
+    .el-rating
+      margin-right: 10px
+    .name
+      color: black
+      font: 400 18px/20px $open
+      margin-right: 10px
+    .data
+      color: #9b9b9b
+      font: 400 12px/20px $open
+  .comment-text
+    margin-bottom: 15px
+    color: black
+    font: 400 14px/22px $open

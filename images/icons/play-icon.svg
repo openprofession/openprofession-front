@@ -1,0 +1,27 @@
+<svg id="SvgjsSvg1000" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:svgjs="http://svgjs.com/svgjs" width="140" height="140">
+    <defs id="SvgjsDefs1001">
+        <clipPath id="SvgjsClipPath1009">
+            <path id="SvgjsPath1008"
+                  d="M960 231C998.66 231 1030 262.34 1030 301C1030 339.65999999999997 998.66 371 960 371C921.34 371 890 339.66 890 301C890 262.34000000000003 921.34 231 960 231Z "
+                  fill="#ffffff"></path>
+        </clipPath>
+        <clipPath id="SvgjsClipPath1012">
+            <path id="SvgjsPath1011"
+                  d="M960 236C995.899 236 1025 265.101 1025 301C1025 336.899 995.899 366 960 366C924.101 366 895 336.899 895 301C895 265.101 924.101 236 960 236Z "
+                  fill="#ffffff"></path>
+        </clipPath>
+    </defs>
+    <path id="SvgjsPath1007"
+          d="M960 231C998.66 231 1030 262.34 1030 301C1030 339.65999999999997 998.66 371 960 371C921.34 371 890 339.66 890 301C890 262.34000000000003 921.34 231 960 231Z "
+          fill-opacity="0" fill="#ffffff" stroke-dasharray="0" stroke-linejoin="miter" stroke-linecap="butt"
+          stroke-opacity="1" stroke="#ffffff" stroke-miterlimit="50" stroke-width="14"
+          clip-path="url(&quot;#SvgjsClipPath1009&quot;)" transform="matrix(1,0,0,1,-890,-231)"></path>
+    <path id="SvgjsPath1010"
+          d="M960 236C995.899 236 1025 265.101 1025 301C1025 336.899 995.899 366 960 366C924.101 366 895 336.899 895 301C895 265.101 924.101 236 960 236Z "
+          fill-opacity="0" fill="#ffffff" stroke-dasharray="0" stroke-linejoin="miter" stroke-linecap="butt"
+          stroke-opacity="1" stroke="#ffffff" stroke-miterlimit="50" stroke-width="14"
+          clip-path="url(&quot;#SvgjsClipPath1012&quot;)" transform="matrix(1,0,0,1,-890,-231)"></path>
+    <path id="SvgjsPath1013" d="M984.246 302.051L944.268 325.132L944.268 278.97Z " fill="#ffffff"
+          transform="matrix(1,0,0,1,-890,-231)"></path>
+</svg>
