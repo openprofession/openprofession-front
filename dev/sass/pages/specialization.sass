@@ -5,11 +5,15 @@
 .section-banner
   min-height: 590px
   background: #171b2d url(../images/bg-1.png) no-repeat center/cover
-
+  @media (max-width: $screen-xs-max)
+    min-height: 370px
   .img-play
     margin: 140px auto 40px
     max-width: 140px
     width: 100%
+    @media (max-width: $screen-xs-max)
+      margin: 0 auto
+      padding: 30px 0
     img
       width: 100%
       height: auto
@@ -18,15 +22,22 @@
     margin-bottom: -5px
     color: white
     font: 400 36px $open
+    @media (max-width: $screen-xs-max)
+      font-size: 18px
+
 
   .text-style-2
     margin-bottom: 20px
     color: white
     font: 300 36px $open
+    @media (max-width: $screen-xs-max)
+      font-size: 18px
 
   .text-style-3
     color: white
     font: 400 18px/1 $open
+    @media (max-width: $screen-xs-max)
+      font-size: 14px
 
 .page-content
   padding: 80px 0
@@ -35,11 +46,17 @@
   &.right-sidebar .content-wrap
     position: relative
     padding-right: 390px
+    @media (max-width: $screen-sm-max)
+      padding-right: 15px
 
     .sidebar
+      @extend %clear-fix
       position: absolute
       right: 0
       top: 0
+      @media (max-width: $screen-sm-max)
+        position: static
+      margin-bottom: 30px
 
   .content
     width: 100%
@@ -70,6 +87,9 @@
     border-radius: 3px
     background-color: white
     box-shadow: 0 9px 24px #e6eaf8
+    @media (max-width: $screen-sm-max)
+      width: 100%
+
 
     .list-nav
       margin: 0 -30px
@@ -203,7 +223,7 @@
       text-decoration: none
       border-bottom: 1px dashed rgba(155, 155, 155, 0.5)
       &:hover
-        border-bottom: none
+        border-color: transparent
 
 
   .style-text-3
@@ -215,7 +235,8 @@
       text-decoration: none
       border-bottom: 1px dashed rgba(#9b9b9b, .5)
       &:hover
-        border-bottom: none
+        border-color: transparent
+        text-decoration: none
 
   .style-text-4
     color: black
@@ -313,6 +334,8 @@
       color: black
       font: 400 15px/15px $open
       box-sizing: border-box
+      @media (max-width: $screen-xs-max)
+        width: 100%
       &:before
         content: ''
         position: absolute
@@ -330,6 +353,9 @@
     float: left
     box-sizing: border-box
     padding-right: 15px
+    @media (max-width: $screen-xs-max)
+      width: 100%
+      margin-bottom: 20px
     ul
       margin-top: 16px
 
@@ -359,7 +385,8 @@
     float: left
     box-sizing: border-box
     padding-left: 15px
-
+    @media (max-width: $screen-xs-max)
+      width: 100%
     ul
       margin-top: 25px
 
@@ -468,6 +495,8 @@
       position: absolute
       right: 43px
       top: 17px
+      @media (max-width: $screen-xs-max)
+        position: static
 
     .show-all
       color: #9b9b9b
@@ -516,6 +545,8 @@
       height: 1px
       opacity: 0.1
       background-color: #4a72f5
+      @media (max-width: $screen-xs-max)
+        position: static
     &.js-open
       .title-item:after
         transform: rotate(180deg)
@@ -529,6 +560,9 @@
       position: relative
       color: black
       font: 400 14px/21px $open
+      @media (max-width: $screen-xs-max)
+        padding-left: 0
+        padding-right: 30px
       &:after
         content: ''
         position: absolute
@@ -543,6 +577,8 @@
         color: #fb5570
         width: 110px
         font: 700 14px/21px $open
+        @media (max-width: $screen-xs-max)
+          position: static
 
     .content-item
       display: none
@@ -557,6 +593,8 @@
       float: left
     .el-btn
       float: right
+      @media (max-width: $screen-xs-max)
+        float: none
 
   .course
     float: left
@@ -565,6 +603,10 @@
       width: 48%
       float: left
       margin-right: 4%
+      @media (max-width: $screen-xs-max)
+        width: 100%
+        margin-right: 0
+
       &:nth-child(2n)
         margin-right: 0
 
