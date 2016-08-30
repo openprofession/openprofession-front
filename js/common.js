@@ -166,6 +166,12 @@ if (isOnPage($('.js-list-dropdown'))) {
 
     });
 
+    $('.js-list-dropdown').on('click', '.title-item-strong', function (el) {
+        el.preventDefault();
+        $(this).parent('.dropdown-item-strong').toggleClass('js-open');
+
+    });
+
 }
 
 
