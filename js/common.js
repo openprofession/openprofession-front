@@ -167,3 +167,33 @@ if (isOnPage($('.js-list-dropdown'))) {
     });
 
 }
+
+
+// js-partner
+//-----------------------------------------------------------------------------------
+if (isOnPage($('.js-partner'))) {
+
+    $('.js-partner').owlCarousel({
+        loop: true,
+        margin: 30,
+        nav: true,
+        navText: ['<i class="icon-arrow-l"></i>', '<i class="icon-arrow-l"></i>'],
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 3
+            }
+        }
+    });
+}
+
+
+$('#scroll-wrap').slimScroll({
+    height: '470px',
+    size: '3px'
+});

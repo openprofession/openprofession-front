@@ -62,7 +62,7 @@
     width: 100%
     min-height: 320px
 
-  .section-content
+  section
     margin-bottom: 30px
     box-sizing: border-box
     &.css-shadow
@@ -329,7 +329,7 @@
     li
       padding-left: 35px
       padding-right: 30px
-      margin-bottom: 25px
+      margin-bottom: 45px
       position: relative
       float: left
       width: 50%
@@ -393,30 +393,29 @@
       margin-top: 25px
 
     li
-      padding-left: 40px
       padding-right: 30px
       margin-bottom: 12px
       position: relative
       color: black
       font: 400 13px/20px $open
       box-sizing: border-box
-      &:before
-        content: ''
-        position: absolute
-        left: 0
+      &:hover
+        cursor: pointer
+        svg
+          fill: #4a72f5
+        p
+          color: black
+      p
+        transition: all .12s ease
+        display: block
+        margin-left: 40px
+        color: #b8bac2
 
-      &.time:before
-        top: 2px
-        width: 32px
-        height: 32px
-        background: url(../images/icons/time-icon.svg) no-repeat center
+      svg
+        transition: all .12s ease
+        float: left
+        fill: #b8bac2
 
-      &.doc:before
-        top: 7px
-        left: 2px
-        width: 28px
-        height: 29px
-        background: url(../images/icons/doc-icon.svg) no-repeat center
 
     p a
       margin-top: 10px
@@ -484,11 +483,12 @@
   .connect
     margin: 35px auto 53px
     .el-btn
-      width: 240px
+      width: 220px
       text-align: center
       font-size: 16px
-      height: 44px
-      padding: 13px 20px
+      height: 54px
+      padding: 18px 20px
+      border-radius: 3px
 
   .list-dropdown-section
     position: relative
