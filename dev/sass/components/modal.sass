@@ -1,0 +1,81 @@
+// Modal window
+//-----------------------------------------------------------------------------------
+.modal-button
+  margin-top: 100px
+
+  li:not(:first-child)
+    margin-top: 10px
+
+.remodal
+  box-sizing: border-box
+  a.mod-gray
+    text-decoration: none
+    color: $color-grey
+    &:hover
+      text-decoration: underline
+
+.remodal-close
+  &:before
+    position: absolute
+    display: inline-block
+    top: 0
+    left: 0
+    width: 30px
+    height: 30px
+    content: "\00d7"
+    color: $color-pure
+    font: 400 50px/34px "Courier New", Arial, "Helvetica Neue", Helvetica, sans-serif
+  &:hover:before
+    color: darken($color-pure, 20%)
+
+.form-input
+  position: relative
+
+::placeholder
+  color: #a1a1a1
+  text-transform: uppercase
+  font: 300 20px/25px $open
+
+// Sign-up modal
+//-----------------------------------------------------------------------------------
+.sign-up
+  padding: 60px 98px 65px
+  width: 570px
+
+// Sing in / up thanks modal
+//-----------------------------------------------------------------------------------
+.sign-thx
+  padding: 50px 72px 58px
+  width: 480px
+  text-align: left
+
+.sign-thx-title
+  margin-bottom: 10px
+  color: black
+  font: 300 28px $open
+  
+.sign-thx-desc
+  max-width: 300px
+  margin-top: 10px
+  color: black
+  font: 300 16px/26px $open
+  &.mod-small
+    margin-top: 25px
+    font-size: 13px
+    line-height: 20px
+
+// Forgot password thanks modal
+//-----------------------------------------------------------------------------------
+.forgot-thx
+  padding: 50px 60px 58px
+  width: 544px
+  text-align: left
+
+.forgot-thx-title
+  color: black
+  font: 300 28px/1.2 $open
+
+.forgot-thx-link
+  display: inline-block
+  margin-top: 22px
+  font: 300 18px/30px $open

@@ -20,8 +20,11 @@ module.exports = function (grunt) {
       style: {
         files: {
           'css/style.css': [
-            'css/style.css',
-            'css/plugins/*.css'
+            'css/plugins/*.css',
+            'css/style.css'
+          ],
+          'js/core.js': [
+            'dev/js/core/*.js'
           ]
         }
       },
@@ -29,14 +32,17 @@ module.exports = function (grunt) {
         files: {
           'js/libs.js': [
             'dev/js/jquery-1.11.3.min.js',
-            'dev/js/lib/*.js',
-            'dev/js/core/*.js'
+            'dev/js/lib/*.js'
           ]
         }
       },
       production: {
         files: {
-          'dev/js/production.js': ['js/libs.js', 'js/common.js']
+          'dev/js/production.js': [
+            'js/libs.js',
+            'js/core.js',
+            'js/common.js'
+          ]
         }
       }
     },
@@ -60,6 +66,7 @@ module.exports = function (grunt) {
               header: 'dev/chunks/header.html',
               scripts: 'dev/chunks/scripts.html',
               footer: 'dev/chunks/footer.html',
+              modal: 'dev/chunks/modal-window.html',
               svg: 'dev/chunks/svg.html'
             }
           }
@@ -91,6 +98,9 @@ module.exports = function (grunt) {
         dest: './',
         replacements: [{
           from: '<script src="//localhost:35729/livereload.js"></script>',
+          to: ''
+        },{
+          from: '<script src="js/core.js"></script>',
           to: ''
         },{
           from: /\?timestamp=\d+/g,
