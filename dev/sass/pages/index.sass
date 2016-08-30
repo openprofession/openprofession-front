@@ -59,23 +59,15 @@
         @media (max-width: $screen-xs-max)
           text-align: center
 
-  .section
+  [class*="section"]
     overflow: hidden
     .title-section
-      @extend %clear-fix
       margin-bottom: 25px
 
       h2
-        display: block
-        float: left
-        box-sizing: border-box
-        padding-right: 180px
-        width: 100%
         color: black
         font: 300 24px/40px $open
         @media (max-width: $screen-xs-max)
-          float: none
-          padding-right: 0
           font-size: 16px
           line-height: 20px
         a
@@ -87,12 +79,8 @@
         .mailru
           color: #9b9b9b
 
-
       .el-btn
-        position: relative
-        z-index: 1
         float: right
-        margin-top: -40px
         @media (max-width: $screen-xs-max)
           float: none
           margin-top: 20px
@@ -272,16 +260,8 @@
     .btn-wraps
       margin: 0 0 80px
 
-    .title-section h2
-      padding-right: 340px
-      @media (max-width: $screen-xs-max)
-        padding-right: 0
-
     .list-el-btn
-      position: relative
-      z-index: 1
       float: right
-      margin-top: -43px
       @media (max-width: $screen-xs-max)
         float: none
         margin-top: 20px
@@ -307,7 +287,7 @@
 
 
   .section-8
-    margin: 40px 0 50px
+    margin: 40px auto 50px
     .item-serves
       text-align: center
       @media (max-width: $screen-xs-max)
