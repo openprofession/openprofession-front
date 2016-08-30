@@ -80,12 +80,29 @@
   .style-text-7
     color: black
     font: 400 14px/24px $open
+  .list-yandex
+    li
+      font: 400 14px/34px $open
+
+    span
+      color: black
+    a
+      text-decoration: none
+      color: #9b9b9b
+      margin-left: 5px
+      .yandex
+        width: 50px
+        display: inline-block
+        vertical-align: text-top
+        margin-bottom: -15px
+
+
 
   .skill
-    margin: 0 -30px
+    margin: 10px -30px 15px -10px
     li
       @extend %clear-fix
-      padding: 10px 30px
+      padding: 6px 30px
 
     .name
       display: block
@@ -184,3 +201,26 @@
         vertical-align: baseline
       &:hover
         border-color: transparent
+
+.certificate-section
+  .certificate
+    ol
+      padding-left: 20px
+      list-style-type: decimal
+      list-style-position: initial
+    li
+      @extend %clear-fix
+      margin-bottom: 34px
+      color: black
+      font: 400 14px/22px $open
+      span
+        display: inline-block
+        //float: left
+    .text
+      width: 80%
+    .prose
+      text-align: right
+      width: 20%
+      float: right
+
+  .right-payment
