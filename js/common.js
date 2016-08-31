@@ -274,3 +274,8 @@ if (isOnPage($('#graph'))) {
     drawCircle('#cacaca', 1, 100 / 100);
     drawCircle('#00e8cb', options.lineWidth, options.percent / 100);
 }
+
+
+// TODO DELETE(development code)
+console.log('----', 'wiho000');
+
