@@ -1,0 +1,181 @@
+// footer
+//-----------------------------------------------------------------------------------
+.footer
+  padding: 30px 0
+  background-color: #4a4a4a
+  @media (max-width: $screen-xs-max)
+    text-align: center
+
+  .programs, .contact
+    display: inline-block
+    float: left
+    width: 20%
+    @media (max-width: $screen-sm-max)
+      width: 50%
+      margin-top: 20px
+    @media (max-width: $screen-xs-max)
+      display: none
+
+  .social
+    margin-top: 40px
+    @media (max-width: $screen-xs-max)
+      display: inline-block
+    li
+      float: left
+      margin-left: 10px
+      &:first-child
+        margin-left: 0
+    a
+      display: inline-block
+      width: 25px
+      height: 25px
+      border-radius: 100%
+      color: white
+      text-align: center
+      font-size: 16px
+      line-height: 25px
+      text-decoration: none
+      transition: all .12s ease
+
+      &.facebook:hover
+        color: #4867aa
+      &.tw:hover
+        color: #4a90e2
+      &.gplus:hover
+        color: #fb5570
+      &.youtube:hover
+        color: #d0021b
+
+  .copywriter
+    margin-top: 50px
+    color: white
+    font: 300 13px/38px $open
+    @media (max-width: $screen-xs-max)
+      margin-top: 20px
+
+    a
+      padding-left: 10px
+      @media (max-width: $screen-xs-max)
+        display: none
+
+  .search
+    position: relative
+    display: inline-block
+    width: 100%
+
+    input
+      box-sizing: border-box
+      padding-right: 25px
+      width: 100%
+      border: none
+      border-bottom: 1px solid #9b9b9b
+      background: none
+      box-shadow: none
+      color: white
+      font: 300 13px/36px $open
+      &:focus::-webkit-input-placeholder
+        color: transparent
+      &:focus::-moz-placeholder
+        color: transparent
+      &:focus:-moz-placeholder
+        color: transparent
+      &:focus:-ms-input-placeholder
+        color: transparent
+
+    button
+      position: absolute
+      top: 10px
+      right: 0
+      color: #9b9b9b
+      font-size: 18px
+
+  .item-programs
+    margin-top: 20px
+    max-width: 180px
+
+    .name
+      color: #f9be6b
+      text-decoration: none
+      font: 300 13px/15px $open
+    p
+      color: white
+      font: 300 13px/15px $open
+      a
+        color: white
+        text-decoration: none
+        &:hover
+          text-decoration: underline
+
+  h3 .title
+    display: inline-block
+    margin-bottom: 8px
+    color: white
+    text-decoration: none
+    font: 300 13px/15px $open
+    &:hover
+      text-decoration: underline
+
+  .contact-link
+    @extend %clear-fix
+    margin-top: 10px
+
+
+    li
+      display: block
+      margin-bottom: 12px
+    a
+      display: inline-block
+      max-width: 160px
+      color: white
+      text-decoration: none
+      font: 300 13px/18px $open
+      &:hover
+        text-decoration: underline
+      &.css-color
+        @extend %clear-fix
+        color: #f9be6b
+        img
+          float: left
+          margin-right: 5px
+          margin-top: 4px
+        i
+          float: left
+          margin-right: 5px
+          font-size: 20px
+        span
+          display: block
+          margin-left: 26px
+
+  .navigation-list
+    display: inline-block
+    float: left
+    @extend %clear-fix
+    width: 60%
+    @media (max-width: $screen-sm-max)
+      width: 100%
+    @media (max-width: $screen-xs-max)
+      display: none
+
+    ul
+      float: left
+      box-sizing: border-box
+      padding-right: 20px
+      width: 33.333%
+
+    li
+      display: block
+      margin-bottom: 14px
+
+    a
+      color: white
+      text-decoration: none
+      font: 300 13px/15px $open
+      &:hover
+        text-decoration: underline
+
+    .title
+      display: block
+      margin-bottom: 18px
+      color: white
+      font: 300 13px/15px $open
+

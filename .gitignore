@@ -17,9 +17,14 @@ Thumbs.db
 # Project ---------------------------------------------------------------------------
 # -----------------------------------------------------------------------------------
 
-# Development files
-/dev/**/*
+# CSS files and .map
+/css/*.css
+*.map
 
-# Grunt files
-Gruntfile.js
-package.json
+# JavaScript files
+/js/libs.js
+/dev/js/production.js
+/js/production.min.js
+
+# HTML files
+/*.html

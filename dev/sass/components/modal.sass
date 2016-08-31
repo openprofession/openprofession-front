@@ -1,0 +1,237 @@
+// Modal window
+//-----------------------------------------------------------------------------------
+.modal-button
+  margin: 100px 0 50px
+  li:not(:first-child)
+    margin-top: 10px
+
+.remodal
+  box-sizing: border-box
+  a.mod-gray
+    text-decoration: none
+    color: $color-grey
+    &:hover
+      text-decoration: underline
+
+.remodal-close
+  &:before
+    font: 400 50px/34px 'Courier New', Arial, 'Helvetica Neue', Helvetica, sans-serif
+    position: absolute
+    top: 0
+    left: 0
+    display: inline-block
+    width: 30px
+    height: 30px
+    content: '\00d7'
+    color: $color-pure
+  &:hover:before
+    color: darken($color-pure, 20%)
+
+.form-input
+  position: relative
+
+  input
+    font: 14px/1.2 $open
+    box-sizing: border-box
+    width: 100%
+    height: 40px
+    padding: 8px 16px
+    color: black
+    border: 1px solid #dce1e7
+    border-radius: 3px
+
+//::placeholder
+//  color: #a1a1a1
+//  text-transform: uppercase
+  //font: 300 20px/25px $open
+
+.modal-title
+  font: 300 28px/1.2 $open
+  color: black
+  @media (max-width: 479px)
+    font-size: 24px
+
+// Sign-up modal
+//-----------------------------------------------------------------------------------
+.sign-up
+  width: 570px
+  padding: 52px 103px 58px
+
+.sign-social
+  display: inline-block
+  margin: 23px 0 17px
+  @extend %clear-fix
+
+  li
+    float: left
+  
+  a
+    display: inline-block
+    width: 43px
+    height: 40px
+    text-decoration: none
+    line-height: 40px
+    text-align: center
+    color: white
+    &:hover
+      opacity: .8
+
+  .social-fb
+    border-radius: 3px 0 0 3px
+    background: #36538e
+
+  .social-gpus
+    background: #cf3420
+
+  .social-vk
+    background: #4e77a6
+
+  .social-tw
+    background: #17cbcc
+
+  .text-social
+    width: 70px
+    border-radius: 0 3px 3px 0
+    background: #4e77a6
+    font: 700 13px/40px $open
+
+.up-header
+  .sign-in-btn,
+  .sign-up-btn
+    position: relative
+    display: inline-block
+    margin-bottom: 38px
+    color: #9b9b9b
+    font: 300 24px $open
+    text-decoration: none
+    &:not(.show):after
+      position: absolute
+      top: 100%
+      left: 0
+      width: 100%
+      height: 1px
+      background-image: linear-gradient(to right, #9b9b9b 60%, rgba(255, 255, 255, 0) 10%)
+      background-position: top
+      background-size: 5px 1px
+      background-repeat: repeat-x
+      content: ''
+    &.show
+      margin-right: 54px
+      color: #3a3e45
+
+  .in-for
+    color: $color-grey
+    font: 400 14px/1.2 $open
+
+.sign-in-content,
+.sign-up-content
+  text-align: left
+
+  label
+    display: inline-block
+    margin: 22px 0 6px
+    color: black
+    font: 400 14px/1.2 $open
+    span
+      color: #fb5570
+
+  b.error
+    position: absolute
+    top: 100%
+    left: 0
+    width: 100%
+    margin-top: 4px
+    height: 16px
+    color: #fb5570
+    font: 400 11px/1.2 $open
+
+  .form-buttons
+    margin-top: 22px
+
+// Sing in / up thanks modal
+//-----------------------------------------------------------------------------------
+.sign-thx
+  width: 480px
+  padding: 50px 72px 58px
+  text-align: left
+  @media (max-width: $screen-xs-max)
+    padding: 50px 60px
+    width: 460px
+  @media (max-width: 479px)
+    padding: 50px 32px
+    width: 300px
+
+.sign-thx-title
+  margin-bottom: 10px
+
+.sign-thx-desc
+  font: 300 16px/26px $open
+  max-width: 300px
+  margin-top: 10px
+  color: black
+  &.mod-small
+    font-size: 13px
+    line-height: 20px
+    margin-top: 25px
+
+// Forgot password modal
+//-----------------------------------------------------------------------------------
+.forgot-pass
+  width: 570px
+  padding: 55px 60px 58px
+  text-align: left
+  @media (max-width: $screen-xs-max)
+    width: 460px
+  @media (max-width: 479px)
+    width: 300px
+    padding: 50px 36px 32px
+
+  .form-input
+    margin: 24px 0 20px
+
+  .forgot-pass-link
+    display: inline-block
+    font: 300 14px/30px $open
+    @media (min-width: $screen-sm)
+      margin-left: 36px
+    @media (max-width: $screen-xs-max) and (min-width: $screen-xs)
+      margin-left: 10px
+    @media (max-width: $screen-xs-max)
+      margin-top: 10px
+
+// Forgot password thanks modal
+//-----------------------------------------------------------------------------------
+.forgot-thx
+  width: 544px
+  padding: 50px 60px 58px
+  text-align: left
+  @media (max-width: $screen-xs-max)
+    width: 460px
+  @media (max-width: 479px)
+    width: 300px
+    padding: 50px 36px 58px
+
+.forgot-thx-link
+  font: 300 18px/30px $open
+  display: inline-block
+  margin-top: 22px
+
+// Promo code modal
+//-----------------------------------------------------------------------------------
+.promo-code
+  width: 420px
+  padding: 54px 55px 58px
+  text-align: left
+  @media (max-width: 479px)
+    padding: 54px 50px 58px
+    width: 300px
+
+.promo-step-1
+  margin-top: 22px
+
+.promo-step-2
+  display: none
+
+  .form-input
+    margin: 22px 0 20px
+

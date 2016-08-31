@@ -1,0 +1,87 @@
+$grid-columns:    12
+$grid-gutter:     20px
+$grid-width:      100% / $grid-columns
+
+// Make Grid
+//-----------------------------------------------------------------------------------
+=make-grid($index)
+  @if ($index > 0)
+    .col-#{$index}
+      width: $grid-width * $index
+
+    +make-grid($index - 1)
+
+=make-grid-fifth($index)
+  @if ($index > 0)
+    .col-fifth-#{$index}
+      width: 20% * $index
+
+    +make-grid-fifth($index - 1)
+
+// Make Extra Space
+//-----------------------------------------------------------------------------------
+=make-extra-space($index)
+  @if ($index > 0)
+    .col-offset-#{$index}
+      margin-left: $grid-width * $index
+
+    .col-push-#{$index}
+      left: $grid-width * $index
+
+    .col-pull-#{$index}
+      left: -($grid-width * $index)
+
+    +make-extra-space($index - 1)
+
+=make-extra-space-fifth($index)
+  @if ($index > 0)
+    .col-fifth-offset-#{$index}
+      margin-left: 20% * $index
+
+    .col-fifth-push-#{$index}
+      left: 20% * $index
+
+    .col-fifth-pull-#{$index}
+      left: -(20% * $index)
+
+    +make-extra-space-fifth($index - 1)
+
+=grid-system($grid-columns, $grid-gutter)
+
+  // Containers
+  //-----------------------------------------------------------------------------------
+  .container
+    margin-left: auto
+    margin-right: auto
+    padding-left: ($grid-gutter / 2)
+    padding-right: ($grid-gutter / 2)
+    width: $widthContent
+    box-sizing: border-box
+    @extend %clear-fix
+
+    .row
+      margin-left: - ($grid-gutter / 2)
+      margin-right: - ($grid-gutter / 2)
+      @extend %clear-fix
+
+
+  // Columns
+  //-----------------------------------------------------------------------------------
+  [class|=col],
+  [class*=col-]
+    min-height: 1px
+    padding-left: ($grid-gutter / 2)
+    padding-right: ($grid-gutter / 2)
+    box-sizing: border-box
+    position: relative
+    float: left
+
+  .container
+    +make-grid($grid-columns)
+    +make-grid-fifth(5)
+
+  .container
+    +make-extra-space($grid-columns - 1)
+    +make-extra-space-fifth(4)
+
++grid-system($grid-columns, $grid-gutter)

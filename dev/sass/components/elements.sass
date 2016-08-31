@@ -1,0 +1,397 @@
+// elements
+//-----------------------------------------------------------------------------------
+
+// rating
+//-----------------------------------------------------------------------------------
+.el-rating
+  .rating
+    border: none
+    float: left
+
+
+  .rating > input
+    display: none
+
+
+  .rating > label:before
+    margin: 3.8px
+    font-size: 14px
+    font-family: FontAwesome
+    display: inline-block
+    content: "\f005"
+    cursor: pointer
+
+
+  .rating > .half:before
+    content: "\f089"
+    position: absolute
+
+
+  .rating > label
+    color: #ddd
+    float: right
+
+
+  .rating > input:checked ~ label,
+  .rating:not(:checked) > label:hover,
+  .rating:not(:checked) > label:hover ~ label
+    color: #f9be6b
+
+
+// btn style
+//-----------------------------------------------------------------------------------
+.el-btn
+  box-sizing: border-box
+  padding: 11px 20px
+  height: 40px
+  border: 2px solid white
+  border-radius: 3px
+  color: white
+  text-align: center
+  text-decoration: none
+  font: 700 13px/1 $open
+  transition: all .12s ease
+  &:hover
+    background: white
+    color: black
+    text-decoration: none
+
+
+  &.blue-style
+    border-color: $color-blue
+    background-color: $color-blue
+    &:hover
+      background: none
+      color: $color-blue
+
+    &.inverse
+      background: none
+      color: $color-blue
+      &:hover
+        background: $color-blue
+        color: white
+
+  &.fiol-style
+    border-color: $color-fiol
+    background: none
+    color: $color-fiol
+    &:hover
+      background-color: $color-fiol
+      color: white
+
+  &.pur-style
+    border-color: $color-pure
+    background-color: $color-pure
+    &:hover
+      background: none
+      color: $color-pure
+
+  &.grey-style
+    border-color: $color-grey
+    background-color: $color-grey
+    &:hover
+      background: none
+      color: $color-grey
+
+    &.inverse
+      background: none
+      color: $color-grey
+      &:hover
+        background: $color-grey
+        color: white
+
+
+// select
+//-----------------------------------------------------------------------------------
+.el-select
+  position: relative
+  display: block
+  margin: 0 auto
+  margin-bottom: 15px
+  max-width: 220px
+  width: 100%
+  color: rgba(black,.7)
+  vertical-align: middle
+  text-align: left
+  user-select: none
+  -webkit-touch-callout: none
+  .hide
+    position: absolute
+    height: 0
+    border: none
+    color: rgba(0,0,0,0)
+
+  .placeholder
+    position: relative
+    display: block
+    overflow: hidden
+    padding: 11px 22px 11px 15px
+    height: 20px
+    border: 1px solid rgba(22, 26, 44, 0.1)
+    border-radius: 3px
+    background-color: white
+    color: rgba(black,.7)
+    text-overflow: ellipsis
+    white-space: nowrap
+    font: 700 13px $open
+    cursor: pointer
+    transition: background .2s ease
+
+    &:hover
+      color: black
+    //&:after
+    //  position: absolute
+    //  top: 16px
+    //  right: 15px
+    //  z-index: 5
+    //  width: 11px
+    //  height: 6px
+    //  //background: url(../images/arow.svg)
+    //  content: ''
+    //  transform: rotate(180deg)
+    //  @media (max-width: $screen-xs-max)
+    //    width: 18px
+    //    height: 10px
+    //    top: 19px
+
+  &.is-open
+    z-index: 2
+    label.error
+      display: none
+    .placeholder
+      padding-bottom: 10px
+      border-radius: 3px 3px 0 0
+      &:after
+        top: 15px
+        right: 15px
+        transform: rotate(0deg)
+    .wraper-list
+      visibility: visible
+      opacity: 1
+  .wraper-list
+    position: absolute
+    top: 100%
+    left: 0
+    z-index: 0
+    visibility: hidden
+    overflow: hidden
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+    width: 100%
+    border: 1px solid #f5f5f5
+    border: 1px solid rgba(22, 26, 44, 0.1)
+    border-top: none
+    border-radius: 0 0 3px 3px
+    background-color: white
+    list-style: none
+    opacity: 0
+  ul
+    overflow: hidden
+    overflow-y: auto
+    margin-bottom: 5px
+    min-height: 20px
+    max-height: 222px
+    li
+      display: block
+      margin-right: 15px
+      margin-left: 15px
+      padding: 10px 5px 10px 5px
+      border-bottom: 1px solid #e0e0e0
+      color: rgba(black,.7)
+      text-align: left
+      font: 700 13px $open
+      cursor: pointer
+      transition: all .2s ease
+      &:last-child
+        border-bottom: none
+      &:hover
+        color: black
+
+
+//
+//-----------------------------------------------------------------------------------
+
+.el-item-course
+  position: relative
+  box-sizing: border-box
+  margin-top: 32px
+  padding: 0 30px 30px
+  height: 460px
+  background-color: white
+  box-shadow: 0 3px 10px rgba(22, 26, 44, 0.1)
+  transition: all .12s ease
+
+  &:hover
+    box-shadow: 0 5px 40px rgba(22, 26, 44, 0.25)
+    cursor: pointer
+  //.hover-block
+  //  opacity: 1
+  //  visibility: visible
+
+  .stock
+    position: absolute
+    top: -32px
+    left: 0
+    overflow: hidden
+    box-sizing: border-box
+    padding: 0 30px
+    width: 100%
+    height: 32px
+    border-radius: 3px 3px 0 0
+    background-color: #61e7d6
+    color: white
+    text-align: left
+    font: 700 12px/32px $open
+
+    &.css-color-yel
+      background-color: #61e7d6
+    &.css-color-pur
+      background-color: #61e7d6
+
+  .img-wrap
+    display: block
+    margin: 0 -30px 15px
+    height: 220px
+    background: #9b9b9b no-repeat center/cover
+
+  .tags
+    margin-bottom: 19px
+    li
+      display: inline-block
+      &:last-child a:after
+        display: none
+    a
+      display: inline-block
+      color: #9b9b9b
+      text-decoration: none
+      font: 400 13px/18px $open
+      &:after
+        content: ','
+      &:hover
+        text-decoration: underline
+
+  .name
+    display: block
+    color: black
+    text-decoration: none
+    font: 400 16px/22px $open
+
+  .announce
+    margin-top: 10px
+    color: #4a4a4a
+    font: 400 13px/18px $open
+
+  .bottom-item
+    position: absolute
+    bottom: 30px
+    left: 30px
+    height: 35px
+
+  .data
+    position: relative
+    padding-left: 22px
+    color: black
+    font: 400 13px/18px $open
+    &.css-color-yel:before
+      background-color: #f9be6b
+    &:before
+      position: absolute
+      top: 3px
+      left: 0
+      overflow: hidden
+      width: 12px
+      height: 12px
+      border-radius: 100%
+      background-color: #61e7d6
+      content: ''
+
+  .group
+    margin-top: 2px
+    color: #9b9b9b
+    font: 400 13px/18px $open
+    &:hover
+      text-decoration: underline
+
+  .hover-block
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 1
+    box-sizing: border-box
+    padding: 30px
+    width: 100%
+    //opacity: 0
+    //visibility: hidden
+    height: 100%
+    transition: all .12s ease
+    background: #7a34b8 no-repeat center/cover
+    cursor: pointer
+    &:hover
+      &:after
+        opacity: 0.9
+        height: 100%
+      .el-btn
+        background: white
+        color: #fb5570
+
+    &:after
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 3px
+      background-color: #fb5570
+      content: ''
+      transition: all .3s ease
+
+    .wraper-text
+      position: absolute
+      bottom: 0
+      left: 0px
+      box-sizing: border-box
+      padding: 30px
+      width: 100%
+      z-index: 2
+
+    .title
+      margin-bottom: 15px
+      color: white
+      font: 700 24px/33px $open
+
+    .announce
+      margin-bottom: 30px
+      color: white
+      font: 400 15px/20px $open
+
+    .el-btn
+      padding: 11px 35px
+
+
+// progress-wrap
+//-----------------------------------------------------------------------------------
+.el-progress-wrap
+  @extend %clear-fix
+  display: block
+  margin-top: 1px
+  width: 140px
+  line-height: 17px
+  .progress
+    display: block
+    float: left
+    overflow: hidden
+    margin-top: 6px
+    width: 100px
+    height: 6px
+    border-radius: 2px
+    background-color: #eff4f7
+  .bar
+    display: block
+    height: 6px
+    border-radius: 2px 0 0 2px
+    background-color: #61e7d6
+
+  .prosent
+    float: right
+    color: black
+    font: 400 12px $open
