@@ -16,15 +16,3 @@ Thumbs.db
 
 # Project ---------------------------------------------------------------------------
 # -----------------------------------------------------------------------------------
-
-# CSS files and .map
-/css/*.css
-*.map
-
-# JavaScript files
-/js/libs.js
-/dev/js/production.js
-/js/production.min.js
-
-# HTML files
-/*.html
