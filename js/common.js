@@ -277,5 +277,5 @@ if (isOnPage($('#graph'))) {
 
 
 // TODO DELETE(development code)
-console.log('----', 'wiho000');
+
 
