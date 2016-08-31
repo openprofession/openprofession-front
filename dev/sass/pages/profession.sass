@@ -162,46 +162,43 @@
 
   .competence-section
     margin-bottom: 70px
-    .more-link
-      display: inline-block
-      margin-top: 10px
-      border-bottom: 1px dashed rgba(155, 155, 155, 0.5)
-      color: #9b9b9b
-      text-decoration: none
-      font: 400 13px/20px $open
-      &:hover
-        border-color: transparent
-      img
-        display: inline-block
-        margin-right: 5px
-        vertical-align: baseline
-
-    .competence
+    //items skill
+    //-----------------------------------------------------------------------------------
+    .item
       position: relative
-    .left-competence
-      padding-right: 290px
-      .item
-        position: relative
-        margin-bottom: 45px
+      margin-bottom: 45px
+      &.after-none
+        margin-bottom: 0
         &:after
-          position: absolute
-          right: -30px
-          bottom: -30px
-          left: -30px
-          height: 1px
-          background-color: #f5f8fa
-          content: ''
-        &:last-child
-          margin-bottom: 0
-          &:after
-            display: none
+          display: none
+
+      &:after
+        position: absolute
+        right: -30px
+        bottom: -30px
+        left: -30px
+        height: 1px
+        background-color: #f5f8fa
+        content: ''
+      &:last-child
+        margin-bottom: 0
+        &:after
+          display: none
 
       .title-competence
         color: black
         font: 400 18px/50px $open
 
-      .skill
-        margin: 0 -30px
+    // skill
+    //-----------------------------------------------------------------------------------
+    .competence
+      position: relative
+      &.js-open
+        .right-competence
+          opacity: 1
+          visibility: visible
+    .skill
+      margin: 0 -30px
       li
         @extend %clear-fix
         padding: 20px 30px
@@ -210,6 +207,13 @@
           padding: 24px 30px
           background-color: #e2e3e9
           cursor: pointer
+          .skill-nav
+            opacity: 1
+            visibility: visible
+            margin: -24px -30px -24px 20px
+            height: 66px
+            li
+              padding: 24px
 
       .name
         display: block
@@ -217,36 +221,39 @@
         color: black
         font: 400 13px $open
 
-      .progress-wrap
-        @extend %clear-fix
-        display: block
+      .el-progress-wrap
         float: right
-        margin-top: 1px
-        width: 140px
-        line-height: 17px
 
-
-      .progress
-        display: block
+    .skill-nav
+      opacity: 0
+      visibility: hidden
+      @extend %clear-fix
+      display: inline-block
+      float: right
+      overflow: hidden
+      margin: -20px -30px -20px 20px
+      width: 280px
+      height: 58px
+      transition: all .12s ease
+      li
         float: left
-        overflow: hidden
-        margin-top: 6px
-        width: 100px
-        height: 6px
-        border-radius: 2px
-        background-color: #eff4f7
-      .bar
-        display: block
-        height: 6px
-        border-radius: 2px 0 0 2px
-        background-color: #61e7d6
-
-      .prosent
-        float: right
+        padding: 20px 24px
+        border-left: 1px solid white
+        transition: all .12s ease
+        &:first-child
+          border-left: none
+      a i:before
+        margin: 0
+        color: #9b9b9b
+        text-decoration: none
+        font-size: 22px
+      span
         color: black
-        font: 400 12px $open
+        font: 400 13px $open
 
     .right-competence
+      opacity: 0
+      visibility: hidden
       position: absolute
       top: -35px
       right: -30px
@@ -307,6 +314,21 @@
         box-sizing: border-box
         padding-right: 10px
         height: 470px
+    // more-link
+    //-----------------------------------------------------------------------------------
+    .more-link
+      display: inline-block
+      margin-top: 10px
+      color: #9b9b9b
+      text-decoration: none
+      font: 400 13px/20px $open
+      &:hover
+        text-decoration: underline
+      i
+        text-decoration: none
+        vertical-align: baseline
+        font-size: 18px
+
 
   .academic-plan-section
     .style-text-6
@@ -382,9 +404,9 @@
 
     .title-name
       margin-bottom: 13px
-      max-width: 520px
       color: #4a72f5
       font: 400 16px/24px $open
+
       a
         color: black
         text-decoration: none
