@@ -1,0 +1,130 @@
+// Personal page
+//-----------------------------------------------------------------------------------
+.personal-page
+
+  .page-content
+    padding: 70px 0
+    background-color: #f0f5f8
+    min-height: 400px
+
+    &.left-sidebar .content-wrap
+      position: relative
+      padding-left: 290px
+      @media (max-width: $screen-sm-max)
+        padding-right: 15px
+
+      .sidebar
+        @extend %clear-fix
+        position: absolute
+        left: 0
+        top: 0
+        @media (max-width: $screen-sm-max)
+          position: static
+          margin-bottom: 30px
+
+    .content
+      width: 100%
+      min-height: 320px
+
+    .sidebar
+      width: 260px
+      min-height: 300px
+      padding: 0 30px
+      box-sizing: border-box
+      border-radius: 3px
+      background-color: white
+      box-shadow: 0 9px 24px #e6eaf8
+      @media (max-width: $screen-sm-max)
+        width: 100%
+
+    section:last-child
+      margin-bottom: 0
+
+
+
+    //items skill
+    //-----------------------------------------------------------------------------------
+    .item
+      position: relative
+      margin-bottom: 45px
+      &:after
+        position: absolute
+        right: -30px
+        bottom: -30px
+        left: -30px
+        height: 1px
+        background-color: #f5f8fa
+        content: ''
+      &:last-child
+        margin-bottom: 0
+        &:after
+          display: none
+
+      .title-competence
+        color: black
+        font: 400 18px/50px $open
+
+    // skill
+    //-----------------------------------------------------------------------------------
+    .skill
+      margin: 0 -30px
+      li
+        @extend %clear-fix
+        padding: 20px 30px
+        transition: all .12s ease
+        &:hover
+          padding: 24px 30px
+          background-color: #e2e3e9
+          cursor: pointer
+
+      .name
+        display: block
+        float: left
+        color: black
+        font: 400 13px $open
+
+      .progress-wrap
+        @extend %clear-fix
+        display: block
+        float: right
+        margin-top: 1px
+        width: 140px
+        line-height: 17px
+
+
+      .progress
+        display: block
+        float: left
+        overflow: hidden
+        margin-top: 6px
+        width: 100px
+        height: 6px
+        border-radius: 2px
+        background-color: #eff4f7
+      .bar
+        display: block
+        height: 6px
+        border-radius: 2px 0 0 2px
+        background-color: #61e7d6
+
+      .prosent
+        float: right
+        color: black
+        font: 400 12px $open
+
+    // more-link
+    //-----------------------------------------------------------------------------------
+    .more-link
+      display: inline-block
+      margin-top: 10px
+      border-bottom: 1px dashed rgba(155, 155, 155, 0.5)
+      color: #9b9b9b
+      text-decoration: none
+      font: 400 13px/20px $open
+      &:hover
+        border-color: transparent
+      img
+        display: inline-block
+        margin-right: 5px
+        vertical-align: baseline
+
