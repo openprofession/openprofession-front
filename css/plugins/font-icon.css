@@ -5,7 +5,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'font-icon';
-    src: url('../font/font-icon.svg?64154097#font-icon') format('svg');
+    src: url('../font/font-icon.svg?9269175#font-icon') format('svg');
   }
 }
 */
@@ -51,14 +51,15 @@
 .icon-down-dir:before { content: '\e803'; } /* '' */
 .icon-filter:before { content: '\e804'; } /* '' */
 .icon-up-dir:before { content: '\e805'; } /* '' */
-.icon-down-open-mini:before { content: '\e806'; } /* '' */
 .icon-rectangle:before { content: '\e807'; } /* '' */
 .icon-search-btn:before { content: '\e808'; } /* '' */
 .icon-tw:before { content: '\e809'; } /* '' */
-.icon-left-open-mini:before { content: '\e80a'; } /* '' */
-.icon-right-open-mini:before { content: '\e80b'; } /* '' */
-.icon-up-open-mini:before { content: '\e80c'; } /* '' */
+.icon-vk:before { content: '\e80d'; } /* '' */
 .icon-facebook:before { content: '\f09a'; } /* '' */
+.icon-angle-left:before { content: '\f104'; } /* '' */
+.icon-angle-right:before { content: '\f105'; } /* '' */
+.icon-angle-up:before { content: '\f106'; } /* '' */
+.icon-angle-down:before { content: '\f107'; } /* '' */
 .icon-youtube-play:before { content: '\f16a'; } /* '' */
 .icon-vkontakte:before { content: '\f189'; } /* '' */
 .icon-gplus:before { content: '\f30f'; } /* '' */
