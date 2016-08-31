@@ -201,6 +201,21 @@ $('#scroll-wrap').slimScroll({
     height: '470px',
     size: '3px'
 });
+$('#scroll-wrap1').slimScroll({
+    height: '280px',
+    size: '3px'
+});
+
+$('.competence').on('click', '.js-toggle-menu', function (el) {
+    el.preventDefault();
+    $(this).parents('.competence').addClass('js-open');
+
+});
+
+$('.competence').on('click', '.js-toggle-close', function (el) {
+    el.preventDefault();
+    $(this).parents('.competence').removeClass('js-open');
+});
 
 // Modal functions
 //-----------------------------------------------------------------------------------
@@ -230,6 +245,9 @@ $(document).on('click', '.js-show', function (el) {
 //-----------------------------------------------------------------------------------
 validator.init();
 
+
+// js-toggle-menu
+// js-open
 // graph
 //-----------------------------------------------------------------------------------
 if (isOnPage($('#graph'))) {
@@ -273,4 +291,51 @@ if (isOnPage($('#graph'))) {
 
     drawCircle('#cacaca', 1, 100 / 100);
     drawCircle('#00e8cb', options.lineWidth, options.percent / 100);
+
+
+}
+
+if (isOnPage($('#graph1'))) {
+    var el = document.getElementById('graph1'); // get canvas
+
+    var options = {
+        percent: el.getAttribute('data-percent') || 20,
+        size: el.getAttribute('data-size') || 44,
+        lineWidth: el.getAttribute('data-line') || 4,
+        rotate: el.getAttribute('data-rotate') || 0
+    };
+
+    var canvas = document.createElement('canvas');
+    var span = document.createElement('span');
+    span.textContent = options.percent + '%';
+
+    if (typeof(G_vmlCanvasManager) !== 'undefined') {
+        G_vmlCanvasManager.initElement(canvas);
+    }
+
+    var ctx = canvas.getContext('2d');
+    canvas.width = canvas.height = options.size;
+
+    el.appendChild(span);
+    el.appendChild(canvas);
+
+    ctx.translate(options.size / 2, options.size / 2); // change center
+    ctx.rotate((-1 / 2 + options.rotate / 180) * Math.PI); // rotate -90 deg
+
+    var radius = (options.size - options.lineWidth) / 2;
+
+    var drawCircle = function (color, lineWidth, percent) {
+        percent = Math.min(Math.max(0, percent || 1), 1);
+        ctx.beginPath();
+        ctx.arc(0, 0, radius, 0, Math.PI * 2 * percent, false);
+        ctx.strokeStyle = color;
+        ctx.lineCap = 'round'; // butt, round or square
+        ctx.lineWidth = lineWidth
+        ctx.stroke();
+    };
+
+    drawCircle('#cacaca', 1, 100 / 100);
+    drawCircle('#00e8cb', options.lineWidth, options.percent / 100);
+
+
 }
