@@ -151,7 +151,6 @@ if (isOnPage($('.js-spikier'))) {
 
 // list-dropdown
 //-----------------------------------------------------------------------------------
-
 $(document).on('click', '.show-all', function (el) {
     el.preventDefault();
     $(this).toggleClass('js-open');
@@ -178,7 +177,6 @@ if (isOnPage($('.js-list-dropdown'))) {
 // js-partner
 //-----------------------------------------------------------------------------------
 if (isOnPage($('.js-partner'))) {
-
     $('.js-partner').owlCarousel({
         loop: true,
         margin: 30,
@@ -203,3 +201,31 @@ $('#scroll-wrap').slimScroll({
     height: '470px',
     size: '3px'
 });
+
+// Modal functions
+//-----------------------------------------------------------------------------------
+$(document).on('confirmation closed', '.sign-up', function () {
+  $('.sign-up-form')
+    .trigger('reset')
+    .validate().resetForm();
+});
+
+$(document).on('click', '.js-promo-step', function (el) {
+  el.preventDefault();
+
+  $('.promo-step-1').hide();
+  $('.promo-step-2').fadeIn();
+});
+
+$(document).on('closed', '.promo-code', function (e) {
+  $('.promo-step-1').show();
+  $('.promo-step-2').hide();
+});
+
+$(document).on('click', '.js-show', function (el) {
+  el.preventDefault();
+});
+
+// Validation init
+//-----------------------------------------------------------------------------------
+validator.init();
