@@ -366,3 +366,32 @@
 
     .el-btn
       padding: 11px 35px
+
+
+// progress-wrap
+//-----------------------------------------------------------------------------------
+.el-progress-wrap
+  @extend %clear-fix
+  display: block
+  margin-top: 1px
+  width: 140px
+  line-height: 17px
+  .progress
+    display: block
+    float: left
+    overflow: hidden
+    margin-top: 6px
+    width: 100px
+    height: 6px
+    border-radius: 2px
+    background-color: #eff4f7
+  .bar
+    display: block
+    height: 6px
+    border-radius: 2px 0 0 2px
+    background-color: #61e7d6
+
+  .prosent
+    float: right
+    color: black
+    font: 400 12px $open

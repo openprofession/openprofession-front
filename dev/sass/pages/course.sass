@@ -52,19 +52,19 @@
     .sidebar
       @extend %clear-fix
       position: absolute
-      right: 0
       top: 0
+      right: 0
       @media (max-width: $screen-sm-max)
         position: static
         margin-bottom: 30px
 
   .content
-    width: 100%
     min-height: 320px
+    width: 100%
 
   section
-    margin-bottom: 30px
     box-sizing: border-box
+    margin-bottom: 30px
     &.css-shadow
       padding: 20px 30px
       border-radius: 3px
@@ -85,10 +85,10 @@
         text-decoration: underline
 
   .sidebar
-    width: 360px
-    min-height: 320px
-    padding: 30px
     box-sizing: border-box
+    padding: 30px
+    min-height: 320px
+    width: 360px
     border-radius: 3px
     background-color: white
     box-shadow: 0 9px 24px #e6eaf8
@@ -99,8 +99,8 @@
     .list-nav
       margin: 0 -30px
       li
-        padding: 0 30px
         display: block
+        padding: 0 30px
         border-bottom: 1px solid rgba(#4a72f5, .1)
         transition: background .2s ease
         &:hover
@@ -116,9 +116,9 @@
           text-decoration: none
 
     .style-gere
+      margin-bottom: 0
       color: #9b9b9b
       font: 400 14px/50px $open
-      margin-bottom: 0
 
     .social
       float: left
@@ -136,10 +136,10 @@
         border-radius: 100%
         color: #9b9b9b
         text-align: center
+        text-decoration: none
         font-size: 16px
         line-height: 25px
         transition: all .12s ease
-        text-decoration: none
 
         &.facebook:hover
           color: #4867aa
@@ -154,13 +154,13 @@
       margin-bottom: 27px
 
       .el-btn
-        border-radius: 5px
-        width: 100%
         padding: 35px 15px 30px
+        width: 100%
         height: 100px
-        font-size: 24px
-        font-weight: 400
         border: none
+        border-radius: 5px
+        font-weight: 400
+        font-size: 24px
         &.center
           padding: 40px 15px
 
@@ -169,8 +169,8 @@
           color: white
 
         span
-          margin-top: 6px
           display: block
+          margin-top: 6px
           color: rgba(white, .5)
           font-size: 12px
           img
@@ -199,15 +199,15 @@
       padding-bottom: 40px
       &:before
         position: absolute
-        height: 1px
-        bottom: 20px
         right: -30px
+        bottom: 20px
         left: -30px
+        height: 1px
         background-color: rgba(#4a72f5, .1)
         content: ''
     p
-      margin-bottom: 7px
       float: left
+      margin-bottom: 7px
       width: 100%
 
     .el-rating, .rating-text, .count-comment
@@ -219,18 +219,18 @@
       line-height: 36px
 
     .rating-text
-      color: black
       float: left
-      margin-left: 10px
       margin-right: 10px
+      margin-left: 10px
+      color: black
       font: 400 24px/36px $open
 
     .count-comment
       //width: 100%
-      color: #9b9b9b
-      font: 400 14px/1 $open
-      text-decoration: none
       border-bottom: 1px dashed rgba(155, 155, 155, 0.5)
+      color: #9b9b9b
+      text-decoration: none
+      font: 400 14px/1 $open
       &:hover
         border-color: transparent
 
@@ -240,9 +240,9 @@
     color: black
     font: 400 16px/24px $open
     a
+      border-bottom: 1px dashed rgba(#9b9b9b, .5)
       color: #9b9b9b
       text-decoration: none
-      border-bottom: 1px dashed rgba(#9b9b9b, .5)
       &:hover
         border-color: transparent
         text-decoration: none
@@ -258,8 +258,8 @@
 
   .partner
     @extend %clear-fix
-    padding-top: 25px
     margin-bottom: 10px
+    padding-top: 25px
     li
       display: inline-block
       float: left
@@ -267,9 +267,9 @@
       &:last-child
         margin-right: 0
     a
-      text-decoration: none
       display: inline-block
       height: 56px
+      text-decoration: none
       line-height: 56px
       img
         vertical-align: middle
@@ -295,33 +295,33 @@
 
     .owl-nav
       .owl-prev, .owl-next
+        float: left
         width: 8px
         height: 12px
-        float: left
 
       .owl-prev
-        background: url(../images/icons/arrow-lef.svg) no-repeat center
         margin-right: 19px
+        background: url(../images/icons/arrow-lef.svg) no-repeat center
       .owl-next
         background: url(../images/icons/arrow-rig.svg) no-repeat center
 
     .photos
+      float: left
+      overflow: hidden
       width: 80px
       height: 80px
-      overflow: hidden
       border-radius: 100%
-      float: left
       transition: all .12s ease
 
     .text
       display: block
-      margin-left: 90px
       margin-bottom: 0
+      margin-left: 90px
 
     .name-person
-      color: black
-      padding-top: 15px
       margin-bottom: 5px
+      padding-top: 15px
+      color: black
       font: 400 14px $open
 
     .dolsh-person
@@ -332,34 +332,34 @@
     @extend %clear-fix
     margin-top: 33px
     li
-      padding-left: 35px
-      padding-right: 30px
-      margin-bottom: 45px
       position: relative
       float: left
+      box-sizing: border-box
+      margin-bottom: 45px
+      padding-right: 30px
+      padding-left: 35px
       width: 50%
       color: black
       font: 400 15px/15px $open
-      box-sizing: border-box
       @media (max-width: $screen-xs-max)
         width: 100%
       &:before
-        content: ''
         position: absolute
-        left: 0
         top: 2px
+        left: 0
         width: 24px
         height: 24px
         background: url(../images/icons/list-style.svg) no-repeat center
+        content: ''
 
   .colon-section
     @extend %clear-fix
 
   .col-left
-    width: 50%
     float: left
     box-sizing: border-box
     padding-right: 15px
+    width: 50%
     @media (max-width: $screen-xs-max)
       width: 100%
       margin-bottom: 20px
@@ -371,39 +371,39 @@
       width: 100%
       text-align: left
       a
-        width: 140px
-        margin-right: 30px
         display: inline-block
+        margin-right: 30px
+        width: 140px
         color: black
-        font: 400 14px/34px $open
         text-decoration: none
+        font: 400 14px/34px $open
 
     .progress
       display: inline-block
       width: 117px
       height: 6px
-      background-color: #4a72f5
       border-radius: 2px
+      background-color: #4a72f5
     p a
       margin-top: 22px
 
   .col-right
-    width: 50%
     float: left
     box-sizing: border-box
     padding-left: 15px
+    width: 50%
     @media (max-width: $screen-xs-max)
       width: 100%
     ul
       margin-top: 25px
 
     li
-      padding-right: 30px
-      margin-bottom: 12px
       position: relative
+      box-sizing: border-box
+      margin-bottom: 12px
+      padding-right: 30px
       color: black
       font: 400 13px/20px $open
-      box-sizing: border-box
       &:hover
         cursor: pointer
         svg
@@ -411,14 +411,14 @@
         p
           color: black
       p
-        transition: all .12s ease
         display: block
         margin-left: 40px
         color: #b8bac2
+        transition: all .12s ease
 
       svg
-        transition: all .12s ease
         float: left
+        transition: all .12s ease
         fill: #b8bac2
 
 
@@ -426,17 +426,17 @@
       margin-top: 10px
 
   .col-center
-    width: 100%
-    float: left
-    padding-top: 25px
-    margin-top: 30px
     position: relative
+    float: left
+    margin-top: 30px
+    padding-top: 25px
+    width: 100%
     &:before
       position: absolute
-      height: 1px
       top: 7px
       right: -30px
       left: -30px
+      height: 1px
       background-color: #ececec
       content: ''
 
@@ -445,14 +445,14 @@
 
     .list-style-2 > li
       @extend %clear-fix
-      color: black
+      margin-bottom: 10px
       padding: 0 15px
+      color: black
       font: 400 13px/40px $open
       transition: all .12s ease
-      margin-bottom: 10px
       &:hover
-        cursor: pointer
         background-color: rgba(#4a72f5, .1)
+        cursor: pointer
 
     .specif
       color: $color-blue
@@ -479,8 +479,8 @@
 
   p a
     display: inline-block
-    text-decoration: none
     color: #9b9b9b
+    text-decoration: none
     font: 400 14px $open
     &:hover
       text-decoration: underline
@@ -488,27 +488,27 @@
   .connect
     margin: 35px auto 53px
     .el-btn
+      padding: 16px 20px
       width: 220px
+      height: 54px
+      border-radius: 3px
       text-align: center
       font-size: 16px
-      height: 54px
-      padding: 16px 20px
-      border-radius: 3px
 
   .list-dropdown-section
     position: relative
 
     .title-btn
       position: absolute
-      right: 43px
       top: 17px
+      right: 43px
       @media (max-width: $screen-xs-max)
         position: static
 
     .show-all
       color: #9b9b9b
-      font: 400 14px/20px $open
       text-decoration: none
+      font: 400 14px/20px $open
       &.js-open
         img
           transform: rotate(180deg)
@@ -531,8 +531,8 @@
         vertical-align: bottom
 
   .list-dropdown
-    margin-top: 25px
     display: block
+    margin-top: 25px
     &.js-open
       display: none
 
@@ -544,14 +544,14 @@
       &:after
         display: none
     &:after
-      content: ''
       position: absolute
+      right: -30px
       bottom: 0px
       left: -30px
-      right: -30px
       height: 1px
-      opacity: 0.1
       background-color: #4a72f5
+      content: ''
+      opacity: 0.1
       @media (max-width: $screen-xs-max)
         position: static
     &.js-open
@@ -561,28 +561,28 @@
         display: block
 
     .title-item
-      cursor: pointer
-      padding-left: 125px
-      padding-right: 40px
       position: relative
+      padding-right: 40px
+      padding-left: 125px
       color: black
       font: 400 14px/21px $open
+      cursor: pointer
       @media (max-width: $screen-xs-max)
         padding-left: 0
         padding-right: 30px
       &:after
-        content: ''
         position: absolute
-        right: 0
         top: 7px
+        right: 0
         width: 11px
         height: 7px
         background: url(../images/icons/arrow-down-pure.svg)
+        content: ''
       .purpur
         position: absolute
         left: 0
-        color: #fb5570
         width: 110px
+        color: #fb5570
         font: 700 14px/21px $open
         @media (max-width: $screen-xs-max)
           position: static
@@ -607,9 +607,9 @@
     float: left
     width: 100%
     .el-item-course
-      width: 48%
       float: left
       margin-right: 4%
+      width: 48%
       @media (max-width: $screen-xs-max)
         width: 100%
         margin-right: 0
@@ -632,10 +632,10 @@
       display: inline-block
       vertical-align: bottom
     .rating-text
-      margin-bottom: -4px
-      color: black
-      margin-left: 10px
       margin-right: 10px
+      margin-bottom: -4px
+      margin-left: 10px
+      color: black
       font: 400 24px/36px $open
     .count-comment
       margin-bottom: -7px
@@ -643,8 +643,8 @@
       font: 400 14px/36px $open
 
   .link-more-show
-    margin: 25px 0 5px
     float: left
+    margin: 25px 0 5px
     width: 100%
     text-align: right
 
@@ -654,14 +654,14 @@
     width: 100%
     @extend %clear-fix
     &:before
-      content: ""
       position: absolute
       top: 10px
-      left: -30px
       right: -30px
+      left: -30px
       height: 1px
-      opacity: 0.1
       background-color: #4a72f5
+      content: ""
+      opacity: 0.1
 
   .comment-item
     position: relative
@@ -669,23 +669,23 @@
     &:last-child:after
       display: none
     &:after
-      content: ""
       position: absolute
+      right: 0
       bottom: -20px
       left: 0
-      right: 0
       height: 1px
-      opacity: 0.1
       background-color: #4a72f5
+      content: ""
+      opacity: 0.1
 
   .comment-title
     margin-bottom: 15px
     .el-rating
       margin-right: 10px
     .name
+      margin-right: 10px
       color: black
       font: 400 18px/20px $open
-      margin-right: 10px
     .data
       color: #9b9b9b
       font: 400 12px/20px $open
