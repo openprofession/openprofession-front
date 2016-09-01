@@ -456,20 +456,22 @@
 //-----------------------------------------------------------------------------------
 .el-section-banner-share, .section-banner-share
   text-align: right
-  @media (max-width: $screen-sm-max)
+  @media (max-width: $screen-xs-max)
     text-align: left
 
 // singlepage-txt (article)
 //-----------------------------------------------------------------------------------
 .singlepage-content
   .singlepage-content-txt
-    margin-bottom: 42px
+    margin-bottom: 38px
     p
       margin-bottom: 40px
       font-size: 18px
       line-height: 30px
       &:last-child
         margin-bottom: 0
+      @media (max-width: $screen-xs-max)
+        margin-bottom: 15px
   .singlepage-content-bottom
     .singlepage-content-bottom-right
       text-align: right
@@ -484,7 +486,7 @@
         li
           a
             color: #9b9b9b
-      @media (max-width: $screen-sm-max)
+      @media (max-width: $screen-xs-max)
         text-align: left
         margin-top: 20px
     .singlepage-content-bottom-back

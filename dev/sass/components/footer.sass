@@ -18,9 +18,14 @@
 
   .social
     margin-top: 40px
-    @media (max-width: $screen-xs-max)
-      display: inline-block
     @extend .el-social-links
+    @media (max-width: $screen-xs-max)
+      display: block
+      text-align: center
+      margin-top: 30px
+      li
+        float: none
+        display: inline-block
     // li
     //   float: left
     //   margin-left: 10px
