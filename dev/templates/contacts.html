@@ -1,0 +1,99 @@
+<!-- build:section layout.head -->
+<!-- /build -->
+</head>
+
+<body>
+
+<div id="page-wrapper" class="page-wrapper">
+
+    <!-- build:section layout.header -->
+    <!-- /build -->
+
+    <div id="page-body" class="page-body page-contacts">
+
+        <section class="container">
+            <div class="title-section row">
+                <h2 class="col-sm-12">Контакты</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="images/icons/icon-cont-1.svg" alt="">
+                    <div class="text-wrapper">
+                        <p><b>Адрес:</b></p>
+                        <p>Долгопрудный, пер. Институтский 5 корпус 2</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/icons/icon-cont-2.svg" alt="">
+                    <div class="text-wrapper">
+                        <p><b>Служба поддержки:</b></p>
+                        <p>Напишите нам</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/icons/icon-cont-3.svg" alt="">
+                    <div class="text-wrapper">
+                        <p><b>Телефон:</b></p>
+                        <p><a href="tel:+7 (902) 245-63-28">+7 (902) 245-63-28</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/icons/icon-cont-4.svg" alt="">
+                    <div class="text-wrapper">
+                        <p><b>Контакты для прессы:</b></p>
+                        <p><a href="tel:+7 (902) 245-63-28">+7 (902) 245-63-28</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+        <script>
+            var addresses = [
+                'Москва, ул. Льва Толстого, 16',
+                'Москва, ул. Лапина, 3',
+                '55.767257,37.613343'
+            ];
+
+            ymaps.ready(init);
+
+            function init() {
+
+                var map = new ymaps.Map('map', {
+                    center: [55.76, 37.64],
+                    zoom: 11,
+                    behaviors: ['default', 'scrollZoom'],
+                    controls: ['mapTools']
+                });
+
+                function addLabel(map, addr) {
+                    var geocoder = new ymaps.geocode(addr, {results: 1});
+                    geocoder.then(function (res) {
+                        var gob = res.geoObjects.get(0);
+                        gob.properties.set('iconContent', "Название");
+                        gob.options.set('preset', "twirl#blueDotIcon");
+                        gob.options.set('balloonContentHeader', "test");
+                        map.geoObjects.add(gob);
+                    });
+                }
+
+                for (var i = 0; i < addresses.length; ++i) {
+                    addLabel(map, addresses[i]);
+                }
+            }
+        </script>
+        <div id="map" class="map-wrap"></div>
+
+    </div>
+
+    <!-- build:section layout.footer -->
+    <!-- /build -->
+
+</div>
+
+
+<!-- scripts -->
+<!-- build:section layout.scripts -->
+<!-- /build -->
+</body>
+</html>

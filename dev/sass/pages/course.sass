@@ -1,0 +1,695 @@
+// course Page
+//-----------------------------------------------------------------------------------
+//.course-page
+
+.section-banner
+  min-height: 590px
+  background: #171b2d url(../images/bg-1.png) no-repeat center/cover
+  @media (max-width: $screen-xs-max)
+    min-height: 370px
+  .img-play
+    margin: 140px auto 40px
+    max-width: 140px
+    width: 100%
+    @media (max-width: $screen-xs-max)
+      margin: 0 auto
+      padding: 30px 0
+    img
+      width: 100%
+      height: auto
+
+  .text-style-1
+    margin-bottom: -5px
+    color: white
+    font: 400 36px $open
+    @media (max-width: $screen-xs-max)
+      font-size: 18px
+
+
+  .text-style-2
+    margin-bottom: 20px
+    color: white
+    font: 300 36px $open
+    @media (max-width: $screen-xs-max)
+      font-size: 18px
+
+  .text-style-3
+    color: white
+    font: 400 18px/1 $open
+    @media (max-width: $screen-xs-max)
+      font-size: 14px
+
+.page-content
+  padding: 80px 0
+  background-color: #f0f5f8
+
+  &.right-sidebar .content-wrap
+    position: relative
+    padding-right: 390px
+    @media (max-width: $screen-sm-max)
+      padding-right: 15px
+
+    .sidebar
+      @extend %clear-fix
+      position: absolute
+      top: 0
+      right: 0
+      @media (max-width: $screen-sm-max)
+        position: static
+        margin-bottom: 30px
+
+  .content
+    min-height: 320px
+    width: 100%
+
+  section
+    box-sizing: border-box
+    margin-bottom: 30px
+    &.css-shadow
+      padding: 20px 30px
+      border-radius: 3px
+      background-color: white
+      box-shadow: 0 9px 24px #e6eaf8
+
+  .text
+    margin-bottom: 20px
+
+  .title-section
+    margin-bottom: 10px
+    color: black
+    font: 300 24px/36px $open
+    a
+      color: #9b9b9b
+      text-decoration: none
+      &:hover
+        text-decoration: underline
+
+  .sidebar
+    box-sizing: border-box
+    padding: 30px
+    min-height: 320px
+    width: 360px
+    border-radius: 3px
+    background-color: white
+    box-shadow: 0 9px 24px #e6eaf8
+    @media (max-width: $screen-sm-max)
+      width: 100%
+
+
+    .list-nav
+      margin: 0 -30px
+      li
+        display: block
+        padding: 0 30px
+        border-bottom: 1px solid rgba(#4a72f5, .1)
+        transition: background .2s ease
+        &:hover
+          background-color: #f5f7ff
+
+
+      a
+        display: block
+        color: black
+        text-decoration: none
+        font: 400 14px/50px $open
+        &:hover
+          text-decoration: none
+
+    .style-gere
+      margin-bottom: 0
+      color: #9b9b9b
+      font: 400 14px/50px $open
+
+    .social
+      float: left
+      @media (max-width: $screen-xs-max)
+        display: inline-block
+      li
+        float: left
+        margin-left: 10px
+        &:first-child
+          margin-left: 0
+      a
+        display: inline-block
+        width: 25px
+        height: 25px
+        border-radius: 100%
+        color: #9b9b9b
+        text-align: center
+        text-decoration: none
+        font-size: 16px
+        line-height: 25px
+        transition: all .12s ease
+
+        &.facebook:hover
+          color: #4867aa
+        &.tw:hover
+          color: #4a90e2
+        &.gplus:hover
+          color: #fb5570
+        &.youtube:hover
+          color: #d0021b
+
+    .wrap-btn
+      margin-bottom: 27px
+
+      .el-btn
+        padding: 35px 15px 30px
+        width: 100%
+        height: 100px
+        border: none
+        border-radius: 5px
+        font-weight: 400
+        font-size: 24px
+        &.center
+          padding: 40px 15px
+
+        &:hover
+          background-color: #CC455C
+          color: white
+
+        span
+          display: block
+          margin-top: 6px
+          color: rgba(white, .5)
+          font-size: 12px
+          img
+            vertical-align: middle
+            opacity: .5
+
+    .price
+      margin: 20px 0
+      color: black
+      font: 400 14px/36px $open
+      span
+        font-size: 36px
+
+    .titles-courses
+      color: #9b9b9b
+      font: 400 15px/24px $open
+      a
+        color: black
+        text-decoration: none
+        &:hover
+          text-decoration: none
+
+    .title-rating
+      position: relative
+      @extend %clear-fix
+      padding-bottom: 40px
+      &:before
+        position: absolute
+        right: -30px
+        bottom: 20px
+        left: -30px
+        height: 1px
+        background-color: rgba(#4a72f5, .1)
+        content: ''
+    p
+      float: left
+      margin-bottom: 7px
+      width: 100%
+
+    .el-rating, .rating-text, .count-comment
+      display: inline-block
+      vertical-align: bottom
+
+    .el-rating
+      float: left
+      line-height: 36px
+
+    .rating-text
+      float: left
+      margin-right: 10px
+      margin-left: 10px
+      color: black
+      font: 400 24px/36px $open
+
+    .count-comment
+      //width: 100%
+      border-bottom: 1px dashed rgba(155, 155, 155, 0.5)
+      color: #9b9b9b
+      text-decoration: none
+      font: 400 14px/1 $open
+      &:hover
+        border-color: transparent
+
+
+  .style-text-3
+    margin-bottom: 25px
+    color: black
+    font: 400 16px/24px $open
+    a
+      border-bottom: 1px dashed rgba(#9b9b9b, .5)
+      color: #9b9b9b
+      text-decoration: none
+      &:hover
+        border-color: transparent
+        text-decoration: none
+
+  .style-text-4
+    color: black
+    font: 400 16px/30px $open
+    span
+      color: #9b9b9b
+
+  .partner-section
+    margin-bottom: 63px
+
+  .partner
+    @extend %clear-fix
+    margin-bottom: 10px
+    padding-top: 25px
+    li
+      display: inline-block
+      float: left
+      margin-right: 30px
+      &:last-child
+        margin-right: 0
+    a
+      display: inline-block
+      height: 56px
+      text-decoration: none
+      line-height: 56px
+      img
+        vertical-align: middle
+
+  .section-spikier
+    position: relative
+    margin-bottom: 55px
+
+  .slide-lengs
+    position: absolute
+    top: 22px
+    right: 80px
+    color: #9b9b9b
+    font: 400 14px $open
+
+  .spikier
+    padding-top: 12px
+
+    .owl-controls
+      position: absolute
+      top: -40px
+      right: 0
+
+    .owl-nav
+      .owl-prev, .owl-next
+        float: left
+        width: 8px
+        height: 12px
+
+      .owl-prev
+        margin-right: 19px
+        background: url(../images/icons/arrow-lef.svg) no-repeat center
+      .owl-next
+        background: url(../images/icons/arrow-rig.svg) no-repeat center
+
+    .photos
+      float: left
+      overflow: hidden
+      width: 80px
+      height: 80px
+      border-radius: 100%
+      transition: all .12s ease
+
+    .text
+      display: block
+      margin-bottom: 0
+      margin-left: 90px
+
+    .name-person
+      margin-bottom: 5px
+      padding-top: 15px
+      color: black
+      font: 400 14px $open
+
+    .dolsh-person
+      color: #9b9b9b
+      font: 400 13px $open
+
+  .list-style-1
+    @extend %clear-fix
+    margin-top: 33px
+    li
+      position: relative
+      float: left
+      box-sizing: border-box
+      margin-bottom: 45px
+      padding-right: 30px
+      padding-left: 35px
+      width: 50%
+      color: black
+      font: 400 15px/15px $open
+      @media (max-width: $screen-xs-max)
+        width: 100%
+      &:before
+        position: absolute
+        top: 2px
+        left: 0
+        width: 24px
+        height: 24px
+        background: url(../images/icons/list-style.svg) no-repeat center
+        content: ''
+
+  .colon-section
+    @extend %clear-fix
+
+  .col-left
+    float: left
+    box-sizing: border-box
+    padding-right: 15px
+    width: 50%
+    @media (max-width: $screen-xs-max)
+      width: 100%
+      margin-bottom: 20px
+    ul
+      margin-top: 16px
+
+    li
+      position: relative
+      width: 100%
+      text-align: left
+      a
+        display: inline-block
+        margin-right: 30px
+        width: 140px
+        color: black
+        text-decoration: none
+        font: 400 14px/34px $open
+
+    .progress
+      display: inline-block
+      width: 117px
+      height: 6px
+      border-radius: 2px
+      background-color: #4a72f5
+    p a
+      margin-top: 22px
+
+  .col-right
+    float: left
+    box-sizing: border-box
+    padding-left: 15px
+    width: 50%
+    @media (max-width: $screen-xs-max)
+      width: 100%
+    ul
+      margin-top: 25px
+
+    li
+      position: relative
+      box-sizing: border-box
+      margin-bottom: 12px
+      padding-right: 30px
+      color: black
+      font: 400 13px/20px $open
+      &:hover
+        cursor: pointer
+        svg
+          fill: #4a72f5
+        p
+          color: black
+      p
+        display: block
+        margin-left: 40px
+        color: #b8bac2
+        transition: all .12s ease
+
+      svg
+        float: left
+        transition: all .12s ease
+        fill: #b8bac2
+
+
+    p a
+      margin-top: 10px
+
+  .col-center
+    position: relative
+    float: left
+    margin-top: 30px
+    padding-top: 25px
+    width: 100%
+    &:before
+      position: absolute
+      top: 7px
+      right: -30px
+      left: -30px
+      height: 1px
+      background-color: #ececec
+      content: ''
+
+    .list-style-2
+      margin: 15px -15px
+
+    .list-style-2 > li
+      @extend %clear-fix
+      margin-bottom: 10px
+      padding: 0 15px
+      color: black
+      font: 400 13px/40px $open
+      transition: all .12s ease
+      &:hover
+        background-color: rgba(#4a72f5, .1)
+        cursor: pointer
+
+    .specif
+      color: $color-blue
+
+    .tags
+      float: right
+      li
+        display: inline-block
+        &:last-child a:after
+          display: none
+      a
+        display: inline-block
+        color: #9b9b9b
+        text-decoration: none
+        font: 400 13px/18px $open
+        &:after
+          content: ','
+        &:hover
+          text-decoration: underline
+
+    p a
+      margin-top: 10px
+      margin-bottom: 10px
+
+  p a
+    display: inline-block
+    color: #9b9b9b
+    text-decoration: none
+    font: 400 14px $open
+    &:hover
+      text-decoration: underline
+
+  .connect
+    margin: 35px auto 53px
+    .el-btn
+      padding: 16px 20px
+      width: 220px
+      height: 54px
+      border-radius: 3px
+      text-align: center
+      font-size: 16px
+
+  .list-dropdown-section
+    position: relative
+
+    .title-btn
+      position: absolute
+      top: 17px
+      right: 43px
+      @media (max-width: $screen-xs-max)
+        position: static
+
+    .show-all
+      color: #9b9b9b
+      text-decoration: none
+      font: 400 14px/20px $open
+      &.js-open
+        img
+          transform: rotate(180deg)
+        .show
+          display: none
+        .hide
+          display: inline-block
+
+      .show
+        display: inline-block
+      .hide
+        display: none
+      img
+        margin-left: 8px
+        vertical-align: middle
+
+    .download
+      margin-left: 30px
+      img
+        vertical-align: bottom
+
+  .list-dropdown
+    display: block
+    margin-top: 25px
+    &.js-open
+      display: none
+
+  .dropdown-item
+    position: relative
+    padding: 30px 0
+    &:last-child
+      padding-bottom: 10px
+      &:after
+        display: none
+    &:after
+      position: absolute
+      right: -30px
+      bottom: 0px
+      left: -30px
+      height: 1px
+      background-color: #4a72f5
+      content: ''
+      opacity: 0.1
+      @media (max-width: $screen-xs-max)
+        position: static
+    &.js-open
+      .title-item:after
+        transform: rotate(180deg)
+      .content-item
+        display: block
+
+    .title-item
+      position: relative
+      padding-right: 40px
+      padding-left: 125px
+      color: black
+      font: 400 14px/21px $open
+      cursor: pointer
+      @media (max-width: $screen-xs-max)
+        padding-left: 0
+        padding-right: 30px
+      &:after
+        position: absolute
+        top: 7px
+        right: 0
+        width: 11px
+        height: 7px
+        background: url(../images/icons/arrow-down-pure.svg)
+        content: ''
+      .purpur
+        position: absolute
+        left: 0
+        width: 110px
+        color: #fb5570
+        font: 700 14px/21px $open
+        @media (max-width: $screen-xs-max)
+          position: static
+
+    .content-item
+      display: none
+      padding: 20px 0
+      color: black
+      font: 400 14px/21px $open
+
+  .course-section
+    @extend %clear-fix
+
+    .title-section
+      float: left
+    .el-btn
+      float: right
+      @media (max-width: $screen-xs-max)
+        float: none
+
+  .course
+    float: left
+    width: 100%
+    .el-item-course
+      float: left
+      margin-right: 4%
+      width: 48%
+      @media (max-width: $screen-xs-max)
+        width: 100%
+        margin-right: 0
+
+      &:nth-child(2n)
+        margin-right: 0
+
+  .rating-section
+    @extend %clear-fix
+    margin-top: 50px
+
+    .title-section
+      float: left
+
+    .title-rating
+      float: right
+      margin-top: -5px
+
+    .el-rating, .rating-text, .count-comment
+      display: inline-block
+      vertical-align: bottom
+    .rating-text
+      margin-right: 10px
+      margin-bottom: -4px
+      margin-left: 10px
+      color: black
+      font: 400 24px/36px $open
+    .count-comment
+      margin-bottom: -7px
+      color: #9b9b9b
+      font: 400 14px/36px $open
+
+  .link-more-show
+    float: left
+    margin: 25px 0 5px
+    width: 100%
+    text-align: right
+
+  .comment-wrap
+    position: relative
+    float: left
+    width: 100%
+    @extend %clear-fix
+    &:before
+      position: absolute
+      top: 10px
+      right: -30px
+      left: -30px
+      height: 1px
+      background-color: #4a72f5
+      content: ""
+      opacity: 0.1
+
+  .comment-item
+    position: relative
+    margin-top: 40px
+    &:last-child:after
+      display: none
+    &:after
+      position: absolute
+      right: 0
+      bottom: -20px
+      left: 0
+      height: 1px
+      background-color: #4a72f5
+      content: ""
+      opacity: 0.1
+
+  .comment-title
+    margin-bottom: 15px
+    .el-rating
+      margin-right: 10px
+    .name
+      margin-right: 10px
+      color: black
+      font: 400 18px/20px $open
+    .data
+      color: #9b9b9b
+      font: 400 12px/20px $open
+  .comment-text
+    margin-bottom: 15px
+    color: black
+    font: 400 14px/22px $open

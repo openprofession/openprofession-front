@@ -1,0 +1,299 @@
+// specialization page
+//-----------------------------------------------------------------------------------
+.dropdown-item-strong
+  position: relative
+  padding: 30px 0
+  &:last-child
+    padding-bottom: 10px
+    &:after
+      display: none
+  &:after
+    position: absolute
+    right: -30px
+    bottom: 0px
+    left: -30px
+    height: 1px
+    background-color: #4a72f5
+    content: ''
+    opacity: 0.1
+    @media (max-width: $screen-xs-max)
+      position: static
+  &.js-open
+    .title-item-strong:after
+      transform: rotate(180deg)
+    .content-item-strong
+      display: block
+
+  .title-item-strong
+    position: relative
+    padding-right: 40px
+    color: black
+    font: 400 18px/26px $open
+    cursor: pointer
+    @media (max-width: $screen-xs-max)
+      padding-left: 0
+      padding-right: 30px
+    &:after
+      position: absolute
+      top: 10px
+      right: 0
+      width: 11px
+      height: 7px
+      background: url(../images/icons/arrow-down-pure.svg)
+      content: ''
+    .purpur
+      color: #4a72f5
+      font: 700 18px/26px $open
+
+  .content-item-strong
+    display: none
+    padding: 20px 0
+    color: black
+    font: 400 14px/21px $open
+
+
+
+.tabs
+  @extend %clear-fix
+  display: inline-block
+  margin-bottom: -8px
+  li
+    float: left
+    &:first-child
+      .el-btn
+        border-radius: 3px 0 0 3px
+
+    &:last-child
+      margin-left: -2px
+      .el-btn
+        border-radius: 0 3px 3px 0
+
+.carts-section
+  @extend %clear-fix
+  margin-bottom: 70px !important
+
+  .necessary, .salary
+    float: left
+    box-sizing: border-box
+    width: 50%
+  .col-sm-6
+    margin-bottom: 20px
+
+  .style-text-7
+    color: black
+    font: 400 14px/24px $open
+  .list-yandex
+    li
+      font: 400 14px/34px $open
+
+    span
+      color: black
+    a
+      margin-left: 5px
+      color: #9b9b9b
+      text-decoration: none
+      .yandex
+        display: inline-block
+        margin-bottom: -15px
+        width: 50px
+        vertical-align: text-top
+
+
+
+  .skill
+    margin: 10px -30px 15px -10px
+    li
+      @extend %clear-fix
+      padding: 6px 30px
+
+    .name
+      display: block
+      float: left
+      color: black
+      font: 400 13px $open
+
+    .progress-wrap
+      @extend %clear-fix
+      display: block
+      float: right
+      margin-top: 1px
+      width: 140px
+      line-height: 17px
+
+
+    .progress
+      display: block
+      float: left
+      overflow: hidden
+      margin-top: 6px
+      width: 100px
+      height: 6px
+      border-radius: 2px
+      background-color: #eff4f7
+    .bar
+      display: block
+      height: 6px
+      border-radius: 2px 0 0 2px
+      background-color: #61e7d6
+
+    .prosent
+      float: right
+      color: black
+      font: 400 12px $open
+
+
+  .necessary
+    ul
+      @extend %clear-fix
+      margin-top: 20px
+      margin-bottom: 10px
+    li
+      float: left
+      box-sizing: border-box
+      padding-left: 20px
+      width: 33.33%
+      &:first-child
+        padding-left: 0
+        p:before
+          display: none
+      &:nth-child(2) p:before
+        content: '+'
+      &:last-child p:before
+        content: '='
+
+      img
+        margin-bottom: 10px
+      p
+        position: relative
+        color: black
+        font: 400 14px/20px $open
+
+        &:before
+          position: absolute
+          top: 0
+          left: -25px
+          color: #2a2d30
+          content: '+'
+          font: 400 14px $open
+    p
+      color: black
+      font: 400 14px/20px $open
+
+
+  .salary
+    .chart
+      margin-top: 20px
+    li
+      display: block
+      width: 100%
+    p
+      display: inline-block
+      float: left
+      width: 215px
+      color: black
+      font: 400 14px/34px $open
+    a
+      border-bottom: 1px dashed rgba(155, 155, 155, 0.5)
+      color: #9b9b9b
+      text-decoration: none
+      font: 400 14px/34px $open
+      img
+        display: inline-block
+        margin-left: 5px
+        vertical-align: baseline
+      &:hover
+        border-color: transparent
+
+.certificate-section
+  position: relative
+  margin-bottom: 70px !important
+
+  &:before
+    position: absolute
+    top: 0px
+    right: 245px
+    bottom: 0
+    width: 1px
+    background-color: #ececec
+    content: ""
+
+  .certificate
+    .all-courses
+      @extend %clear-fix
+      margin-bottom: 20px
+
+      a
+        display: inline-block
+        margin-top: 3px
+        color: black
+        text-decoration: none
+        font: 400 16px/34px $open
+
+      .olt-prise
+        float: left
+        margin-top: 3px
+        color: #9b9b9b
+        text-decoration: line-through
+        font: 400 18px/36px $open
+
+      .all-prises
+        display: inline-block
+        float: right
+        width: 210px
+        vertical-align: middle
+        text-align: right
+
+      .skidka
+        display: inline-block
+        text-align: left
+        span
+          color: black
+          font: 400 30px/36px $open
+          img
+            margin-bottom: 4px
+            vertical-align: middle
+        p
+          color: #fb5570
+          font: 400 13px/24px $open
+
+    ol
+      padding-left: 20px
+      list-style-position: initial
+      list-style-type: decimal
+    li
+      @extend %clear-fix
+      margin-bottom: 26px
+      color: black
+      font: 400 14px/22px $open
+      &:last-child
+        margin-bottom: 10px
+
+    .text
+      width: 80%
+
+    .prose
+      float: right
+      width: 20%
+      color: black
+      text-align: right
+      font: 400 22px/22px $open
+      img
+        margin-bottom: 4px
+        vertical-align: middle
+
+  .right-payment
+    padding-left: 40px
+    ul
+      margin-top: 18px
+    li
+      margin-bottom: 25px
+      &:last-child
+        margin-bottom: 0
+    img
+      margin-bottom: 10px
+    p
+      color: #9b9b9b
+      font: 400 13px/20px $open
+      &.name
+        color: black
+        font: 400 14px/24px $open
