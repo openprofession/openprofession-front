@@ -7,6 +7,10 @@
     margin-top: 440px
     color: white
     font: 300 36px $open
+    @media (max-width: $screen-xs-max)
+      margin-top: 0
+      padding-top: 40px
+
     span
       font-weight: 400
   .text-style-3
@@ -102,9 +106,14 @@
       float: left
       box-sizing: border-box
       width: 50%
+      @media (max-width: $screen-xs-max)
+        width: 100%
 
     .necessary
       padding-right: 15px
+      @media (max-width: $screen-xs-max)
+        margin-bottom: 20px
+        padding-right: 0
       ul
         @extend %clear-fix
         margin-bottom: 10px
@@ -137,6 +146,8 @@
 
     .salary
       padding-left: 15px
+      @media (max-width: $screen-xs-max)
+        padding-left: 0
       .chart
         margin-top: 20px
       li
@@ -356,6 +367,10 @@
     margin-bottom: 20px
     padding-left: 60px
     border-left: 1px solid #dce1e7
+    @media (max-width: $screen-xs-max)
+      padding-left: 0
+      border-left: none
+
     &:after
       position: absolute
       bottom: -16px
@@ -363,6 +378,8 @@
       border: 8px solid transparent
       border-top: 8px solid #dce1e7
       content: ""
+      @media (max-width: $screen-xs-max)
+        display: none
 
     li
       position: relative
@@ -370,6 +387,9 @@
       padding: 25px 100px 25px 27px
       border-left: 4px solid #f7fafc
       background-color: #f7fafc
+      @media (max-width: $screen-xs-max)
+        padding-right: 25px
+
       &.complete
         border-left: 4px solid #61e7d6
 
@@ -390,6 +410,8 @@
         height: 14px
         background: url(../images/academic-before.svg) no-repeat left center
         content: ''
+        @media (max-width: $screen-xs-max)
+          display: none
 
       &:after
         position: absolute
@@ -401,6 +423,8 @@
         background: url(../images/icons/info-icon.svg) no-repeat center/cover
         content: ''
         opacity: .8
+        @media (max-width: $screen-xs-max)
+          display: none
 
     .title-name
       margin-bottom: 13px

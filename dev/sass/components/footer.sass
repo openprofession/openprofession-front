@@ -18,33 +18,39 @@
 
   .social
     margin-top: 40px
+    @extend .el-social-links
     @media (max-width: $screen-xs-max)
-      display: inline-block
-    li
-      float: left
-      margin-left: 10px
-      &:first-child
-        margin-left: 0
-    a
-      display: inline-block
-      width: 25px
-      height: 25px
-      border-radius: 100%
-      color: white
+      display: block
       text-align: center
-      font-size: 16px
-      line-height: 25px
-      text-decoration: none
-      transition: all .12s ease
+      margin-top: 30px
+      li
+        float: none
+        display: inline-block
+    // li
+    //   float: left
+    //   margin-left: 10px
+    //   &:first-child
+    //     margin-left: 0
+    // a
+    //   display: inline-block
+    //   width: 25px
+    //   height: 25px
+    //   border-radius: 100%
+    //   color: white
+    //   text-align: center
+    //   font-size: 16px
+    //   line-height: 25px
+    //   text-decoration: none
+    //   transition: all .12s ease
 
-      &.facebook:hover
-        color: #4867aa
-      &.tw:hover
-        color: #4a90e2
-      &.gplus:hover
-        color: #fb5570
-      &.youtube:hover
-        color: #d0021b
+    //   &.facebook:hover
+    //     color: #4867aa
+    //   &.tw:hover
+    //     color: #4a90e2
+    //   &.gplus:hover
+    //     color: #fb5570
+    //   &.youtube:hover
+    //     color: #d0021b
 
   .copywriter
     margin-top: 50px
