@@ -397,3 +397,104 @@
     float: right
     color: black
     font: 400 12px $open
+
+// labels-block 
+//-----------------------------------------------------------------------------------
+.el-labelcircle
+  margin: 40px auto 50px
+  .item-serves
+    text-align: center
+    @media (max-width: $screen-xs-max)
+      margin-bottom: 70px
+      &:last-child
+        margin-bottom: 0
+    img
+      margin-bottom: 27px
+      max-width: 151px
+      width: 100%
+      height: auto
+    p
+      display: block
+      margin: 0 auto
+      max-width: 290px
+      color: black
+      font: 400 18px/24px $open
+      @media (max-width: $screen-sm-max)
+        font-size: 14px
+        line-height: 20px
+
+
+// social share block 
+//-----------------------------------------------------------------------------------
+.el-social-links
+  li
+    float: left
+    margin-left: 10px
+    &:first-child
+      margin-left: 0
+    a
+      display: inline-block
+      width: 25px
+      height: 25px
+      border-radius: 100%
+      color: white
+      text-align: center
+      font-size: 16px
+      line-height: 25px
+      text-decoration: none
+      transition: all 0.12s ease
+      &.facebook:hover
+        color: #4867aa
+      &.youtube:hover
+        color: #d0021b
+      &.tw:hover
+        color: #4a90e2
+      &.gplus:hover
+        color: #fb5570
+
+// social share block wrap
+//-----------------------------------------------------------------------------------
+.el-section-banner-share, .section-banner-share
+  text-align: right
+  @media (max-width: $screen-sm-max)
+    text-align: left
+
+// singlepage-txt (article)
+//-----------------------------------------------------------------------------------
+.singlepage-content
+  .singlepage-content-txt
+    margin-bottom: 42px
+    p
+      margin-bottom: 40px
+      font-size: 18px
+      line-height: 30px
+      &:last-child
+        margin-bottom: 0
+  .singlepage-content-bottom
+    .singlepage-content-bottom-right
+      text-align: right
+      p
+        font-size: 14px
+        display: inline-block
+        margin-right: 10px
+      .social
+        @extend .el-social-links
+        display: inline-block
+        vertical-align: middle
+        li
+          a
+            color: #9b9b9b
+      @media (max-width: $screen-sm-max)
+        text-align: left
+        margin-top: 20px
+    .singlepage-content-bottom-back
+      color: #000
+      text-decoration: none
+      font-size: 14px
+      // .icon-larr
+      //   font-family: 'FontAwesome' !important
+      //   color: #000
+      //   display: inline-block 
+
+  
+
