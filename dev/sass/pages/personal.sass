@@ -215,9 +215,12 @@
     .academic-plan
       li
         padding-right: 300px
+        @media (max-width: $screen-xs-max)
+          padding-right: 25px
 
         &:after
           right: 230px
+
       .list-buttons
         position: absolute
         right: 0
@@ -356,14 +359,11 @@
         text-align: center
         line-height: 136px
         box-sizing: border-box
-<<<<<<< HEAD
         @media (max-width: $screen-sm-max)
           width: 100px
           height: 100px
           line-height: 96px
 
-=======
->>>>>>> be3bce99666034fb9c4e09894dce332eab7aacbf
         img
           vertical-align: middle
 
@@ -371,11 +371,9 @@
         margin-top: 10px
         margin-left: 165px
         display: block
-<<<<<<< HEAD
         @media (max-width: $screen-sm-max)
           margin-left: 120px
-=======
->>>>>>> be3bce99666034fb9c4e09894dce332eab7aacbf
+
 
       .el-progress-wrap
         margin-bottom: 37px
@@ -390,13 +388,10 @@
       .bal
         color: black
         font: 400 46px/50px $open
-<<<<<<< HEAD
         @media (max-width: $screen-sm-max)
           font-size: 30px
           line-height: 34px
 
-=======
->>>>>>> be3bce99666034fb9c4e09894dce332eab7aacbf
 
       .title
         color: black
@@ -551,6 +546,8 @@
 
     .academic-plan.no-info > li
       padding-right: 170px
+      @media (max-width: $screen-xs-max)
+        padding-right: 25px
       &:after
         display: none
 
@@ -568,6 +565,9 @@
         color: #9b9b9b
         font: 400 13px $open
         text-decoration: none
+        @media (max-width: $screen-xs-max)
+          position: static
+
         &:hover
           text-decoration: underline
 
@@ -578,6 +578,9 @@
         padding-right: 20px
         box-sizing: border-box
         margin-top: 30px
+
+        @media (max-width: $screen-xs-max)
+          width: 100%
 
         .name
           display: block

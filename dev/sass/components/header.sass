@@ -13,6 +13,32 @@
       text-align: center
       margin-top: 15px
 
+  .user-page-link
+    text-align: right
+    @extend %clear-fix
+    display: inline-block
+    color: white
+    text-decoration: none
+    font: 400 13px/40px $open
+
+    display: none
+
+
+    .img-wrap
+      display: inline-block
+      float: left
+      overflow: hidden
+      width: 40px
+      height: 40px
+      border-radius: 100%
+      background-color: white
+      margin-right: 10px
+      img
+        width: 100%
+        height: auto
+
+
+
   .logo-site
     @media (max-width: $screen-xs-max)
       display: inline-block
