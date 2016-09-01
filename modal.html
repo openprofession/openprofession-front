@@ -5,7 +5,7 @@
   <title>Title</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/style.css?timestamp=1472725363028"/>
+  <link rel="stylesheet" href="css/style.css?timestamp=1472728965708"/>
   <script src="js/ie-detector.js"></script>
   <script src="js/modernizr.js"></script>
   <!--[if lte IE 9]><meta http-equiv="X-UA-Compatible" content="IE=edge"/><![endif]-->
@@ -79,6 +79,11 @@
         <li><a href="#forgot-pass" class="el-btn blue-style">Forgot password</a></li>
         <li><a href="#forgot-thx" class="el-btn blue-style">Forgot success</a></li>
         <li><a href="#promo-code" class="el-btn blue-style">Promo code</a></li>
+        <!-- new modals -->
+        <li><a href="#start-date" class="el-btn blue-style">Дата начала</a></li>
+        <li><a href="#disable-course" class="el-btn blue-style">Отписаться от курса</a></li>
+        <li><a href="#disable-course-extended" class="el-btn blue-style">Отписаться от курса 2</a></li>
+        <li><a href="#pick-schedule" class="el-btn blue-style">Режим обучения</a></li>
       </ul>
       <!-- End Modal window call button -->
 
@@ -299,13 +304,221 @@
 </div>
 <!-- End Modal promo-code -->
 
+<!-- ===================================================================== -->
+
+<!-- begin Start Course Modal -->
+<div class="remodal start-date" data-remodal-id="start-date">
+  <button data-remodal-action="close" class="remodal-close"></button>
+  
+  
+    <div class="modal-title">
+      Выберите дату начала
+    </div>
+    
+    <div class="start-date-content">
+      
+      <a href="#" class="start-date-link mod-started vafix">
+        <span>15 августа - 25 октября </span>
+        <i class="mod-started-txt">
+          Курс начался
+        </i>
+      </a>
+
+      <a href="#" class="start-date-link vafix">
+        <span>25 декабря 2016 - 15 февраля 2017</span>
+        <i class="mod-started-txt">
+          Курс начался
+        </i>
+      </a>
+
+      <a href="#" class="start-date-link mod-blue vafix">
+        <span>25 марта - 15 мая 2017</span>
+        <i class="mod-started-txt">
+          Курс начался
+        </i>
+      </a>
+
+    </div>
+    
+    <a href="#" class="el-btn pur-style">
+      Выбрать
+    </a>
+</div>
+<!-- end Start Course Modal -->
+
+<!-- begin Disable Course Modal -->
+<div class="remodal disable-course" data-remodal-id="disable-course">
+  <button data-remodal-action="close" class="remodal-close"></button>
+  <div class="modal-title">
+    Вы уверены что хотите отписаться от курса
+  </div>
+  <div class="disable-course-content">
+    <p>
+      Программирование на F# функциональное с единорогами?
+    </p>
+  </div>
+  <a href="#" class="el-btn pur-style">
+    Да, отписаться
+  </a>
+  <a href="#" class="el-btn cancel-style" data-remodal-action="close">
+    Отмена
+  </a>
+</div>
+<!-- end Disable Course Modal -->
+
+
+<!-- begin Disable Course Modal -->
+<div class="remodal disable-course mod-extended" data-remodal-id="disable-course-extended">
+  <button data-remodal-action="close" class="remodal-close"></button>
+  <div class="modal-title">
+    Вы уверены что хотите отписаться от курса
+  </div>
+  <div class="disable-course-content">
+    <p>
+      Программирование на F# функциональное с единорогами?
+    </p>
+    <span>
+      Вы уже прошли первую неделю курса. Прогресс
+      в компетенциях и достижения будут удалены безвозвратно.
+      При переносе курса вы можете сохранить свои достижения.
+    </span>
+  </div>
+  <a href="#" class="el-btn pur-style">
+    Да, отписаться
+  </a>
+  <a href="#" class="el-btn cancel-style mod-narrow" data-remodal-action="close">
+    Перенести сессию
+  </a>
+  <a href="#" class="el-btn cancel-style" data-remodal-action="close">
+    Отмена
+  </a>
+</div>
+<!-- end Disable Course Modal -->
+
+<!-- begin Schedule Modal -->
+<div class="remodal pick-schedule" data-remodal-id="pick-schedule">
+  <button data-remodal-action="close" class="remodal-close"></button>
+  
+  <div class="modal-title">
+    Выберите режим обучения и дополнительные возможности
+  </div>
+
+  <div class="pick-schedule-content">
+    <!-- frames -->
+        <div class="pick-schedule-content-frame">
+          <div class="pick-schedule-content-frame-title">
+            Бесплатный просмотр
+          </div>
+          <p>
+            Смотрите лекции, общайтесь на форуме и выполняйте задания без ограничений.
+          </p>
+        </div>
+        
+        
+        
+        <div class="clear-fix pick-schedule-group">
+          
+          <div class="pick-schedule-content-frame mod-highlight">
+            <div class="pick-schedule-content-frame-title">
+              Получить сертификат о прохождени - 8 300 рублей
+            </div>
+            <p>
+              Пройдите авторизацию и получайте обратную связь, проверку<br>
+              заданий и подтверждение ваших навыков!
+            </p>
+            <div class="pick-schedule-content-frame-selected js-select-course active">
+              <span>
+                Выбрано
+              </span>
+              <span class="ico ico-g-gal"></span>
+            </div>
+          </div>
+
+          <div class="pick-schedule-content-frame mod-highlight mod-half" >
+            <div class="pick-schedule-content-frame-title">
+              Участие в вебинарах
+            </div>
+            <p>
+              Ответы на ваши вопросы и личное<br>
+              общение с преподавателем!
+            </p>
+            <div class="pick-schedule-content-frame-price">
+              1 200 рублей
+            </div>
+            <div class="pick-schedule-content-frame-selected js-select-course active">
+              <span>
+                Выбрано
+              </span>
+              <span class="ico ico-g-gal"></span>
+            </div>
+          </div>
+          
+          <div class="pick-schedule-content-frame mod-highlight mod-half">
+            <div class="pick-schedule-content-frame-title">
+              Личные встречи - 1 200 рублей
+            </div>
+            <p>
+              Ответы на ваши вопросы и личное общение с преподавателем!
+
+            </p>
+            <div class="pick-schedule-content-frame-selected js-select-course active">
+              <span>
+                Выбрано
+              </span>
+              <span class="ico ico-g-gal"></span>
+            </div>
+          </div>
+
+          <div class="pick-schedule-content-frame mod-half">
+            <div class="pick-schedule-content-frame-title">
+              Личный тьютор - 1 200 рублей
+            </div>
+            <p>
+              Поможет понять все трудные моменты, даст пояснения и обратную связь
+            </p>
+            <div class="pick-schedule-content-frame-selected js-select-course">
+              <span>
+                Выбрано
+              </span>
+              <span class="ico ico-g-gal"></span>
+            </div>
+          </div>
+
+        </div>
+        
+
+
+    <!-- end frames -->
+
+    <div class="pick-schedule-content-bottom">
+      <div class="styled-cb">
+        <input type="checkbox" id="cb-uslov">
+        <label for="cb-uslov">
+          Я согласен со всеми <a href="#">условиями</a>, на которые вы меня подпишете.
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <a href="#" class="el-btn pur-style">
+    Оплатить
+  </a>
+  <a href="#" class="el-btn cancel-style" data-remodal-action="close">
+    Отмена
+  </a>
+
+</div>
+
+<!-- end Schedule Modal -->
+
+
 </div>
 
 
 <!-- scripts -->
 <script src="js/libs.js"></script>
 <script src="js/core.js"></script>
-<script src="js/common.js?timestamp=1472725363028"></script>
+<script src="js/common.js?timestamp=1472728965708"></script>
 <script src="//localhost:35729/livereload.js"></script>
 </body>
 </html>

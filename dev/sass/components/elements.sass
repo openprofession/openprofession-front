@@ -102,6 +102,18 @@
         background: $color-grey
         color: white
 
+  &.cancel-style
+    border-color: #e8ecf0
+    background-color: #e8ecf0
+    color: #ababab
+    &:hover
+      background: none
+    &.mod-narrow
+      max-width: 122px
+      padding: 6px 20px
+
+
+
 
 // select
 //-----------------------------------------------------------------------------------
@@ -497,6 +509,85 @@
       //   font-family: 'FontAwesome' !important
       //   color: #000
       //   display: inline-block 
+
+// modal start-date-link
+
+.start-date-link
+  position: relative
+  display: inline-block
+  width: 100%
+  margin-bottom: 10px
+  background: #edf1fe
+  // box-sizing: border-box
+  color: #000
+  text-decoration: none
+  font: 400 13px/1 "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif
+  &:last-child
+    margin-bottom: 0
+  .mod-started-txt
+    display: none
+    color: #9b9b9b
+    position: absolute
+    top: 15px
+    right: 15px
+    font: 400 13px/1 "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif
+    font-style: normal
+  span
+    padding: 15px
+    display: inline-block
+    vertical-align: middle
+  &.mod-started
+    background: #fef8f0
+    .mod-started-txt
+      display: block
+  &.mod-blue
+    background: #4a72f5
+    color: #fff
+  @media (max-width: 540px)
+    text-align: center
+    // min-height: 60px
+    line-height: 20px
+    &.mod-started
+      margin-bottom: 30px
+      .mod-started-txt
+        top: auto
+        bottom: -20px
+        right: auto
+        left: 0
+
+.ico
+  display: inline-block
+  vertical-align: middle
+  &.ico-g-gal
+    width: 19px
+    height: 13px
+    background: url(../images/icons/g-gal.svg) center no-repeat
+
+.styled-cb
+  label
+    position: relative
+    padding-left: 22px
+    box-sizing: border-box
+    width: 100%
+  input[type='checkbox']
+    display: none
+    & + label:before
+      content: ""
+      position: absolute
+      width: 14px
+      height: 14px
+      background: #5076f5
+      left: 0
+      top: 2px
+      background-repeat: no-repeat
+      background-position: center
+    &:checked + label:before
+      background-color: #5076f5
+      background-image: url("../images/icons/cb-gal.png")
+
+
+
+
 
   
 

@@ -8,7 +8,7 @@ body, input, button, select, textarea
 .clear
   clear: both
 
-%clear-fix:after
+%clear-fix:after, .clear-fix:after
   content: ''
   clear: both
   display: table
@@ -99,9 +99,12 @@ input[type='image']
 
 // vertical align middle
 //-----------------------------------------------------------------------------------
-%vafix:before
+%vafix:before, .vafix:before
   display: inline-block
-  margin-right: -0.25em
+  margin-right: -0.35em
   height: 100%
   content: ''
   vertical-align: middle
+
+%transition
+  transition: all 0.5s
