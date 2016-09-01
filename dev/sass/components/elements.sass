@@ -498,5 +498,64 @@
       //   color: #000
       //   display: inline-block 
 
-  
 
+// Validation success and error
+//-----------------------------------------------------------------------------------
+b.error
+  position: absolute
+  top: 100%
+  left: 0
+  width: 100%
+  margin-top: 4px
+  height: 16px
+  color: #fb5570
+  font: 400 11px/1.2 $open
+
+.form-input.error:not(.mod-pass),
+.form-input.valid:not(.mod-pass),
+.icon-pass
+  position: relative
+  &:before
+    position: absolute
+    display: inline-block
+    top: 0
+    right: 0
+    width: 30px
+    height: 100%
+    font-family: "font-icon"
+    font-style: normal
+    font-weight: normal
+    speak: none
+    text-decoration: inherit
+    margin-right: .2em
+    text-align: center
+    font-variant: normal
+    text-transform: none
+    line-height: 40px
+    margin-left: .2em
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+
+.form-input.error:not(.mod-pass):before
+  color: $color-pure
+  content: '\e806'
+
+.form-input.valid:not(.mod-pass):before
+  color: #61e7d6
+  content: '\e80b'
+
+.icon-pass
+  position: absolute
+  display: inline-block
+  top: 0
+  right: 0
+  width: 40px
+  height: 100%
+  color: black
+  line-height: 40px
+  text-decoration: none
+  &:before
+    font-size: 14px
+    content: '\e80a'
+  &.show:before
+    content: '\e810'
