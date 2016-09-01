@@ -1,0 +1,25 @@
+{
+  "name": "example-project",
+  "version": "0.1.0",
+  "devDependencies": {
+    "autoprefixer-core": "^3.1.2",
+    "grunt": "~0.4.1",
+    "grunt-contrib-concat": "^0.4.0",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-sass": "^0.9.0",
+    "grunt-contrib-uglify": "^0.5.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-csso": "^0.6.3",
+    "grunt-sass": "^0.18.1",
+    "grunt-html-build": "^0.3.2",
+    "grunt-modernizr": "^0.6.0",
+    "grunt-postcss": "^0.1.0",
+    "grunt-remove-logging": "^0.2.0",
+    "grunt-text-replace": "^0.3.12",
+    "grunt-notify": "^0.4.1",
+    "postcss-urlrewrite": "^0.1.1"
+  },
+  "dependencies": {
+    "mddir": "^1.0.9"
+  }
+}

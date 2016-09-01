@@ -5,8 +5,8 @@
   <title>Title</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css?timestamp=1472638584450"/>
-  <link rel="stylesheet" href="css/style.css?timestamp=1472638584450"/>
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"/>
+  <link rel="stylesheet" href="css/style.min.css"/>
   <script src="js/ie-detector.js"></script>
   <script src="js/modernizr.js"></script>
   <!--[if lte IE 9]><meta http-equiv="X-UA-Compatible" content="IE=edge"/><![endif]-->
@@ -124,7 +124,7 @@
                             <!-- Begin section-2 -->
                             <section class="css-shadow section-2">
                                 <h2 class="title-section">Мои профессии</h2>
-                                <p>Выберите профессию, которой хотите научиться</p>
+                                <p class="small">Выберите профессию, которой хотите научиться</p>
                                 <div class="row">
                                     <div class="col-sm-5">
                                         <div class="this-course">
@@ -141,12 +141,15 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-7">
+                                    <div class="col-sm-7 competence">
                                         <div class="item">
                                             <div class="title-competence">Технические компетенции 55%</div>
                                             <ul class="skill">
                                                 <li>
                                                     <span class="name">Программирование</span>
+                                                    <ul class="skill-nav">
+                                                        <li><a href="#" class="js-toggle-menu">Подробнее <i class="icon-angle-down"></i></a></li>
+                                                    </ul>
                                                     <span class="el-progress-wrap">
                                                         <span class="prosent">56%</span>
                                                         <span class="progress">
@@ -156,6 +159,9 @@
                                                 </li>
                                                 <li>
                                                     <span class="name">Maschine Learning</span>
+                                                    <ul class="skill-nav">
+                                                        <li><a href="#" class="js-toggle-menu">Подробнее <i class="icon-angle-down"></i></a></li>
+                                                    </ul>
                                                     <span class="el-progress-wrap">
                                                         <span class="prosent">73%</span>
                                                         <span class="progress">
@@ -166,6 +172,9 @@
                                                 </li>
                                                 <li>
                                                     <span class="name">Анализ Big Data</span>
+                                                    <ul class="skill-nav">
+                                                        <li><a href="#" class="js-toggle-menu">Подробнее <i class="icon-angle-down"></i></a></li>
+                                                    </ul>
                                                     <span class="el-progress-wrap">
                                                         <span class="prosent">23%</span>
                                                         <span class="progress">
@@ -182,6 +191,9 @@
                                             <ul class="skill">
                                                 <li>
                                                     <span class="name">Анализ Big Data</span>
+                                                    <ul class="skill-nav">
+                                                        <li><a href="#" class="js-toggle-menu">Подробнее <i class="icon-angle-down"></i></a></li>
+                                                    </ul>
                                                     <span class="el-progress-wrap">
                                                         <span class="prosent">23%</span>
                                                         <span class="progress">
@@ -191,6 +203,9 @@
                                                 </li>
                                                 <li>
                                                     <span class="name">Микробиом пресных водоемов</span>
+                                                    <ul class="skill-nav">
+                                                        <li><a href="#" class="js-toggle-menu">Подробнее <i class="icon-angle-down"></i></a></li>
+                                                    </ul>
                                                     <span class="el-progress-wrap">
                                                         <span class="prosent"></span>
                                                         <span class="progress">
@@ -201,6 +216,34 @@
                                             </ul>
                                             <a class="more-link" href="#"><i class="icon-angle-down"></i>
                                                 Еще 7 навыков</a>
+                                        </div>
+                                        <div class="right-competence">
+                                            <div class="title">
+                                                8 из 15 <span>компетенций</span>
+                                                <button class="js-toggle-close"><img src="images/icons/arrow-up-icon.svg" alt=""></button>
+                                            </div>
+                                            <div id="scroll-wrap1" class="scroll-wrap">
+                                                <ul class="list-competence">
+                                                    <li class="active">R language</li>
+                                                    <li>Orange Framework</li>
+                                                    <li>Regression Analysis</li>
+                                                    <li>Orange Framework</li>
+                                                    <li>Regression Analysis</li>
+                                                    <li>Orange Framework</li>
+                                                    <li>Regression Analysis</li>
+                                                    <li>Orange Framework</li>
+                                                    <li>Independent Component Analysis</li>
+                                                    <li>Independent Component Analysis</li>
+                                                    <li>Orange Framework</li>
+                                                    <li>Regression Analysis</li>
+                                                    <li>Orange Framework</li>
+                                                    <li>Regression Analysis</li>
+                                                    <li>Orange Framework</li>
+                                                    <li>Regression Analysis</li>
+                                                    <li>Orange Framework</li>
+                                                </ul>
+
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -213,13 +256,17 @@
                             <section class="css-shadow section-3">
                                 <h2 class="title-section">Мои компетенции</h2>
                                 <div class="row">
-                                    <div class="col-sm-12">
+                                    <div class="col-sm-12 competence">
                                         <div class="item">
                                             <div class="title-competence">Технические компетенции 55%</div>
                                             <ul class="skill">
                                                 <li>
                                                     <span class="name">Программирование</span>
-                                                    <ul class="skill-nav"></ul>
+                                                    <ul class="skill-nav">
+                                                        <li><span>идет обучение</span></li>
+                                                        <li><a href="#"><img src="images/icons/info-icon.svg" alt=""></a></li>
+                                                        <li><a href="#" class="js-toggle-menu"><i class="icon-angle-down"></i></a></li>
+                                                    </ul>
                                                     <span class="el-progress-wrap">
                                                         <span class="prosent">56%</span>
                                                         <span class="progress">
@@ -232,7 +279,7 @@
                                                     <ul class="skill-nav">
                                                         <li><span>идет обучение</span></li>
                                                         <li><a href="#"><img src="images/icons/info-icon.svg" alt=""></a></li>
-                                                        <li><a href="#"><i class="icon-angle-down"></i></a></li>
+                                                        <li><a href="#" class="js-toggle-menu"><i class="icon-angle-down"></i></a></li>
                                                     </ul>
                                                     <span class="el-progress-wrap">
                                                         <span class="prosent">73%</span>
@@ -244,7 +291,11 @@
                                                 </li>
                                                 <li>
                                                     <span class="name">Анализ Big Data</span>
-                                                    <ul class="skill-nav"></ul>
+                                                    <ul class="skill-nav">
+                                                        <li><span>идет обучение</span></li>
+                                                        <li><a href="#"><img src="images/icons/info-icon.svg" alt=""></a></li>
+                                                        <li><a href="#" class="js-toggle-menu"><i class="icon-angle-down"></i></a></li>
+                                                    </ul>
                                                     <span class="el-progress-wrap">
                                                         <span class="prosent">23%</span>
                                                         <span class="progress">
@@ -254,7 +305,11 @@
                                                 </li>
                                                 <li>
                                                     <span class="name">Микробиом пресных водоемов</span>
-                                                    <ul class="skill-nav"></ul>
+                                                    <ul class="skill-nav">
+                                                        <li><span>идет обучение</span></li>
+                                                        <li><a href="#"><img src="images/icons/info-icon.svg" alt=""></a></li>
+                                                        <li><a href="#" class="js-toggle-menu"><i class="icon-angle-down"></i></a></li>
+                                                    </ul>
                                                     <span class="el-progress-wrap">
                                                         <span class="prosent"></span>
                                                         <span class="progress">
@@ -266,12 +321,16 @@
                                             <a class="more-link" href="#"><i class="icon-angle-down"></i>
                                                 Еще 7 навыков</a>
                                         </div>
-                                        <div class="item">
+                                        <div class="item after-none">
                                             <div class="title-competence">Социальные компетенции 15%</div>
                                             <ul class="skill">
                                                 <li>
                                                     <span class="name">Анализ Big Data</span>
-                                                    <ul class="skill-nav"></ul>
+                                                    <ul class="skill-nav">
+                                                        <li><span>идет обучение</span></li>
+                                                        <li><a href="#"><img src="images/icons/info-icon.svg" alt=""></a></li>
+                                                        <li><a href="#" class="js-toggle-menu"><i class="icon-angle-down"></i></a></li>
+                                                    </ul>
                                                     <span class="el-progress-wrap">
                                                         <span class="prosent">23%</span>
                                                         <span class="progress">
@@ -281,7 +340,11 @@
                                                 </li>
                                                 <li>
                                                     <span class="name">Микробиом пресных водоемов</span>
-                                                    <ul class="skill-nav"></ul>
+                                                    <ul class="skill-nav">
+                                                        <li><span>идет обучение</span></li>
+                                                        <li><a href="#"><img src="images/icons/info-icon.svg" alt=""></a></li>
+                                                        <li><a href="#" class="js-toggle-menu"><i class="icon-angle-down"></i></a></li>
+                                                    </ul>
                                                     <span class="el-progress-wrap">
                                                         <span class="prosent"></span>
                                                         <span class="progress">
@@ -292,6 +355,34 @@
                                             </ul>
                                             <a class="more-link" href="#"><i class="icon-angle-down"></i>
                                                 Еще 7 навыков</a>
+                                        </div>
+                                        <div class="right-competence">
+                                            <div class="title">
+                                                8 из 15 <span>компетенций</span>
+                                                <button class="js-toggle-close"><img src="images/icons/arrow-up-icon.svg" alt=""></button>
+                                            </div>
+                                            <div id="scroll-wrap" class="scroll-wrap">
+                                                <ul class="list-competence">
+                                                    <li class="active">R language</li>
+                                                    <li>Orange Framework</li>
+                                                    <li>Regression Analysis</li>
+                                                    <li>Orange Framework</li>
+                                                    <li>Regression Analysis</li>
+                                                    <li>Orange Framework</li>
+                                                    <li>Regression Analysis</li>
+                                                    <li>Orange Framework</li>
+                                                    <li>Independent Component Analysis</li>
+                                                    <li>Independent Component Analysis</li>
+                                                    <li>Orange Framework</li>
+                                                    <li>Regression Analysis</li>
+                                                    <li>Orange Framework</li>
+                                                    <li>Regression Analysis</li>
+                                                    <li>Orange Framework</li>
+                                                    <li>Regression Analysis</li>
+                                                    <li>Orange Framework</li>
+                                                </ul>
+
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -366,7 +457,7 @@
                                                     Курс <a href="#">Beyond Silicon Valley: Growing Entrepreneurship
                                                     in TransitioningEconomies </a>
                                                 </div>
-                                                <span class="progress-wrap">
+                                                <span class="el-progress-wrap all-progress">
                                                     <span class="prosent">23%</span>
                                                     <span class="progress">
                                                         <span class="bar" style="width:23%;"></span>
@@ -439,7 +530,276 @@
                             </section>
                             <!-- End section-4 -->
 
+                            <!-- Begin section-5 -->
+                            <section class="css-shadow section-5">
+                                <h2 class="title-section">Моя траектория обучения</h2>
+                                <div class="row">
+                                    <div class="col-xs-10">
+                                        <p class="style-text-5">
+                                            Здесь будут показаны подобранные специально для вас курсы.
+                                            <a href="#">Выберите целевую профессию</a> и мы сделаем для вас персональный учебный план
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="border-block css-gren">
+                                            <div class="text-wrap">
+                                                <div class="title">Junior Data Analyst</div>
+                                                <p>Совпадение навыков 38%</p>
+                                                <ul class="tags">
+                                                    <li><a href="#">HeadHunter</a></li>
+                                                    <li><a href="#">МФТИ</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="border-block css-gren">
+                                            <div class="text-wrap">
+                                                <div class="title">Product Designer</div>
+                                                <ul class="tags">
+                                                    <li><a href="#">HeadHunter</a></li>
+                                                    <li><a href="#">МФТИ</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="border-block css-gren">
+                                            <div class="text-wrap">
+                                                <div class="title">Product Manager</div>
+                                                <ul class="tags">
+                                                    <li><a href="#">Яндекс</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p class="style-text-5">
+                                        Этих профессионалов ждут 125 компаний
+                                        </p>
+                                        <ul class="partner-lists">
+                                            <li><img src="images/partner/img-1.png" alt=""></li>
+                                            <li><img src="images/partner/img-5.png" alt=""></li>
+                                            <li><img src="images/partner/img-2.png" alt=""></li>
+                                            <li><img src="images/partner/img-4.png" alt=""></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- End section-5 -->
 
+                            <!-- Begin section-2 -->
+                            <section class="css-shadow section-2">
+                                <h2 class="title-section">Мои профессии</h2>
+                                <p class="small">Выберите профессию, которой хотите научиться</p>
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <div class="this-course">
+                                            <div class="head">Идет обучение</div>
+                                            <div class="cont-course"  style="background-image: url(images/course-profile.png);">
+                                                <ul class="tags">
+                                                    <li><a href="#">МФТИ</a></li>
+                                                </ul>
+                                                <div class="title">Junior Data Analyst</div>
+                                                <div class="course-change">
+                                                    <span>Курс пройден на </span>
+                                                    <div class="chart" id="graph1" data-percent="42"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <div class="border-block">
+                                            <div class="text-wrap">
+                                                <div class="title">Junior Data Analyst</div>
+                                                <p>Совпадение навыков 38%</p>
+                                                <ul class="tags">
+                                                    <li><a href="#">HeadHunter</a></li>
+                                                    <li><a href="#">МФТИ</a></li>
+                                                </ul>
+                                            </div>
+                                            <a href="#" class="el-btn blue-style give">Получить</a>
+                                        </div>
+                                        <div class="border-block css-gren">
+                                            <div class="text-wrap">
+                                                <div class="title">Junior Data Analyst</div>
+                                                <p>Совпадение навыков 38%</p>
+                                                <ul class="tags">
+                                                    <li><a href="#">HeadHunter</a></li>
+                                                    <li><a href="#">МФТИ</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="border-block css-gren">
+                                            <div class="text-wrap">
+                                                <div class="title">Junior Data Analyst</div>
+                                                <p>Совпадение навыков 38%</p>
+                                                <ul class="tags">
+                                                    <li><a href="#">HeadHunter</a></li>
+                                                    <li><a href="#">МФТИ</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </section>
+                            <!-- End section-2 -->
+
+                            <!-- Begin section-4 -->
+                            <section class="css-shadow section-4">
+                                <h2 class="title-section">Моя траектория обучения</h2>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span class="el-progress-wrap all-progress">
+                                            <span class="prosent">43%</span>
+                                            <span class="progress">
+                                                <span class="bar" style="width:43%;"></span>
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <p class="style-text-5">До завершения текущей траектории осталось 7 месяцев.
+                                            Она включает 5 курсов и 1 специализацию.
+                                        </p>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <p class="style-text-5">Вы уже прошли 5 курсов.
+                                            <a href="#">Показать все</a></p>
+
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <ul class="academic-plan no-info">
+                                            <li class="complete">
+                                                <div class="title-name">
+                                                    Курс <a href="#">Программирование волшебных единорогов</a>
+                                                </div>
+                                                <div class="specialization">
+                                                    <a class="medal" href="#">Пройден! <img src="images/medal.svg" alt=""></a>
+
+                                                    <span>Яндекс</span>
+                                                </div>
+                                                <ul class="list-buttons">
+                                                    <li><a href="#"><img src="images/icons/info-icon.svg" alt=""></a></li>
+                                                    <li>
+                                                        <a href="#">Вы записаны <br>с 14 марта</a>
+                                                    </li>
+                                                </ul>
+
+                                            </li>
+                                            <li class="active">
+                                                <div class="title-name">
+                                                    Курс <a href="#">Beyond Silicon Valley: Growing Entrepreneurship
+                                                    in TransitioningEconomies </a>
+                                                </div>
+                                                <span class="el-progress-wrap all-progress">
+                                                    <span class="prosent">23%</span>
+                                                    <span class="progress">
+                                                        <span class="bar" style="width:23%;"></span>
+                                                    </span>
+                                                </span>
+                                                <div class="specialization">
+                                                    специализация <a href="#">Extremal Enterpreneurship</a>
+
+                                                    <span>Яндекс</span>
+                                                </div>
+
+                                                <div class="wrap-list-process">
+                                                    <a href="#">Найти похожие курсы</a>
+                                                    <div class="item-list-process">
+                                                        <span class="name">Программирование</span>
+                                                        <span class="el-progress-wrap">
+                                                            <span class="prosent">23%</span>
+                                                            <span class="progress">
+                                                                <span class="bar" style="width:23%;"></span>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="item-list-process">
+                                                        <span class="name">Maschine Learning</span>
+                                                        <span class="el-progress-wrap">
+                                                            <span class="prosent">23%</span>
+                                                            <span class="progress">
+                                                                <span class="bar" style="width:23%;"></span>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="item-list-process">
+                                                        <span class="name">Maschine Learning</span>
+                                                        <span class="el-progress-wrap">
+                                                            <span class="prosent">23%</span>
+                                                            <span class="progress">
+                                                                <span class="bar" style="width:23%;"></span>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="item-list-process">
+                                                        <span class="name">Big data</span>
+                                                        <span class="el-progress-wrap">
+                                                            <span class="prosent">23%</span>
+                                                            <span class="progress">
+                                                                <span class="bar" style="width:23%;"></span>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="title-name">
+                                                    Курс <a href="#">Программирование волшебных единорогов</a>
+                                                </div>
+                                                <div class="specialization">
+                                                    <div class="data">с марта 2017</div>
+                                                    специализация <a href="#">Extremal Enterpreneurship</a>
+                                                    <span>Яндекс</span>
+                                                </div>
+
+                                            </li>
+                                            <li class="hover">
+                                                <div class="title-name">
+                                                    Курс <a href="#">Программирование волшебных единорогов</a>
+                                                </div>
+                                                <div class="specialization">
+                                                    <div class="data">с марта 2017</div>
+
+                                                    <span>Яндекс</span>
+                                                </div>
+
+                                            </li>
+                                            <li>
+                                                <div class="title-name">
+                                                    Курс <a href="#">Программирование волшебных единорогов</a>
+                                                </div>
+                                                <div class="specialization">
+                                                    <div class="data">с 15 апреля 2017</div>
+
+                                                    <span>Яндекс</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="border-block">
+                                            <div class="text-wrap">
+                                                <div class="title">Junior Data Analyst</div>
+                                                <span class="el-progress-wrap">
+                                                    <span class="prosent">23%</span>
+                                                    <span class="progress">
+                                                        <span class="bar" style="width:23%;"></span>
+                                                    </span>
+                                                </span>
+                                                <ul class="tags">
+                                                    <li><a href="#">Яндекс</a></li>
+                                                </ul>
+                                            </div>
+                                            <a href="#" class="el-btn blue-style delete">Удалить</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- End section-4 -->
                         </div>
                         <!-- End content -->
 
@@ -529,8 +889,8 @@
 
 <!-- scripts -->
 <script src="js/libs.js"></script>
-<script src="js/core.js"></script>
-<script src="js/common.js?timestamp=1472638584450"></script>
-<script src="//localhost:35729/livereload.js"></script>
+
+<script src="js/common.js"></script>
+
 </body>
 </html>

@@ -850,7 +850,7 @@ body, input, button, select, textarea {
 .clear {
   clear: both; }
 
-.container:after, .container-fluid:after, .row:after, .el-progress-wrap:after, .sign-social:after, .footer .contact-link:after, .footer .contact-link a.css-color:after, .footer .navigation-list:after, .home-page .section-1 .tab-catalog:after, .home-page .section-1 .wrap-drop:after, .home-page .section-4 .wrap-banner:after, .home-page .carousel .owl-nav:after, .page-content.right-sidebar .content-wrap .sidebar:after, .page-content .sidebar .title-rating:after, .page-content .partner:after, .page-content .list-style-1:after, .page-content .colon-section:after, .page-content .col-center .list-style-2 > li:after, .page-content .course-section:after, .page-content .rating-section:after, .page-content .comment-wrap:after, .page-content .branches-section ul:after, .page-content .branches-section li:after, .page-content .partner-section .owl-nav:after, .page-content .necessary-section:after, .page-content .necessary-section .necessary ul:after, .page-content .competence-section .left-competence li:after, .page-content .competence-section .left-competence .progress-wrap:after, .page-content .competence-section .right-competence .title:after, .page-content .academic-plan .progress-wrap:after, .page-content .academic-plan .specialization:after, .tabs:after, .carts-section:after, .carts-section .skill li:after, .carts-section .skill .progress-wrap:after, .carts-section .necessary ul:after, .certificate-section .certificate .all-courses:after, .certificate-section .certificate li:after, .personal-page .page-content.left-sidebar .content-wrap .sidebar:after, .personal-page .page-content .skill li:after, .personal-page .page-content .skill-nav:after, .personal-page .page-content .border-block:after {
+.container:after, .container-fluid:after, .row:after, .el-progress-wrap:after, .sign-social:after, .footer .contact-link:after, .footer .contact-link a.css-color:after, .footer .navigation-list:after, .home-page .section-1 .tab-catalog:after, .home-page .section-1 .wrap-drop:after, .home-page .section-4 .wrap-banner:after, .home-page .carousel .owl-nav:after, .page-content.right-sidebar .content-wrap .sidebar:after, .page-content .sidebar .title-rating:after, .page-content .partner:after, .page-content .list-style-1:after, .page-content .colon-section:after, .page-content .col-center .list-style-2 > li:after, .page-content .course-section:after, .page-content .rating-section:after, .page-content .comment-wrap:after, .page-content .branches-section ul:after, .page-content .branches-section li:after, .page-content .partner-section .owl-nav:after, .page-content .necessary-section:after, .page-content .necessary-section .necessary ul:after, .page-content .competence-section .skill li:after, .page-content .competence-section .skill-nav:after, .page-content .competence-section .right-competence .title:after, .page-content .academic-plan .progress-wrap:after, .page-content .academic-plan .specialization:after, .tabs:after, .carts-section:after, .carts-section .skill li:after, .carts-section .skill .progress-wrap:after, .carts-section .necessary ul:after, .certificate-section .certificate .all-courses:after, .certificate-section .certificate li:after, .personal-page .page-content.left-sidebar .content-wrap .sidebar:after, .personal-page .page-content .skill li:after, .personal-page .page-content .skill-nav:after, .personal-page .page-content .right-competence .title:after, .personal-page .page-content .border-block:after, .personal-page .page-content .section-2 .skill-nav:after, .personal-page .page-content .section-5 .partner-lists:after, .personal-page .page-content .wrap-list-process:after, .personal-page .page-content .wrap-list-process .item-list-process:after {
   content: "";
   clear: both;
   display: table;
@@ -3189,80 +3189,84 @@ html {
       border-color: transparent; }
 .page-content .competence-section {
   margin-bottom: 70px; }
-  .page-content .competence-section .more-link {
-    display: inline-block;
-    margin-top: 10px;
-    border-bottom: 1px dashed rgba(155, 155, 155, 0.5);
-    color: #9b9b9b;
-    text-decoration: none;
-    font: 400 13px/20px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
-    .page-content .competence-section .more-link:hover {
-      border-color: transparent; }
-    .page-content .competence-section .more-link img {
-      display: inline-block;
-      margin-right: 5px;
-      vertical-align: baseline; }
-  .page-content .competence-section .competence {
-    position: relative; }
-  .page-content .competence-section .left-competence {
-    padding-right: 290px; }
-    .page-content .competence-section .left-competence .item {
-      position: relative;
-      margin-bottom: 45px; }
-      .page-content .competence-section .left-competence .item:after {
-        position: absolute;
-        right: -30px;
-        bottom: -30px;
-        left: -30px;
-        height: 1px;
-        background-color: #f5f8fa;
-        content: ""; }
-      .page-content .competence-section .left-competence .item:last-child {
-        margin-bottom: 0; }
-        .page-content .competence-section .left-competence .item:last-child:after {
-          display: none; }
-    .page-content .competence-section .left-competence .title-competence {
+  .page-content .competence-section .item {
+    position: relative;
+    margin-bottom: 45px; }
+    .page-content .competence-section .item.after-none {
+      margin-bottom: 0; }
+      .page-content .competence-section .item.after-none:after {
+        display: none; }
+    .page-content .competence-section .item:after {
+      position: absolute;
+      right: -30px;
+      bottom: -30px;
+      left: -30px;
+      height: 1px;
+      background-color: #f5f8fa;
+      content: ""; }
+    .page-content .competence-section .item:last-child {
+      margin-bottom: 0; }
+      .page-content .competence-section .item:last-child:after {
+        display: none; }
+    .page-content .competence-section .item .title-competence {
       color: black;
       font: 400 18px/50px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
-    .page-content .competence-section .left-competence .skill {
-      margin: 0 -30px; }
-    .page-content .competence-section .left-competence li {
+  .page-content .competence-section .competence {
+    position: relative; }
+    .page-content .competence-section .competence.js-open .right-competence {
+      opacity: 1;
+      visibility: visible; }
+  .page-content .competence-section .skill {
+    margin: 0 -30px; }
+    .page-content .competence-section .skill li {
       padding: 20px 30px;
       transition: all 0.12s ease; }
-      .page-content .competence-section .left-competence li:hover {
+      .page-content .competence-section .skill li:hover {
         padding: 24px 30px;
         background-color: #e2e3e9;
         cursor: pointer; }
-    .page-content .competence-section .left-competence .name {
+        .page-content .competence-section .skill li:hover .skill-nav {
+          opacity: 1;
+          visibility: visible;
+          margin: -24px -30px -24px 20px;
+          height: 66px; }
+          .page-content .competence-section .skill li:hover .skill-nav li {
+            padding: 24px; }
+    .page-content .competence-section .skill .name {
       display: block;
       float: left;
       color: black;
       font: 400 13px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
-    .page-content .competence-section .left-competence .progress-wrap {
-      display: block;
-      float: right;
-      margin-top: 1px;
-      width: 140px;
-      line-height: 17px; }
-    .page-content .competence-section .left-competence .progress {
-      display: block;
+    .page-content .competence-section .skill .el-progress-wrap {
+      float: right; }
+  .page-content .competence-section .skill-nav {
+    opacity: 0;
+    visibility: hidden;
+    display: inline-block;
+    float: right;
+    overflow: hidden;
+    margin: -20px -30px -20px 20px;
+    width: 280px;
+    height: 58px;
+    transition: all 0.12s ease; }
+    .page-content .competence-section .skill-nav li {
       float: left;
-      overflow: hidden;
-      margin-top: 6px;
-      width: 100px;
-      height: 6px;
-      border-radius: 2px;
-      background-color: #eff4f7; }
-    .page-content .competence-section .left-competence .bar {
-      display: block;
-      height: 6px;
-      border-radius: 2px 0 0 2px;
-      background-color: #61e7d6; }
-    .page-content .competence-section .left-competence .prosent {
-      float: right;
+      padding: 20px 24px;
+      border-left: 1px solid white;
+      transition: all 0.12s ease; }
+      .page-content .competence-section .skill-nav li:first-child {
+        border-left: none; }
+    .page-content .competence-section .skill-nav a i:before {
+      margin: 0;
+      color: #9b9b9b;
+      text-decoration: none;
+      font-size: 22px; }
+    .page-content .competence-section .skill-nav span {
       color: black;
-      font: 400 12px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+      font: 400 13px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
   .page-content .competence-section .right-competence {
+    opacity: 0;
+    visibility: hidden;
     position: absolute;
     top: -35px;
     right: -30px;
@@ -3318,6 +3322,18 @@ html {
       box-sizing: border-box;
       padding-right: 10px;
       height: 470px; }
+  .page-content .competence-section .more-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #9b9b9b;
+    text-decoration: none;
+    font: 400 13px/20px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+    .page-content .competence-section .more-link:hover {
+      text-decoration: underline; }
+    .page-content .competence-section .more-link i {
+      text-decoration: none;
+      vertical-align: baseline;
+      font-size: 18px; }
 .page-content .academic-plan-section .style-text-6 {
   color: black;
   font: 400 14px/30px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
@@ -3383,7 +3399,6 @@ html {
       opacity: 0.8; }
   .page-content .academic-plan .title-name {
     margin-bottom: 13px;
-    max-width: 520px;
     color: #4a72f5;
     font: 400 16px/24px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
     .page-content .academic-plan .title-name a {
@@ -3723,6 +3738,10 @@ html {
   .personal-page .page-content .item {
     position: relative;
     margin-bottom: 45px; }
+    .personal-page .page-content .item.after-none {
+      margin-bottom: 0; }
+      .personal-page .page-content .item.after-none:after {
+        display: none; }
     .personal-page .page-content .item:after {
       position: absolute;
       right: -30px;
@@ -3738,6 +3757,11 @@ html {
     .personal-page .page-content .item .title-competence {
       color: black;
       font: 400 18px/50px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+  .personal-page .page-content .competence {
+    position: relative; }
+    .personal-page .page-content .competence.js-open .right-competence {
+      opacity: 1;
+      visibility: visible; }
   .personal-page .page-content .skill {
     margin: 0 -30px; }
     .personal-page .page-content .skill li {
@@ -3748,6 +3772,8 @@ html {
         background-color: #e2e3e9;
         cursor: pointer; }
         .personal-page .page-content .skill li:hover .skill-nav {
+          opacity: 1;
+          visibility: visible;
           margin: -24px -30px -24px 20px;
           height: 66px; }
           .personal-page .page-content .skill li:hover .skill-nav li {
@@ -3760,6 +3786,8 @@ html {
     .personal-page .page-content .skill .el-progress-wrap {
       float: right; }
   .personal-page .page-content .skill-nav {
+    opacity: 0;
+    visibility: hidden;
     display: inline-block;
     float: right;
     overflow: hidden;
@@ -3782,6 +3810,64 @@ html {
     .personal-page .page-content .skill-nav span {
       color: black;
       font: 400 13px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+  .personal-page .page-content .right-competence {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: -35px;
+    right: -15px;
+    bottom: 31px;
+    width: 290px;
+    background-color: #e2e3e9; }
+    .personal-page .page-content .right-competence .title {
+      margin-bottom: 10px;
+      padding-left: 30px;
+      color: black;
+      font: 400 13px/67px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+      .personal-page .page-content .right-competence .title span {
+        color: #9b9b9b; }
+      .personal-page .page-content .right-competence .title button {
+        float: right;
+        width: 67px;
+        height: 67px;
+        background-color: #c8cccf;
+        text-align: center;
+        line-height: 67px; }
+        .personal-page .page-content .right-competence .title button img {
+          vertical-align: middle; }
+    .personal-page .page-content .right-competence .list-competence {
+      padding: 0px 10px 0 20px; }
+      .personal-page .page-content .right-competence .list-competence li {
+        position: relative;
+        display: block;
+        padding: 10px 35px 10px 10px;
+        color: black;
+        font: 400 13px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+        transition: all 0.12s ease; }
+        .personal-page .page-content .right-competence .list-competence li.active {
+          color: #4a72f5; }
+        .personal-page .page-content .right-competence .list-competence li:after {
+          position: absolute;
+          top: 50%;
+          right: 10px;
+          visibility: hidden;
+          margin-top: -9px;
+          width: 18px;
+          height: 18px;
+          background: url(../images/icons/info-icon.svg) no-repeat center;
+          content: "";
+          opacity: 0; }
+        .personal-page .page-content .right-competence .list-competence li:hover {
+          background-color: #c8cccf;
+          color: #4a72f5;
+          cursor: pointer; }
+          .personal-page .page-content .right-competence .list-competence li:hover:after {
+            visibility: visible;
+            opacity: 1; }
+    .personal-page .page-content .right-competence .scroll-wrap {
+      box-sizing: border-box;
+      padding-right: 10px;
+      height: 470px; }
   .personal-page .page-content .more-link {
     display: inline-block;
     margin-top: 10px;
@@ -3798,6 +3884,35 @@ html {
     padding-right: 300px; }
     .personal-page .page-content .academic-plan li:after {
       right: 230px; }
+  .personal-page .page-content .academic-plan .list-buttons {
+    position: absolute;
+    right: 0;
+    top: 0; }
+    .personal-page .page-content .academic-plan .list-buttons li {
+      display: inline-block;
+      padding: 0;
+      float: left;
+      max-width: 105px;
+      min-width: 66px;
+      height: 66px;
+      line-height: 66px;
+      text-align: center;
+      background-color: #dce1e7;
+      border-left: 1px solid white; }
+      .personal-page .page-content .academic-plan .list-buttons li:first-child {
+        border-left: none; }
+      .personal-page .page-content .academic-plan .list-buttons li:after {
+        display: none; }
+      .personal-page .page-content .academic-plan .list-buttons li:before {
+        display: none; }
+      .personal-page .page-content .academic-plan .list-buttons li a {
+        display: inline-block;
+        color: black;
+        text-decoration: none;
+        padding: 15px 10px;
+        font: 400 13px/18px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+        .personal-page .page-content .academic-plan .list-buttons li a img {
+          display: inline-block; }
   .personal-page .page-content .academic-plan .wrap-btn {
     position: absolute;
     top: 50%;
@@ -3834,17 +3949,24 @@ html {
     .personal-page .page-content .el-progress-wrap.all-progress .progress {
       width: 170px; }
   .personal-page .page-content .border-block {
-    margin-top: 30px;
+    margin-top: 28px;
     margin-bottom: 10px;
     padding: 25px 30px;
     border: 1px solid #4a72f5;
     box-sizing: border-box; }
+    .personal-page .page-content .border-block.css-gren {
+      border-color: rgba(74, 114, 245, 0.1); }
     .personal-page .page-content .border-block.css-pur {
       border-color: #fb5570; }
     .personal-page .page-content .border-block .el-btn {
       float: right; }
       .personal-page .page-content .border-block .el-btn.delete {
         margin-top: 14px; }
+      .personal-page .page-content .border-block .el-btn.give {
+        margin-top: 11px; }
+    .personal-page .page-content .border-block p {
+      font: 400 13px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+      margin-bottom: 5px; }
     .personal-page .page-content .border-block .el-progress-wrap {
       margin-top: 5px;
       margin-bottom: 5px; }
@@ -3912,10 +4034,58 @@ html {
       float: right;
       margin-top: 12px;
       opacity: 0.5; }
+  .personal-page .page-content .section-2 .small {
+    color: #9b9b9b;
+    font: 400 13px/20px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+  .personal-page .page-content .section-2 .right-competence {
+    top: 50px;
+    bottom: 40px; }
+    .personal-page .page-content .section-2 .right-competence .scroll-wrap {
+      height: 280px; }
   .personal-page .page-content .section-2 .item {
     margin-bottom: 10px; }
     .personal-page .page-content .section-2 .item:after {
       display: none; }
+  .personal-page .page-content .section-2 .skill .name {
+    max-width: 170px; }
+  .personal-page .page-content .section-2 .skill li {
+    padding: 16px 30px; }
+    .personal-page .page-content .section-2 .skill li:hover {
+      padding: 20px 30px; }
+      .personal-page .page-content .section-2 .skill li:hover .skill-nav {
+        opacity: 1;
+        visibility: visible;
+        margin: -18px -30px -20px 20px;
+        height: 58px; }
+        .personal-page .page-content .section-2 .skill li:hover .skill-nav li {
+          padding: 16px 24px; }
+  .personal-page .page-content .section-2 .skill-nav {
+    display: inline-block;
+    float: right;
+    overflow: hidden;
+    margin: -20px -30px -20px 20px;
+    width: 150px;
+    height: 50px;
+    transition: all 0.12s ease;
+    opacity: 0;
+    visibility: hidden; }
+    .personal-page .page-content .section-2 .skill-nav li {
+      float: left;
+      padding: 16px 24px;
+      border-left: 1px solid white;
+      transition: all 0.12s ease; }
+      .personal-page .page-content .section-2 .skill-nav li:first-child {
+        border-left: none; }
+    .personal-page .page-content .section-2 .skill-nav a {
+      text-decoration: none;
+      color: black;
+      font: 400 13px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+      .personal-page .page-content .section-2 .skill-nav a i:before {
+        margin: 0;
+        color: #9b9b9b;
+        text-decoration: none;
+        font-size: 22px;
+        vertical-align: sub; }
   .personal-page .page-content .section-2 .this-course {
     margin-top: 20px; }
   .personal-page .page-content .section-2 .head {
@@ -3972,5 +4142,44 @@ html {
       text-align: center;
       color: #61e7d6;
       font: 700 13px/42px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+  .personal-page .page-content .section-5 .partner-lists {
+    margin-top: 15px; }
+    .personal-page .page-content .section-5 .partner-lists li {
+      margin-bottom: 5px;
+      float: left; }
+  .personal-page .page-content .academic-plan.no-info > li {
+    padding-right: 170px; }
+    .personal-page .page-content .academic-plan.no-info > li:after {
+      display: none; }
+  .personal-page .page-content .wrap-list-process {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-top: 20px; }
+    .personal-page .page-content .wrap-list-process a {
+      position: absolute;
+      bottom: 0px;
+      right: -140px;
+      color: #9b9b9b;
+      font: 400 13px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+      text-decoration: none; }
+      .personal-page .page-content .wrap-list-process a:hover {
+        text-decoration: underline; }
+    .personal-page .page-content .wrap-list-process .item-list-process {
+      float: left;
+      width: 50%;
+      padding-right: 20px;
+      box-sizing: border-box;
+      margin-top: 30px; }
+      .personal-page .page-content .wrap-list-process .item-list-process .name {
+        display: block;
+        float: left;
+        color: black;
+        font: 400 13px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+      .personal-page .page-content .wrap-list-process .item-list-process .el-progress-wrap {
+        float: right;
+        width: 110px; }
+        .personal-page .page-content .wrap-list-process .item-list-process .el-progress-wrap .progress {
+          width: 70px; }
 
 /*# sourceMappingURL=style.css.map */
