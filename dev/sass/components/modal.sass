@@ -56,6 +56,12 @@
 .sign-up
   width: 570px
   padding: 52px 103px 58px
+  @media (max-width: $screen-xs-max)
+    padding: 52px 40px 58px
+    width: 460px
+  @media (max-width: 479px)
+    padding: 52px 20px 58px
+    width: 300px
 
 .sign-social
   display: inline-block
@@ -118,6 +124,9 @@
     &.show
       margin-right: 54px
       color: #3a3e45
+      @media (max-width: 479px)
+        margin-right: 0
+        margin-bottom: 10px
 
   .in-for
     color: $color-grey
@@ -135,18 +144,29 @@
     span
       color: #fb5570
 
-  b.error
-    position: absolute
-    top: 100%
-    left: 0
-    width: 100%
-    margin-top: 4px
-    height: 16px
-    color: #fb5570
-    font: 400 11px/1.2 $open
-
   .form-buttons
     margin-top: 22px
+
+.sign-in-content
+  .el-btn
+    width: 180px
+    font-size: 14px
+    @media (max-width: 479px)
+      width: 120px
+
+  .forgot-pass-link
+    margin-left: 38px
+    font: 400 14px/1 $open
+    @media (max-width: 479px)
+      margin-left: 20px
+
+.sign-up-content .el-btn
+  width: 100%
+  height: 70px
+  font-size: 18px
+  @media (max-width: $screen-xs-max)
+    height: 50px
+    font-size: 15px
 
 // Sing in / up thanks modal
 //-----------------------------------------------------------------------------------

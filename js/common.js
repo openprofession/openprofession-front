@@ -223,6 +223,8 @@ $(document).on('confirmation closed', '.sign-up', function () {
   $('.sign-up-form')
     .trigger('reset')
     .validate().resetForm();
+  $('input[name="password"]').attr('type', 'password');
+  $('.js-pass').removeClass('show');
 });
 
 $(document).on('click', '.js-promo-step', function (el) {
@@ -239,6 +241,20 @@ $(document).on('closed', '.promo-code', function (e) {
 
 $(document).on('click', '.js-show', function (el) {
   el.preventDefault();
+});
+
+// Show password
+//-----------------------------------------------------------------------------------
+function showHidePassword(elClass){
+  var element = $('.'+ elClass).next('input[name="password"]');
+  element.replaceWith(element.clone().attr('type',(element.attr('type') == 'password') ? 'text' : 'password'));
+}
+
+$(document).on('click', '.js-pass', function (el) {
+  el.preventDefault();
+
+  $(this).toggleClass('show');
+  showHidePassword('js-pass');
 });
 
 // Validation init

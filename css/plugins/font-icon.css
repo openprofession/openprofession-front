@@ -5,7 +5,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'font-icon';
-    src: url('../font/font-icon.svg?88394270#font-icon') format('svg');
+    src: url('../font/font-icon.svg?20105247#font-icon') format('svg');
   }
 }
 */
@@ -61,6 +61,7 @@
 .icon-vk:before { content: '\e80d'; } /* '' */
 .icon-star-empty:before { content: '\e80e'; } /* '' */
 .icon-star-half:before { content: '\e80f'; } /* '' */
+.icon-eye-o:before { content: '\e810'; } /* '' */
 .icon-facebook:before { content: '\f09a'; } /* '' */
 .icon-angle-left:before { content: '\f104'; } /* '' */
 .icon-angle-right:before { content: '\f105'; } /* '' */

@@ -11,7 +11,7 @@ var validator = {
           errorElement:   'b',
           errorClass:     'error',
           focusInvalid:   false,
-          focusCleanup:   true,
+          focusCleanup:   false,
           errorPlacement: function (error, element) {
             validator.setError($(element), error);
           },
@@ -39,12 +39,12 @@ var validator = {
     if ($el) this.domWorker.error($el, message);
   },
   defineElement: function ($el) {
-    return $el;
+    return $el.closest('.form-input');
   },
   domWorker:     {
     error: function ($el, message) {
       $el.addClass('error');
-      $el.after(message);
+      $el.append(message);
     }
   }
 };
