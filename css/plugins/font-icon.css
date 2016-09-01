@@ -5,7 +5,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'font-icon';
-    src: url('../font/font-icon.svg?31854644#font-icon') format('svg');
+    src: url('../font/font-icon.svg?88394270#font-icon') format('svg');
   }
 }
 */
@@ -57,12 +57,17 @@
 .icon-tw:before { content: '\e809'; } /* '' */
 .icon-glas-icon:before { content: '\e80a'; } /* '' */
 .icon-ok-1:before { content: '\e80b'; } /* '' */
+.icon-star:before { content: '\e80c'; } /* '' */
 .icon-vk:before { content: '\e80d'; } /* '' */
+.icon-star-empty:before { content: '\e80e'; } /* '' */
+.icon-star-half:before { content: '\e80f'; } /* '' */
 .icon-facebook:before { content: '\f09a'; } /* '' */
 .icon-angle-left:before { content: '\f104'; } /* '' */
 .icon-angle-right:before { content: '\f105'; } /* '' */
 .icon-angle-up:before { content: '\f106'; } /* '' */
 .icon-angle-down:before { content: '\f107'; } /* '' */
+.icon-star-half-alt:before { content: '\f123'; } /* '' */
 .icon-youtube-play:before { content: '\f16a'; } /* '' */
+.icon-left:before { content: '\f177'; } /* '' */
 .icon-vkontakte:before { content: '\f189'; } /* '' */
 .icon-gplus:before { content: '\f30f'; } /* '' */
