@@ -339,3 +339,10 @@ if (isOnPage($('#graph1'))) {
 
 
 }
+
+
+$('.js-show-block').on('click', function(e){
+    e.preventDefault();
+    $(this).toggleClass('visible');
+    $(this).closest('.visibility-block').next('.hidden-block').slideToggle(200);
+})
