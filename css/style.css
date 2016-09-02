@@ -1562,7 +1562,6 @@ html {
   position: relative;
   display: block;
   margin: 0 auto;
-  margin-bottom: 15px;
   max-width: 220px;
   width: 100%;
   color: rgba(0, 0, 0, 0.7);
@@ -2818,6 +2817,7 @@ b.error {
         border-color: #4a72f5;
         color: #4a72f5; }
   .home-page .section-1 .wrap-drop {
+    position: relative;
     margin-top: 30px; }
     @media (max-width: 991px) {
       .home-page .section-1 .wrap-drop {
@@ -4933,5 +4933,8 @@ b.error {
 .home-page .section-list-profession {
   background: white;
   padding: 60px 0; }
+.home-page .list-profession-item p {
+  color: black;
+  font: 400 18px/24px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
 /*# sourceMappingURL=style.css.map */
