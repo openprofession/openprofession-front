@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+<head>
+  <meta charset="utf-8"/>
+  <title>Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.css?timestamp=1472829538461"/>
+  <script src="js/ie-detector.js"></script>
+  <script src="js/modernizr.js"></script>
+  <!--[if lte IE 9]><meta http-equiv="X-UA-Compatible" content="IE=edge"/><![endif]-->
+
+  <!--
+    mobile define colors for elements of the browser
+
+    <meta name="theme-color" content="HEX_COLOR">
+    <meta name="msapplication-navbutton-color" content="HEX_COLOR">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="HEX_COLOR">
+
+  -->
+
+  <!--
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="author" content="">
+    <meta name="robots" content="index,follow">
+    <meta name="copyright" content="">
+  -->
+</head>
+
+<body>
+
+<div id="page-wrapper" class="page-wrapper">
+
+<header id="header" class="wrapper header">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3 col-md-3">
+        <a href="#" class="logo-site"><img src="images/logo.svg" alt="logo"></a>
+      </div>
+      <div class="col-sm-5 col-md-6">
+        <div class="wrap-search">
+          <div class="catalog-btn">
+            <a href="#" class="el-btn blue-style">Каталог</a>
+          </div>
+          <form action="#" class="search">
+            <input type="text" >
+            <button><i class="icon-search-btn"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="col-sm-4 col-md-3 login-wrap-btn">
+        <a href="#" class="el-btn blue-style inverse">Вход / Регистрация</a>
+
+        <a class="user-page-link" href="personal.html">
+          <span class="img-wrap">
+            <img src="images/person-1.png" alt="person">
+          </span>
+          Личный кабинет <i class="icon-angle-down"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+    <div id="page-body" class="page-body home-page search-page">
+        <div class="home-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1>Курсы и специализации онлайн-обучения
+                            от лучших ВУЗов и компаний России</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-content">
+
+            <!-- Begin Section 1 -->
+            <section class="section-1 container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="catalog-list">
+                            <ul>
+                                <li class="title"><a href="#">Каталог</a></li>
+                                <li><a href="#">Бизнес</a></li>
+                                <li><a href="#">ИТ</a></li>
+                                <li><a href="#">Физика</a></li>
+                                <li><a href="#">Математика</a></li>
+                                <li><a href="#">Экономика</a></li>
+                                <li><a href="#">Астрономия</a></li>
+                                <li><a href="#">ДПО</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="title-section row">
+                            <h2 class="col-sm-7">Поиск</h2>
+                        </div>
+                        <form action="#">
+                            <input type="text" placeholder="Ваш email">
+                            <button class="el-btn blue-style" type="submit">Подписаться</button>
+                        </form>
+                        <p class="style-text-1">Найдено 18 курсов и 3 специализации</p>
+
+
+                        <div class="wrap-drop">
+                            <div class="el-select css-filter filter-toggle">
+                                <i class="icon icon-filter"></i>
+                                <i class="icon-up-dir"></i>
+                                <i class="icon-down-dir"></i>
+                                <span class="placeholder">Фильтры</span>
+                            </div>
+                            <div class="selected-count">
+                                Выбрано <span>18</span> программ
+                            </div>
+                            <div class="filter-drop">
+                                <div class="filter-content">
+                                    <div class="col-md-8 col-sm-6">
+                                        <div class="el-check-group mod-horizontal">
+                                            <div class="el-btn mod-check mod-icon">
+                                                <input type="checkbox" name="check-specialization"
+                                                       id="check-specialization" value="specialization">
+                                                <label for="check-specialization">Специализация</label>
+                                            </div>
+                                            <div class="el-btn mod-check mod-icon">
+                                                <input type="checkbox" name="check-courses" id="check-courses"
+                                                       value="courses">
+                                                <label for="check-courses">Курсы</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="el-btn mod-check">
+                                            <input type="checkbox" name="check-startOnWeek" id="check-startOnWeek"
+                                                   value="startOnWeek">
+                                            <label for="check-startOnWeek">Курсы</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="el-check-group mod-vertical">
+                                            <div class="el-field-title">
+                                                Длительность курса
+                                                <button class="js-filter-clear icon-cancel" type="button"></button>
+                                            </div>
+                                            <div class="el-btn mod-check">
+                                                <input type="checkbox" name="check-duration" id="check-duration-small"
+                                                       value="duration-small">
+                                                <label for="check-duration-small">
+                                                    До месяца
+                                                    <span>15</span>
+                                                </label>
+                                            </div>
+                                            <div class="el-btn mod-check">
+                                                <input type="checkbox" name="check-courses" id="check-duration-middle"
+                                                       value="duration-middle">
+                                                <label for="check-duration-middle">
+                                                    1-3 месяца
+                                                    <span>23</span>
+                                                </label>
+                                            </div>
+                                            <div class="el-btn mod-check">
+                                                <input type="checkbox" name="check-courses" id="check-duration-large"
+                                                       value="duration-large">
+                                                <label for="check-duration-large">
+                                                    Больше 3 месяцев
+                                                    <span>11</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="el-search">
+                                            <div class="el-field-title">
+                                                Темы занятий
+                                                <button class="icon-cancel js-search-clear" type="button"></button>
+                                            </div>
+                                            <div class="input-wrap">
+                                                <input type="text" name="training-topics">
+                                                <button class="btn-search" type="button"></button>
+                                            </div>
+                                            <div class="list">
+                                                <ul>
+                                                    <li>
+                                                        Генетика
+                                                        <span>2</span>
+                                                    </li>
+                                                    <li>
+                                                        Геномика
+                                                        <span>1</span>
+                                                    </li>
+                                                    <li>
+                                                        Мультиагентное моделирование
+                                                        <span>4</span>
+                                                    </li>
+                                                    <li>
+                                                        Геномика
+                                                        <span>12</span>
+                                                    </li>
+                                                </ul>
+                                                <button class="show-more" type="button">Показать еще 13</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="el-search">
+                                            <div class="el-field-title">
+                                                Создатели курса
+                                                <button class="icon-cancel js-search-clear" type="button"></button>
+                                            </div>
+                                            <div class="input-wrap">
+                                                <input type="text" name="course-creators">
+                                                <button class="btn-search" type="button"></button>
+                                            </div>
+                                            <div class="list">
+                                                <ul>
+                                                    <li>
+                                                        Генетика
+                                                        <span>2</span>
+                                                    </li>
+                                                    <li>
+                                                        Геномика
+                                                        <span>1</span>
+                                                    </li>
+                                                    <li>
+                                                        Мультиагентное моделирование
+                                                        <span>4</span>
+                                                    </li>
+                                                    <li>
+                                                        Геномика
+                                                        <span>12</span>
+                                                    </li>
+                                                </ul>
+                                                <button class="show-more" type="button">Показать еще 13</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="el-check-group mod-vertical">
+                                            <div class="el-field-title">
+                                                Уровень знаний
+                                                <button class="js-filter-clear icon-cancel" type="button"></button>
+                                            </div>
+                                            <div class="el-btn mod-check">
+                                                <input type="checkbox" name="check-elementary" id="check-elementary"
+                                                       value="elementary">
+                                                <label for="check-elementary">
+                                                    Начальный
+                                                    <span>15</span>
+                                                </label>
+                                            </div>
+                                            <div class="el-btn mod-check">
+                                                <input type="checkbox" name="check-average" id="check-average"
+                                                       value="average">
+                                                <label for="check-average">
+                                                    Средний
+                                                    <span>23</span>
+                                                </label>
+                                            </div>
+                                            <div class="el-btn mod-check">
+                                                <input type="checkbox" name="check-advanced" id="check-advanced"
+                                                       value="advanced">
+                                                <label for="check-advanced">
+                                                    Продвинутый
+                                                    <span>11</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="el-btn mod-check pos-top">
+                                            <input type="checkbox" name="check-certified" id="check-certified"
+                                                   value="certified">
+                                            <label for="check-certified">
+                                                Сертифицированы
+                                                <span>11</span>
+                                            </label>
+                                        </div>
+                                        <div class="el-btn mod-check pos-bottom">
+                                            <input type="checkbox" name="check-approved-experts"
+                                                   id="check-approved-experts" value="approved-experts">
+                                            <label for="check-approved-experts">
+                                                Одобрено экспертами
+                                                <span>11</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="btn-bottom-group col-md-4 col-sm-6">
+                                        <div class="el-btn mod-check pos-top">
+                                            <input type="checkbox" name="check-new-courses" id="check-new-courses"
+                                                   value="new-courses">
+                                            <label for="check-new-courses">
+                                                Новые
+                                                <span>11</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <button class="el-btn pur-style" type="button">Показать 14 специализаций</button>
+                                    <button class="el-btn grey-light-style" type="button">Сбросить</button>
+                                </div>
+                            </div>
+                            <div class="el-select css-sort js-select">
+                                <i class="icon icon-combined-shape"></i>
+                                <i class="icon-up-dir"></i>
+                                <i class="icon-down-dir"></i>
+                                <span class="placeholder"> По дате начала  </span>
+                                <div class="wraper-list">
+                                    <ul>
+                                        <li data-value="По дате окончания">По дате окончания</li>
+                                        <li data-value="По дате начала">По дате начала</li>
+                                    </ul>
+                                </div>
+                                <input class="hide" type="text">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Section 1 -->
+
+            <!-- Begin section-result -->
+            <section class="section-result container">
+                <div class="title-section row">
+                    <h2 class="col-sm-8">В категории "Бизнес" - 4 курса, 2 специализации</h2>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="el-item-course">
+                            <div class="img-wrap" style="background-image: url(images/img-7.jpg);"></div>
+                            <div class="tags">
+                                <ul>
+                                    <li><a href="#">МФТИ</a></li>
+                                </ul>
+                            </div>
+                            <a href="#" class="name">Управление проектами в условиях динамично развивающегося
+                                продукта. Роль инвестиций
+                                в разработке инноваций.</a>
+                            <div class="bottom-item">
+                                <div class="data css-color-yel">Начало 5 августа</div>
+                                <div class="group">5 курсов</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="el-item-course">
+                            <div class="img-wrap" style="background-image: url(images/img-8.jpg);"></div>
+                            <div class="tags">
+                                <ul>
+                                    <li><a href="#">МФТИ</a></li>
+                                    <li><a href="#">УрФУ</a></li>
+                                </ul>
+                            </div>
+                            <a href="#" class="name">Инвестиции в инновациях</a>
+                            <div class="announce">
+                                Вы научитесь сегментировать изображения, выделять на них информативные области в
+                                автоматическом режиме.
+                            </div>
+                            <div class="bottom-item">
+                                <div class="data">Запись до 30 июля</div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="el-item-course">
+                            <div class="stock">Лучший курс 2016 года!</div>
+                            <div class="img-wrap" style="background-image: url(images/img-5.jpg);"></div>
+                            <div class="tags">
+                                <ul>
+                                    <li><a href="#">МФТИ</a></li>
+                                </ul>
+                            </div>
+                            <a href="#" class="name">Управление проектами в условиях динамично развивающегося
+                                продукта. Роль инвестиций
+                                в разработке инноваций.</a>
+                            <div class="bottom-item">
+                                <div class="data">Начало 5 августа</div>
+                                <div class="group">5 курсов</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="el-item-course">
+                            <div class="stock">Лучший курс 2016 года!</div>
+                            <div class="img-wrap" style="background-image: url(images/img-6.jpg);"></div>
+                            <div class="tags">
+                                <ul>
+                                    <li><a href="#">МФТИ</a></li>
+                                </ul>
+                            </div>
+                            <a href="#" class="name">Управление проектами в условиях динамично развивающегося
+                                продукта. Роль инвестиций
+                                в разработке инноваций.</a>
+                            <div class="bottom-item">
+                                <div class="data">Начало 5 августа</div>
+                                <div class="group">5 курсов</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="el-item-course">
+                            <div class="stock">Лучший курс 2016 года!</div>
+                            <div class="img-wrap" style="background-image: url(images/img-7.jpg);"></div>
+                            <div class="tags">
+                                <ul>
+                                    <li><a href="#">МФТИ</a></li>
+                                </ul>
+                            </div>
+                            <a href="#" class="name">Управление проектами в условиях динамично развивающегося
+                                продукта. Роль инвестиций
+                                в разработке инноваций.</a>
+                            <div class="bottom-item">
+                                <div class="data">Начало 5 августа</div>
+                                <div class="group">5 курсов</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End section-result -->
+
+            <!-- Begin section-result -->
+            <section class="section-result container">
+                <div class="title-section row">
+                    <h2 class="col-sm-8">В других категориях - 12 курсов</h2>
+                    <div class="col-sm-4">
+                        <a href="#" class="el-btn blue-style inverse">Смотреть все 15</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="el-item-course">
+                            <div class="img-wrap" style="background-image: url(images/img-7.jpg);"></div>
+                            <div class="tags">
+                                <ul>
+                                    <li><a href="#">МФТИ</a></li>
+                                </ul>
+                            </div>
+                            <a href="#" class="name">Управление проектами в условиях динамично развивающегося
+                                продукта. Роль инвестиций
+                                в разработке инноваций.</a>
+                            <div class="bottom-item">
+                                <div class="data css-color-yel">Начало 5 августа</div>
+                                <div class="group">5 курсов</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="el-item-course">
+                            <div class="img-wrap" style="background-image: url(images/img-8.jpg);"></div>
+                            <div class="tags">
+                                <ul>
+                                    <li><a href="#">МФТИ</a></li>
+                                    <li><a href="#">УрФУ</a></li>
+                                </ul>
+                            </div>
+                            <a href="#" class="name">Инвестиции в инновациях</a>
+                            <div class="announce">
+                                Вы научитесь сегментировать изображения, выделять на них информативные области в
+                                автоматическом режиме.
+                            </div>
+                            <div class="bottom-item">
+                                <div class="data">Запись до 30 июля</div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="el-item-course">
+                            <div class="stock">Лучший курс 2016 года!</div>
+                            <div class="img-wrap" style="background-image: url(images/img-5.jpg);"></div>
+                            <div class="tags">
+                                <ul>
+                                    <li><a href="#">МФТИ</a></li>
+                                </ul>
+                            </div>
+                            <a href="#" class="name">Управление проектами в условиях динамично развивающегося
+                                продукта. Роль инвестиций
+                                в разработке инноваций.</a>
+                            <div class="bottom-item">
+                                <div class="data">Начало 5 августа</div>
+                                <div class="group">5 курсов</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="el-item-course">
+                            <div class="stock">Лучший курс 2016 года!</div>
+                            <div class="img-wrap" style="background-image: url(images/img-6.jpg);"></div>
+                            <div class="tags">
+                                <ul>
+                                    <li><a href="#">МФТИ</a></li>
+                                </ul>
+                            </div>
+                            <a href="#" class="name">Управление проектами в условиях динамично развивающегося
+                                продукта. Роль инвестиций
+                                в разработке инноваций.</a>
+                            <div class="bottom-item">
+                                <div class="data">Начало 5 августа</div>
+                                <div class="group">5 курсов</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="el-item-course">
+                            <div class="stock">Лучший курс 2016 года!</div>
+                            <div class="img-wrap" style="background-image: url(images/img-7.jpg);"></div>
+                            <div class="tags">
+                                <ul>
+                                    <li><a href="#">МФТИ</a></li>
+                                </ul>
+                            </div>
+                            <a href="#" class="name">Управление проектами в условиях динамично развивающегося
+                                продукта. Роль инвестиций
+                                в разработке инноваций.</a>
+                            <div class="bottom-item">
+                                <div class="data">Начало 5 августа</div>
+                                <div class="group">5 курсов</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="el-item-course">
+                            <div class="img-wrap" style="background-image: url(images/img-8.jpg);"></div>
+                            <div class="tags">
+                                <ul>
+                                    <li><a href="#">МФТИ</a></li>
+                                    <li><a href="#">УрФУ</a></li>
+                                </ul>
+                            </div>
+                            <a href="#" class="name">Инвестиции в инновациях</a>
+                            <div class="announce">
+                                Вы научитесь сегментировать изображения, выделять на них информативные области в
+                                автоматическом режиме.
+                            </div>
+                            <div class="bottom-item">
+                                <div class="data">Запись до 30 июля</div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-12 text-center btn-wraps">
+                        <a href="#" class="el-btn blue-style">Смотреть все 125</a>
+                    </div>
+                </div>
+            </section>
+            <!-- End section-result -->
+
+            <!-- Begin section-result -->
+            <section class="section-result css-white">
+                <div class="container">
+                    <div class="title-section row">
+                        <h2 class="col-sm-4">Вы смотрели</h2>
+                        <div class="col-sm-8">
+                            <ul class="list-el-btn">
+                                <li><a href="#" class="el-btn grey-style inverse">IT</a></li>
+                                <li><a href="#" class="el-btn grey-style inverse">Миникурсы</a></li>
+                                <li><a href="#" class="el-btn grey-style inverse">Начнутся в мае</a></li>
+                                <li><a href="#" class="el-btn grey-style inverse">Все</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4">
+                            <div class="el-item-course">
+                                <div class="img-wrap" style="background-image: url(images/img-7.jpg);"></div>
+                                <div class="tags">
+                                    <ul>
+                                        <li><a href="#">МФТИ</a></li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="name">Управление проектами в условиях динамично развивающегося
+                                    продукта. Роль инвестиций
+                                    в разработке инноваций.</a>
+                                <div class="bottom-item">
+                                    <div class="data css-color-yel">Начало 5 августа</div>
+                                    <div class="group">5 курсов</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="el-item-course">
+                                <div class="img-wrap" style="background-image: url(images/img-8.jpg);"></div>
+                                <div class="tags">
+                                    <ul>
+                                        <li><a href="#">МФТИ</a></li>
+                                        <li><a href="#">УрФУ</a></li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="name">Инвестиции в инновациях</a>
+                                <div class="announce">
+                                    Вы научитесь сегментировать изображения, выделять на них информативные области в
+                                    автоматическом режиме.
+                                </div>
+                                <div class="bottom-item">
+                                    <div class="data">Запись до 30 июля</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="el-item-course">
+                                <div class="stock">Лучший курс 2016 года!</div>
+                                <div class="img-wrap" style="background-image: url(images/img-5.jpg);"></div>
+                                <div class="tags">
+                                    <ul>
+                                        <li><a href="#">МФТИ</a></li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="name">Управление проектами в условиях динамично развивающегося
+                                    продукта. Роль инвестиций
+                                    в разработке инноваций.</a>
+                                <div class="bottom-item">
+                                    <div class="data">Начало 5 августа</div>
+                                    <div class="group">5 курсов</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 text-center btn-wraps">
+                            <a href="#" class="el-btn blue-style">Смотреть все 125</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End section-result -->
+
+            <!-- Begin Section 8 -->
+            <section class="section-8 container">
+                <div class="row">
+                    <div class="col-sm-4 item-serves">
+                        <img src="images/icon-1.svg" alt="icon">
+                        <p>Выбирай из&nbsp;150 курсов
+                            от&nbsp;лучших компаний
+                            и&nbsp;университетов</p>
+                    </div>
+                    <div class="col-sm-4 item-serves">
+                        <img src="images/icon-2.svg" alt="icon">
+                        <p>Стань лучшим
+                            профессионалом&nbsp;с&nbsp;персональной тректорией&nbsp;развития</p>
+                    </div>
+                    <div class="col-sm-4 item-serves">
+                        <img src="images/icon-3.svg" alt="icon">
+                        <p>Получи сертификат по&nbsp;любой из&nbsp;20&nbsp;профессий.
+                            Работодатели&nbsp;уже ждут!</p>
+                    </div>
+                </div>
+            </section>
+            <!-- End Section 8 -->
+
+        </div>
+    </div>
+
+<footer id="footer" class="wrapper footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3 col-md-2">
+        <a href="#" class="logo-footer"><img src="images/logo-footer.svg" alt="logo"></a>
+        <ul class="social">
+          <li><a class="facebook" href="#"><i class="icon-facebook"></i></a></li>
+          <li><a class="tw" href="#"><i class="icon-tw"></i></a></li>
+          <li><a class="gplus" href="#"><i class="icon-gplus"></i></a></li>
+          <li><a class="youtube" href="#"><i class="icon-youtube-play"></i></a></li>
+        </ul>
+      </div>
+      <div class="col-sm-9 col-md-10">
+        <div class="navigation-list">
+          <ul>
+            <li><a href="#" class="title">О проекте</a></li>
+            <li><a href="#">Бизнес-партнеры</a></li>
+            <li><a href="#">Университеты</a></li>
+            <li><a href="#">Корпоративное обучение</a></li>
+            <li><a href="#">Пользовательское соглашение</a></li>
+            <li><a href="#">Политика конфиденциальности</a></li>
+          </ul>
+          <ul>
+            <li><a href="#" class="title">Курсы</a></li>
+            <li><a href="#">Специализации</a></li>
+            <li><a href="#">Онлайн-магистратура</a></li>
+            <li><a href="#">Мини-курсы</a></li>
+            <li><a href="#">Дополнительное профессиональное образование (ДПО)</a></li>
+          </ul>
+          <ul>
+            <li><a href="#" class="title">Оплата</a></li>
+            <li><a href="#">Сертификаты</a></li>
+            <li><a href="#">Профессии</a></li>
+            <li><a href="#">Трудоустройство</a></li>
+            <li><a href="#">Зачет курса в вашем университете</a></li>
+          </ul>
+        </div>
+
+        <div class="programs">
+          <h3><a href="#" class="title">Избранные программы обучения  </a></h3>
+          <div class="item-programs">
+            <p><span class="name">Курс:</span> <a href="#">Grow to Greatness: Smart Growth for Private Businesses</a></p>
+          </div>
+          <div class="item-programs">
+            <p><span class="name">Специализация:</span> <a href="#">Grow to Greatness: Smart Growth for Private Businesses</a></p>
+          </div>
+          <div class="item-programs">
+            <p><span class="name">Мини-курсы:</span><a href="#"> Grow to Greatness: Smart Growth for Private Businesses</a></p>
+          </div>
+        </div>
+
+        <div class="contact">
+          <h3><a href="#" class="title">Контакты</a></h3>
+          <ul class="contact-link">
+            <li><a class="css-color" href="#"><img src="images/icons/mail.svg" alt=""> <span>Сообщить о проблеме</span></a></li>
+            <li><a href="#"> Часто задаваемые вопросы </a></li>
+            <li><a href="#">Корпоративным клиентам</a></li>
+          </ul>
+          <form action="#" class="search">
+            <input type="text" placeholder="Поиск">
+            <button><i class="icon-search-btn"></i></button>
+          </form>
+
+        </div>
+
+      </div>
+      <div class="col-sm-12">
+        <p class="copywriter">Open Profession 2016. <a href="#"><img src="images/g-store.png" alt="g-store"></a> <a href="#"><img src="images/a-store.png" alt="a-store"></a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</div>
+
+
+<!-- scripts -->
+<script src="js/libs.js"></script>
+<script src="js/core.js"></script>
+<script src="js/common.js?timestamp=1472829538461"></script>
+<script src="//localhost:35729/livereload.js"></script>
+</body>
+</html>
