@@ -1,21 +1,41 @@
-.media
+.courses-page .css-shadow.cours-status
+  padding-bottom: 0
 
-  &:after
-    display: table
-    clear: both
-    content: ''
+.courses-status
+  display: flex
+  box-sizing: border-box
+  margin: 0 -30px
+  width: auto
+  border-top: 1px solid #e2e3e9
+  vertical-align: top
+  white-space: nowrap
+  font-size: 0
+  line-height: 0
+  justify-content: space-between
 
-  .right-part
-    float: left
-    overflow: hidden
-
-
-  .left-part
-    position: relative
-    top: -7px
-    float: left
-    margin-right: 20px
+  a
+    display: inline-block
+    box-sizing: border-box
+    height: 50px
+    color: #000
     text-align: center
+    text-decoration: none
+    white-space: normal
+    font: 400 14px/50px $open
+    flex-grow: 2
+
+    + a
+      border-left: 1px solid #e2e3e9
+
+      &:last-child
+        max-width: 132px
+        flex-grow: 1
+
+
+    &.active
+      background-color: #e2e3e9
+
+
 
 .course-block
 
@@ -23,6 +43,7 @@
     display: inline-block
     margin-bottom: 10px
     text-decoration: none
+    vertical-align: top
     
   .sertificat
     position: relative
@@ -30,20 +51,25 @@
     margin-left: 3px
 
   .img
+    margin-bottom: 3px
     width: 117px
 
+.inform-block
+  display: flex
+  justify-content: space-between
 
 .course-desc
   margin-left: -3px
-  width: 405px
+  outline: 1px solid #000
+
   .title-name
     margin-top: -7px
+    width: 405px
     color: #4a72f5
-    white-space: nowrap
     font: 400 16px/24px $open
 
     @media (max-width: $screen-xs-max)
-      white-space: normal
+
 
     a
       color: black
@@ -51,22 +77,33 @@
 
 .course-process
   position: relative
+  display: flex
+  //white-space: nowrap
   margin-bottom: 12px
-  white-space: nowrap
 
   div
     display: inline-block
 
   .academic-performance
     position: relative
+    box-sizing: border-box
     margin-left: 20px
-    width: 238px
+    //width: 238px
+    padding-right: 20px
+    width: 100%
+    outline: 1px solid #c00
     vertical-align: top
     line-height: 1
     
     .progress
       position: relative
       height: 45px
+      outline: 1px solid #cc0000
+      width: 100%
+      padding: 0 10px
+      box-sizing: border-box
+      display: flex
+      justify-content: space-between
 
     .line
       position: absolute
@@ -79,13 +116,11 @@
 
 
     .academic-item
-      //position: absolute
       position: relative
       top: 19px
       z-index: 2
       float: right
       overflow: hidden
-      margin-right: 14px
       width: 13px
       height: 13px
       border-radius: 50%
@@ -103,10 +138,9 @@
         background-color: #fff
         content: ''
 
-      + .academic-item
-        margin-right: 25px
-
-      &.active
+      &.indic-success,
+      &.indic-fail,
+      &.indic-waiting
         &:before
           position: absolute
           top: 4px
@@ -116,7 +150,6 @@
           width: 5px
           height: 5px
           border-radius: 50%
-          background-color: #61e7d6
           content: ''
 
         &:after
@@ -126,9 +159,23 @@
           height: 9px
 
 
-        ~ .academic-item
+        ~ .academic-item:not([class*='indic'])
           &:after
             display: none
+
+
+
+      &.indic-success
+        &:before
+          background-color: #61e7d6
+
+      &.indic-fail
+        &:before
+          background-color: #fb5570
+
+      &.indic-waiting
+        &:before
+          background-color: #f18a47
 
   .icon-success
     position: absolute
@@ -152,7 +199,6 @@
 
   .mark
     float: left
-    color: #9b9b9b
     white-space: normal
     font: 400  13px/14px $open
 
@@ -160,13 +206,12 @@
     float: right
     margin-right: -6px
     max-width: 100px
-    color: black
     white-space: normal
     font: 400 13px/14px $open
 
 
 
-.rating-stars
+.rating
   display: block
   margin-bottom: 15px
   height: 20px
@@ -226,6 +271,7 @@
 
 .share-info
   margin-bottom: 15px
+  outline: 1px solid #c00
   text-align: right
   white-space: normal
   font-size: 0
@@ -288,6 +334,7 @@
     right: 15px
     z-index: 5
     display: none
+    background-color: #fff
     text-align: right
 
     @media (max-width: $screen-md-max)
@@ -311,6 +358,18 @@
     border: 1px solid #e2e3e9
     color: #000
 
+  .btn-unsubscribe
+    position: relative
+    padding-right: 18px
+    &:after
+      position: absolute
+      top: 4px
+      right: 24px
+      color: #fb5570
+      content: '\d7'
+      font-weight: 300
+      font-size: 30px
+      line-height: 1
     
 .competence-block
   clear: both
@@ -362,7 +421,7 @@
 
         &:hover
           padding: 10px 0
-          background-color: #fff
+          background-color: transparent
 
       .el-progress-wrap,
       .progress
@@ -379,4 +438,56 @@
 
 
 
-// page course 10.1
+
+// page course 10.1 //group courses
+
+.group-courses
+  position: relative
+
+  &:before
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    width: 4px
+    background-color: #5076f5
+    content: ''
+    
+  .css-shadow
+    margin-bottom: 0
+    border-bottom: 1px solid #eff4f7
+
+
+
+.specializ-block
+  .title-name
+    width: 467px
+
+  .partner-logo
+    max-width: 47%
+    height: 30px
+    outline: 1px solid
+    line-height: 30px
+
+    img
+      vertical-align: middle
+
+  .competence-block
+    padding-top: 10px
+    border-top: 1px solid #eff4f7
+
+
+
+.get-mail
+  outline: 1px solid blue
+  font: 400 13px $open
+  color: black
+
+  label
+    display: inline-block
+    margin-left: 3px
+
+
+  input
+    position: relative
+    top: -2px
