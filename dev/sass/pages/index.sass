@@ -49,7 +49,7 @@
             background-color: #4a72f5
       a
         display: block
-        padding: 14.8px 30px
+        padding: 14px 30px 15px
         color: black
         text-decoration: none
         font: 400 14px/20px $open
@@ -93,14 +93,15 @@
     .style-text-1
       margin-top: 30px
       color: #4a4a4a
-      font: 400 18px/27px $open
+      font: 400 18px/28px $open
       @media (max-width: $screen-sm-max)
         font-size: 14px
         line-height: 25px
 
 
     .tab-catalog
-      margin-top: 24px
+      margin-top: 26px
+      margin-bottom: 18px
       @extend %clear-fix
 
       li
@@ -128,7 +129,7 @@
 
     .wrap-drop
       @extend %clear-fix
-      margin-top: 95px
+      margin-top: 30px
       @media (max-width: $screen-sm-max)
         margin-top: 20px
 
@@ -162,21 +163,21 @@
         position: absolute
         top: 16px
         left: 12px
-        z-index: 2
+        z-index: 4
         font-size: 13px
 
       .icon-up-dir
         position: absolute
         top: 12px
         right: 9px
-        z-index: 2
+        z-index: 4
         font-size: 14px
 
       .icon-down-dir
         position: absolute
         top: 19px
         right: 9px
-        z-index: 2
+        z-index: 4
         font-size: 14px
 
   .section-2
@@ -351,3 +352,37 @@
       margin: 0 -20px
       padding: 0 20px 50px
 
+.filter-drop
+  position: absolute
+  z-index: 2
+  top: 100%
+  left: 0
+  right: 0
+  display: none
+  margin-top: -2px
+  padding: 31px 16px
+  background-color: #fff
+  border: 1px solid rgba(22, 26, 44, 0.1)
+
+  .btn-bottom-group
+    .el-btn + .el-btn
+      margin-left: 10px
+
+  .filter-content
+    margin-bottom: 50px
+
+    [class*="col"]
+      margin-bottom: 30px
+
+.show
+  .placeholder
+    border-bottom: none
+
+  & ~ .filter-drop
+    display: block
+
+.selected-count
+  float: left
+  margin-left: 26px
+  color: #4a4a4a
+  font: 400 13px/43px $open
