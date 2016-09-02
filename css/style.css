@@ -885,7 +885,7 @@ body, input, button, select, textarea {
 .clear {
   clear: both; }
 
-.container:after, .container-fluid:after, .row:after, .el-check-group.mod-horizontal:after, .el-progress-wrap:after, .tag-filter-wrap:after, .sign-social:after, .header .user-page-link:after, .footer .contact-link:after, .footer .contact-link a.css-color:after, .footer .navigation-list:after, .home-page .section-1 .tab-catalog:after, .home-page .section-1 .wrap-drop:after, .home-page .section-4 .wrap-banner:after, .home-page .carousel .owl-nav:after, .page-content.right-sidebar .content-wrap .sidebar:after, .page-content .sidebar .title-rating:after, .page-content .partner:after, .page-content .list-style-1:after, .page-content .colon-section:after, .page-content .col-center .list-style-2 > li:after, .page-content .course-section:after, .page-content .rating-section:after, .page-content .comment-wrap:after, .page-content .branches-section ul:after, .page-content .branches-section li:after, .page-content .partner-section .owl-nav:after, .page-content .necessary-section:after, .page-content .necessary-section .necessary ul:after, .page-content .competence-section .skill li:after, .page-content .competence-section .skill-nav:after, .page-content .competence-section .right-competence .title:after, .page-content .academic-plan .progress-wrap:after, .page-content .academic-plan .specialization:after, .tabs:after, .carts-section:after, .carts-section .skill li:after, .carts-section .skill .progress-wrap:after, .carts-section .necessary ul:after, .certificate-section .certificate .all-courses:after, .certificate-section .certificate li:after, .personal-page .page-content.left-sidebar .content-wrap .sidebar:after, .personal-page .page-content .skill li:after, .personal-page .page-content .skill-nav:after, .personal-page .page-content .right-competence .title:after, .personal-page .page-content .border-block:after, .personal-page .page-content .section-2 .skill-nav:after, .personal-page .page-content .section-5 .partner-lists:after, .personal-page .page-content .wrap-list-process:after, .personal-page .page-content .wrap-list-process .item-list-process:after, .clear-fix:after {
+.container:after, .container-fluid:after, .row:after, .el-check-group.mod-horizontal:after, .el-progress-wrap:after, .tag-filter-wrap:after, .sign-social:after, .header .user-page-link:after, .footer .contact-link:after, .footer .contact-link a.css-color:after, .footer .navigation-list:after, .home-page .section-1 .tab-catalog:after, .home-page .section-1 .wrap-drop:after, .home-page .section-4 .wrap-banner:after, .home-page .carousel .owl-nav:after, .page-content.right-sidebar .content-wrap .sidebar:after, .page-content .sidebar .title-rating:after, .page-content .partner:after, .page-content .list-style-1:after, .page-content .colon-section:after, .page-content .col-center .list-style-2 > li:after, .page-content .course-section:after, .page-content .rating-section:after, .page-content .comment-wrap:after, .page-content .branches-section ul:after, .page-content .branches-section li:after, .page-content .partner-section .owl-nav:after, .page-content .necessary-section:after, .page-content .necessary-section .necessary ul:after, .page-content .competence-section .skill li:after, .page-content .competence-section .skill-nav:after, .page-content .competence-section .right-competence .title:after, .page-content .academic-plan .progress-wrap:after, .page-content .academic-plan .specialization:after, .tabs:after, .carts-section:after, .carts-section .skill li:after, .carts-section .skill .progress-wrap:after, .carts-section .necessary ul:after, .certificate-section .certificate .all-courses:after, .certificate-section .certificate li:after, .personal-page .page-content.left-sidebar .content-wrap .sidebar:after, .personal-page .page-content .skill li:after, .personal-page .page-content .skill-nav:after, .personal-page .page-content .right-competence .title:after, .personal-page .page-content .border-block:after, .personal-page .page-content .section-2 .skill-nav:after, .personal-page .page-content .section-5 .partner-lists:after, .personal-page .page-content .wrap-list-process:after, .personal-page .page-content .wrap-list-process .item-list-process:after, .home-page.css-home .section-subscribe .wrap-banner:after, .home-page.css-home .section-tabs .tabs:after, .home-page.css-home .section-tabs .tabgroup .wrapper-tabs-item:after, .clear-fix:after {
   content: "";
   clear: both;
   display: table;
@@ -2146,15 +2146,29 @@ b.error {
     .modal-title {
       font-size: 24px; } }
 
-.sign-up {
+.mod-modal {
+  background: #f5f7ff; }
+
+.wrapper-modal {
+  padding: 60px 0 100px;
+  text-align: center; }
+
+.wrap-win {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  background: white;
+  box-shadow: 0 9px 24px #e6eaf8; }
+
+.sign-content {
   width: 570px;
   padding: 52px 103px 58px; }
   @media (max-width: 767px) {
-    .sign-up {
+    .sign-content {
       padding: 52px 40px 58px;
       width: 460px; } }
   @media (max-width: 479px) {
-    .sign-up {
+    .sign-content {
       padding: 52px 20px 58px;
       width: 300px; } }
 
@@ -2955,6 +2969,7 @@ b.error {
         margin-right: 0; }
       .home-page .section-7 .list-el-btn li .el-btn {
         float: none;
+        text-decoration: none;
         margin-top: 0; }
       .home-page .section-7 .list-el-btn li .grey-style {
         padding: 12px 20px;
@@ -4909,32 +4924,219 @@ b.error {
     margin-top: 64px;
     margin-bottom: 62px; }
 
-.home-page .home-banner.center {
+.home-page.css-home .section-7 .btn-wraps {
+  margin: 0 0 40px; }
+.home-page.css-home .home-banner.center {
   padding: 200px 0;
   background: url(../images/home-bg.jpg) no-repeat center/cover; }
   @media (max-width: 767px) {
-    .home-page .home-banner.center {
+    .home-page.css-home .home-banner.center {
       padding-top: 30px; } }
-  .home-page .home-banner.center h1 {
+  .home-page.css-home .home-banner.center h1 {
     margin: 0 auto;
     max-width: 560px;
     font-weight: 300; }
-    .home-page .home-banner.center h1 b {
+    .home-page.css-home .home-banner.center h1 b {
       font-width: 400; }
-  .home-page .home-banner.center .el-btn {
+  .home-page.css-home .home-banner.center .el-btn {
     margin-top: 50px;
     padding: 16px 20px;
     width: 200px;
     height: 54px;
     text-align: center;
     font-size: 16px; }
-.home-page .partner-section {
+.home-page.css-home .partner-section {
   padding-top: 60px; }
-.home-page .section-list-profession {
-  background: white;
-  padding: 60px 0; }
-.home-page .list-profession-item p {
-  color: black;
-  font: 400 18px/24px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+.home-page.css-home .section-list-profession {
+  padding: 60px 0;
+  background: white; }
+.home-page.css-home .list-profession-item {
+  margin-bottom: 70px; }
+  @media (max-width: 991px) {
+    .home-page.css-home .list-profession-item {
+      margin-bottom: 40px; } }
+  .home-page.css-home .list-profession-item:last-child {
+    margin-bottom: 0; }
+    @media (max-width: 991px) {
+      .home-page.css-home .list-profession-item:last-child {
+        margin-bottom: 40px; } }
+  .home-page.css-home .list-profession-item p {
+    position: relative;
+    padding-left: 55px;
+    height: 38px;
+    color: black;
+    font: 400 18px/24px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+    @media (max-width: 991px) {
+      .home-page.css-home .list-profession-item p {
+        height: auto; } }
+    .home-page.css-home .list-profession-item p span {
+      position: absolute;
+      top: -13px;
+      left: 0;
+      margin-right: 12px;
+      color: #4a72f5;
+      font: 700 30px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+.home-page.css-home .section-8.mar-b-85 {
+  margin-bottom: 85px; }
+.home-page.css-home .section-subscribe {
+  margin-bottom: 0; }
+  .home-page.css-home .section-subscribe .wrap-banner {
+    position: relative;
+    margin: 0 15px;
+    background-image: linear-gradient(45deg, #181b2e 0%, #172825 100%); }
+    @media (max-width: 991px) {
+      .home-page.css-home .section-subscribe .wrap-banner {
+        text-align: center; } }
+    @media (max-width: 767px) {
+      .home-page.css-home .section-subscribe .wrap-banner {
+        padding-top: 40px; } }
+    .home-page.css-home .section-subscribe .wrap-banner:before {
+      position: absolute;
+      bottom: -20px;
+      left: 30px;
+      width: 202px;
+      height: 248px;
+      background: url(../images/icons/Profession_icon-2.svg) no-repeat center;
+      content: ""; }
+      @media (max-width: 991px) {
+        .home-page.css-home .section-subscribe .wrap-banner:before {
+          display: none; } }
+    .home-page.css-home .section-subscribe .wrap-banner .style-text-2 {
+      margin-top: 60px;
+      margin-bottom: 25px;
+      color: white;
+      font: 300 22px/33px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+      @media (max-width: 767px) {
+        .home-page.css-home .section-subscribe .wrap-banner .style-text-2 {
+          font-size: 18px;
+          line-height: 30px;
+          margin-top: 0; } }
+      .home-page.css-home .section-subscribe .wrap-banner .style-text-2 b {
+        display: block;
+        margin-bottom: 15px;
+        font-weight: 700; }
+    .home-page.css-home .section-subscribe .wrap-banner form {
+      position: relative;
+      margin-bottom: 60px;
+      padding-right: 125px;
+      max-width: 420px; }
+      @media (max-width: 991px) {
+        .home-page.css-home .section-subscribe .wrap-banner form {
+          margin: 20px auto 50px; } }
+      .home-page.css-home .section-subscribe .wrap-banner form input {
+        box-sizing: border-box;
+        padding: 11px 20px;
+        padding-right: 50px;
+        width: 100%;
+        height: 40px;
+        border: none;
+        border-bottom: 1px solid white;
+        border-radius: 3px;
+        background: white;
+        box-shadow: none;
+        color: black;
+        font: 400 14px/36px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+    .home-page.css-home .section-subscribe .wrap-banner .el-btn {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 130px;
+      border: none;
+      border-radius: 0 3px 3px 0; }
+      .home-page.css-home .section-subscribe .wrap-banner .el-btn:hover {
+        background-color: #CC455C;
+        color: white; }
+.home-page.css-home .section-tabs {
+  margin-bottom: 100px; }
+  .home-page.css-home .section-tabs .tabs {
+    width: 100%; }
+    .home-page.css-home .section-tabs .tabs li {
+      float: left;
+      box-sizing: border-box;
+      width: 25%;
+      border-left: 1px solid #e7ebee; }
+      @media (max-width: 767px) {
+        .home-page.css-home .section-tabs .tabs li {
+          width: 100%; } }
+      .home-page.css-home .section-tabs .tabs li:first-child {
+        border-left: none; }
+    .home-page.css-home .section-tabs .tabs a {
+      display: block;
+      box-sizing: border-box;
+      padding: 25px 0;
+      height: 74px;
+      background: white;
+      color: black;
+      text-align: center;
+      text-decoration: none;
+      font: 400 16px/1 "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+      transition: all 0.12s ease; }
+      @media (max-width: 991px) {
+        .home-page.css-home .section-tabs .tabs a {
+          padding: 20px 5px;
+          font-size: 15px; } }
+      @media (max-width: 991px) {
+        .home-page.css-home .section-tabs .tabs a {
+          padding: 25px 0; } }
+      .home-page.css-home .section-tabs .tabs a i {
+        color: transparent; }
+        @media (max-width: 991px) {
+          .home-page.css-home .section-tabs .tabs a i {
+            display: none; } }
+      .home-page.css-home .section-tabs .tabs a:hover, .home-page.css-home .section-tabs .tabs a.active {
+        background: #4a72f5;
+        color: white; }
+        .home-page.css-home .section-tabs .tabs a:hover i, .home-page.css-home .section-tabs .tabs a.active i {
+          color: white; }
+  .home-page.css-home .section-tabs .tabgroup {
+    box-sizing: border-box;
+    background: white; }
+    .home-page.css-home .section-tabs .tabgroup .wrapper-tabs-item {
+      margin: 0 -15px; }
+      @media (max-width: 991px) {
+        .home-page.css-home .section-tabs .tabgroup .wrapper-tabs-item .col-md-4 {
+          margin: 0 30px; } }
+    .home-page.css-home .section-tabs .tabgroup h2 {
+      margin-top: 30px;
+      margin-bottom: 20px;
+      color: black;
+      font: 300 20px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+    .home-page.css-home .section-tabs .tabgroup .style-text-tab {
+      margin-bottom: 20px;
+      color: black;
+      font: 300 15px/26px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+      .home-page.css-home .section-tabs .tabgroup .style-text-tab a {
+        padding: 15px 20px;
+        max-width: 270px;
+        width: 100%;
+        height: 54px;
+        color: white;
+        text-align: center;
+        text-decoration: none; }
+        .home-page.css-home .section-tabs .tabgroup .style-text-tab a:hover {
+          color: #fb5570; }
+    .home-page.css-home .section-tabs .tabgroup .img-wrap {
+      position: relative;
+      box-sizing: border-box;
+      padding: 45px 50px;
+      height: 435px;
+      background: #000000 no-repeat center/cover;
+      vertical-align: bottom; }
+      @media (max-width: 767px) {
+        .home-page.css-home .section-tabs .tabgroup .img-wrap {
+          padding: 25px; } }
+      .home-page.css-home .section-tabs .tabgroup .img-wrap p {
+        position: absolute;
+        right: 50px;
+        bottom: 45px;
+        left: 50px;
+        display: inline-block;
+        color: white;
+        font: 300 24px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+        @media (max-width: 767px) {
+          .home-page.css-home .section-tabs .tabgroup .img-wrap p {
+            font-size: 16px; } }
+        .home-page.css-home .section-tabs .tabgroup .img-wrap p b {
+          font-weight: 400; }
 
 /*# sourceMappingURL=style.css.map */

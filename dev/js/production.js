@@ -6199,41 +6199,41 @@ $('.competence').on('click', '.js-toggle-close', function (el) {
 // Modal functions
 //-----------------------------------------------------------------------------------
 $(document).on('confirmation closed', '.sign-up', function () {
-  $('.sign-up-form')
-    .trigger('reset')
-    .validate().resetForm();
-  $('input[name="password"]').attr('type', 'password');
-  $('.js-pass').removeClass('show');
+    $('.sign-up-form')
+        .trigger('reset')
+        .validate().resetForm();
+    $('input[name="password"]').attr('type', 'password');
+    $('.js-pass').removeClass('show');
 });
 
 $(document).on('click', '.js-promo-step', function (el) {
-  el.preventDefault();
+    el.preventDefault();
 
-  $('.promo-step-1').hide();
-  $('.promo-step-2').fadeIn();
+    $('.promo-step-1').hide();
+    $('.promo-step-2').fadeIn();
 });
 
 $(document).on('closed', '.promo-code', function (e) {
-  $('.promo-step-1').show();
-  $('.promo-step-2').hide();
+    $('.promo-step-1').show();
+    $('.promo-step-2').hide();
 });
 
 $(document).on('click', '.js-show', function (el) {
-  el.preventDefault();
+    el.preventDefault();
 });
 
 // Show password
 //-----------------------------------------------------------------------------------
-function showHidePassword(elClass){
-  var element = $('.'+ elClass).next('input[name="password"]');
-  element.replaceWith(element.clone().attr('type',(element.attr('type') == 'password') ? 'text' : 'password'));
+function showHidePassword(elClass) {
+    var element = $('.' + elClass).next('input[name="password"]');
+    element.replaceWith(element.clone().attr('type', (element.attr('type') == 'password') ? 'text' : 'password'));
 }
 
 $(document).on('click', '.js-pass', function (el) {
-  el.preventDefault();
+    el.preventDefault();
 
-  $(this).toggleClass('show');
-  showHidePassword('js-pass');
+    $(this).toggleClass('show');
+    showHidePassword('js-pass');
 });
 
 // Validation init
@@ -6335,10 +6335,10 @@ if (isOnPage($('#graph1'))) {
 
 }
 
-$(".js-select-course").click(function(){
+$(".js-select-course").click(function () {
     $(this).toggleClass("active");
     $(this).closest(".pick-schedule-content-frame").toggleClass("mod-highlight");
-    
+
 });
 
 // filter
@@ -6358,3 +6358,23 @@ $(document).on('click', '.js-search-clear', function (el) {
 $(document).on('click', '.js-filter-clear', function (el) {
     $(this).closest('.el-check-group').find('input').removeAttr('checked');
 });
+
+
+// tabs
+//-----------------------------------------------------------------------------------
+
+$('.tabgroup > div').hide();
+$('.tabgroup > div:first-of-type').show();
+$('.tabs a').click(function (e) {
+    e.preventDefault();
+    var $this = $(this),
+        tabgroup = '#' + $this.parents('.tabs').data('tabgroup'),
+        others = $this.closest('li').siblings().children('a'),
+        target = $this.attr('href');
+    others.removeClass('active');
+    $this.addClass('active');
+    $(tabgroup).children('div').hide();
+    $(target).show();
+
+});
+

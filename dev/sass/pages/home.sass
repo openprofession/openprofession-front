@@ -1,7 +1,9 @@
 // index-page "HOME"
 //-----------------------------------------------------------------------------------
 
-.home-page
+.home-page.css-home
+  .section-7 .btn-wraps
+    margin: 0 0 40px
 
   .home-banner.center
     padding: 200px 0
@@ -23,16 +25,206 @@
       text-align: center
       font-size: 16px
 
-
   .partner-section
     padding-top: 60px
 
   .section-list-profession
-    background: white
     padding: 60px 0
+    background: white
+
   .list-profession-item
+    margin-bottom: 70px
+    @media (max-width: $screen-sm-max)
+      margin-bottom: 40px
+    &:last-child
+      margin-bottom: 0
+      @media (max-width: $screen-sm-max)
+        margin-bottom: 40px
     p
+      position: relative
+      padding-left: 55px
+      height: 38px
       color: black
       font: 400 18px/24px $open
+      @media (max-width: $screen-sm-max)
+        height: auto
       span
+        position: absolute
+        top: -13px
+        left: 0
+        margin-right: 12px
+        color: #4a72f5
+        font: 700 30px $open
+
+  .section-8.mar-b-85
+    margin-bottom: 85px
+
+  .section-subscribe
+    margin-bottom: 0
+
+    .wrap-banner
+      position: relative
+      margin: 0 15px
+      @extend %clear-fix
+      background-image: linear-gradient(45deg, #181b2e 0%, #172825 100%)
+      @media (max-width: $screen-sm-max)
+        text-align: center
+      @media (max-width: $screen-xs-max)
+        padding-top: 40px
+      &:before
+        position: absolute
+        bottom: -20px
+        left: 30px
+        width: 202px
+        height: 248px
+        //opacity: 0.2
+        background: url(../images/icons/Profession_icon-2.svg) no-repeat center
+        content: ''
+        @media (max-width: $screen-sm-max)
+          display: none
+
+      .style-text-2
+        margin-top: 60px
+        margin-bottom: 25px
+        color: white
+        font: 300 22px/33px $open
+        @media (max-width: $screen-xs-max)
+          font-size: 18px
+          line-height: 30px
+          margin-top: 0
+        b
+          display: block
+          margin-bottom: 15px
+          font-weight: 700
+      form
+        position: relative
+        margin-bottom: 60px
+        padding-right: 125px
+        max-width: 420px
+        @media (max-width: $screen-sm-max)
+          margin: 20px auto 50px
+
+
+        input
+          box-sizing: border-box
+          padding: 11px 20px
+          padding-right: 50px
+          width: 100%
+          height: 40px
+          border: none
+          border-bottom: 1px solid white
+          border-radius: 3px
+          background: white
+          box-shadow: none
+          color: black
+          font: 400 14px/36px $open
+
+      .el-btn
+        position: absolute
+        top: 0
+        right: 0
+        width: 130px
+        border: none
+        border-radius: 0 3px 3px 0
+
+        &:hover
+          background-color: #CC455C
+          color: white
+
+
+  .section-tabs
+    margin-bottom: 100px
+    .tabs
+      @extend %clear-fix
+      width: 100%
+      li
+        float: left
+        box-sizing: border-box
+        width: 25%
+        border-left: 1px solid #e7ebee
+        @media (max-width: $screen-xs-max)
+          width: 100%
+
+        &:first-child
+          border-left: none
+      a
+        display: block
+        box-sizing: border-box
+        padding: 25px 0
+        height: 74px
+        background: white
+        color: black
+        text-align: center
+        text-decoration: none
+        font: 400 16px/1 $open
+        transition: all .12s ease
+        @media (max-width: $screen-sm-max)
+          padding: 20px 5px
+          font-size: 15px
+        @media (max-width: $screen-sm-max)
+          padding: 25px 0
+        i
+          color: transparent
+          @media (max-width: $screen-sm-max)
+            display: none
+
+        &:hover, &.active
+          background: #4a72f5
+          color: white
+          i
+            color: white
+
+    .tabgroup
+      box-sizing: border-box
+      background: white
+
+      .wrapper-tabs-item
+        @extend %clear-fix
+        margin: 0 -15px
+        .col-md-4
+          @media (max-width: $screen-sm-max)
+            margin: 0 30px
+
+      h2
+        margin-top: 30px
+        margin-bottom: 20px
+        color: black
+        font: 300 20px $open
+      .style-text-tab
+        margin-bottom: 20px
+        color: black
+        font: 300 15px/26px $open
+        a
+          padding: 15px 20px
+          max-width: 270px
+          width: 100%
+          height: 54px
+          color: white
+          text-align: center
+          text-decoration: none
+          &:hover
+            color: $color-pure
+
+      .img-wrap
+        position: relative
+        box-sizing: border-box
+        padding: 45px 50px
+        height: 435px
+        background: #000000 no-repeat center/cover
+        vertical-align: bottom
+        @media (max-width: $screen-xs-max)
+          padding: 25px
+        p
+          position: absolute
+          right: 50px
+          bottom: 45px
+          left: 50px
+          display: inline-block
+          color: white
+          font: 300 24px $open
+          @media (max-width: $screen-xs-max)
+            font-size: 16px
+          b
+            font-weight: 400
+
 
