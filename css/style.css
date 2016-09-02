@@ -2146,15 +2146,27 @@ b.error {
     .modal-title {
       font-size: 24px; } }
 
-.sign-up {
+.mod-modal {
+  background: #f5f7ff; }
+
+.wrapper-modal {
+  padding: 60px 0 100px;
+  text-align: center; }
+
+.wrap-win {
+  display: inline-block;
+  background: white;
+  box-shadow: 0 9px 24px #e6eaf8; }
+
+.sign-content {
   width: 570px;
   padding: 52px 103px 58px; }
   @media (max-width: 767px) {
-    .sign-up {
+    .sign-content {
       padding: 52px 40px 58px;
       width: 460px; } }
   @media (max-width: 479px) {
-    .sign-up {
+    .sign-content {
       padding: 52px 20px 58px;
       width: 300px; } }
 
