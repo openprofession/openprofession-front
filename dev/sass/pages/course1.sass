@@ -22,6 +22,7 @@
   .partner-logo
     display: inline-block
     text-decoration: none
+    margin-bottom: 10px
     
   .sertificat
     position: relative
@@ -41,15 +42,17 @@
     font: 400 16px/24px $open
     white-space: nowrap
 
+    @media (max-width: $screen-xs-max)
+      white-space: normal
+
     a
       color: black
       text-decoration: none
 
 .course-process
   white-space: nowrap
-  min-height: 78px
   position: relative
-  margin-bottom: 6px
+  margin-bottom: 12px
 
   div
     display: inline-block
@@ -58,13 +61,12 @@
     line-height: 1
     width: 238px
     position: relative
-    height: 45px
     margin-left: 20px
     vertical-align: top
     
     .progress
       position: relative
-      height: 100%
+      height: 45px
 
     .line
       position: absolute
@@ -123,22 +125,28 @@
     color: black
     font: 400 13px/20px $open
 
+  .addition-info
+    display: block
+    margin-top: -3px
+
+    &:after
+      content: ''
+      display: table
+      clear: both
+
   .mark
-    position: absolute
     color: #9b9b9b
     font: 400  13px/14px $open
-    top: 46px
-    right: 157px
+    float: left
     white-space: normal
 
   .availability-cert
+    float: right
     color: black
     font: 400 13px/14px $open
-    position: absolute
-    top: 46px
-    right: 20px
     max-width: 100px
     white-space: normal
+    margin-right: -6px
 
 
 
@@ -201,11 +209,16 @@
 
 
 .share-info
-  float: left
-  margin-left: -8px
   white-space: normal
   font-size: 0
   line-height: 1
+  text-align: right
+  margin-bottom: 15px
+
+  @media (max-width: $screen-md-max)
+    text-align: left
+
+
   
   .visibility-block
 
@@ -259,9 +272,12 @@
     
   .hidden-block
     display: none
-    position: absolute
     z-index: 5
+    text-align: right
     right: 15px
+
+    @media (max-width: $screen-md-max)
+      text-align: left
     a
       width: 155px
       height: 38px
@@ -295,12 +311,35 @@
   &.css-shadow
     padding: 31px 30px
 
+  &.hidden-columns
+    position: relative
+
+    &:after
+      content: ''
+      position: absolute
+      bottom: 20px
+      right: 34px
+      width: 27px
+      height: 5px
+      background-image: url('data:image/svg+xml;charset=utf-8, <svg xmlns="http://www.w3.org/2000/svg"  width="27" height="5"><defs></defs><path d="M1473 2213L1473 2208L1478 2208L1478 2213Z " fill="#5076f5" transform="matrix(1,0,0,1,-1473,-2208)"></path><path d="M1484 2213L1484 2208L1489 2208L1489 2213Z " fill="#5076f5" transform="matrix(1,0,0,1,-1473,-2208)"></path><path  d="M1495 2213L1495 2208L1500 2208L1500 2213Z " fill="#5076f5" transform="matrix(1,0,0,1,-1473,-2208)"></path></svg>')
+
+    .img
+      height: 85px
+      overflow: hidden
+
   .competence-block
     .skill
       column-count: 2
       column-gap: 0
       margin: 0
       width: 525px
+
+      @media (max-width: $screen-md-max) and (min-width: $screen-sm-max)
+        width: 477px
+
+      @media (max-width: $screen-xs-max)
+        column-count: 1
+        max-width: 100%
 
       li
         padding: 10px 0
