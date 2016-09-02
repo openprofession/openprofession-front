@@ -67,7 +67,8 @@ module.exports = function (grunt) {
               scripts: 'dev/chunks/scripts.html',
               footer: 'dev/chunks/footer.html',
               modal: 'dev/chunks/modal-window.html',
-              svg: 'dev/chunks/svg.html'
+              svg: 'dev/chunks/svg.html',
+              stars: 'dev/chunks/rating-stars.html'
             }
           }
         },
