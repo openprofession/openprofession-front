@@ -93,12 +93,19 @@
       box-sizing: border-box
       display: block
       height: 100%
-      padding: 11px 40px 9px 20px
+      line-height: 35px
+      padding: 0 40px 0 20px
       font-weight: 400
       cursor: pointer
 
-      span
+      .name
+        display: inline-block
+        vertical-align: middle
+        line-height: 1
+
+      .res-count
         position: absolute
+        top: 0
         right: 18px
 
     &.mod-icon input:checked ~ label

@@ -1457,11 +1457,17 @@ html {
       box-sizing: border-box;
       display: block;
       height: 100%;
-      padding: 11px 40px 9px 20px;
+      line-height: 35px;
+      padding: 0 40px 0 20px;
       font-weight: 400;
       cursor: pointer; }
-      .el-btn.mod-check label span {
+      .el-btn.mod-check label .name {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 1; }
+      .el-btn.mod-check label .res-count {
         position: absolute;
+        top: 0;
         right: 18px; }
     .el-btn.mod-check.mod-icon input:checked ~ label {
       background-image: url(../images/icons/icon-check-white.svg);
@@ -3005,8 +3011,10 @@ b.error {
   padding: 31px 16px;
   background-color: #fff;
   border: 1px solid rgba(22, 26, 44, 0.1); }
-  .filter-drop .btn-bottom-group .el-btn + .el-btn {
-    margin-left: 10px; }
+  .filter-drop .btn-bottom-group {
+    font-size: 0; }
+    .filter-drop .btn-bottom-group .el-btn + .el-btn {
+      margin-left: 10px; }
   .filter-drop .filter-content {
     margin-bottom: 50px; }
     .filter-drop .filter-content [class*="col"] {
