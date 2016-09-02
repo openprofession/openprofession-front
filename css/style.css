@@ -4720,4 +4720,29 @@ b.error {
     margin-top: 64px;
     margin-bottom: 62px; }
 
+.home-page .home-banner.center {
+  padding: 200px 0;
+  background: url(../images/home-bg.jpg) no-repeat center/cover; }
+  @media (max-width: 767px) {
+    .home-page .home-banner.center {
+      padding-top: 30px; } }
+  .home-page .home-banner.center h1 {
+    margin: 0 auto;
+    max-width: 560px;
+    font-weight: 300; }
+    .home-page .home-banner.center h1 b {
+      font-width: 400; }
+  .home-page .home-banner.center .el-btn {
+    margin-top: 50px;
+    padding: 16px 20px;
+    width: 200px;
+    height: 54px;
+    text-align: center;
+    font-size: 16px; }
+.home-page .partner-section {
+  padding-top: 60px; }
+.home-page .section-list-profession {
+  background: white;
+  padding: 60px 0; }
+
 /*# sourceMappingURL=style.css.map */

@@ -197,6 +197,28 @@ if (isOnPage($('.js-partner'))) {
 }
 
 
+// js-partner-home
+//-----------------------------------------------------------------------------------
+if (isOnPage($('.js-partner-home'))) {
+    $('.js-partner-home').owlCarousel({
+        loop: true,
+        margin: 30,
+        nav: true,
+        navText: ['<i class="icon-arrow-l"></i>', '<i class="icon-arrow-l"></i>'],
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 6
+            }
+        }
+    });
+}
+
 $('#scroll-wrap').slimScroll({
     height: '470px',
     size: '3px'
