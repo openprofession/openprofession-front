@@ -2296,7 +2296,7 @@ b.error {
       .pick-schedule .pick-schedule-content .pick-schedule-content-frame.mod-half {
         width: 50%;
         float: left; }
-  @media (max-width: 850px) {
+  @media (max-width: 860px) {
     .pick-schedule {
       width: 300px;
       padding: 54px 30px 58px; }
@@ -2310,7 +2310,8 @@ b.error {
         .pick-schedule .pick-schedule-content .pick-schedule-content-frame.mod-half {
           width: 100%; }
         .pick-schedule .pick-schedule-content .pick-schedule-content-frame .pick-schedule-content-frame-price {
-          position: static; }
+          position: static;
+          margin-top: 15px; }
         .pick-schedule .pick-schedule-content .pick-schedule-content-frame .pick-schedule-content-frame-selected {
           right: auto;
           left: 10px; } }
