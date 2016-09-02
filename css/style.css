@@ -885,7 +885,7 @@ body, input, button, select, textarea {
 .clear {
   clear: both; }
 
-.container:after, .container-fluid:after, .row:after, .el-progress-wrap:after, .sign-social:after, .header .user-page-link:after, .footer .contact-link:after, .footer .contact-link a.css-color:after, .footer .navigation-list:after, .home-page .section-1 .tab-catalog:after, .home-page .section-1 .wrap-drop:after, .home-page .section-4 .wrap-banner:after, .home-page .carousel .owl-nav:after, .page-content.right-sidebar .content-wrap .sidebar:after, .page-content .sidebar .title-rating:after, .page-content .partner:after, .page-content .list-style-1:after, .page-content .colon-section:after, .page-content .col-center .list-style-2 > li:after, .page-content .course-section:after, .page-content .rating-section:after, .page-content .comment-wrap:after, .page-content .branches-section ul:after, .page-content .branches-section li:after, .page-content .partner-section .owl-nav:after, .page-content .necessary-section:after, .page-content .necessary-section .necessary ul:after, .page-content .competence-section .skill li:after, .page-content .competence-section .skill-nav:after, .page-content .competence-section .right-competence .title:after, .page-content .academic-plan .progress-wrap:after, .page-content .academic-plan .specialization:after, .tabs:after, .carts-section:after, .carts-section .skill li:after, .carts-section .skill .progress-wrap:after, .carts-section .necessary ul:after, .certificate-section .certificate .all-courses:after, .certificate-section .certificate li:after, .personal-page .page-content.left-sidebar .content-wrap .sidebar:after, .personal-page .page-content .skill li:after, .personal-page .page-content .skill-nav:after, .personal-page .page-content .right-competence .title:after, .personal-page .page-content .border-block:after, .personal-page .page-content .section-2 .skill-nav:after, .personal-page .page-content .section-5 .partner-lists:after, .personal-page .page-content .wrap-list-process:after, .personal-page .page-content .wrap-list-process .item-list-process:after {
+.container:after, .container-fluid:after, .row:after, .el-progress-wrap:after, .sign-social:after, .header .user-page-link:after, .footer .contact-link:after, .footer .contact-link a.css-color:after, .footer .navigation-list:after, .home-page .section-1 .tab-catalog:after, .home-page .section-1 .wrap-drop:after, .home-page .section-4 .wrap-banner:after, .home-page .carousel .owl-nav:after, .page-content.right-sidebar .content-wrap .sidebar:after, .page-content .sidebar .title-rating:after, .page-content .partner:after, .page-content .list-style-1:after, .page-content .colon-section:after, .page-content .col-center .list-style-2 > li:after, .page-content .course-section:after, .page-content .rating-section:after, .page-content .comment-wrap:after, .page-content .branches-section ul:after, .page-content .branches-section li:after, .page-content .partner-section .owl-nav:after, .page-content .necessary-section:after, .page-content .necessary-section .necessary ul:after, .page-content .competence-section .skill li:after, .page-content .competence-section .skill-nav:after, .page-content .competence-section .right-competence .title:after, .page-content .academic-plan .progress-wrap:after, .page-content .academic-plan .specialization:after, .tabs:after, .carts-section:after, .carts-section .skill li:after, .carts-section .skill .progress-wrap:after, .carts-section .necessary ul:after, .certificate-section .certificate .all-courses:after, .certificate-section .certificate li:after, .personal-page .page-content.left-sidebar .content-wrap .sidebar:after, .personal-page .page-content .skill li:after, .personal-page .page-content .skill-nav:after, .personal-page .page-content .right-competence .title:after, .personal-page .page-content .border-block:after, .personal-page .page-content .section-2 .skill-nav:after, .personal-page .page-content .section-5 .partner-lists:after, .personal-page .page-content .wrap-list-process:after, .personal-page .page-content .wrap-list-process .item-list-process:after, .clear-fix:after {
   content: "";
   clear: both;
   display: table;
@@ -960,6 +960,16 @@ input[type='image'] {
 
 ::selection {
   background: dodgerblue; }
+
+.vafix:before {
+  display: inline-block;
+  margin-right: -0.35em;
+  height: 100%;
+  content: "";
+  vertical-align: middle; }
+
+.pick-schedule .pick-schedule-content .pick-schedule-content-frame, .pick-schedule .pick-schedule-content .pick-schedule-content-frame .pick-schedule-content-frame-selected .ico {
+  transition: all 0.5s; }
 
 html {
   height: 100%; }
@@ -1455,6 +1465,15 @@ html {
       .el-btn.grey-style.inverse:hover {
         background: #9b9b9b;
         color: white; }
+  .el-btn.cancel-style {
+    border-color: #e8ecf0;
+    background-color: #e8ecf0;
+    color: #ababab; }
+    .el-btn.cancel-style:hover {
+      background: none; }
+    .el-btn.cancel-style.mod-narrow {
+      max-width: 122px;
+      padding: 6px 20px; }
 
 .el-select {
   position: relative;
@@ -1793,6 +1812,77 @@ html {
   text-decoration: none;
   font-size: 14px; }
 
+.start-date-link {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px;
+  background: #edf1fe;
+  color: #000;
+  text-decoration: none;
+  font: 400 13px/1 "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+  .start-date-link:last-child {
+    margin-bottom: 0; }
+  .start-date-link .mod-started-txt {
+    display: none;
+    color: #9b9b9b;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font: 400 13px/1 "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-style: normal; }
+  .start-date-link span {
+    padding: 15px;
+    display: inline-block;
+    vertical-align: middle; }
+  .start-date-link.mod-started {
+    background: #fef8f0; }
+    .start-date-link.mod-started .mod-started-txt {
+      display: block; }
+  .start-date-link.mod-blue {
+    background: #4a72f5;
+    color: #fff; }
+  @media (max-width: 540px) {
+    .start-date-link {
+      text-align: center;
+      line-height: 20px; }
+      .start-date-link.mod-started {
+        margin-bottom: 30px; }
+        .start-date-link.mod-started .mod-started-txt {
+          top: auto;
+          bottom: -20px;
+          right: auto;
+          left: 0; } }
+
+.ico {
+  display: inline-block;
+  vertical-align: middle; }
+  .ico.ico-g-gal {
+    width: 19px;
+    height: 13px;
+    background: url(../images/icons/g-gal.svg) center no-repeat; }
+
+.styled-cb label {
+  position: relative;
+  padding-left: 22px;
+  box-sizing: border-box;
+  width: 100%; }
+.styled-cb input[type='checkbox'] {
+  display: none; }
+  .styled-cb input[type='checkbox'] + label:before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: #5076f5;
+    left: 0;
+    top: 2px;
+    background-repeat: no-repeat;
+    background-position: center; }
+  .styled-cb input[type='checkbox']:checked + label:before {
+    background-color: #5076f5;
+    background-image: url("../images/icons/cb-gal.png"); }
+
 b.error {
   position: absolute;
   top: 100%;
@@ -1893,7 +1983,7 @@ b.error {
     border-radius: 3px; }
 
 .modal-title {
-  font: 300 28px/1.2 "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font: 300 24px/1.2 "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
   color: black; }
   @media (max-width: 479px) {
     .modal-title {
@@ -2097,6 +2187,134 @@ b.error {
   display: none; }
   .promo-step-2 .form-input {
     margin: 22px 0 20px; }
+
+.start-date {
+  width: 533px;
+  padding: 54px 55px 58px;
+  text-align: left; }
+  .start-date .start-date-content {
+    margin-top: 24px;
+    margin-bottom: 30px; }
+  @media (max-width: 540px) {
+    .start-date {
+      padding: 54px 50px 58px;
+      width: 300px; } }
+
+.disable-course {
+  width: 443px;
+  text-align: left;
+  padding: 54px 55px 58px; }
+  .disable-course .disable-course-content {
+    margin: 21px 0 25px 0;
+    color: #9b9b9b;
+    font: 300 20px/1 "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    line-height: 30px; }
+    .disable-course .disable-course-content span {
+      margin-top: 20px;
+      display: inline-block;
+      color: #9b9b9b;
+      font: 300 13px/25px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+  .disable-course .el-btn {
+    margin-right: 5px; }
+    .disable-course .el-btn:last-child {
+      margin-bottom: 0; }
+    @media (max-width: 450px) {
+      .disable-course .el-btn {
+        margin-bottom: 20px;
+        margin-right: 0;
+        width: 80%;
+        max-width: 80% !important;
+        padding: 11px 20px !important; } }
+  @media (max-width: 450px) {
+    .disable-course {
+      padding: 54px 30px 58px;
+      width: 300px;
+      text-align: center; } }
+  .disable-course.mod-extended {
+    width: 613px; }
+    @media (max-width: 620px) {
+      .disable-course.mod-extended {
+        padding: 54px 30px 58px;
+        width: 300px; }
+        .disable-course.mod-extended .el-btn {
+          margin-bottom: 20px;
+          margin-right: 0;
+          width: 100%;
+          max-width: 100% !important;
+          padding: 11px 20px !important; } }
+
+.pick-schedule {
+  padding: 54px 55px 58px;
+  width: 848px;
+  text-align: left; }
+  .pick-schedule .pick-schedule-group {
+    margin: 20px 0; }
+  .pick-schedule .pick-schedule-content {
+    margin: 24px 0 30px 0; }
+    .pick-schedule .pick-schedule-content .pick-schedule-content-bottom label {
+      font: 400 13px/1 "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+      .pick-schedule .pick-schedule-content .pick-schedule-content-bottom label a {
+        text-decoration: none;
+        color: #a2a2a2; }
+    .pick-schedule .pick-schedule-content .pick-schedule-content-frame {
+      box-sizing: border-box;
+      border: 1px solid #edf1fe;
+      position: relative;
+      padding: 30px 30px 48px 30px; }
+      .pick-schedule .pick-schedule-content .pick-schedule-content-frame .pick-schedule-content-frame-selected {
+        cursor: pointer;
+        position: absolute;
+        right: 30px;
+        bottom: 14px; }
+        .pick-schedule .pick-schedule-content .pick-schedule-content-frame .pick-schedule-content-frame-selected span {
+          display: inline-block;
+          vertical-align: middle;
+          font: 600 13px/20px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+          .pick-schedule .pick-schedule-content .pick-schedule-content-frame .pick-schedule-content-frame-selected span:first-child {
+            margin-right: 5px; }
+        .pick-schedule .pick-schedule-content .pick-schedule-content-frame .pick-schedule-content-frame-selected .ico {
+          opacity: 0; }
+        .pick-schedule .pick-schedule-content .pick-schedule-content-frame .pick-schedule-content-frame-selected.active .ico {
+          opacity: 1; }
+      .pick-schedule .pick-schedule-content .pick-schedule-content-frame .pick-schedule-content-frame-price {
+        position: absolute;
+        left: 30px;
+        bottom: 14px;
+        font: 600 16px/20px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+      .pick-schedule .pick-schedule-content .pick-schedule-content-frame .pick-schedule-content-frame-title {
+        color: #000;
+        margin-bottom: 12px;
+        font: 700 16px/20px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+      .pick-schedule .pick-schedule-content .pick-schedule-content-frame p {
+        color: #9b9b9b;
+        font: 400 13px/20px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+      .pick-schedule .pick-schedule-content .pick-schedule-content-frame.mod-highlight {
+        background-color: #fafbfc;
+        border: 1px solid #4a72f5;
+        margin-bottom: 0;
+        padding-bottom: 48px; }
+      .pick-schedule .pick-schedule-content .pick-schedule-content-frame.mod-half {
+        width: 50%;
+        float: left; }
+  @media (max-width: 860px) {
+    .pick-schedule {
+      width: 300px;
+      padding: 54px 30px 58px; }
+      .pick-schedule .modal-title {
+        text-align: center; }
+      .pick-schedule .pick-schedule-content .pick-schedule-group {
+        margin: 0; }
+      .pick-schedule .pick-schedule-content .pick-schedule-content-frame {
+        margin-bottom: 15px !important;
+        padding: 10px 10px 48px 10px; }
+        .pick-schedule .pick-schedule-content .pick-schedule-content-frame.mod-half {
+          width: 100%; }
+        .pick-schedule .pick-schedule-content .pick-schedule-content-frame .pick-schedule-content-frame-price {
+          position: static;
+          margin-top: 15px; }
+        .pick-schedule .pick-schedule-content .pick-schedule-content-frame .pick-schedule-content-frame-selected {
+          right: auto;
+          left: 10px; } }
 
 .header {
   padding: 20px 0;

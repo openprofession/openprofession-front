@@ -46,7 +46,7 @@
   //font: 300 20px/25px $open
 
 .modal-title
-  font: 300 28px/1.2 $open
+  font: 300 24px/1.2 $open
   color: black
   @media (max-width: 479px)
     font-size: 24px
@@ -238,6 +238,7 @@
 
 // Promo code modal
 //-----------------------------------------------------------------------------------
+
 .promo-code
   width: 420px
   padding: 54px 55px 58px
@@ -255,3 +256,152 @@
   .form-input
     margin: 22px 0 20px
 
+// Start date modal
+//-----------------------------------------------------------------------------------
+.start-date
+  width: 533px
+  padding: 54px 55px 58px
+  text-align: left
+  .start-date-content
+    margin-top: 24px
+    margin-bottom: 30px
+  @media (max-width: 540px)
+    padding: 54px 50px 58px
+    width: 300px
+
+// disable course modal
+//-----------------------------------------------------------------------------------   
+.disable-course
+  width: 443px
+  text-align: left
+  padding: 54px 55px 58px
+  .disable-course-content
+    margin: 21px 0 25px 0
+    color: #9b9b9b
+    font: 300 20px/1 "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif
+    line-height: 30px
+    span
+      margin-top: 20px
+      display: inline-block
+      color: #9b9b9b
+      font: 300 13px/25px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif
+  
+  .el-btn
+    margin-right: 5px
+    &:last-child
+      margin-bottom: 0
+    @media (max-width: 450px)
+      margin-bottom: 20px
+      margin-right: 0
+      width: 80% 
+      max-width: 80% !important
+      padding: 11px 20px !important
+
+  @media (max-width: 450px)
+    padding: 54px 30px 58px
+    width: 300px
+    text-align: center
+
+  &.mod-extended
+    width: 613px
+    @media (max-width: 620px)
+      padding: 54px 30px 58px
+      width: 300px
+      .el-btn
+        margin-bottom: 20px
+        margin-right: 0
+        width: 100% 
+        max-width: 100% !important
+        padding: 11px 20px !important
+
+// pick-schedule modal
+//-----------------------------------------------------------------------------------   
+.pick-schedule
+  padding: 54px 55px 58px
+  width: 848px
+  text-align: left
+  .pick-schedule-group
+    margin: 20px 0
+  .pick-schedule-content
+    margin: 24px 0 30px 0
+    .pick-schedule-content-bottom
+      label
+        font: 400 13px/1 "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif
+        a
+          text-decoration: none
+          color: #a2a2a2
+    .pick-schedule-content-frame
+      box-sizing: border-box
+      border: 1px solid #edf1fe
+      position: relative
+      padding: 30px 30px 48px 30px
+      @extend %transition
+      .pick-schedule-content-frame-selected
+        cursor: pointer
+        position: absolute
+        right: 30px
+        bottom: 14px
+        span
+          display: inline-block
+          vertical-align: middle
+          font: 600 13px/20px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif
+          &:first-child
+            margin-right: 5px
+        .ico
+          opacity: 0
+          @extend %transition
+        &.active
+          .ico
+            opacity: 1
+      .pick-schedule-content-frame-price
+        position: absolute
+        left: 30px
+        bottom: 14px
+        font: 600 16px/20px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif
+      .pick-schedule-content-frame-title
+        color: #000
+        margin-bottom: 12px
+        font: 700 16px/20px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif
+      p
+        color: #9b9b9b
+        font: 400 13px/20px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif
+      
+      &.mod-highlight
+        background-color: #fafbfc
+        border: 1px solid #4a72f5
+        margin-bottom: 0
+        padding-bottom: 48px
+
+      &.mod-half
+        width: 50%
+        float: left
+
+  @media (max-width: 860px)
+    width: 300px
+    padding: 54px 30px 58px
+    .modal-title
+      text-align: center
+    .pick-schedule-content
+      .pick-schedule-group
+        margin: 0
+      .pick-schedule-content-frame
+        margin-bottom: 15px !important
+        padding: 10px 10px 48px 10px
+        &.mod-half
+          width: 100% 
+        .pick-schedule-content-frame-price
+          position: static
+          margin-top: 15px
+        .pick-schedule-content-frame-selected
+          right: auto
+          left: 10px
+        
+          
+
+
+
+  
+
+
+
+  

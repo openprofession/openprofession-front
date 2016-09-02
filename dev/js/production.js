@@ -6308,3 +6308,9 @@ if (isOnPage($('#graph1'))) {
 
 
 }
+
+$(".js-select-course").click(function(){
+    $(this).toggleClass("active");
+    $(this).closest(".pick-schedule-content-frame").toggleClass("mod-highlight");
+    
+});
