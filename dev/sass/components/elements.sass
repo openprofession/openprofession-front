@@ -53,11 +53,58 @@
   text-decoration: none
   font: 700 13px/1 $open
   transition: all .12s ease
+
   &:hover
     background: white
     color: black
     text-decoration: none
 
+  &.mod-check
+    display: block
+    position: relative
+    padding: 0
+    color: #000
+    border: 1px solid $color-blue
+    text-align: left
+
+    @media (max-width: $screen-xs-max)
+      max-width: 280px
+      margin: auto
+
+    &.pos-top
+      margin-top: 28px
+
+    &.pos-bottom
+      margin-top: 40px
+
+      @media (max-width: $screen-xs-max)
+        margin-top: 30px
+
+    input
+      position: absolute
+      visibility: hidden
+      
+      &:checked ~ label
+        background-color: $color-blue
+        color: #fff
+
+    label
+      position: relative
+      box-sizing: border-box
+      display: block
+      height: 100%
+      padding: 11px 40px 9px 20px
+      font-weight: 400
+      cursor: pointer
+
+      span
+        position: absolute
+        right: 18px
+
+    &.mod-icon input:checked ~ label
+      background-image: url(../images/icons/icon-check-white.svg)
+      background-position: 134px center
+      background-repeat: no-repeat
 
   &.blue-style
     border-color: $color-blue
@@ -102,6 +149,13 @@
         background: $color-grey
         color: white
 
+  &.grey-light-style
+    border-color: $color-grey-light
+    background-color: $color-grey-light
+    color: #a4acb8
+    &:hover
+      background: none
+
   &.cancel-style
     border-color: #e8ecf0
     background-color: #e8ecf0
@@ -112,8 +166,58 @@
       max-width: 122px
       padding: 6px 20px
 
+.el-field-title
+  color: black
+  font: 400 13px/1 $open
+  margin-bottom: 16px
+
+  button
+    float: right
+    margin-top: -2px
+    font-size: 16px
+    color: #d9dee5
+
+    &:hover
+      color: $color-pure
 
 
+.el-check-group
+  @media (max-width: $screen-xs-max)
+    max-width: 280px
+    margin: auto
+
+  .el-btn
+    border-radius: 0
+
+  &.mod-horizontal
+    @extend %clear-fix
+    max-width: 100%
+
+    .el-btn
+      float: left
+      width: 169px
+
+      & + .el-btn
+        margin-left: 0
+        border-left: none
+
+      &:nth-child(2)
+        border-radius: 3px 0 0 3px
+
+      &:last-child
+        border-radius: 0 3px 3px 0
+
+  &.mod-vertical
+    .el-btn
+      & + .el-btn
+        margin-left: 0
+        border-top: none
+
+      &:first-child
+        border-radius: 3px 3px 0 0px
+
+      &:last-child
+        border-radius: 0 0 3px 3px
 
 // select
 //-----------------------------------------------------------------------------------
@@ -137,6 +241,7 @@
 
   .placeholder
     position: relative
+    z-index: 3
     display: block
     overflow: hidden
     padding: 11px 22px 11px 15px
@@ -435,6 +540,31 @@
         font-size: 14px
         line-height: 20px
 
+.tag-filter-wrap
+  @extend %clear-fix
+
+.el-tag-filter
+  box-sizing: border-box
+  float: left
+  height: 40px
+  margin-right: 12px
+  padding: 9px 10px 11px 18px
+  border: 1px solid #9b9b9b
+  border-radius: 3px
+  color: $color-grey
+  font: 400 13px $open
+  cursor: pointer
+
+  &:hover
+    button
+      color: $color-pure
+
+  button
+    margin-top: -3px
+    margin-left: 2px
+    font-size: 16px
+    color: $color-grey
+    transition: color .15s
 
 // social share block 
 //-----------------------------------------------------------------------------------
@@ -509,6 +639,69 @@
       //   font-family: 'FontAwesome' !important
       //   color: #000
       //   display: inline-block 
+
+.el-search
+  @media (max-width: $screen-xs-max)
+    max-width: 280px
+    margin: auto
+
+  .input-wrap
+    position: relative
+    box-sizing: border-box
+    height: 40px
+    padding: 11px 20px 9px
+    border: 1px solid #4a72f5
+    border-radius: 3px 3px 0 0
+
+    input
+      width: 132px
+      border: none
+
+      @media (max-width: $screen-md-max)
+        width: 100px
+
+    .btn-search
+      position: absolute
+      right: 14px
+      width: 18px
+      height: 18px
+      background: url(../images/icons/Search.svg) no-repeat center
+      
+  .list
+    position: relative
+    padding: 11px 0 40px 20px
+    border: 1px solid #4a72f5
+    border-top: none
+
+  ul
+    max-height: 104px
+    overflow-y: auto
+
+  li
+    position: relative
+    padding: 5px 42px 5px 0
+    color: #000
+    font: 400 13px $open
+    cursor: pointer
+
+    &.active:after
+      position: absolute
+      top: 7px
+      right: 18px
+      font-family: "font-icon"
+      color: $color-blue
+      content: '\e80b'
+
+    span
+      position: absolute
+      top: 6px
+      margin-left: 10px
+      color: $color-grey
+
+  .show-more
+    position: absolute
+    bottom: 12px
+    color: $color-grey
 
 
 // modal start-date-link
@@ -585,13 +778,6 @@
     &:checked + label:before
       background-color: #5076f5
       background-image: url("../images/icons/cb-gal.png")
-
-
-
-
-
-  
-
 
 // Validation success and error
 //-----------------------------------------------------------------------------------
