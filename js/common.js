@@ -432,5 +432,14 @@ $('.js-show-block').on('click', function(e){
     e.preventDefault();
     $(this).toggleClass('visible');
     $(this).closest('.visibility-block').next('.hidden-block').slideToggle(200);
-})
+});
+
+
+// datepicker at personal17 page
+//-----------------------------------------------------------------------------------
+$( "#datepicker" ).datepicker({
+    dayNamesMin: [ "Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс" ],
+    monthNames: [ "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь" ],
+});
+
 
