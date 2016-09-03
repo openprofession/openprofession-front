@@ -5996,9 +5996,17 @@ html .ui-button.ui-state-disabled:active {
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between; }
+  @media (max-width: 1199px) {
+    .inform-block {
+      -ms-flex-direction: column;
+          flex-direction: column; } }
 
 .course-desc {
   margin-left: -3px; }
+  @media (max-width: 1199px) {
+    .course-desc {
+      -ms-flex-order: 2;
+          order: 2; } }
   .course-desc .title-name {
     margin-top: -7px;
     width: 405px;
@@ -6161,14 +6169,15 @@ html .ui-button.ui-state-disabled:active {
     margin-right: 7px; }
 
 .share-info {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   text-align: right;
   white-space: normal;
   font-size: 0;
   line-height: 1; }
   @media (max-width: 1199px) {
     .share-info {
-      text-align: left; } }
+      -ms-flex-order: 1;
+          order: 1; } }
   .share-info .visibility-block button {
     display: inline-block;
     box-sizing: border-box;

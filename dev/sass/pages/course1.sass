@@ -60,8 +60,14 @@
   display: flex
   justify-content: space-between
 
+  @media (max-width: $screen-md-max)
+    flex-direction: column
+
 .course-desc
   margin-left: -3px
+
+  @media (max-width: $screen-md-max)
+    order: 2
 
   .title-name
     margin-top: -7px
@@ -262,14 +268,15 @@
     margin-right: 7px
 
 .share-info
-  margin-bottom: 15px
+  margin-bottom: 20px
   text-align: right
   white-space: normal
   font-size: 0
   line-height: 1
 
   @media (max-width: $screen-md-max)
-    text-align: left
+    //text-align: left
+    order: 1
 
   .visibility-block
 
