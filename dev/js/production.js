@@ -6378,3 +6378,12 @@ $('.tabs a').click(function (e) {
 
 });
 
+// btn in courses page
+//-----------------------------------------------------------------------------------
+
+$('.js-show-block').on('click', function(e){
+    e.preventDefault();
+    $(this).toggleClass('visible');
+    $(this).closest('.visibility-block').next('.hidden-block').slideToggle(200);
+})
+
