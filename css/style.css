@@ -5947,7 +5947,7 @@ html .ui-button.ui-state-disabled:active {
   display: -ms-flexbox;
   display: flex;
   box-sizing: border-box;
-  margin: 0 -30px;
+  margin: 0 -26px;
   width: auto;
   border-top: 1px solid #e2e3e9;
   vertical-align: top;
@@ -5990,6 +5990,12 @@ html .ui-button.ui-state-disabled:active {
 .course-block .img {
   margin-bottom: 3px;
   width: 117px; }
+@media (max-width: 767px) {
+  .course-block > .text-center {
+    width: 147px; } }
+@media (max-width: 767px) {
+  .course-block .col-xs-12 {
+    position: static; } }
 
 .inform-block {
   display: -ms-flexbox;
@@ -6012,6 +6018,9 @@ html .ui-button.ui-state-disabled:active {
     width: 405px;
     color: #4a72f5;
     font: 400 16px/24px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+    @media (max-width: 767px) {
+      .course-desc .title-name {
+        max-width: 100%; } }
     .course-desc .title-name a {
       color: black;
       text-decoration: none; }
@@ -6020,9 +6029,14 @@ html .ui-button.ui-state-disabled:active {
   position: relative;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 12px;
   padding-right: 53px;
-  max-width: 351px;
-  margin-bottom: 12px; }
+  max-width: 351px; }
+  @media (max-width: 767px) {
+    .course-process {
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box; } }
   .course-process div {
     display: inline-block; }
   .course-process .academic-performance {
@@ -6037,6 +6051,8 @@ html .ui-button.ui-state-disabled:active {
       position: relative;
       display: -ms-flexbox;
       display: flex;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
       box-sizing: border-box;
       padding: 0 2px;
       width: 100%;
@@ -6055,7 +6071,6 @@ html .ui-button.ui-state-disabled:active {
       position: relative;
       top: 19px;
       z-index: 2;
-      float: right;
       overflow: hidden;
       width: 13px;
       height: 13px;
@@ -6102,8 +6117,8 @@ html .ui-button.ui-state-disabled:active {
     position: relative;
     top: 15px;
     color: black;
-    font: 400 13px/20px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
-    white-space: nowrap; }
+    white-space: nowrap;
+    font: 400 13px/20px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
   .course-process .addition-info {
     display: block;
     white-space: nowrap; }
@@ -6112,15 +6127,15 @@ html .ui-button.ui-state-disabled:active {
       clear: both;
       content: ""; }
   .course-process .mark {
-    vertical-align: top;
     display: inline-block;
+    vertical-align: top;
     white-space: normal;
     font: 400 13px/14px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
   .course-process .availability-cert {
     display: inline-block;
-    vertical-align: top;
     margin-left: 34px;
     max-width: 100px;
+    vertical-align: top;
     white-space: normal;
     font: 400 13px/14px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
@@ -6178,6 +6193,11 @@ html .ui-button.ui-state-disabled:active {
     .share-info {
       -ms-flex-order: 1;
           order: 1; } }
+  @media (max-width: 767px) {
+    .share-info .visibility-block {
+      position: absolute;
+      top: 31px;
+      right: 15px; } }
   .share-info .visibility-block button {
     display: inline-block;
     box-sizing: border-box;
@@ -6186,6 +6206,11 @@ html .ui-button.ui-state-disabled:active {
     height: 47px;
     text-align: center;
     font: 400 12px/18px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+    @media (max-width: 767px) {
+      .share-info .visibility-block button {
+        max-width: 77px;
+        padding: 0;
+        letter-spacing: -0.7px; } }
     .share-info .visibility-block button + button {
       margin-left: 1px; }
   .share-info .visibility-block .btn-arrow {
@@ -6219,15 +6244,26 @@ html .ui-button.ui-state-disabled:active {
       -webkit-transform: rotate(45deg);
           -ms-transform: rotate(45deg);
               transform: rotate(45deg); }
+  .share-info .visibility-block .btn-white {
+    max-width: 110px; }
+    @media (max-width: 767px) {
+      .share-info .visibility-block .btn-white {
+        max-width: 77px; } }
   .share-info .hidden-block {
-    right: 15px;
+    position: absolute;
+    right: 0;
     z-index: 5;
     display: none;
+    padding: 0 15px 15px;
+    max-width: 155px;
     background-color: #fff;
     text-align: right; }
     @media (max-width: 1199px) {
       .share-info .hidden-block {
         text-align: left; } }
+    @media (max-width: 767px) {
+      .share-info .hidden-block {
+        top: 80px; } }
     .share-info .hidden-block a {
       display: inline-block;
       box-sizing: border-box;
@@ -6243,19 +6279,20 @@ html .ui-button.ui-state-disabled:active {
     color: #fff; }
   .share-info .btn-white {
     border: 1px solid #e2e3e9;
+    background-color: #fff;
     color: #000; }
   .share-info .btn-unsubscribe {
     position: relative;
     padding-right: 18px; }
     .share-info .btn-unsubscribe:after {
       position: absolute;
-      top: 4px;
-      right: 24px;
-      color: #fb5570;
-      content: "×";
-      font-weight: 300;
-      font-size: 30px;
-      line-height: 1; }
+      top: 13px;
+      right: 26px;
+      width: 12px;
+      height: 12px;
+      background-image: url("../images/icons/unsubscribe.png");
+      background-repeat: no-repeat;
+      content: ""; }
 
 .competence-block {
   clear: both; }
@@ -6264,53 +6301,55 @@ html .ui-button.ui-state-disabled:active {
     color: black;
     font: 400 15px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
-.skill-columns.css-shadow {
-  padding: 31px 30px; }
-.skill-columns.hidden-columns {
+.skill-columns {
   position: relative; }
-  .skill-columns.hidden-columns:after {
-    position: absolute;
-    right: 34px;
-    bottom: 20px;
-    width: 27px;
-    height: 5px;
-    background-image: url('data:image/svg+xml;charset=utf-8, <svg xmlns="http://www.w3.org/2000/svg"  width="27" height="5"><defs></defs><path d="M1473 2213L1473 2208L1478 2208L1478 2213Z " fill="#5076f5" transform="matrix(1,0,0,1,-1473,-2208)"></path><path d="M1484 2213L1484 2208L1489 2208L1489 2213Z " fill="#5076f5" transform="matrix(1,0,0,1,-1473,-2208)"></path><path  d="M1495 2213L1495 2208L1500 2208L1500 2213Z " fill="#5076f5" transform="matrix(1,0,0,1,-1473,-2208)"></path></svg>');
-    content: ""; }
-  .skill-columns.hidden-columns .img {
-    overflow: hidden;
-    height: 85px; }
-.skill-columns .competence-block .skill {
-  margin: 0 0 7px 0;
-  width: 525px;
-  -webkit-column-count: 2;
-     -moz-column-count: 2;
-          column-count: 2;
-  -webkit-column-gap: 0;
-     -moz-column-gap: 0;
-          column-gap: 0; }
-  @media (max-width: 1199px) and (min-width: 991px) {
-    .skill-columns .competence-block .skill {
-      width: 477px; } }
-  @media (max-width: 767px) {
-    .skill-columns .competence-block .skill {
-      -webkit-column-count: 1;
-         -moz-column-count: 1;
-              column-count: 1;
-      max-width: 100%; } }
-  .skill-columns .competence-block .skill li {
-    box-sizing: border-box;
-    padding: 10px 0;
-    width: 229px;
-    vertical-align: top; }
-    .skill-columns .competence-block .skill li:hover {
+  .skill-columns.css-shadow {
+    padding: 31px 30px; }
+  .skill-columns.hidden-columns {
+    position: relative; }
+    .skill-columns.hidden-columns:after {
+      position: absolute;
+      right: 34px;
+      bottom: 20px;
+      width: 27px;
+      height: 5px;
+      background-image: url('data:image/svg+xml;charset=utf-8, <svg xmlns="http://www.w3.org/2000/svg"  width="27" height="5"><defs></defs><path d="M1473 2213L1473 2208L1478 2208L1478 2213Z " fill="#5076f5" transform="matrix(1,0,0,1,-1473,-2208)"></path><path d="M1484 2213L1484 2208L1489 2208L1489 2213Z " fill="#5076f5" transform="matrix(1,0,0,1,-1473,-2208)"></path><path  d="M1495 2213L1495 2208L1500 2208L1500 2213Z " fill="#5076f5" transform="matrix(1,0,0,1,-1473,-2208)"></path></svg>');
+      content: ""; }
+    .skill-columns.hidden-columns .img {
+      overflow: hidden;
+      height: 85px; }
+  .skill-columns .competence-block .skill {
+    margin: 0 0 7px 0;
+    width: 525px;
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+    -webkit-column-gap: 0;
+       -moz-column-gap: 0;
+            column-gap: 0; }
+    @media (max-width: 1199px) and (min-width: 991px) {
+      .skill-columns .competence-block .skill {
+        width: 477px; } }
+    @media (max-width: 767px) {
+      .skill-columns .competence-block .skill {
+        -webkit-column-count: 1;
+           -moz-column-count: 1;
+                column-count: 1;
+        max-width: 100%; } }
+    .skill-columns .competence-block .skill li {
+      box-sizing: border-box;
       padding: 10px 0;
-      background-color: transparent; }
-  .skill-columns .competence-block .skill .el-progress-wrap,
-  .skill-columns .competence-block .skill .progress {
-    width: 81px; }
-.skill-columns .styled-cb label {
-  color: black;
-  font: 400 13px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+      width: 229px;
+      vertical-align: top; }
+      .skill-columns .competence-block .skill li:hover {
+        padding: 10px 0;
+        background-color: transparent; }
+    .skill-columns .competence-block .skill .el-progress-wrap,
+    .skill-columns .competence-block .skill .progress {
+      width: 81px; }
+  .skill-columns .styled-cb label {
+    color: black;
+    font: 400 13px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
 .group-courses {
   position: relative;
@@ -6320,10 +6359,10 @@ html .ui-button.ui-state-disabled:active {
     top: 0;
     bottom: 0;
     left: 0;
+    z-index: 5;
     width: 4px;
     background-color: #5076f5;
-    content: "";
-    z-index: 5; }
+    content: ""; }
   .group-courses .css-shadow {
     margin-bottom: 0;
     border-bottom: 1px solid #eff4f7; }

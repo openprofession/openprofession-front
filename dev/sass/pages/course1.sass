@@ -4,7 +4,7 @@
 .courses-status
   display: flex
   box-sizing: border-box
-  margin: 0 -30px
+  margin: 0 -26px
   width: auto
   border-top: 1px solid #e2e3e9
   vertical-align: top
@@ -35,7 +35,6 @@
       background-color: #e2e3e9
 
 .course-block
-
   .partner-logo
     display: inline-block
     margin-bottom: 10px
@@ -50,11 +49,17 @@
     img
       width: 29px
 
-
-
   .img
     margin-bottom: 3px
     width: 117px
+
+  >.text-center
+    @media (max-width: $screen-xs-max)
+      width: 147px
+
+  @media (max-width: $screen-xs-max)
+    .col-xs-12
+      position: static
 
 .inform-block
   display: flex
@@ -76,7 +81,7 @@
     font: 400 16px/24px $open
 
     @media (max-width: $screen-xs-max)
-
+      max-width: 100%
     a
       color: black
       text-decoration: none
@@ -84,9 +89,14 @@
 .course-process
   position: relative
   display: flex
+  margin-bottom: 12px
   padding-right: 53px
   max-width: 351px
-  margin-bottom: 12px
+
+  @media (max-width: $screen-xs-max)
+    width: 100%
+    max-width: 100%
+    box-sizing: border-box
 
   div
     display: inline-block
@@ -104,10 +114,12 @@
     .progress
       position: relative
       display: flex
+      flex-direction: row-reverse
       box-sizing: border-box
       padding: 0 2px
       width: 100%
       height: 45px
+      //direction: rtl
       justify-content: space-between
 
     .line
@@ -123,7 +135,7 @@
       position: relative
       top: 19px
       z-index: 2
-      float: right
+      //float: right
       overflow: hidden
       width: 13px
       height: 13px
@@ -186,8 +198,8 @@
     position: relative
     top: 15px
     color: black
-    font: 400 13px/20px $open
     white-space: nowrap
+    font: 400 13px/20px $open
     //min-width: 90px
 
   .addition-info
@@ -200,16 +212,16 @@
       content: ''
 
   .mark
-    vertical-align: top
     display: inline-block
+    vertical-align: top
     white-space: normal
     font: 400 13px/14px $open
 
   .availability-cert
     display: inline-block
-    vertical-align: top
     margin-left: 34px
     max-width: 100px
+    vertical-align: top
     white-space: normal
     font: 400 13px/14px $open
 
@@ -280,6 +292,11 @@
 
   .visibility-block
 
+    @media (max-width: $screen-xs-max)
+      position: absolute
+      top: 31px
+      right: 15px
+
     button
       display: inline-block
       box-sizing: border-box
@@ -288,6 +305,11 @@
       height: 47px
       text-align: center
       font: 400 12px/18px $open
+
+      @media (max-width: $screen-xs-max)
+        max-width: 77px
+        padding: 0
+        letter-spacing: -0.7px
 
       + button
         margin-left: 1px
@@ -323,15 +345,26 @@
         &:after
           transform: rotate(45deg)
 
+    .btn-white
+      max-width: 110px
+      @media (max-width: $screen-xs-max)
+        max-width: 77px
+
+
   .hidden-block
-    right: 15px
+    position: absolute
+    right: 0
     z-index: 5
     display: none
+    padding: 0 15px 15px
+    max-width: 155px
     background-color: #fff
     text-align: right
 
     @media (max-width: $screen-md-max)
       text-align: left
+    @media (max-width: $screen-xs-max)
+      top: 80px
     a
       display: inline-block
       box-sizing: border-box
@@ -349,6 +382,7 @@
 
   .btn-white
     border: 1px solid #e2e3e9
+    background-color: #fff
     color: #000
 
   .btn-unsubscribe
@@ -356,13 +390,13 @@
     padding-right: 18px
     &:after
       position: absolute
-      top: 4px
-      right: 24px
-      color: #fb5570
-      content: '\d7'
-      font-weight: 300
-      font-size: 30px
-      line-height: 1
+      top: 13px
+      right: 26px
+      width: 12px
+      height: 12px
+      background-image: url('../images/icons/unsubscribe.png')
+      background-repeat: no-repeat
+      content: ''
 
 .competence-block
   clear: both
@@ -373,6 +407,7 @@
     font: 400 15px $open
 
 .skill-columns
+  position: relative
 
   &.css-shadow
     padding: 31px 30px
@@ -436,10 +471,10 @@
     top: 0
     bottom: 0
     left: 0
+    z-index: 5
     width: 4px
     background-color: #5076f5
     content: ''
-    z-index: 5
 
   .css-shadow
     margin-bottom: 0
@@ -464,3 +499,4 @@
   .course-process
     padding-right: 6px
     max-width: 100%
+
