@@ -93,12 +93,19 @@
       box-sizing: border-box
       display: block
       height: 100%
-      padding: 11px 40px 9px 20px
+      line-height: 35px
+      padding: 0 40px 0 20px
       font-weight: 400
       cursor: pointer
 
-      span
+      .name
+        display: inline-block
+        vertical-align: middle
+        line-height: 1
+
+      .res-count
         position: absolute
+        top: 0
         right: 18px
 
     &.mod-icon input:checked ~ label
@@ -192,20 +199,41 @@
   &.mod-horizontal
     @extend %clear-fix
     max-width: 100%
+    font-size: 0
+
+    @media (max-width: $screen-xs-max)
+      text-align: center
 
     .el-btn
-      float: left
+      display: inline-block
       width: 169px
+      margin: 0
+
+      @media (max-width: $screen-xs-max)
+        display: block
+        margin: auto
 
       & + .el-btn
         margin-left: 0
-        border-left: none
 
-      &:nth-child(2)
+        @media (min-width: $screen-sm)
+          border-left: none
+
+        @media (max-width: $screen-xs-max)
+          border-top: none
+          margin: auto
+
+      &:first-child
         border-radius: 3px 0 0 3px
+
+        @media (max-width: $screen-xs-max)
+          border-radius: 3px 3px 0 0
 
       &:last-child
         border-radius: 0 3px 3px 0
+
+        @media (max-width: $screen-xs-max)
+          border-radius: 0 0 3px 3px
 
   &.mod-vertical
     .el-btn
@@ -213,7 +241,7 @@
         margin-left: 0
         border-top: none
 
-      &:first-child
+      &:nth-child(2)
         border-radius: 3px 3px 0 0px
 
       &:last-child
@@ -553,6 +581,11 @@
   color: $color-grey
   font: 400 13px $open
   cursor: pointer
+
+  @media (max-width: $screen-xs-max)
+    //display: block
+    //float: none
+    margin-bottom: 10px
 
   &:hover
     button

@@ -335,8 +335,19 @@
   border: 1px solid rgba(22, 26, 44, 0.1)
 
   .btn-bottom-group
-    .el-btn + .el-btn
-      margin-left: 10px
+    font-size: 0
+
+    .el-btn
+      @media (max-width: $screen-xs-max)
+        display: block
+        margin: auto
+    
+      & + .el-btn
+        margin-left: 10px
+
+        @media (max-width: $screen-xs-max)
+          margin-top: 10px
+          margin-left: auto
 
   .filter-content
     margin-bottom: 50px
@@ -357,6 +368,10 @@
   color: #4a4a4a
   font: 400 13px/43px $open
 
+  @media (max-width: $screen-xs-max)
+    float: none
+    margin-left: 0
+    text-align: center
 
 .catalog-list
   width: 100%
