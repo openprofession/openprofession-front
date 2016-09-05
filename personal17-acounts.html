@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+<head>
+  <meta charset="utf-8"/>
+  <title>Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.min.css"/>
+  <script src="js/ie-detector.js"></script>
+  <script src="js/modernizr.js"></script>
+  <!--[if lte IE 9]><meta http-equiv="X-UA-Compatible" content="IE=edge"/><![endif]-->
+
+  <!--
+    mobile define colors for elements of the browser
+
+    <meta name="theme-color" content="HEX_COLOR">
+    <meta name="msapplication-navbutton-color" content="HEX_COLOR">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="HEX_COLOR">
+
+  -->
+
+  <!--
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="author" content="">
+    <meta name="robots" content="index,follow">
+    <meta name="copyright" content="">
+  -->
+</head>
+
+<body>
+
+<div id="page-wrapper" class="page-wrapper ">
+
+<header id="header" class="wrapper header">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3 col-md-3">
+        <a href="#" class="logo-site"><img src="images/logo.svg" alt="logo"></a>
+      </div>
+      <div class="col-sm-5 col-md-6">
+        <div class="wrap-search">
+          <div class="catalog-btn">
+            <a href="#" class="el-btn blue-style">Каталог</a>
+          </div>
+          <form action="#" class="search">
+            <input type="text" >
+            <button><i class="icon-search-btn"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="col-sm-4 col-md-3 login-wrap-btn">
+        <a href="#" class="el-btn blue-style inverse">Вход / Регистрация</a>
+
+        <a class="user-page-link" href="personal.html">
+          <span class="img-wrap">
+            <img src="images/person-1.png" alt="person">
+          </span>
+          Личный кабинет <i class="icon-angle-down"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+    <!-- Begin personal Page -->
+    <div id="page-body" class="page-body personal-page">
+        <div class="page-content left-sidebar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 content-wrap">
+                        <!-- Begin sidebar -->
+                        <div class="sidebar">
+                            <ul class="list-nav">
+                                <li><a href="#">Профиль</a></li>
+                                <li><a href="#">Мои курсы</a></li>
+                                <li><a href="#">Мои навыки</a></li>
+                                <li><a href="#">Персональная траектория</a></li>
+                                <li><a href="#">Мои сертификаты</a></li>
+                                <li><a href="#">Подбор вакансий</a></li>
+                                <li><a href="#">Настройки</a></li>
+                            </ul>
+                        </div>
+                        <!-- End sidebar -->
+
+                        <!-- Begin content -->
+                        <div class="content">
+
+                            <!-- Begin section-1 -->
+                            <section class="css-shadow section-name">
+                                <div class="row">
+                                    <h2 class="title-section col-sm-8">Привет, Мария Иванова!</h2>
+                                    <div class="col-sm-4">
+                                        <a class="logout" href="#"><img src="images/icons/icon-logout.svg" alt=""></a>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- End section-1 -->
+
+                            <!-- Begin personal info section-->
+                            <section class="css-shadow info-section">
+                                <div class="row">
+                                    <h2 class="title-section col-sm-8">Личная информация</h2>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-4 text-center">
+                                        <div class="wrap-img">
+                                            <img src="images/img-persone.png" alt="img-persone">
+                                        </div>
+                                        <a href="#" class="add-photo">Добавить фото</a>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <form action="#" name="form-personal-info" class="el-form-default">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <label for="up-email">Email<span>*</span></label>
+                                                    <div class="form-input">
+                                                        <input name="email" type="email" id="up-email"/>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <label for="up-name">Имя<span>*</span></label>
+                                                    <div class="form-input">
+                                                        <input name="name" type="text" id="up-name"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <label for="up-surname">Фамилия<span>*</span></label>
+                                                    <div class="form-input">
+                                                        <input name="surname" type="text" id="up-surname"/>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <label for="up-patronymic">Отчество</label>
+                                                    <div class="form-input">
+                                                        <input name="patronymic" type="text" id="up-patronymic"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="pick-schedule-content-bottom">
+                                                <div class="styled-cb">
+                                                    <input type="checkbox" id="cb-uslov" checked />
+                                                    <label for="cb-uslov">  Получать новостную рассылку</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-buttons">
+                                                <button type="submit" class="el-btn pur-style">Сохранить</button>
+                                                <button type="reset" class="el-btn cancel-style">Сбросить</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- End personal info section -->
+
+                            <!-- Begin change password  section -->
+                            <section class="css-shadow info-section">
+                                <div class="row">
+                                    <h2 class="title-section col-sm-4">Заменить пароль</h2>
+                                    <div class="col-sm-4">
+                                        <form action="/" name="change-passw" class="el-form-default">
+                                            <label for="up-old-pass">Старый пароль<span>*</span></label>
+                                            <div class="form-input">
+                                                <input name="oldPassword" type="password" id="up-old-pass"/>
+                                            </div>
+                                            <label for="up-pass">Новый пароль<span>*</span></label>
+                                            <div class="form-input mod-pass">
+                                                <a href="#" class="js-pass icon-pass icon-glas-icon"></a>
+                                                <input name="password" type="password" id="up-pass"/>
+                                            </div>
+                                            <div class="form-buttons">
+                                                <button type="submit" class="el-btn pur-style">Сохранить</button>
+                                                <button type="reset" class="el-btn cancel-style">Сбросить</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- End change password  section -->
+
+                            <!-- Begin enable account section -->
+                            <section class="css-shadow info-section">
+                                <div class="row">
+                                    <h2 class="title col-sm-4">Подключить аккаунт</h2>
+                                    <div class="col-sm-8">
+                                        <ul class="sign-social">
+                                            <li><a href="#" class="social-fb"><i class="icon-facebook"></i></a></li>
+                                            <li><a href="#" class="social-gpus"><i class="icon-gplus"></i></a></li>
+                                            <li><a href="#" class="social-vk"><i class="icon-vkontakte"></i></a></li>
+                                            <li><a href="#" class="social-tw"><i class="icon-tw"></i></a></li>
+                                            <li><a href="#" class="text-social">НПОО</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <h2 class="title col-sm-4">Отключить</h2>
+                                    <div class="col-sm-8">
+                                        <ul class="sign-social">
+                                            <li><a href="#" class="social-fb"><i class="icon-facebook"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- Begin enable account section -->
+
+
+                            <!-- Begin addition info section -->
+                            <section class="css-shadow info-section">
+                                <div class="row">
+                                    <h2 class="title-section col-sm-4">Дополнительная  информация</h2>
+                                    <div class="col-sm-8">
+                                        <form action="#" name="form-addition-info" class="el-form-default">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <label for="city">Город</label>
+                                                    <div class="form-input">
+                                                        <input name="city" type="text" id="city" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <label for="institute">Вуз</label>
+                                                    <div class="form-input">
+                                                        <input name="institute" type="text" id="institute" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <label for="datepicker">Дата рождения</label>
+                                                    <div class="form-input">
+                                                        <input name="date" type="text" id="datepicker" autocomplete="off" placeholder="12.08.2016"/>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <label for="company">Место работы</label>
+                                                    <div class="form-input">
+                                                        <input name="company" type="text" id="company" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <label for="self">О себе</label>
+                                            <div class="form-input">
+                                                <textarea name="self" id="self" cols="30" rows="10"></textarea>
+                                            </div>
+                                            <div class="form-buttons">
+                                                <button type="submit" class="el-btn pur-style">Сохранить</button>
+                                                <button type="reset" class="el-btn cancel-style">Сбросить</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- End addition info section -->
+
+
+                        </div>
+                        <!-- End content -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End personal Page -->
+
+<footer id="footer" class="wrapper footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3 col-md-2">
+        <a href="#" class="logo-footer"><img src="images/logo-footer.svg" alt="logo"></a>
+        <ul class="social">
+          <li><a class="facebook" href="#"><i class="icon-facebook"></i></a></li>
+          <li><a class="tw" href="#"><i class="icon-tw"></i></a></li>
+          <li><a class="gplus" href="#"><i class="icon-gplus"></i></a></li>
+          <li><a class="youtube" href="#"><i class="icon-youtube-play"></i></a></li>
+        </ul>
+      </div>
+      <div class="col-sm-9 col-md-10">
+        <div class="navigation-list">
+          <ul>
+            <li><a href="#" class="title">О проекте</a></li>
+            <li><a href="#">Бизнес-партнеры</a></li>
+            <li><a href="#">Университеты</a></li>
+            <li><a href="#">Корпоративное обучение</a></li>
+            <li><a href="#">Пользовательское соглашение</a></li>
+            <li><a href="#">Политика конфиденциальности</a></li>
+          </ul>
+          <ul>
+            <li><a href="#" class="title">Курсы</a></li>
+            <li><a href="#">Специализации</a></li>
+            <li><a href="#">Онлайн-магистратура</a></li>
+            <li><a href="#">Мини-курсы</a></li>
+            <li><a href="#">Дополнительное профессиональное образование (ДПО)</a></li>
+          </ul>
+          <ul>
+            <li><a href="#" class="title">Оплата</a></li>
+            <li><a href="#">Сертификаты</a></li>
+            <li><a href="#">Профессии</a></li>
+            <li><a href="#">Трудоустройство</a></li>
+            <li><a href="#">Зачет курса в вашем университете</a></li>
+          </ul>
+        </div>
+
+        <div class="programs">
+          <h3><a href="#" class="title">Избранные программы обучения  </a></h3>
+          <div class="item-programs">
+            <p><span class="name">Курс:</span> <a href="#">Grow to Greatness: Smart Growth for Private Businesses</a></p>
+          </div>
+          <div class="item-programs">
+            <p><span class="name">Специализация:</span> <a href="#">Grow to Greatness: Smart Growth for Private Businesses</a></p>
+          </div>
+          <div class="item-programs">
+            <p><span class="name">Мини-курсы:</span><a href="#"> Grow to Greatness: Smart Growth for Private Businesses</a></p>
+          </div>
+        </div>
+
+        <div class="contact">
+          <h3><a href="#" class="title">Контакты</a></h3>
+          <ul class="contact-link">
+            <li><a class="css-color" href="#"><img src="images/icons/mail.svg" alt=""> <span>Сообщить о проблеме</span></a></li>
+            <li><a href="#"> Часто задаваемые вопросы </a></li>
+            <li><a href="#">Корпоративным клиентам</a></li>
+          </ul>
+          <form action="#" class="search">
+            <input type="text" placeholder="Поиск">
+            <button><i class="icon-search-btn"></i></button>
+          </form>
+
+        </div>
+
+      </div>
+      <div class="col-sm-12">
+        <p class="copywriter">Open Profession 2016. <a href="#"><img src="images/g-store.png" alt="g-store"></a> <a href="#"><img src="images/a-store.png" alt="a-store"></a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</div>
+
+
+<!-- scripts -->
+<script src="js/libs.js"></script>
+
+<script src="js/common.js"></script>
+
+</body>
+</html>

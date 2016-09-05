@@ -63,6 +63,26 @@ var valitatorRules = {
       required: true,
       email:    true
     }
+  },
+  'form-personal-info':{
+    name:      {
+      required: true
+    },
+    surname:     {
+      required: true
+    },
+    email:     {
+      required: true,
+      email:    true
+    }
+  },
+  'change-passw':{
+    oldPassword:      {
+      required: true
+    },
+    password:      {
+      required: true
+    },
   }
 };
 
