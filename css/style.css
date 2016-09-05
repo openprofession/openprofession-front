@@ -5763,7 +5763,7 @@ html .ui-button.ui-state-disabled:active {
       padding-top: 30px; } }
   .home-page.css-home .home-banner.center h1 {
     margin: 0 auto;
-    max-width: 560px;
+    max-width: 580px;
     font-weight: 300; }
     .home-page.css-home .home-banner.center h1 b {
       font-width: 400; }
@@ -5777,6 +5777,7 @@ html .ui-button.ui-state-disabled:active {
 .home-page.css-home .partner-section {
   padding-top: 60px; }
 .home-page.css-home .section-list-profession {
+  margin-bottom: 0;
   padding: 60px 0;
   background: white; }
 .home-page.css-home .list-profession-item {
@@ -5876,7 +5877,16 @@ html .ui-button.ui-state-disabled:active {
         background-color: #CC455C;
         color: white; }
 .home-page.css-home .section-tabs {
-  margin-bottom: 100px; }
+  position: relative;
+  margin-bottom: 100px;
+  padding-bottom: 4px;
+  background-color: white; }
+  .home-page.css-home .section-tabs .title-section {
+    position: absolute;
+    z-index: 1;
+    top: 60px; }
+    .home-page.css-home .section-tabs .title-section h2 {
+      color: white; }
   .home-page.css-home .section-tabs .tabs {
     width: 100%; }
     .home-page.css-home .section-tabs .tabs li {
@@ -5921,20 +5931,31 @@ html .ui-button.ui-state-disabled:active {
     box-sizing: border-box;
     background: white; }
     .home-page.css-home .section-tabs .tabgroup .wrapper-tabs-item {
-      margin: 0 -15px; }
+      position: relative;
+      margin: 0 -15px;
+      background: #000000 no-repeat center/cover; }
+      .home-page.css-home .section-tabs .tabgroup .wrapper-tabs-item:before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 40%;
+        background-color: rgba(23, 27, 45, 0.7);
+        content: ""; }
       @media (max-width: 991px) {
         .home-page.css-home .section-tabs .tabgroup .wrapper-tabs-item .col-md-4 {
           margin: 0 30px; } }
     .home-page.css-home .section-tabs .tabgroup h2 {
-      margin-top: 30px;
+      margin-top: 80px;
       margin-bottom: 20px;
-      color: black;
+      color: white;
       font: 300 20px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
     .home-page.css-home .section-tabs .tabgroup .style-text-tab {
       margin-bottom: 20px;
-      color: black;
+      color: white;
       font: 300 15px/26px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
       .home-page.css-home .section-tabs .tabgroup .style-text-tab a {
+        margin-bottom: 80px;
         padding: 15px 20px;
         max-width: 270px;
         width: 100%;
@@ -5947,18 +5968,16 @@ html .ui-button.ui-state-disabled:active {
     .home-page.css-home .section-tabs .tabgroup .img-wrap {
       position: relative;
       box-sizing: border-box;
-      padding: 45px 50px;
       height: 435px;
-      background: #000000 no-repeat center/cover;
       vertical-align: bottom; }
       @media (max-width: 767px) {
         .home-page.css-home .section-tabs .tabgroup .img-wrap {
           padding: 25px; } }
       .home-page.css-home .section-tabs .tabgroup .img-wrap p {
         position: absolute;
-        right: 50px;
+        right: 45px;
         bottom: 45px;
-        left: 50px;
+        left: 0;
         display: inline-block;
         color: white;
         font: 300 24px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
