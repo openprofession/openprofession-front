@@ -53,7 +53,21 @@
 
 // Sign-up modal
 //-----------------------------------------------------------------------------------
-.sign-up
+.mod-modal
+  background: #f5f7ff
+
+.wrapper-modal
+  padding: 60px 0 100px
+  text-align: center
+
+.wrap-win
+  position: relative
+  display: inline-block
+  box-sizing: border-box
+  background: white
+  box-shadow: 0 9px 24px #e6eaf8
+
+.sign-content
   width: 570px
   padding: 52px 103px 58px
   @media (max-width: $screen-xs-max)
@@ -395,8 +409,74 @@
         .pick-schedule-content-frame-selected
           right: auto
           left: 10px
-        
-          
+
+.modal-message
+  display: inline-block
+  padding: 54px 65px 56px 75px
+  text-align: left
+  color: #fff
+  font-weight: 300
+
+  @media (max-width: $screen-xs-max)
+    padding: 25px 20px 20px
+
+  .title
+    font: 24px/30px $open
+
+    & + .main-text
+      margin-top: 14px
+
+  .main-text
+    font: 16px/26px $open
+
+    & + .additional-text
+      margin-top: 32px
+
+  .additional-text,
+  .link-wrap
+    font: 14px/26px $open
+
+  .link-wrap
+    margin-top: 32px
+    a
+      margin-left: 30px
+      font-weight: 700
+      color: #fff
+      text-decoration: none
+
+      @media (max-width: $screen-xs-max)
+        display: block
+        margin-left: 0
+
+      &:hover
+        text-decoration: underline
+
+      &:first-child
+        margin-left: 33px
+
+        @media (max-width: $screen-xs-max)
+          margin-left: 0
+
+    .el-btn
+      box-sizing: border-box
+      height: 50px
+      max-width: 280px
+      padding: 0 43px
+      line-height: 48px
+      background-color: #fff
+      border: none
+      color: $color-pure-light
+
+      &:first-child
+        margin-left: 0
+
+  &.modal-thanksBuying
+    max-width: 706px
+    background-image: linear-gradient(45deg, #4a72f5 0%, #61e7d6 100%)
+
+  &.modal-paymentDeclined
+    max-width: 554px
+    background-image: linear-gradient(45deg, #fb5570 0%, #fc8572 100%)
 
 
 

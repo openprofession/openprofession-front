@@ -6028,9 +6028,12 @@ $('.js-select').on('click', '.placeholder', function () {
     parent.removeClass('is-open').find('.placeholder').text($(this).text());
     parent.find('input').attr('value', $(this).attr('data-value')).trigger('focusout');
 });
+
 $(window).on('click', function (el) {
     if (!el.target.closest('.js-select, .placeholder, .js-select ul>li')) $('.js-select').removeClass('is-open');
+    if (!el.target.closest('.wrap-drop')) $('.filter-toggle').removeClass('show');
 });
+
 $('.js-select li').each(function () {
     if ($(this).hasClass('js-active')) {
 
@@ -6130,6 +6133,7 @@ if (isOnPage($('.js-list-dropdown'))) {
 // js-partner
 //-----------------------------------------------------------------------------------
 if (isOnPage($('.js-partner'))) {
+
     $('.js-partner').owlCarousel({
         loop: true,
         margin: 30,
@@ -6149,6 +6153,28 @@ if (isOnPage($('.js-partner'))) {
     });
 }
 
+
+// js-partner-home
+//-----------------------------------------------------------------------------------
+if (isOnPage($('.js-partner-home'))) {
+    $('.js-partner-home').owlCarousel({
+        loop: true,
+        margin: 30,
+        nav: true,
+        navText: ['<i class="icon-arrow-l"></i>', '<i class="icon-arrow-l"></i>'],
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 6
+            }
+        }
+    });
+}
 
 $('#scroll-wrap').slimScroll({
     height: '470px',
@@ -6173,41 +6199,41 @@ $('.competence').on('click', '.js-toggle-close', function (el) {
 // Modal functions
 //-----------------------------------------------------------------------------------
 $(document).on('confirmation closed', '.sign-up', function () {
-  $('.sign-up-form')
-    .trigger('reset')
-    .validate().resetForm();
-  $('input[name="password"]').attr('type', 'password');
-  $('.js-pass').removeClass('show');
+    $('.sign-up-form')
+        .trigger('reset')
+        .validate().resetForm();
+    $('input[name="password"]').attr('type', 'password');
+    $('.js-pass').removeClass('show');
 });
 
 $(document).on('click', '.js-promo-step', function (el) {
-  el.preventDefault();
+    el.preventDefault();
 
-  $('.promo-step-1').hide();
-  $('.promo-step-2').fadeIn();
+    $('.promo-step-1').hide();
+    $('.promo-step-2').fadeIn();
 });
 
 $(document).on('closed', '.promo-code', function (e) {
-  $('.promo-step-1').show();
-  $('.promo-step-2').hide();
+    $('.promo-step-1').show();
+    $('.promo-step-2').hide();
 });
 
 $(document).on('click', '.js-show', function (el) {
-  el.preventDefault();
+    el.preventDefault();
 });
 
 // Show password
 //-----------------------------------------------------------------------------------
-function showHidePassword(elClass){
-  var element = $('.'+ elClass).next('input[name="password"]');
-  element.replaceWith(element.clone().attr('type',(element.attr('type') == 'password') ? 'text' : 'password'));
+function showHidePassword(elClass) {
+    var element = $('.' + elClass).next('input[name="password"]');
+    element.replaceWith(element.clone().attr('type', (element.attr('type') == 'password') ? 'text' : 'password'));
 }
 
 $(document).on('click', '.js-pass', function (el) {
-  el.preventDefault();
+    el.preventDefault();
 
-  $(this).toggleClass('show');
-  showHidePassword('js-pass');
+    $(this).toggleClass('show');
+    showHidePassword('js-pass');
 });
 
 // Validation init
@@ -6308,3 +6334,47 @@ if (isOnPage($('#graph1'))) {
 
 
 }
+
+$(".js-select-course").click(function () {
+    $(this).toggleClass("active");
+    $(this).closest(".pick-schedule-content-frame").toggleClass("mod-highlight");
+
+});
+
+// filter
+//-----------------------------------------------------------------------------------
+$(document).on('click', '.filter-toggle', function (el) {
+    $(this).toggleClass('show');
+});
+
+$(document).on('click', '.el-search li', function (el) {
+    $(this).toggleClass('active');
+});
+
+$(document).on('click', '.js-search-clear', function (el) {
+    $(this).closest('.el-search').find('li').removeClass('active');
+});
+
+$(document).on('click', '.js-filter-clear', function (el) {
+    $(this).closest('.el-check-group').find('input').removeAttr('checked');
+});
+
+
+// tabs
+//-----------------------------------------------------------------------------------
+
+$('.tabgroup > div').hide();
+$('.tabgroup > div:first-of-type').show();
+$('.tabs a').click(function (e) {
+    e.preventDefault();
+    var $this = $(this),
+        tabgroup = '#' + $this.parents('.tabs').data('tabgroup'),
+        others = $this.closest('li').siblings().children('a'),
+        target = $this.attr('href');
+    others.removeClass('active');
+    $this.addClass('active');
+    $(tabgroup).children('div').hide();
+    $(target).show();
+
+});
+

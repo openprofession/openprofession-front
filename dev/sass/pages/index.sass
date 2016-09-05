@@ -2,6 +2,8 @@
 //-----------------------------------------------------------------------------------
 
 .home-page
+  @media (max-width: 1340px)
+    overflow: hidden
 
   .home-banner
     background: url(../images/bg-banner-1.jpg) no-repeat center/cover
@@ -60,7 +62,7 @@
           text-align: center
 
   [class*="section"]
-    overflow: hidden
+
     .title-section
       margin-bottom: 25px
 
@@ -282,6 +284,7 @@
           margin-right: 0
         .el-btn
           float: none
+          text-decoration: none
           margin-top: 0
         .grey-style
           padding: 12px 20px
@@ -367,9 +370,18 @@
 
   .btn-bottom-group
     font-size: 0
+
+    .el-btn
+      @media (max-width: $screen-xs-max)
+        display: block
+        margin: auto
     
-    .el-btn + .el-btn
-      margin-left: 10px
+      & + .el-btn
+        margin-left: 10px
+
+        @media (max-width: $screen-xs-max)
+          margin-top: 10px
+          margin-left: auto
 
   .filter-content
     margin-bottom: 50px
@@ -389,3 +401,8 @@
   margin-left: 26px
   color: #4a4a4a
   font: 400 13px/43px $open
+
+  @media (max-width: $screen-xs-max)
+    float: none
+    margin-left: 0
+    text-align: center

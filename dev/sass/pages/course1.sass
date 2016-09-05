@@ -1,0 +1,459 @@
+.courses-page .css-shadow.cours-status
+  padding: 20px 26px 0
+
+.courses-status
+  display: flex
+  box-sizing: border-box
+  margin: 0 -30px
+  width: auto
+  border-top: 1px solid #e2e3e9
+  vertical-align: top
+  white-space: nowrap
+  font-size: 0
+  line-height: 0
+  justify-content: space-between
+
+  a
+    display: inline-block
+    box-sizing: border-box
+    height: 57px
+    color: #000
+    text-align: center
+    text-decoration: none
+    white-space: normal
+    font: 400 14px/57px $open
+    flex-grow: 2
+
+    + a
+      border-left: 1px solid #e2e3e9
+
+      &:last-child
+        max-width: 132px
+        flex-grow: 1
+
+    &.active
+      background-color: #e2e3e9
+
+.course-block
+
+  .partner-logo
+    display: inline-block
+    margin-bottom: 10px
+    vertical-align: top
+    text-decoration: none
+
+  .sertificat
+    position: relative
+    top: 13px
+    margin-left: 9px
+
+    img
+      width: 29px
+
+
+
+  .img
+    margin-bottom: 3px
+    width: 117px
+
+.inform-block
+  display: flex
+  justify-content: space-between
+
+.course-desc
+  margin-left: -3px
+
+  .title-name
+    margin-top: -7px
+    width: 405px
+    color: #4a72f5
+    font: 400 16px/24px $open
+
+    @media (max-width: $screen-xs-max)
+
+    a
+      color: black
+      text-decoration: none
+
+.course-process
+  position: relative
+  display: flex
+  padding-right: 53px
+  max-width: 351px
+  margin-bottom: 12px
+
+  div
+    display: inline-block
+
+  .academic-performance
+    position: relative
+    box-sizing: border-box
+    margin-left: 20px
+    //width: 238px
+    padding-right: 35px
+    width: 100%
+    vertical-align: top
+    line-height: 1
+
+    .progress
+      position: relative
+      display: flex
+      box-sizing: border-box
+      padding: 0 2px
+      width: 100%
+      height: 45px
+      justify-content: space-between
+
+    .line
+      position: absolute
+      top: 25px
+      right: 14px
+      left: 10px
+      z-index: 1
+      height: 2px
+      background-color: #eff4f7
+
+    .academic-item
+      position: relative
+      top: 19px
+      z-index: 2
+      float: right
+      overflow: hidden
+      width: 13px
+      height: 13px
+      border-radius: 50%
+      background-color: #eff4f7
+
+      &:after
+        position: absolute
+        top: 3px
+        left: 3px
+        overflow: hidden
+        width: 7px
+        height: 7px
+        border-radius: 50%
+        background-color: #fff
+        content: ''
+
+      &.indic-success,
+      &.indic-fail,
+      &.indic-waiting
+        &:before
+          position: absolute
+          top: 4px
+          left: 4px
+          z-index: 3
+          overflow: hidden
+          width: 5px
+          height: 5px
+          border-radius: 50%
+          content: ''
+
+        &:after
+          top: 2px
+          left: 2px
+          width: 9px
+          height: 9px
+
+        ~ .academic-item:not([class*='indic'])
+          &:after
+            display: none
+
+      &.indic-success
+        &:before
+          background-color: #61e7d6
+
+      &.indic-fail
+        &:before
+          background-color: #fb5570
+
+      &.indic-waiting
+        &:before
+          background-color: #f18a47
+
+  .icon-success
+    position: absolute
+    top: 17px
+    right: 0
+
+  .black-txt
+    position: relative
+    top: 15px
+    color: black
+    font: 400 13px/20px $open
+    white-space: nowrap
+    //min-width: 90px
+
+  .addition-info
+    display: block
+    white-space: nowrap
+
+    &:after
+      display: table
+      clear: both
+      content: ''
+
+  .mark
+    vertical-align: top
+    display: inline-block
+    white-space: normal
+    font: 400 13px/14px $open
+
+  .availability-cert
+    display: inline-block
+    vertical-align: top
+    margin-left: 34px
+    max-width: 100px
+    white-space: normal
+    font: 400 13px/14px $open
+
+.rating
+  display: block
+  margin-bottom: 15px
+  height: 20px
+  color: #9b9b9b
+  font: 400 13px $open
+  line-height: 1
+
+  .stars
+    display: inline-block
+    width: 100px
+    font-size: 0
+
+  input
+    display: none
+
+  input:checked ~ label:before,
+  label:hover:before,
+  label:hover ~ label:before
+    background-image: url('data:image/svg+xml;charset=utf-8, <svg xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" viewBox="0 0 16 14" width="16" height="14"><path fill="#F9BE6B" d="M14.4,5.4l-3.9-0.4c-0.2,0-0.5-0.2-0.6-0.4L8.6,1.4c-0.2-0.5-1-0.5-1.2,0L6,4.7C5.9,4.9,5.7,5.1,5.5,5.1L1.6,5.4C1,5.5,0.8,6.2,1.2,6.6l2.9,2.5c0.2,0.2,0.3,0.4,0.2,0.6l-0.9,3.5c-0.1,0.6,0.5,1,1,0.7l3.2-1.8c0.2-0.1,0.5-0.1,0.7,0l3.2,1.8c0.5,0.3,1.1-0.2,1-0.7l-0.9-3.5c-0.1-0.2,0-0.5,0.2-0.6l2.9-2.5C15.2,6.2,15,5.5,14.4,5.4z"/></svg>')
+    background-repeat: no-repeat
+
+  //input:checked + label:hover:before,
+  input:checked ~ label:hover:before,
+  label:hover ~ input:checked ~ label:before,
+  input:checked ~ label:hover ~ label:before
+    background-image: url('data:image/svg+xml;charset=utf-8, <svg xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" viewBox="0 0 16 14" width="16" height="14"><path fill="#fbd197" d="M14.4,5.4l-3.9-0.4c-0.2,0-0.5-0.2-0.6-0.4L8.6,1.4c-0.2-0.5-1-0.5-1.2,0L6,4.7C5.9,4.9,5.7,5.1,5.5,5.1L1.6,5.4C1,5.5,0.8,6.2,1.2,6.6l2.9,2.5c0.2,0.2,0.3,0.4,0.2,0.6l-0.9,3.5c-0.1,0.6,0.5,1,1,0.7l3.2-1.8c0.2-0.1,0.5-0.1,0.7,0l3.2,1.8c0.5,0.3,1.1-0.2,1-0.7l-0.9-3.5c-0.1-0.2,0-0.5,0.2-0.6l2.9-2.5C15.2,6.2,15,5.5,14.4,5.4z"/></svg>')
+    background-repeat: no-repeat
+
+  label
+    float: right
+    &:before
+      display: inline-block
+      width: 16px
+      height: 15px
+      background-image: url('data:image/svg+xml;charset=utf-8,<svg  xmlns="http://www.w3.org/2000/svg" width="16" height="14"><defs id="SvgjsDefs1009"><clipPath id="SvgjsClipPath1012"><path id="SvgjsPath1011" d="M945.392 669.43L941.5360000000001 669.074C941.293 669.053 941.0830000000001 668.901 940.9830000000001 668.675L939.6020000000001 665.4029999999999C939.3810000000001 664.8629999999999 938.5970000000001 664.8629999999999 938.3760000000001 665.4029999999999L937.0060000000001 668.675C936.917 668.901 936.6960000000001 669.053 936.4530000000001 669.074L932.5970000000001 669.43C932.0230000000001 669.4849999999999 931.7900000000001 670.1859999999999 932.2210000000001 670.564L935.1270000000001 673.058C935.315 673.22 935.392 673.458 935.3370000000001 673.6949999999999L934.464 677.194C934.3320000000001 677.7439999999999 934.9390000000001 678.198 935.4480000000001 677.906L938.6630000000001 676.06C938.8730000000002 675.9409999999999 939.1270000000002 675.9409999999999 939.3370000000001 676.06L942.5520000000001 677.906C943.0600000000002 678.198 943.6680000000001 677.755 943.5350000000001 677.194L942.6740000000001 673.6949999999999C942.618 673.458 942.6960000000001 673.2199999999999 942.8840000000001 673.058L945.7890000000001 670.564C946.2090000000001 670.1859999999999 945.9660000000001 669.485 945.392 669.43Z " fill="#ffffff"></path></clipPath></defs><path id="SvgjsPath1010" d="M945.392 669.43L941.5360000000001 669.074C941.293 669.053 941.0830000000001 668.901 940.9830000000001 668.675L939.6020000000001 665.4029999999999C939.3810000000001 664.8629999999999 938.5970000000001 664.8629999999999 938.3760000000001 665.4029999999999L937.0060000000001 668.675C936.917 668.901 936.6960000000001 669.053 936.4530000000001 669.074L932.5970000000001 669.43C932.0230000000001 669.4849999999999 931.7900000000001 670.1859999999999 932.2210000000001 670.564L935.1270000000001 673.058C935.315 673.22 935.392 673.458 935.3370000000001 673.6949999999999L934.464 677.194C934.3320000000001 677.7439999999999 934.9390000000001 678.198 935.4480000000001 677.906L938.6630000000001 676.06C938.8730000000002 675.9409999999999 939.1270000000002 675.9409999999999 939.3370000000001 676.06L942.5520000000001 677.906C943.0600000000002 678.198 943.6680000000001 677.755 943.5350000000001 677.194L942.6740000000001 673.6949999999999C942.618 673.458 942.6960000000001 673.2199999999999 942.8840000000001 673.058L945.7890000000001 670.564C946.2090000000001 670.1859999999999 945.9660000000001 669.485 945.392 669.43Z " fill-opacity="0" fill="#ffffff" stroke-dasharray="0" stroke-linejoin="miter" stroke-linecap="butt" stroke-opacity="1" stroke="#c3c3c3" stroke-miterlimit="50" stroke-width="2" clip-path="url(&quot;#SvgjsClipPath1012&quot;)" transform="matrix(1,0,0,1,-931,-664)"></path></svg>')
+      background-repeat: no-repeat
+      content: ''
+
+    &:nth-of-type( 2n + 3 )
+      margin-right: 5px
+
+  .half
+    &:before
+      position: absolute
+      z-index: 20
+      overflow: hidden
+      width: 7px
+
+  span
+    position: relative
+    top: -2px
+    margin-right: 7px
+
+.share-info
+  margin-bottom: 15px
+  text-align: right
+  white-space: normal
+  font-size: 0
+  line-height: 1
+
+  @media (max-width: $screen-md-max)
+    text-align: left
+
+  .visibility-block
+
+    button
+      display: inline-block
+      box-sizing: border-box
+      padding: 3px
+      max-width: 100px
+      height: 47px
+      text-align: center
+      font: 400 12px/18px $open
+
+      + button
+        margin-left: 1px
+
+    .btn-arrow
+      position: relative
+      width: 47px
+      height: 47px
+      background-color: #d3d4dc
+
+      &:before,
+      &:after
+        position: absolute
+        top: 22px
+        width: 11px
+        height: 2px
+        background-color: black
+        content: ''
+        transition: all 0.1s ease
+
+      &:before
+        left: 14px
+        transform: rotate(45deg)
+
+      &:after
+        right: 15px
+        transform: rotate(-45deg)
+
+      &.visible
+        &:before
+          transform: rotate(-45deg)
+
+        &:after
+          transform: rotate(45deg)
+
+  .hidden-block
+    right: 15px
+    z-index: 5
+    display: none
+    background-color: #fff
+    text-align: right
+
+    @media (max-width: $screen-md-max)
+      text-align: left
+    a
+      display: inline-block
+      box-sizing: border-box
+      margin-top: 9px
+      width: 155px
+      height: 38px
+      text-align: center
+      text-decoration: none
+      font: 400 12px $open
+      line-height: 38px
+
+  .btn-blue
+    background-color: #5076f5
+    color: #fff
+
+  .btn-white
+    border: 1px solid #e2e3e9
+    color: #000
+
+  .btn-unsubscribe
+    position: relative
+    padding-right: 18px
+    &:after
+      position: absolute
+      top: 4px
+      right: 24px
+      color: #fb5570
+      content: '\d7'
+      font-weight: 300
+      font-size: 30px
+      line-height: 1
+
+.competence-block
+  clear: both
+
+  .title-competence
+    margin-bottom: 9px
+    color: black
+    font: 400 15px $open
+
+.skill-columns
+
+  &.css-shadow
+    padding: 31px 30px
+
+  &.hidden-columns
+    position: relative
+
+    &:after
+      position: absolute
+      right: 34px
+      bottom: 20px
+      width: 27px
+      height: 5px
+      background-image: url('data:image/svg+xml;charset=utf-8, <svg xmlns="http://www.w3.org/2000/svg"  width="27" height="5"><defs></defs><path d="M1473 2213L1473 2208L1478 2208L1478 2213Z " fill="#5076f5" transform="matrix(1,0,0,1,-1473,-2208)"></path><path d="M1484 2213L1484 2208L1489 2208L1489 2213Z " fill="#5076f5" transform="matrix(1,0,0,1,-1473,-2208)"></path><path  d="M1495 2213L1495 2208L1500 2208L1500 2213Z " fill="#5076f5" transform="matrix(1,0,0,1,-1473,-2208)"></path></svg>')
+      content: ''
+
+    .img
+      overflow: hidden
+      height: 85px
+
+  .competence-block
+    .skill
+      margin: 0 0 7px 0
+      width: 525px
+      column-count: 2
+      column-gap: 0
+
+      @media (max-width: $screen-md-max) and (min-width: $screen-sm-max)
+        width: 477px
+
+      @media (max-width: $screen-xs-max)
+        column-count: 1
+        max-width: 100%
+
+      li
+        box-sizing: border-box
+        padding: 10px 0
+        width: 229px
+        vertical-align: top
+
+        &:hover
+          padding: 10px 0
+          background-color: transparent
+
+      .el-progress-wrap,
+      .progress
+        width: 81px
+
+  .styled-cb label
+    color: black
+    font: 400 13px $open
+
+// page course 10.1 //group courses
+
+.group-courses
+  position: relative
+  margin-bottom: 20px
+
+  &:before
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    width: 4px
+    background-color: #5076f5
+    content: ''
+    z-index: 5
+
+  .css-shadow
+    margin-bottom: 0
+    border-bottom: 1px solid #eff4f7
+
+.specializ-block
+  .title-name
+    width: 467px
+
+  .partner-logo
+    max-width: 47%
+    height: 30px
+    line-height: 30px
+
+    img
+      vertical-align: middle
+
+  .competence-block
+    padding-top: 10px
+    border-top: 1px solid #eff4f7
+
+  .course-process
+    padding-right: 6px
+    max-width: 100%

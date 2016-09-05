@@ -199,20 +199,41 @@
   &.mod-horizontal
     @extend %clear-fix
     max-width: 100%
+    font-size: 0
+
+    @media (max-width: $screen-xs-max)
+      text-align: center
 
     .el-btn
-      float: left
+      display: inline-block
       width: 169px
+      margin: 0
+
+      @media (max-width: $screen-xs-max)
+        display: block
+        margin: auto
 
       & + .el-btn
         margin-left: 0
-        border-left: none
 
-      &:nth-child(2)
+        @media (min-width: $screen-sm)
+          border-left: none
+
+        @media (max-width: $screen-xs-max)
+          border-top: none
+          margin: auto
+
+      &:first-child
         border-radius: 3px 0 0 3px
+
+        @media (max-width: $screen-xs-max)
+          border-radius: 3px 3px 0 0
 
       &:last-child
         border-radius: 0 3px 3px 0
+
+        @media (max-width: $screen-xs-max)
+          border-radius: 0 0 3px 3px
 
   &.mod-vertical
     .el-btn
@@ -220,7 +241,7 @@
         margin-left: 0
         border-top: none
 
-      &:first-child
+      &:nth-child(2)
         border-radius: 3px 3px 0 0px
 
       &:last-child
@@ -561,6 +582,11 @@
   font: 400 13px $open
   cursor: pointer
 
+  @media (max-width: $screen-xs-max)
+    //display: block
+    //float: none
+    margin-bottom: 10px
+
   &:hover
     button
       color: $color-pure
@@ -845,3 +871,18 @@ b.error
     content: '\e80a'
   &.show:before
     content: '\e810'
+
+//new el style
+//-----------------------------------------------------------------------------------------
+section
+  &.css-shadow
+    padding: 20px 30px
+    //border-radius: 3px
+    background-color: white
+    box-shadow: 0 9px 24px #e6eaf8
+    
+.el-grey-txt
+  color: #9b9b9b
+.el-black-txt
+  color: #000
+
