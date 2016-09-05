@@ -1,2 +1,94 @@
 // 404 page
 //-----------------------------------------------------------------------------------
+
+.not-found-page
+  .catalog-list ul
+    margin-top: 0
+
+  .page-content
+    padding: 71px 0
+
+    @media (max-width: $screen-xs-max)
+      padding: 45px 0
+
+  .form-search
+    padding-right: 95px
+    margin-bottom: 20px
+
+    .el-btn
+      width: 97px
+
+  .title-section
+    @media (max-width: $screen-sm-max)
+      text-align: center
+
+
+
+.block-404
+  padding-top: 51px
+  margin-bottom: 47px
+
+  &:after
+    content: ''
+    display: table
+    clear: both
+
+  .img
+    color: #dfe3f6
+    font: 700 190px/190px $open
+    float: left
+    margin-right: 24px
+    
+    @media (max-width: $screen-sm-max)
+      float: none
+      text-align: center
+
+  .description
+    padding-top: 21px
+    overflow: hidden
+
+  .note
+    font: 400 18px $open
+    color: black
+    margin-bottom: 21px
+
+  .style-text-5
+    font: 400 14px/18px $open
+    color: black
+
+    a
+      color: #9b9b9b
+
+
+.form-search
+  position: relative
+  padding-right: 125px
+  box-sizing: border-box
+  @media (max-width: $screen-sm-max)
+    margin: 20px auto 50px
+
+  input
+    box-sizing: border-box
+    padding: 11px 20px
+    padding-right: 50px
+    width: 100%
+    height: 40px
+    border: none
+    border-bottom: 1px solid white
+    border-radius: 3px
+    background: white
+    box-shadow: none
+    color: black
+    font: 400 14px/36px $open
+
+  .el-btn
+    position: absolute
+    top: 0
+    right: 0
+    width: 130px
+    border: none
+    border-radius: 0 3px 3px 0
+
+    &:hover
+      background-color: #3653b3
+      color: white
