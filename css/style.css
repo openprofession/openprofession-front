@@ -3096,6 +3096,34 @@ section.css-shadow {
   padding: 54px 55px 58px;
   width: 848px;
   text-align: left; }
+  .pick-schedule.wrap-win {
+    display: block;
+    margin: 0 auto; }
+  .pick-schedule.smoll {
+    max-width: 535px; }
+    .pick-schedule.smoll .pick-schedule-content .pick-schedule-content-frame {
+      padding: 30px; }
+    .pick-schedule.smoll .mod-marg {
+      margin-bottom: 20px; }
+    .pick-schedule.smoll .marg {
+      margin-bottom: 20px; }
+    .pick-schedule.smoll .el-btn.pur-style.gross {
+      width: 211px;
+      height: 60px;
+      padding: 18px 20px;
+      font: 700 14px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+      .pick-schedule.smoll .el-btn.pur-style.gross.mod-w {
+        width: 100%; }
+    .pick-schedule.smoll .strong {
+      display: block;
+      font: 400 18px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+  .pick-schedule .el-btn.pur-style.gross {
+    margin: 50px auto 0;
+    display: block;
+    width: 267px;
+    height: 80px;
+    padding: 24px 20px;
+    font: 700 18px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
   .pick-schedule .pick-schedule-group {
     margin: 20px 0; }
   .pick-schedule .pick-schedule-content {
