@@ -212,19 +212,19 @@
       margin: 0 -30px
       li
         @extend %clear-fix
-        padding: 20px 30px
+        padding: 15px 30px
         transition: all .12s ease
         &:hover
-          padding: 24px 30px
-          background-color: #e2e3e9
+          background-color: #4a72f5
           cursor: pointer
           .skill-nav
             opacity: 1
             visibility: visible
-            margin: -24px -30px -24px 20px
-            height: 66px
-            li
-              padding: 24px
+
+          .name
+            color: white
+          .el-progress-wrap .prosent
+            color: white
 
       .name
         display: block
@@ -242,24 +242,31 @@
       display: inline-block
       float: right
       overflow: hidden
-      margin: -20px -30px -20px 20px
+      margin: -15px -30px -15px 20px
       width: 280px
-      height: 58px
+      height: 48px
       transition: all .12s ease
+
       li
         float: left
-        padding: 20px 24px
+        padding: 15px 23px
         border-left: 1px solid white
         transition: all .12s ease
         &:first-child
           border-left: none
-      a i:before
-        margin: 0
-        color: #9b9b9b
+
+      a
         text-decoration: none
-        font-size: 22px
+        color: white
+        font: 400 13px $open
+        i:before
+          margin: 0
+          color: white
+          text-decoration: none
+          font-size: 22px
+
       span
-        color: black
+        color: white
         font: 400 13px $open
 
     .right-competence
@@ -270,23 +277,31 @@
       right: -30px
       bottom: 31px
       width: 290px
-      background-color: #e2e3e9
+      background-color: white
       .title
         @extend %clear-fix
         margin-bottom: 10px
         padding-left: 30px
         color: black
-        font: 400 13px/67px $open
+        font: 400 13px/40px $open
         span
           color: #9b9b9b
 
         button
           float: right
           width: 67px
-          height: 67px
-          background-color: #c8cccf
+          height: 40px
+          background-color: #4a72f5
           text-align: center
-          line-height: 67px
+          line-height: 40px
+
+          i:before
+            margin: 0
+            color: white
+            text-decoration: none
+            font-size: 22px
+            vertical-align: sub
+
           img
             vertical-align: middle
       .list-competence
@@ -314,8 +329,7 @@
             opacity: 0
 
           &:hover
-            background-color: #c8cccf
-            color: $color-blue
+            background-color: #eff4f7
             cursor: pointer
             &:after
               visibility: visible
