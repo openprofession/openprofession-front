@@ -6132,6 +6132,27 @@ if (isOnPage($('.js-spikier'))) {
     callback();
 }
 
+var $lecturerSlider = $('.js-lecturer-slider');
+if (isOnPage($lecturerSlider)) {
+  $lecturerSlider.owlCarousel({
+    loop: true,
+    margin: 30,
+    nav: true,
+    navText: ['<i class="icon-arrow-l"></i>', '<i class="icon-arrow-l"></i>'],
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 1
+      },
+      1000: {
+        items: 2
+      }
+    }
+  });
+}
+
 // list-dropdown
 //-----------------------------------------------------------------------------------
 $(document).on('click', '.show-all', function (el) {

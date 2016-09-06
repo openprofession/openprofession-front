@@ -3,13 +3,15 @@
   .css-profession
     min-height: 590px
     h2
-      margin-bottom: 22px
-      margin-top: 388px
+      margin-bottom: 20px
+      margin-top: 342px
       box-sizing: border-box
       padding-right: 320px
       line-height: 46px
       @media (max-width: $screen-md-max)
         padding-right: 0
+      b
+        font-weight: 400
     .section-banner-split2
       margin-bottom: 65px
       .text-style-3
@@ -24,9 +26,17 @@
         display: inline-block
         vertical-align: middle
         li
-          margin-left: 18px
+          margin-left: 4px
+          a
+            width: 27px
+            height: 27px
+            line-height: 27px
+            font-size: 14px
+            background-color: rgba(255,255,255,.3)
+            border-radius: 3px
       .section-banner-share
         p
+          margin-right: 18px
           font-size: 14px
       @media (max-width: $screen-xs-max)
         margin-bottom: 20px
@@ -39,16 +49,197 @@
           vertical-align: middle
         .social
           vertical-align: middle
+    .top-beck
+      display: inline-block
+      margin-top: 28px
+      font-size: 18px
+      text-decoration: none
+      color: #fff
 
   .page-content
     padding: 60px 0
+    .static-page-toptext,
+    .section-title
+      font: 400 24px/36px $open
     .static-page-toptext
-      font: 400 22px/1 "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif
-      line-height: 30px
+      margin-bottom: 36px
       @media (max-width: $screen-xs-max)
         text-align: center
-        
+
     .section-8
       @extend .el-labelcircle
       margin-top: 64px
-      margin-bottom: 62px
+      margin-bottom: 36px
+
+    .singlepage-content-txt p
+      margin-bottom: 32px
+
+  .lecturer-wrap
+    margin-top: 24px
+    padding: 57px 0 72px
+    overflow: hidden
+    background-color: #fff
+
+    .lecturer-item + .lecturer-item
+      margin-top: 64px
+
+    .section-title
+      margin-bottom: 40px
+
+    .info
+      margin-left: 89px
+      padding-top: 17px
+
+    .avatar
+      float: left
+      width: 80px
+      height: 80px
+      overflow: hidden
+      border-radius: 50%
+
+    .name
+      font: 400 14px/1 $open
+      color: #000
+
+    .position,
+    .resume-link
+      font: 400 13px/16px $open
+
+    .position
+      margin: 9px 0 11px
+      color: $color-grey
+
+    .resume-link
+      float: left
+      margin-right: 9px
+      color: $color-blue
+      line-height: 22px
+      text-decoration: none
+
+    .lecturer-item .social li
+      float: left
+
+      a
+        display: inline-block
+        width: 22px
+        height: 22px
+        line-height: 22px
+        text-align: center
+        font-size: 12px
+
+  .main-text-wrap
+    padding-top: 65px
+
+    p
+      font: 300 18px/28px $open
+      color: #313337
+
+      & + p
+        margin-top: 37px
+
+      & + .paragraph-title
+        margin-top: 62px
+
+    .section-title + p
+      margin-top: 10px
+
+    .paragraph-title
+      font-size: 22px
+      line-height: 1
+
+      & + p
+        margin-top: 15px
+
+      &.mod-small
+        font-size: 20px
+
+    img
+      margin: 36px 0 64px
+
+    .special-block
+      box-sizing: border-box
+      margin: 65px 0
+      padding: 22px 12px 26px 30px
+      background-color: #fff
+
+      .title
+        font-weight: 400
+        color: #000
+
+        & + p
+          margin-top: 14px
+
+      &.mod-large
+        position: relative
+        max-width: 733px
+
+        &:before
+          position: absolute
+          top: 0
+          bottom: 0
+          left: 0
+          width: 6px
+          background-color: #e4e7f4
+          content: ''
+
+        .author
+          text-align: right
+
+      &.mod-middle
+        max-width: 635px
+
+        .title + p
+          margin-top: 9px
+
+      &.mod-small
+        max-width: 733px
+        padding: 0
+        background-color: transparent
+
+  .singlepage-content-bottom
+    margin: 96px 0 110px
+
+    .singlepage-content-bottom-right
+      p
+        margin-right: 16px
+        font-size: 15px
+
+  .singlepage-content-bottom .singlepage-content-bottom-right .social li,
+  .lecturer-wrap .social li
+    margin-left: 4px
+
+    a
+      width: 27px
+      height: 27px
+      border-radius: 3px
+      color: #fff
+      line-height: 27px
+      font-size: 14px
+
+      &:hover
+        background-color: #fff
+
+      &.facebook
+        background-color: #4867aa
+        &:hover
+          background-color: transparent
+          color: #4867aa
+
+      &.vk
+        background-color: #36538e
+        &:hover
+          background-color: transparent
+          color: #36538e
+
+      &.tw
+        background-color: #4a90e2
+        &:hover
+          background-color: transparent
+          color: #4a90e2
+
+      &.gplus
+        background-color: #fb5570
+        &:hover
+          background-color: transparent
+          color: #fb5570
+

@@ -54,11 +54,11 @@
 .icon-cancel:before { content: '\e806'; } /* '' */
 .icon-rectangle:before { content: '\e807'; } /* '' */
 .icon-search-btn:before { content: '\e808'; } /* '' */
-.icon-tw:before { content: '\e809'; } /* '' */
+.icon-tw:before { margin-left: 0; content: '\e809'; } /* '' */
 .icon-glas-icon:before { content: '\e80a'; } /* '' */
 .icon-ok-1:before { content: '\e80b'; } /* '' */
 .icon-star:before { content: '\e80c'; } /* '' */
-.icon-vk:before { content: '\e80d'; } /* '' */
+.icon-vk:before { margin-left: 0; content: '\e80d'; } /* '' */
 .icon-star-empty:before { content: '\e80e'; } /* '' */
 .icon-star-half:before { content: '\e80f'; } /* '' */
 .icon-eye-o:before { content: '\e810'; } /* '' */
