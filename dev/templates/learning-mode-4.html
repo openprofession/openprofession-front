@@ -14,43 +14,44 @@
             <div class="wrapper-modal">
 
                 <div class="wrap-win pick-schedule smoll" >
-
-                    <div class="modal-title">
-                        Выберите режим обучения
-                    </div>
-
-                    <div class="pick-schedule-content">
-                        <!-- frames -->
-                        <div class="pick-schedule-content-frame mod-marg">
-                            <div class="pick-schedule-content-frame-title">
-                                Без оплаты и сертификации - 0 рублей
-                            </div>
-                            <p>
-                                Смотрите лекции, общайтесь на форуме и выполняйте
-                                задания без ограничений.
-                            </p>
+                    <form action="" method="">
+                        <div class="modal-title">
+                            Выберите вариант оплаты
                         </div>
 
-                        <div class="pick-schedule-content-frame mod-highlight ">
-                            <div class="pick-schedule-content-frame-title">
-                                Получить сертификат - 6 500 рублей
-                            </div>
-                            <p>
-                                Пройдите авторизацию и получайте обратную связь,
-                                проверку заданий и подтверждение ваших навыков!
-                            </p>
+                        <div class="pick-schedule-content">
+                            <!-- frames -->
+                            <label class="toggle-variant-wrap" for="radio_without_payment">
+                                <input type="radio" id="radio_without_payment" name="learning_mode" value="without_payment" checked>
+                                <div class="toggle-variant-item pick-schedule-content-frame mod-marg">
+                                    <div class="pick-schedule-content-frame-title">
+                                        Предоплата - 18 500 рублей
+                                    </div>
+                                    <p>
+                                        Смотрите лекции, общайтесь на форуме и выполняйте
+                                        задания без ограничений.
+                                    </p>
+                                </div>
+                            </label>
+
+                            <label class="toggle-variant-wrap" for="radio_with_payment">
+                                <input class="js-second-name" type="radio" id="radio_with_payment" name="learning_mode" value="with_payment">
+                                <div class="toggle-variant-item pick-schedule-content-frame">
+                                    <div class="pick-schedule-content-frame-title">
+                                        Оплата первого курса в наборе - 6 500 рублей
+                                    </div>
+                                    <p>
+                                        Пройдите авторизацию и получайте обратную связь,
+                                        проверку заданий и подтверждение ваших навыков!
+                                    </p>
+                                </div>
+                            </label>
+                            <!-- end frames -->
                         </div>
-                        <!-- end frames -->
 
-                    </div>
-
-                    <a href="#" class="el-btn pur-style gross mod-w">
-                        Перейти к материалам в Личный кабинет
-                    </a>
-
+                        <button class="el-btn pur-style gross" type="submit">Оплатить</button>
+                    </form>
                 </div>
-
-
             </div>
         </div>
     </div>

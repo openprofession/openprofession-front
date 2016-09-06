@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/style.css?timestamp=1473147595737"/>
+  <link rel="stylesheet" href="css/style.min.css"/>
   <script src="js/ie-detector.js"></script>
   <script src="js/modernizr.js"></script>
   <!--[if lte IE 9]><meta http-equiv="X-UA-Compatible" content="IE=edge"/><![endif]-->
@@ -72,106 +72,103 @@
             <div class="wrapper-modal">
 
 
-                <div class="wrap-win pick-schedule" >
-
-                    <div class="modal-title">
-                        Выберите режим обучения и дополнительные возможности
-                    </div>
-
-                    <div class="pick-schedule-content">
-                        <!-- frames -->
-                        <div class="pick-schedule-content-frame">
-                            <div class="pick-schedule-content-frame-title">
-                                Бесплатный просмотр
-                            </div>
-                            <p>
-                                Смотрите лекции, общайтесь на форуме и выполняйте задания без ограничений.
-                            </p>
+                <label class="wrap-win pick-schedule" >
+                    <form action="" method="">
+                        <div class="modal-title">
+                            Выберите режим обучения и дополнительные возможности
                         </div>
 
-
-
-                        <div class="clear-fix pick-schedule-group">
-
-                            <div class="pick-schedule-content-frame mod-highlight">
-                                <div class="pick-schedule-content-frame-title">
-                                    Получить сертификат о прохождени - 8 300 рублей
+                        <div class="pick-schedule-content">
+                            <!-- frames -->
+                            <label for="check_mode_free" class="toggle-variant-wrap">
+                                <input type="radio" class="js-other-btn-name" id="check_mode_free" name="check_mode" value="free">
+                                <div class="pick-schedule-content-frame toggle-variant-item">
+                                    <div class="pick-schedule-content-frame-title">
+                                        Бесплатный просмотр
+                                    </div>
+                                    <p>
+                                        Смотрите лекции, общайтесь на форуме и выполняйте задания без ограничений.
+                                    </p>
                                 </div>
-                                <p>
-                                    Пройдите авторизацию и получайте обратную связь, проверку<br>
-                                    заданий и подтверждение ваших навыков!
-                                </p>
-                                <div class="pick-schedule-content-frame-selected js-select-course active">
-              <span>
-                Выбрано
-              </span>
-                                    <span class="ico ico-g-gal"></span>
-                                </div>
+                                <span class="select-check">Выбрано<i class="ico ico-g-gal"></i></span>
+                            </label>
+
+
+
+                            <div class="clear-fix pick-schedule-group">
+
+                                <label for="check_mode_pay" class="toggle-variant-wrap">
+                                    <input type="radio" id="check_mode_pay" name="check_mode" value="pay" checked>
+                                    <div class="pick-schedule-content-frame toggle-variant-item">
+                                        <div class="pick-schedule-content-frame-title">
+                                            Получить сертификат о прохождени - 8 300 рублей
+                                        </div>
+                                        <p>
+                                            Пройдите авторизацию и получайте обратную связь, проверку<br>
+                                            заданий и подтверждение ваших навыков!
+                                        </p>
+                                    </div>
+                                    <span class="select-check">Выбрано<i class="ico ico-g-gal"></i></span>
+                                </label>
+
+                                <label for="check_webinar" class="toggle-variant-wrap mod-half">
+                                    <input type="checkbox" id="check_webinar" name="check_webinar" value="check_webinar">
+                                    <div class="pick-schedule-content-frame mod-large toggle-variant-item" >
+                                        <div class="pick-schedule-content-frame-title">
+                                            Участие в вебинарах
+                                        </div>
+                                        <p>
+                                            Ответы на ваши вопросы и личное<br>
+                                            общение с преподавателем!
+                                        </p>
+                                        <div class="pick-schedule-content-frame-price">
+                                            1 200 рублей
+                                        </div>
+                                    </div>
+                                  <span class="select-check">Выбрано<i class="ico ico-g-gal"></i></span>
+                                </label>
+
+                                <label for="check_meeting" class="toggle-variant-wrap mod-half">
+                                    <input type="checkbox" id="check_meeting" name="check_meeting" value="check_meeting">
+                                    <div class="pick-schedule-content-frame toggle-variant-item">
+                                        <div class="pick-schedule-content-frame-title">
+                                            Личные встречи - 1 200 рублей
+                                        </div>
+                                        <p>
+                                            Ответы на ваши вопросы и личное общение с преподавателем!
+
+                                        </p>
+                                    </div>
+                                  <span class="select-check">Выбрано<i class="ico ico-g-gal"></i></span>
+                                </label>
+
+                                <label for="check_tutor" class="toggle-variant-wrap mod-half">
+                                    <input type="checkbox" id="check_tutor" name="check_tutor" value="check_tutor">
+                                    <div class="pick-schedule-content-frame toggle-variant-item">
+                                        <div class="pick-schedule-content-frame-title">
+                                            Личный тьютор - 1 200 рублей
+                                        </div>
+                                        <p>
+                                            Поможет понять все трудные моменты, даст пояснения и обратную связь
+                                        </p>
+                                    </div>
+                                  <span class="select-check">Выбрано<i class="ico ico-g-gal"></i></span>
+                                </label>
+
                             </div>
 
-                            <div class="pick-schedule-content-frame mod-highlight mod-half" >
-                                <div class="pick-schedule-content-frame-title">
-                                    Участие в вебинарах
-                                </div>
-                                <p>
-                                    Ответы на ваши вопросы и личное<br>
-                                    общение с преподавателем!
-                                </p>
-                                <div class="pick-schedule-content-frame-price">
-                                    1 200 рублей
-                                </div>
-                                <div class="pick-schedule-content-frame-selected js-select-course active">
-              <span>
-                Выбрано
-              </span>
-                                    <span class="ico ico-g-gal"></span>
-                                </div>
-                            </div>
 
-                            <div class="pick-schedule-content-frame mod-highlight mod-half">
-                                <div class="pick-schedule-content-frame-title">
-                                    Личные встречи - 1 200 рублей
-                                </div>
-                                <p>
-                                    Ответы на ваши вопросы и личное общение с преподавателем!
 
-                                </p>
-                                <div class="pick-schedule-content-frame-selected js-select-course active">
-              <span>
-                Выбрано
-              </span>
-                                    <span class="ico ico-g-gal"></span>
-                                </div>
-                            </div>
+                            <!-- end frames -->
 
-                            <div class="pick-schedule-content-frame mod-half">
-                                <div class="pick-schedule-content-frame-title">
-                                    Личный тьютор - 1 200 рублей
-                                </div>
-                                <p>
-                                    Поможет понять все трудные моменты, даст пояснения и обратную связь
-                                </p>
-                                <div class="pick-schedule-content-frame-selected js-select-course">
-              <span>
-                Выбрано
-              </span>
-                                    <span class="ico ico-g-gal"></span>
-                                </div>
-                            </div>
 
                         </div>
 
-
-
-                        <!-- end frames -->
-
-
-                    </div>
-
-                    <a href="#" class="el-btn pur-style gross">
-                        Записаться
-                    </a>
-
+                        <button class="el-btn pur-style gross toggle-name" type="submit">
+                            <span>Оплатить</span>
+                            <span>Записаться</span>
+                        </button>
+                    </form>
                 </div>
 
 
@@ -607,8 +604,8 @@
 
 <!-- scripts -->
 <script src="js/libs.js"></script>
-<script src="js/core.js"></script>
-<script src="js/common.js?timestamp=1473147595737"></script>
-<script src="//localhost:35729/livereload.js"></script>
+
+<script src="js/common.js"></script>
+
 </body>
 </html>

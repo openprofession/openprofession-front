@@ -976,7 +976,7 @@ input[type='image'] {
   content: "";
   vertical-align: middle; }
 
-.pick-schedule .pick-schedule-content .pick-schedule-content-frame, .pick-schedule .pick-schedule-content .pick-schedule-content-frame .pick-schedule-content-frame-selected .ico {
+.pick-schedule .pick-schedule-content .pick-schedule-content-frame {
   transition: all 0.5s; }
 
 html {
@@ -2851,11 +2851,13 @@ section.css-shadow {
     border-radius: 3px; }
 
 .modal-title {
-  font: 300 24px/1.2 "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font: 300 24px/32px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
   color: black; }
   @media (max-width: 479px) {
     .modal-title {
       font-size: 24px; } }
+  .modal-title b {
+    font-weight: 400; }
 
 .mod-modal {
   background: #f5f7ff; }
@@ -3125,9 +3127,12 @@ section.css-shadow {
           max-width: 100% !important;
           padding: 11px 20px !important; } }
 
+.js-toggle-variant {
+  cursor: pointer; }
+
 .pick-schedule {
-  padding: 54px 55px 58px;
-  width: 848px;
+  padding: 53px 54px 58px;
+  width: 838px;
   text-align: left; }
   .pick-schedule.wrap-win {
     display: block;
@@ -3135,11 +3140,11 @@ section.css-shadow {
   .pick-schedule.smoll {
     max-width: 535px; }
     .pick-schedule.smoll .pick-schedule-content .pick-schedule-content-frame {
-      padding: 30px; }
+      padding: 28px 30px 22px; }
     .pick-schedule.smoll .mod-marg {
-      margin-bottom: 20px; }
+      margin-bottom: 19px; }
     .pick-schedule.smoll .marg {
-      margin-bottom: 20px; }
+      margin-bottom: 12px; }
     .pick-schedule.smoll .el-btn.pur-style.gross {
       width: 211px;
       height: 60px;
@@ -3151,7 +3156,7 @@ section.css-shadow {
       display: block;
       font: 400 18px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
   .pick-schedule .el-btn.pur-style.gross {
-    margin: 50px auto 0;
+    margin: 24px auto 0;
     display: block;
     width: 267px;
     height: 80px;
@@ -3160,7 +3165,7 @@ section.css-shadow {
   .pick-schedule .pick-schedule-group {
     margin: 20px 0; }
   .pick-schedule .pick-schedule-content {
-    margin: 24px 0 30px 0; }
+    margin: 23px 0 24px 0; }
     .pick-schedule .pick-schedule-content .pick-schedule-content-bottom label {
       font: 400 13px/1 "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
       .pick-schedule .pick-schedule-content .pick-schedule-content-bottom label a {
@@ -3170,42 +3175,25 @@ section.css-shadow {
       box-sizing: border-box;
       border: 1px solid #edf1fe;
       position: relative;
-      padding: 30px 30px 48px 30px; }
-      .pick-schedule .pick-schedule-content .pick-schedule-content-frame .pick-schedule-content-frame-selected {
-        cursor: pointer;
-        position: absolute;
-        right: 30px;
-        bottom: 14px; }
-        .pick-schedule .pick-schedule-content .pick-schedule-content-frame .pick-schedule-content-frame-selected span {
-          display: inline-block;
-          vertical-align: middle;
-          font: 600 13px/20px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
-          .pick-schedule .pick-schedule-content .pick-schedule-content-frame .pick-schedule-content-frame-selected span:first-child {
-            margin-right: 5px; }
-        .pick-schedule .pick-schedule-content .pick-schedule-content-frame .pick-schedule-content-frame-selected .ico {
-          opacity: 0; }
-        .pick-schedule .pick-schedule-content .pick-schedule-content-frame .pick-schedule-content-frame-selected.active .ico {
-          opacity: 1; }
+      padding: 26px 30px 24px 30px; }
       .pick-schedule .pick-schedule-content .pick-schedule-content-frame .pick-schedule-content-frame-price {
         position: absolute;
         left: 30px;
-        bottom: 14px;
-        font: 600 16px/20px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+        bottom: 27px;
+        font: 400 16px/20px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
       .pick-schedule .pick-schedule-content .pick-schedule-content-frame .pick-schedule-content-frame-title {
         color: #000;
-        margin-bottom: 12px;
-        font: 700 16px/20px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+        margin-bottom: 8px;
+        font: 400 16px/20px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
       .pick-schedule .pick-schedule-content .pick-schedule-content-frame p {
         color: #9b9b9b;
         font: 400 13px/20px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
       .pick-schedule .pick-schedule-content .pick-schedule-content-frame.mod-highlight {
         background-color: #fafbfc;
-        border: 1px solid #4a72f5;
-        margin-bottom: 0;
-        padding-bottom: 48px; }
-      .pick-schedule .pick-schedule-content .pick-schedule-content-frame.mod-half {
-        width: 50%;
-        float: left; }
+        border: 1px solid #4a72f5; }
+      .pick-schedule .pick-schedule-content .pick-schedule-content-frame.mod-large {
+        min-height: 198px;
+        padding-top: 22px; }
   @media (max-width: 860px) {
     .pick-schedule {
       width: 300px;
@@ -3281,6 +3269,46 @@ section.css-shadow {
   .modal-message.modal-paymentDeclined {
     max-width: 554px;
     background-image: linear-gradient(45deg, #fb5570 0%, #fc8572 100%); }
+
+.toggle-variant-wrap {
+  position: relative;
+  display: block;
+  cursor: pointer; }
+  .toggle-variant-wrap.mod-half {
+    float: left;
+    width: 50%; }
+    .toggle-variant-wrap.mod-half .pick-schedule-content-frame {
+      padding: 14px 80px 15px 30px; }
+    .toggle-variant-wrap.mod-half .select-check {
+      bottom: 16px; }
+    .toggle-variant-wrap.mod-half .mod-large ~ .select-check {
+      bottom: 26px; }
+  .toggle-variant-wrap input[type="radio"],
+  .toggle-variant-wrap input[type="checkbox"] {
+    position: absolute;
+    visibility: hidden; }
+    .toggle-variant-wrap input[type="radio"]:checked ~ .toggle-variant-item,
+    .toggle-variant-wrap input[type="checkbox"]:checked ~ .toggle-variant-item {
+      background-color: #fafbfc;
+      border: 1px solid #4a72f5; }
+    .toggle-variant-wrap input[type="radio"]:checked ~ .select-check,
+    .toggle-variant-wrap input[type="checkbox"]:checked ~ .select-check {
+      visibility: visible; }
+  .toggle-variant-wrap .select-check {
+    position: absolute;
+    right: 30px;
+    bottom: 26px;
+    visibility: hidden;
+    font: 600 13px/20px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+    .toggle-variant-wrap .select-check .ico {
+      margin-left: 11px; }
+
+.toggle-name span:last-child {
+  display: none; }
+.toggle-name.mod-second-name span:first-child {
+  display: none; }
+.toggle-name.mod-second-name span:last-child {
+  display: inline; }
 
 .header {
   padding: 20px 0;

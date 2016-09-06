@@ -403,12 +403,6 @@ if (isOnPage($('#graph1'))) {
 
 }
 
-$(".js-select-course").click(function () {
-    $(this).toggleClass("active");
-    $(this).closest(".pick-schedule-content-frame").toggleClass("mod-highlight");
-
-});
-
 // filter
 //-----------------------------------------------------------------------------------
 $(document).on('click', '.filter-toggle', function (el) {
@@ -464,3 +458,20 @@ $( "#datepicker" ).datepicker({
 });
 
 
+var $btnSubmit = $('button[type=submit]');
+$(document).on('click', '.toggle-variant-wrap input[type=radio]', function () {
+  if ($(this).hasClass('js-other-btn-name')) {
+    if (!$btnSubmit.hasClass('mod-second-name')) {
+        $btnSubmit.addClass('mod-second-name mod-w');
+    }
+    if (isOnPage('.pick-schedule-group')) {
+        $('input[type=checkbox]').removeAttr('checked');
+    }
+  } else {
+      $btnSubmit.removeClass('mod-second-name mod-w');
+  }
+});
+
+$(document).on('click', '.pick-schedule-group input[type=checkbox]', function () {
+    $('input[type=radio]:not(.js-other-btn-name)').click();
+});

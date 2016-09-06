@@ -46,10 +46,13 @@
   //font: 300 20px/25px $open
 
 .modal-title
-  font: 300 24px/1.2 $open
+  font: 300 24px/32px $open
   color: black
   @media (max-width: 479px)
     font-size: 24px
+
+  b
+    font-weight: 400
 
 // Sign-up modal
 //-----------------------------------------------------------------------------------
@@ -330,9 +333,12 @@
 
 // pick-schedule modal
 //-----------------------------------------------------------------------------------   
+.js-toggle-variant
+  cursor: pointer
+
 .pick-schedule
-  padding: 54px 55px 58px
-  width: 848px
+  padding: 53px 54px 58px
+  width: 838px
   text-align: left
   &.wrap-win
     display: block
@@ -342,13 +348,13 @@
     max-width: 535px
 
     .pick-schedule-content .pick-schedule-content-frame
-      padding: 30px
+      padding: 28px 30px 22px
 
     .mod-marg
-      margin-bottom: 20px
+      margin-bottom: 19px
 
     .marg
-      margin-bottom: 20px
+      margin-bottom: 12px
 
     .el-btn.pur-style.gross
       width: 211px
@@ -363,7 +369,7 @@
       font: 400 18px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif
 
   .el-btn.pur-style.gross
-    margin: 50px auto 0
+    margin: 24px auto 0
     display: block
     width: 267px
     height: 80px
@@ -373,7 +379,7 @@
   .pick-schedule-group
     margin: 20px 0
   .pick-schedule-content
-    margin: 24px 0 30px 0
+    margin: 23px 0 24px 0
     .pick-schedule-content-bottom
       label
         font: 400 13px/1 "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif
@@ -384,47 +390,28 @@
       box-sizing: border-box
       border: 1px solid #edf1fe
       position: relative
-      padding: 30px 30px 48px 30px
+      padding: 26px 30px 24px 30px
       @extend %transition
-      .pick-schedule-content-frame-selected
-        cursor: pointer
-        position: absolute
-        right: 30px
-        bottom: 14px
-        span
-          display: inline-block
-          vertical-align: middle
-          font: 600 13px/20px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif
-          &:first-child
-            margin-right: 5px
-        .ico
-          opacity: 0
-          @extend %transition
-        &.active
-          .ico
-            opacity: 1
       .pick-schedule-content-frame-price
         position: absolute
         left: 30px
-        bottom: 14px
-        font: 600 16px/20px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif
+        bottom: 27px
+        font: 400 16px/20px $open
       .pick-schedule-content-frame-title
         color: #000
-        margin-bottom: 12px
-        font: 700 16px/20px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif
+        margin-bottom: 8px
+        font: 400 16px/20px $open
       p
         color: #9b9b9b
-        font: 400 13px/20px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif
+        font: 400 13px/20px $open
       
       &.mod-highlight
         background-color: #fafbfc
         border: 1px solid #4a72f5
-        margin-bottom: 0
-        padding-bottom: 48px
 
-      &.mod-half
-        width: 50%
-        float: left
+      &.mod-large
+        min-height: 198px
+        padding-top: 22px
 
   @media (max-width: 860px)
     width: 300px
@@ -438,7 +425,7 @@
         margin-bottom: 15px !important
         padding: 10px 10px 48px 10px
         &.mod-half
-          width: 100% 
+          width: 100%
         .pick-schedule-content-frame-price
           position: static
           margin-top: 15px
@@ -514,10 +501,57 @@
     max-width: 554px
     background-image: linear-gradient(45deg, #fb5570 0%, #fc8572 100%)
 
+.toggle-variant-wrap
+  position: relative
+  display: block
+  cursor: pointer
 
+  &.mod-half
+    float: left
+    width: 50%
 
-  
+    .pick-schedule-content-frame
+      padding: 14px 80px 15px 30px
 
+    .select-check
+      bottom: 16px
+
+    .mod-large ~ .select-check
+      bottom: 26px
+
+  input[type="radio"],
+  input[type="checkbox"]
+    position: absolute
+    visibility: hidden
+
+    &:checked
+      & ~ .toggle-variant-item
+        background-color: #fafbfc
+        border: 1px solid #4a72f5
+
+      & ~ .select-check
+        visibility: visible
+
+  .select-check
+    position: absolute
+    right: 30px
+    bottom: 26px
+    visibility: hidden
+    font: 600 13px/20px $open
+
+    .ico
+      margin-left: 11px
+
+.toggle-name
+  span:last-child
+    display: none
+
+  &.mod-second-name
+    span
+      &:first-child
+        display: none
+      &:last-child
+        display: inline
 
 
   

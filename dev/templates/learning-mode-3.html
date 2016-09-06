@@ -14,43 +14,47 @@
             <div class="wrapper-modal">
 
                 <div class="wrap-win pick-schedule smoll" >
-
+                  <form action="" method="">
                     <div class="modal-title">
-                        Выберите режим обучения
-                    </div>
+                          Выберите режим обучения
+                      </div>
 
-                    <div class="pick-schedule-content">
-                        <!-- frames -->
-                        <div class="pick-schedule-content-frame mod-marg">
-                            <div class="pick-schedule-content-frame-title">
-                                Без оплаты и сертификации - 0 рублей
-                            </div>
-                            <p>
-                                Смотрите лекции, общайтесь на форуме и выполняйте
-                                задания без ограничений.
-                            </p>
-                        </div>
+                      <div class="pick-schedule-content">
+                          <!-- frames -->
+                          <label class="toggle-variant-wrap" for="radio_without_payment">
+                              <input class="js-other-btn-name" type="radio" id="radio_without_payment" name="learning_mode" value="without_payment">
+                              <div class="toggle-variant-item pick-schedule-content-frame mod-marg">
+                                  <div class="pick-schedule-content-frame-title">
+                                      Без оплаты и сертификации - 0 рублей
+                                  </div>
+                                  <p>
+                                      Смотрите лекции, общайтесь на форуме и выполняйте
+                                      задания без ограничений.
+                                  </p>
+                              </div>
+                          </label>
 
-                        <div class="pick-schedule-content-frame mod-highlight ">
-                            <div class="pick-schedule-content-frame-title">
-                                Получить сертификат - 6 500 рублей
-                            </div>
-                            <p>
-                                Пройдите авторизацию и получайте обратную связь,
-                                проверку заданий и подтверждение ваших навыков!
-                            </p>
-                        </div>
-                        <!-- end frames -->
+                          <label class="toggle-variant-wrap" for="radio_with_payment">
+                              <input type="radio" id="radio_with_payment" name="learning_mode" value="with_payment" checked>
+                              <div class="toggle-variant-item pick-schedule-content-frame">
+                                  <div class="pick-schedule-content-frame-title">
+                                      Получить сертификат - 6 500 рублей
+                                  </div>
+                                  <p>
+                                      Пройдите авторизацию и получайте обратную связь,
+                                      проверку заданий и подтверждение ваших навыков!
+                                  </p>
+                              </div>
+                          </label>
+                          <!-- end frames -->
+                      </div>
 
-                    </div>
-
-                    <a href="#" class="el-btn pur-style gross">
-                        Оплатить
-                    </a>
-
+                      <button class="el-btn pur-style gross toggle-name" type="submit">
+                        <span>Оплатить</span>
+                        <span>Перейти к материалам в Личный кабинет</span>
+                      </button>
+                  </form>
                 </div>
-
-
             </div>
         </div>
     </div>
@@ -62,3 +66,10 @@
     <!-- /build -->
 
 </div>
+
+
+<!-- scripts -->
+<!-- build:section layout.scripts -->
+<!-- /build -->
+</body>
+</html>
