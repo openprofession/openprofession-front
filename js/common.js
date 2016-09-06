@@ -224,11 +224,11 @@ if (isOnPage($('.js-partner-home'))) {
 }
 
 $('#scroll-wrap').slimScroll({
-    height: '470px',
+    height: '410px',
     size: '3px'
 });
 $('#scroll-wrap1').slimScroll({
-    height: '280px',
+    height: '260px',
     size: '3px'
 });
 
@@ -441,5 +441,3 @@ $( "#datepicker" ).datepicker({
     dayNamesMin: [ "Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс" ],
     monthNames: [ "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь" ],
 });
-
-

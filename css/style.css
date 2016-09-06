@@ -4768,19 +4768,18 @@ html .ui-button.ui-state-disabled:active {
   .page-content .competence-section .skill {
     margin: 0 -30px; }
     .page-content .competence-section .skill li {
-      padding: 20px 30px;
+      padding: 15px 30px;
       transition: all 0.12s ease; }
       .page-content .competence-section .skill li:hover {
-        padding: 24px 30px;
-        background-color: #e2e3e9;
+        background-color: #4a72f5;
         cursor: pointer; }
         .page-content .competence-section .skill li:hover .skill-nav {
           opacity: 1;
-          visibility: visible;
-          margin: -24px -30px -24px 20px;
-          height: 66px; }
-          .page-content .competence-section .skill li:hover .skill-nav li {
-            padding: 24px; }
+          visibility: visible; }
+        .page-content .competence-section .skill li:hover .name {
+          color: white; }
+        .page-content .competence-section .skill li:hover .el-progress-wrap .prosent {
+          color: white; }
     .page-content .competence-section .skill .name {
       display: block;
       float: left;
@@ -4794,24 +4793,28 @@ html .ui-button.ui-state-disabled:active {
     display: inline-block;
     float: right;
     overflow: hidden;
-    margin: -20px -30px -20px 20px;
+    margin: -15px -30px -15px 20px;
     width: 280px;
-    height: 58px;
+    height: 48px;
     transition: all 0.12s ease; }
     .page-content .competence-section .skill-nav li {
       float: left;
-      padding: 20px 24px;
+      padding: 15px 23px;
       border-left: 1px solid white;
       transition: all 0.12s ease; }
       .page-content .competence-section .skill-nav li:first-child {
         border-left: none; }
-    .page-content .competence-section .skill-nav a i:before {
-      margin: 0;
-      color: #9b9b9b;
+    .page-content .competence-section .skill-nav a {
       text-decoration: none;
-      font-size: 22px; }
+      color: white;
+      font: 400 13px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+      .page-content .competence-section .skill-nav a i:before {
+        margin: 0;
+        color: white;
+        text-decoration: none;
+        font-size: 22px; }
     .page-content .competence-section .skill-nav span {
-      color: black;
+      color: white;
       font: 400 13px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
   .page-content .competence-section .right-competence {
     opacity: 0;
@@ -4821,21 +4824,27 @@ html .ui-button.ui-state-disabled:active {
     right: -30px;
     bottom: 31px;
     width: 290px;
-    background-color: #e2e3e9; }
+    background-color: white; }
     .page-content .competence-section .right-competence .title {
       margin-bottom: 10px;
       padding-left: 30px;
       color: black;
-      font: 400 13px/67px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+      font: 400 13px/40px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
       .page-content .competence-section .right-competence .title span {
         color: #9b9b9b; }
       .page-content .competence-section .right-competence .title button {
         float: right;
         width: 67px;
-        height: 67px;
-        background-color: #c8cccf;
+        height: 40px;
+        background-color: #4a72f5;
         text-align: center;
-        line-height: 67px; }
+        line-height: 40px; }
+        .page-content .competence-section .right-competence .title button i:before {
+          margin: 0;
+          color: white;
+          text-decoration: none;
+          font-size: 22px;
+          vertical-align: sub; }
         .page-content .competence-section .right-competence .title button img {
           vertical-align: middle; }
     .page-content .competence-section .right-competence .list-competence {
@@ -4861,8 +4870,7 @@ html .ui-button.ui-state-disabled:active {
           content: "";
           opacity: 0; }
         .page-content .competence-section .right-competence .list-competence li:hover {
-          background-color: #c8cccf;
-          color: #4a72f5;
+          background-color: #eff4f7;
           cursor: pointer; }
           .page-content .competence-section .right-competence .list-competence li:hover:after {
             visibility: visible;
@@ -5333,19 +5341,18 @@ html .ui-button.ui-state-disabled:active {
   .personal-page .page-content .skill {
     margin: 0 -30px; }
     .personal-page .page-content .skill li {
-      padding: 20px 30px;
+      padding: 15px 30px;
       transition: all 0.12s ease; }
       .personal-page .page-content .skill li:hover {
-        padding: 24px 30px;
-        background-color: #e2e3e9;
+        background-color: #4a72f5;
         cursor: pointer; }
         .personal-page .page-content .skill li:hover .skill-nav {
           opacity: 1;
-          visibility: visible;
-          margin: -24px -30px -24px 20px;
-          height: 66px; }
-          .personal-page .page-content .skill li:hover .skill-nav li {
-            padding: 24px; }
+          visibility: visible; }
+        .personal-page .page-content .skill li:hover .name {
+          color: white; }
+        .personal-page .page-content .skill li:hover .el-progress-wrap .prosent {
+          color: white; }
     .personal-page .page-content .skill .name {
       display: block;
       float: left;
@@ -5359,24 +5366,24 @@ html .ui-button.ui-state-disabled:active {
     display: inline-block;
     float: right;
     overflow: hidden;
-    margin: -20px -30px -20px 20px;
+    margin: -15px -30px -15px 20px;
     width: 280px;
-    height: 58px;
+    height: 48px;
     transition: all 0.12s ease; }
     .personal-page .page-content .skill-nav li {
       float: left;
-      padding: 20px 24px;
+      padding: 15px 23px;
       border-left: 1px solid white;
       transition: all 0.12s ease; }
       .personal-page .page-content .skill-nav li:first-child {
         border-left: none; }
     .personal-page .page-content .skill-nav a i:before {
       margin: 0;
-      color: #9b9b9b;
+      color: white;
       text-decoration: none;
       font-size: 22px; }
     .personal-page .page-content .skill-nav span {
-      color: black;
+      color: white;
       font: 400 13px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
   .personal-page .page-content .right-competence {
     opacity: 0;
@@ -5386,21 +5393,27 @@ html .ui-button.ui-state-disabled:active {
     right: -15px;
     bottom: 31px;
     width: 290px;
-    background-color: #e2e3e9; }
+    background-color: white; }
     .personal-page .page-content .right-competence .title {
       margin-bottom: 10px;
       padding-left: 30px;
       color: black;
-      font: 400 13px/67px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+      font: 400 13px/40px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
       .personal-page .page-content .right-competence .title span {
         color: #9b9b9b; }
       .personal-page .page-content .right-competence .title button {
         float: right;
         width: 67px;
-        height: 67px;
-        background-color: #c8cccf;
+        height: 40px;
+        background-color: #4a72f5;
         text-align: center;
-        line-height: 67px; }
+        line-height: 40px; }
+        .personal-page .page-content .right-competence .title button i:before {
+          margin: 0;
+          color: white;
+          text-decoration: none;
+          font-size: 22px;
+          vertical-align: sub; }
         .personal-page .page-content .right-competence .title button img {
           vertical-align: middle; }
     .personal-page .page-content .right-competence .list-competence {
@@ -5426,8 +5439,7 @@ html .ui-button.ui-state-disabled:active {
           content: "";
           opacity: 0; }
         .personal-page .page-content .right-competence .list-competence li:hover {
-          background-color: #c8cccf;
-          color: #4a72f5;
+          background-color: #eff4f7;
           cursor: pointer; }
           .personal-page .page-content .right-competence .list-competence li:hover:after {
             visibility: visible;
@@ -5435,7 +5447,7 @@ html .ui-button.ui-state-disabled:active {
     .personal-page .page-content .right-competence .scroll-wrap {
       box-sizing: border-box;
       padding-right: 10px;
-      height: 470px; }
+      height: 410px; }
   .personal-page .page-content .more-link {
     display: inline-block;
     margin-top: 10px;
@@ -5575,10 +5587,10 @@ html .ui-button.ui-state-disabled:active {
         width: 26px; }
     .personal-page .page-content .section-1 .bal {
       color: black;
-      font: 400 46px/50px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+      font: 400 36px/50px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
       @media (max-width: 991px) {
         .personal-page .page-content .section-1 .bal {
-          font-size: 30px;
+          font-size: 20px;
           line-height: 34px; } }
     .personal-page .page-content .section-1 .title {
       color: black;
@@ -5618,6 +5630,17 @@ html .ui-button.ui-state-disabled:active {
     float: right;
     margin-top: 12px;
     opacity: 0.5; }
+  .personal-page .page-content .profile-arrow {
+    position: relative;
+    padding-left: 80px; }
+    .personal-page .page-content .profile-arrow:before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      content: "";
+      background: url(../images/profile-arrow.svg) no-repeat center;
+      width: 40px;
+      height: 70px; }
   .personal-page .page-content .section-2 .small {
     color: #9b9b9b;
     font: 400 13px/20px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
@@ -5625,7 +5648,7 @@ html .ui-button.ui-state-disabled:active {
     top: 50px;
     bottom: 40px; }
     .personal-page .page-content .section-2 .right-competence .scroll-wrap {
-      height: 280px; }
+      height: 260px; }
   .personal-page .page-content .section-2 .item {
     margin-bottom: 10px; }
     .personal-page .page-content .section-2 .item:after {
@@ -5633,40 +5656,34 @@ html .ui-button.ui-state-disabled:active {
   .personal-page .page-content .section-2 .skill .name {
     max-width: 170px; }
   .personal-page .page-content .section-2 .skill li {
-    padding: 16px 30px; }
-    .personal-page .page-content .section-2 .skill li:hover {
-      padding: 20px 30px; }
-      .personal-page .page-content .section-2 .skill li:hover .skill-nav {
-        opacity: 1;
-        visibility: visible;
-        margin: -18px -30px -20px 20px;
-        height: 58px; }
-        .personal-page .page-content .section-2 .skill li:hover .skill-nav li {
-          padding: 16px 24px; }
+    padding: 15px 30px; }
+    .personal-page .page-content .section-2 .skill li:hover .skill-nav {
+      opacity: 1;
+      visibility: visible; }
   .personal-page .page-content .section-2 .skill-nav {
     display: inline-block;
     float: right;
     overflow: hidden;
-    margin: -20px -30px -20px 20px;
+    margin: -15px -30px -15px 20px;
     width: 150px;
-    height: 50px;
+    height: 48px;
     transition: all 0.12s ease;
     opacity: 0;
     visibility: hidden; }
     .personal-page .page-content .section-2 .skill-nav li {
       float: left;
-      padding: 16px 24px;
+      padding: 13px 24px;
       border-left: 1px solid white;
       transition: all 0.12s ease; }
       .personal-page .page-content .section-2 .skill-nav li:first-child {
         border-left: none; }
     .personal-page .page-content .section-2 .skill-nav a {
       text-decoration: none;
-      color: black;
+      color: white;
       font: 400 13px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
       .personal-page .page-content .section-2 .skill-nav a i:before {
         margin: 0;
-        color: #9b9b9b;
+        color: white;
         text-decoration: none;
         font-size: 22px;
         vertical-align: sub; }
