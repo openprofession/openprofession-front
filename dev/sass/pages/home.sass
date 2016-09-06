@@ -12,7 +12,7 @@
       padding-top: 30px
     h1
       margin: 0 auto
-      max-width: 560px
+      max-width: 580px
       font-weight: 300
       b
         font-width: 400
@@ -29,6 +29,7 @@
     padding-top: 60px
 
   .section-list-profession
+    margin-bottom: 0
     padding: 60px 0
     background: white
 
@@ -133,7 +134,17 @@
 
 
   .section-tabs
+    position: relative
     margin-bottom: 100px
+    padding-bottom: 4px
+    background-color: white
+
+    .title-section
+      position: absolute
+      z-index: 1
+      top: 60px
+      h2
+        color: white
     .tabs
       @extend %clear-fix
       width: 100%
@@ -179,22 +190,34 @@
       background: white
 
       .wrapper-tabs-item
+        position: relative
         @extend %clear-fix
         margin: 0 -15px
+        background: #000000 no-repeat center/cover
+        &:before
+          position: absolute
+          top: 0
+          right: 0
+          bottom: 0
+          width: 40%
+          background-color: rgba(#171b2d, .7)
+          content: ""
+
         .col-md-4
           @media (max-width: $screen-sm-max)
             margin: 0 30px
 
       h2
-        margin-top: 30px
+        margin-top: 80px
         margin-bottom: 20px
-        color: black
+        color: white
         font: 300 20px $open
       .style-text-tab
         margin-bottom: 20px
-        color: black
+        color: white
         font: 300 15px/26px $open
         a
+          margin-bottom: 80px
           padding: 15px 20px
           max-width: 270px
           width: 100%
@@ -208,17 +231,16 @@
       .img-wrap
         position: relative
         box-sizing: border-box
-        padding: 45px 50px
         height: 435px
-        background: #000000 no-repeat center/cover
+
         vertical-align: bottom
         @media (max-width: $screen-xs-max)
           padding: 25px
         p
           position: absolute
-          right: 50px
+          right: 45px
           bottom: 45px
-          left: 50px
+          left: 0
           display: inline-block
           color: white
           font: 300 24px $open
