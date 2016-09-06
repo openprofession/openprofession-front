@@ -223,11 +223,11 @@
 .icon-cancel:before { content: '\e806'; } /* '' */
 .icon-rectangle:before { content: '\e807'; } /* '' */
 .icon-search-btn:before { content: '\e808'; } /* '' */
-.icon-tw:before { content: '\e809'; } /* '' */
+.icon-tw:before { margin-left: 0; content: '\e809'; } /* '' */
 .icon-glas-icon:before { content: '\e80a'; } /* '' */
 .icon-ok-1:before { content: '\e80b'; } /* '' */
 .icon-star:before { content: '\e80c'; } /* '' */
-.icon-vk:before { content: '\e80d'; } /* '' */
+.icon-vk:before { margin-left: 0; content: '\e80d'; } /* '' */
 .icon-star-empty:before { content: '\e80e'; } /* '' */
 .icon-star-half:before { content: '\e80f'; } /* '' */
 .icon-eye-o:before { content: '\e810'; } /* '' */
@@ -892,7 +892,8 @@ body, input, button, select, textarea {
 .clear {
   clear: both; }
 
-.container:after, .container-fluid:after, .row:after, .el-check-group.mod-horizontal:after, .el-progress-wrap:after, .tag-filter-wrap:after, .sign-social:after, .header .user-page-link:after, .footer .contact-link:after, .footer .contact-link a.css-color:after, .footer .navigation-list:after, .home-page .section-1 .tab-catalog:after, .home-page .section-1 .wrap-drop:after, .home-page .section-4 .wrap-banner:after, .home-page .carousel .owl-nav:after, .page-content.right-sidebar .content-wrap .sidebar:after, .page-content .sidebar .title-rating:after, .page-content .partner:after, .page-content .list-style-1:after, .page-content .colon-section:after, .page-content .col-center .list-style-2 > li:after, .page-content .course-section:after, .page-content .rating-section:after, .page-content .comment-wrap:after, .page-content .branches-section ul:after, .page-content .branches-section li:after, .page-content .partner-section .owl-nav:after, .page-content .necessary-section:after, .page-content .necessary-section .necessary ul:after, .page-content .competence-section .skill li:after, .page-content .competence-section .skill-nav:after, .page-content .competence-section .right-competence .title:after, .page-content .academic-plan .progress-wrap:after, .page-content .academic-plan .specialization:after, .tabs:after, .carts-section:after, .carts-section .skill li:after, .carts-section .skill .progress-wrap:after, .carts-section .necessary ul:after, .certificate-section .certificate .all-courses:after, .certificate-section .certificate li:after, .personal-page .page-content.left-sidebar .content-wrap .sidebar:after, .personal-page .page-content .skill li:after, .personal-page .page-content .skill-nav:after, .personal-page .page-content .right-competence .title:after, .personal-page .page-content .border-block:after, .personal-page .page-content .section-2 .skill-nav:after, .personal-page .page-content .section-5 .partner-lists:after, .personal-page .page-content .wrap-list-process:after, .personal-page .page-content .wrap-list-process .item-list-process:after, .home-page.css-home .section-subscribe .wrap-banner:after, .home-page.css-home .section-tabs .tabs:after, .home-page.css-home .section-tabs .tabgroup .wrapper-tabs-item:after, .clear-fix:after {
+.container:after, .container-fluid:after, .row:after, .el-check-group.mod-horizontal:after, .el-progress-wrap:after, .tag-filter-wrap:after, .sign-social:after, .header .user-page-link:after, .footer .contact-link:after, .footer .contact-link a.css-color:after, .footer .navigation-list:after, .home-page .section-1 .tab-catalog:after, .home-page .section-1 .wrap-drop:after, .home-page .section-4 .wrap-banner:after, .home-page .carousel .owl-nav:after, .page-content.right-sidebar .content-wrap .sidebar:after, .page-content .sidebar .title-rating:after, .page-content .partner:after, .page-content .list-style-1:after, .page-content .colon-section:after, .page-content .col-center .list-style-2 > li:after, .page-content .course-section:after, .page-content .rating-section:after, .page-content .comment-wrap:after, .page-content .partner-section .owl-nav:after,
+.page-content .lecturer-wrap .owl-nav:after, .page-content .branches-section ul:after, .page-content .branches-section li:after, .page-content .necessary-section:after, .page-content .necessary-section .necessary ul:after, .page-content .competence-section .skill li:after, .page-content .competence-section .skill-nav:after, .page-content .competence-section .right-competence .title:after, .page-content .academic-plan .progress-wrap:after, .page-content .academic-plan .specialization:after, .tabs:after, .carts-section:after, .carts-section .skill li:after, .carts-section .skill .progress-wrap:after, .carts-section .necessary ul:after, .certificate-section .certificate .all-courses:after, .certificate-section .certificate li:after, .personal-page .page-content.left-sidebar .content-wrap .sidebar:after, .personal-page .page-content .skill li:after, .personal-page .page-content .skill-nav:after, .personal-page .page-content .right-competence .title:after, .personal-page .page-content .border-block:after, .personal-page .page-content .section-2 .skill-nav:after, .personal-page .page-content .section-5 .partner-lists:after, .personal-page .page-content .wrap-list-process:after, .personal-page .page-content .wrap-list-process .item-list-process:after, .home-page.css-home .section-subscribe .wrap-banner:after, .home-page.css-home .section-tabs .tabs:after, .home-page.css-home .section-tabs .tabgroup .wrapper-tabs-item:after, .clear-fix:after {
   content: "";
   clear: both;
   display: table;
@@ -2574,6 +2575,8 @@ html {
       color: #4a90e2; }
     .el-social-links li a.gplus:hover, .singlepage-content .singlepage-content-bottom .singlepage-content-bottom-right .social li a.gplus:hover, .footer .social li a.gplus:hover, .static-page .css-profession .section-banner-split2 .social li a.gplus:hover {
       color: #fb5570; }
+    .el-social-links li a.vk:hover, .singlepage-content .singlepage-content-bottom .singlepage-content-bottom-right .social li a.vk:hover, .footer .social li a.vk:hover, .static-page .css-profession .section-banner-split2 .social li a.vk:hover {
+      color: #36538e; }
 
 .el-section-banner-share, .section-banner-share {
   text-align: right; }
@@ -4608,6 +4611,47 @@ html .ui-button.ui-state-disabled:active {
   color: black;
   font: 400 18px/36px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
+.page-content .partner-section .owl-controls,
+.page-content .lecturer-wrap .owl-controls {
+  position: absolute;
+  top: 50%;
+  right: -90px;
+  left: -90px;
+  margin-top: -28px;
+  height: 0; }
+.page-content .partner-section .owl-nav,
+.page-content .lecturer-wrap .owl-nav {
+  height: 0; }
+.page-content .partner-section .owl-prev, .page-content .partner-section .owl-next,
+.page-content .lecturer-wrap .owl-prev,
+.page-content .lecturer-wrap .owl-next {
+  width: 56px;
+  height: 56px;
+  border: 1px solid #4a72f5;
+  border-radius: 100%;
+  color: #4a72f5;
+  text-align: center;
+  font-size: 20px;
+  line-height: 54px;
+  opacity: 0.3;
+  cursor: pointer;
+  transition: all 0.12s ease; }
+  .page-content .partner-section .owl-prev:hover, .page-content .partner-section .owl-next:hover,
+  .page-content .lecturer-wrap .owl-prev:hover,
+  .page-content .lecturer-wrap .owl-next:hover {
+    opacity: 1; }
+.page-content .partner-section .owl-prev,
+.page-content .lecturer-wrap .owl-prev {
+  float: left; }
+.page-content .partner-section .owl-next,
+.page-content .lecturer-wrap .owl-next {
+  float: right; }
+  .page-content .partner-section .owl-next .icon-arrow-l:before,
+  .page-content .lecturer-wrap .owl-next .icon-arrow-l:before {
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg); }
+
 .page-content .branches-section {
   margin-bottom: 60px; }
   .page-content .branches-section ul {
@@ -4624,37 +4668,6 @@ html .ui-button.ui-state-disabled:active {
     margin-left: 75px;
     color: black;
     font: 300 16px/50px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
-.page-content .partner-section .owl-controls {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  left: 0;
-  margin-top: -28px;
-  height: 0; }
-.page-content .partner-section .owl-nav {
-  height: 0; }
-.page-content .partner-section .owl-prev, .page-content .partner-section .owl-next {
-  width: 56px;
-  height: 56px;
-  border: 1px solid #4a72f5;
-  border-radius: 100%;
-  color: #4a72f5;
-  text-align: center;
-  font-size: 20px;
-  line-height: 54px;
-  opacity: 0.3;
-  cursor: pointer;
-  transition: all 0.12s ease; }
-  .page-content .partner-section .owl-prev:hover, .page-content .partner-section .owl-next:hover {
-    opacity: 1; }
-.page-content .partner-section .owl-prev {
-  float: left; }
-.page-content .partner-section .owl-next {
-  float: right; }
-  .page-content .partner-section .owl-next .icon-arrow-l:before {
-    -webkit-transform: rotate(180deg);
-        -ms-transform: rotate(180deg);
-            transform: rotate(180deg); }
 .page-content .partner.css-slider {
   box-sizing: border-box;
   margin: 0 auto;
@@ -5823,14 +5836,16 @@ html .ui-button.ui-state-disabled:active {
 .static-page .css-profession {
   min-height: 590px; }
   .static-page .css-profession h2 {
-    margin-bottom: 22px;
-    margin-top: 388px;
+    margin-bottom: 20px;
+    margin-top: 342px;
     box-sizing: border-box;
     padding-right: 320px;
     line-height: 46px; }
     @media (max-width: 1199px) {
       .static-page .css-profession h2 {
         padding-right: 0; } }
+    .static-page .css-profession h2 b {
+      font-weight: 400; }
   .static-page .css-profession .section-banner-split2 {
     margin-bottom: 65px; }
     .static-page .css-profession .section-banner-split2 .text-style-3 {
@@ -5844,8 +5859,16 @@ html .ui-button.ui-state-disabled:active {
       display: inline-block;
       vertical-align: middle; }
       .static-page .css-profession .section-banner-split2 .social li {
-        margin-left: 18px; }
+        margin-left: 4px; }
+        .static-page .css-profession .section-banner-split2 .social li a {
+          width: 27px;
+          height: 27px;
+          line-height: 27px;
+          font-size: 14px;
+          background-color: rgba(255, 255, 255, 0.3);
+          border-radius: 3px; }
     .static-page .css-profession .section-banner-split2 .section-banner-share p {
+      margin-right: 18px;
       font-size: 14px; }
     @media (max-width: 767px) {
       .static-page .css-profession .section-banner-split2 {
@@ -5859,17 +5882,167 @@ html .ui-button.ui-state-disabled:active {
           vertical-align: middle; }
         .static-page .css-profession .section-banner-split2 .social {
           vertical-align: middle; } }
+  .static-page .css-profession .top-beck {
+    display: inline-block;
+    margin-top: 28px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff; }
 .static-page .page-content {
   padding: 60px 0; }
+  .static-page .page-content .static-page-toptext,
+  .static-page .page-content .section-title {
+    font: 400 24px/36px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
   .static-page .page-content .static-page-toptext {
-    font: 400 22px/1 "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
-    line-height: 30px; }
+    margin-bottom: 36px; }
     @media (max-width: 767px) {
       .static-page .page-content .static-page-toptext {
         text-align: center; } }
   .static-page .page-content .section-8 {
     margin-top: 64px;
-    margin-bottom: 62px; }
+    margin-bottom: 36px; }
+  .static-page .page-content .singlepage-content-txt p {
+    margin-bottom: 32px; }
+.static-page .lecturer-wrap {
+  margin-top: 24px;
+  padding: 57px 0 72px;
+  overflow: hidden;
+  background-color: #fff; }
+  .static-page .lecturer-wrap .lecturer-item + .lecturer-item {
+    margin-top: 64px; }
+  .static-page .lecturer-wrap .section-title {
+    margin-bottom: 40px; }
+  .static-page .lecturer-wrap .info {
+    margin-left: 89px;
+    padding-top: 17px; }
+  .static-page .lecturer-wrap .avatar {
+    float: left;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 50%; }
+  .static-page .lecturer-wrap .name {
+    font: 400 14px/1 "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #000; }
+  .static-page .lecturer-wrap .position,
+  .static-page .lecturer-wrap .resume-link {
+    font: 400 13px/16px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+  .static-page .lecturer-wrap .position {
+    margin: 9px 0 11px;
+    color: #9b9b9b; }
+  .static-page .lecturer-wrap .resume-link {
+    float: left;
+    margin-right: 9px;
+    color: #4a72f5;
+    line-height: 22px;
+    text-decoration: none; }
+  .static-page .lecturer-wrap .lecturer-item .social li {
+    float: left; }
+    .static-page .lecturer-wrap .lecturer-item .social li a {
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+      line-height: 22px;
+      text-align: center;
+      font-size: 12px; }
+.static-page .main-text-wrap {
+  padding-top: 65px; }
+  .static-page .main-text-wrap p {
+    font: 300 18px/28px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #313337; }
+    .static-page .main-text-wrap p + p {
+      margin-top: 37px; }
+    .static-page .main-text-wrap p + .paragraph-title {
+      margin-top: 62px; }
+  .static-page .main-text-wrap .section-title + p {
+    margin-top: 10px; }
+  .static-page .main-text-wrap .paragraph-title {
+    font-size: 22px;
+    line-height: 1; }
+    .static-page .main-text-wrap .paragraph-title + p {
+      margin-top: 15px; }
+    .static-page .main-text-wrap .paragraph-title.mod-small {
+      font-size: 20px; }
+  .static-page .main-text-wrap img {
+    margin: 36px 0 64px; }
+  .static-page .main-text-wrap .special-block {
+    box-sizing: border-box;
+    margin: 65px 0;
+    padding: 22px 12px 26px 30px;
+    background-color: #fff; }
+    .static-page .main-text-wrap .special-block .title {
+      font-weight: 400;
+      color: #000; }
+      .static-page .main-text-wrap .special-block .title + p {
+        margin-top: 14px; }
+    .static-page .main-text-wrap .special-block.mod-large {
+      position: relative;
+      max-width: 733px; }
+      .static-page .main-text-wrap .special-block.mod-large:before {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 6px;
+        background-color: #e4e7f4;
+        content: ""; }
+      .static-page .main-text-wrap .special-block.mod-large .author {
+        text-align: right; }
+    .static-page .main-text-wrap .special-block.mod-middle {
+      max-width: 635px; }
+      .static-page .main-text-wrap .special-block.mod-middle .title + p {
+        margin-top: 9px; }
+    .static-page .main-text-wrap .special-block.mod-small {
+      max-width: 733px;
+      padding: 0;
+      background-color: transparent; }
+.static-page .singlepage-content-bottom {
+  margin: 96px 0 110px; }
+  .static-page .singlepage-content-bottom .singlepage-content-bottom-right p {
+    margin-right: 16px;
+    font-size: 15px; }
+.static-page .singlepage-content-bottom .singlepage-content-bottom-right .social li,
+.static-page .lecturer-wrap .social li {
+  margin-left: 4px; }
+  .static-page .singlepage-content-bottom .singlepage-content-bottom-right .social li a,
+  .static-page .lecturer-wrap .social li a {
+    width: 27px;
+    height: 27px;
+    border-radius: 3px;
+    color: #fff;
+    line-height: 27px;
+    font-size: 14px; }
+    .static-page .singlepage-content-bottom .singlepage-content-bottom-right .social li a:hover,
+    .static-page .lecturer-wrap .social li a:hover {
+      background-color: #fff; }
+    .static-page .singlepage-content-bottom .singlepage-content-bottom-right .social li a.facebook,
+    .static-page .lecturer-wrap .social li a.facebook {
+      background-color: #4867aa; }
+      .static-page .singlepage-content-bottom .singlepage-content-bottom-right .social li a.facebook:hover,
+      .static-page .lecturer-wrap .social li a.facebook:hover {
+        background-color: transparent;
+        color: #4867aa; }
+    .static-page .singlepage-content-bottom .singlepage-content-bottom-right .social li a.vk,
+    .static-page .lecturer-wrap .social li a.vk {
+      background-color: #36538e; }
+      .static-page .singlepage-content-bottom .singlepage-content-bottom-right .social li a.vk:hover,
+      .static-page .lecturer-wrap .social li a.vk:hover {
+        background-color: transparent;
+        color: #36538e; }
+    .static-page .singlepage-content-bottom .singlepage-content-bottom-right .social li a.tw,
+    .static-page .lecturer-wrap .social li a.tw {
+      background-color: #4a90e2; }
+      .static-page .singlepage-content-bottom .singlepage-content-bottom-right .social li a.tw:hover,
+      .static-page .lecturer-wrap .social li a.tw:hover {
+        background-color: transparent;
+        color: #4a90e2; }
+    .static-page .singlepage-content-bottom .singlepage-content-bottom-right .social li a.gplus,
+    .static-page .lecturer-wrap .social li a.gplus {
+      background-color: #fb5570; }
+      .static-page .singlepage-content-bottom .singlepage-content-bottom-right .social li a.gplus:hover,
+      .static-page .lecturer-wrap .social li a.gplus:hover {
+        background-color: transparent;
+        color: #fb5570; }
 
 .home-page.css-home .section-7 .btn-wraps {
   margin: 0 0 40px; }
