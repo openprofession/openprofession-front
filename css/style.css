@@ -3134,6 +3134,9 @@ section.css-shadow {
   padding: 53px 54px 58px;
   width: 838px;
   text-align: left; }
+  @media (max-width: 991px) {
+    .pick-schedule {
+      width: 600px; } }
   .pick-schedule.wrap-win {
     display: block;
     margin: 0 auto; }
@@ -3162,6 +3165,9 @@ section.css-shadow {
     height: 80px;
     padding: 24px 20px;
     font: 700 18px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+    @media (max-width: 767px) {
+      .pick-schedule .el-btn.pur-style.gross {
+        width: 240px; } }
   .pick-schedule .pick-schedule-group {
     margin: 20px 0; }
   .pick-schedule .pick-schedule-content {
@@ -3194,7 +3200,7 @@ section.css-shadow {
       .pick-schedule .pick-schedule-content .pick-schedule-content-frame.mod-large {
         min-height: 198px;
         padding-top: 22px; }
-  @media (max-width: 860px) {
+  @media (max-width: 767px) {
     .pick-schedule {
       width: 300px;
       padding: 54px 30px 58px; }
@@ -3277,18 +3283,34 @@ section.css-shadow {
   .toggle-variant-wrap.mod-half {
     float: left;
     width: 50%; }
+    @media (max-width: 991px) {
+      .toggle-variant-wrap.mod-half {
+        float: none;
+        width: 100%; } }
     .toggle-variant-wrap.mod-half .pick-schedule-content-frame {
       padding: 14px 80px 15px 30px; }
+      @media (max-width: 767px) {
+        .toggle-variant-wrap.mod-half .pick-schedule-content-frame {
+          padding-left: 10px; } }
     .toggle-variant-wrap.mod-half .select-check {
       bottom: 16px; }
-    .toggle-variant-wrap.mod-half .mod-large ~ .select-check {
-      bottom: 26px; }
+    .toggle-variant-wrap.mod-half .mod-large {
+      margin-top: -1px; }
+      .toggle-variant-wrap.mod-half .mod-large ~ .select-check {
+        bottom: 26px; }
+        @media (max-width: 767px) {
+          .toggle-variant-wrap.mod-half .mod-large ~ .select-check {
+            bottom: 16px; } }
+    .toggle-variant-wrap.mod-half .mod-small {
+      margin-left: -1px;
+      margin-top: -1px; }
   .toggle-variant-wrap input[type="radio"],
   .toggle-variant-wrap input[type="checkbox"] {
     position: absolute;
     visibility: hidden; }
     .toggle-variant-wrap input[type="radio"]:checked ~ .toggle-variant-item,
     .toggle-variant-wrap input[type="checkbox"]:checked ~ .toggle-variant-item {
+      z-index: 1;
       background-color: #fafbfc;
       border: 1px solid #4a72f5; }
     .toggle-variant-wrap input[type="radio"]:checked ~ .select-check,
@@ -3296,6 +3318,7 @@ section.css-shadow {
       visibility: visible; }
   .toggle-variant-wrap .select-check {
     position: absolute;
+    z-index: 1;
     right: 30px;
     bottom: 26px;
     visibility: hidden;

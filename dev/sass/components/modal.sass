@@ -340,6 +340,10 @@
   padding: 53px 54px 58px
   width: 838px
   text-align: left
+
+  @media (max-width: $screen-sm-max)
+    width: 600px
+
   &.wrap-win
     display: block
     margin: 0 auto
@@ -375,6 +379,9 @@
     height: 80px
     padding: 24px 20px
     font: 700 18px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif
+
+    @media (max-width: $screen-xs-max)
+      width: 240px
 
   .pick-schedule-group
     margin: 20px 0
@@ -413,7 +420,7 @@
         min-height: 198px
         padding-top: 22px
 
-  @media (max-width: 860px)
+  @media (max-width: $screen-xs-max)
     width: 300px
     padding: 54px 30px 58px
     .modal-title
@@ -510,14 +517,31 @@
     float: left
     width: 50%
 
+    @media (max-width: $screen-sm-max)
+      float: none
+      width: 100%
+
     .pick-schedule-content-frame
       padding: 14px 80px 15px 30px
+
+      @media (max-width: $screen-xs-max)
+        padding-left: 10px
 
     .select-check
       bottom: 16px
 
-    .mod-large ~ .select-check
-      bottom: 26px
+    .mod-large
+      margin-top: -1px
+
+      & ~ .select-check
+        bottom: 26px
+
+        @media (max-width: $screen-xs-max)
+          bottom: 16px
+
+    .mod-small
+      margin-left: -1px
+      margin-top: -1px
 
   input[type="radio"],
   input[type="checkbox"]
@@ -526,6 +550,7 @@
 
     &:checked
       & ~ .toggle-variant-item
+        z-index: 1
         background-color: #fafbfc
         border: 1px solid #4a72f5
 
@@ -534,6 +559,7 @@
 
   .select-check
     position: absolute
+    z-index: 1
     right: 30px
     bottom: 26px
     visibility: hidden
@@ -552,6 +578,5 @@
         display: none
       &:last-child
         display: inline
-
 
   

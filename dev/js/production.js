@@ -6436,8 +6436,6 @@ $( "#datepicker" ).datepicker({
     dayNamesMin: [ "Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс" ],
     monthNames: [ "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь" ],
 });
-<<<<<<< HEAD
-
 
 var $btnSubmit = $('button[type=submit]');
 $(document).on('click', '.toggle-variant-wrap input[type=radio]', function () {
@@ -6456,5 +6454,4 @@ $(document).on('click', '.toggle-variant-wrap input[type=radio]', function () {
 $(document).on('click', '.pick-schedule-group input[type=checkbox]', function () {
     $('input[type=radio]:not(.js-other-btn-name)').click();
 });
-=======
->>>>>>> e2180466738699505feeee326ffb65031d9a59bf
+
