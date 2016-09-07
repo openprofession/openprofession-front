@@ -26,13 +26,12 @@
     color: black
     font: 400 18px/36px $open
 
-.page-content .partner-section,
-.page-content .lecturer-wrap
+.page-content .partner-section
   .owl-controls
     position: absolute
     top: 50%
-    right: -90px
-    left: -90px
+    right: 0
+    left: 0
     margin-top: -28px
     height: 0
 
@@ -214,6 +213,16 @@
         @extend %clear-fix
         padding: 15px 30px
         transition: all .12s ease
+        &.active
+          background-color: #4a72f5
+          .skill-nav
+            opacity: 1
+            visibility: visible
+          .name
+            color: white
+          .el-progress-wrap .prosent
+            color: white
+
         &:hover
           background-color: #4a72f5
           cursor: pointer

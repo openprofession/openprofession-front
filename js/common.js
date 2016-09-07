@@ -256,11 +256,14 @@ $('#scroll-wrap1').slimScroll({
 $('.competence').on('click', '.js-toggle-menu', function (el) {
     el.preventDefault();
     $(this).parents('.competence').addClass('js-open');
+    $('.competence .skill li').removeClass('active');
+    $(this).parents('.skill-nav').parent('li').addClass('active');
 
 });
 
 $('.competence').on('click', '.js-toggle-close', function (el) {
     el.preventDefault();
+    $('.competence .skill li').removeClass('active');
     $(this).parents('.competence').removeClass('js-open');
 });
 
