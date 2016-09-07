@@ -92,3 +92,7 @@ $.validator.addMethod("email", function (value) {
   var regexp = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
   return regexp.test(value);
 });
+
+// Validation init
+//-----------------------------------------------------------------------------------
+validator.init();
