@@ -6454,4 +6454,3 @@ $(document).on('click', '.toggle-variant-wrap input[type=radio]', function () {
 $(document).on('click', '.pick-schedule-group input[type=checkbox]', function () {
     $('input[type=radio]:not(.js-other-btn-name)').click();
 });
-
