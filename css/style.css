@@ -4934,7 +4934,7 @@ html .ui-button.ui-state-disabled:active {
     right: -30px;
     bottom: 31px;
     width: 290px;
-    background-color: white;
+    background-color: #eee;
     box-shadow: 0px 9px 24px 0px rgba(230, 234, 248, 0.4); }
     .page-content .competence-section .right-competence .title {
       margin-bottom: 10px;
@@ -4977,12 +4977,13 @@ html .ui-button.ui-state-disabled:active {
           margin-top: -9px;
           width: 18px;
           height: 18px;
-          background: url(../images/icons/info-icon.svg) no-repeat center;
+          background: url(../images/icons/info-icon-white.svg) no-repeat center/cover;
           content: "";
           opacity: 0; }
         .page-content .competence-section .right-competence .list-competence li:hover {
-          background-color: #eff4f7;
-          cursor: pointer; }
+          background-color: #4a72f5;
+          cursor: pointer;
+          color: white; }
           .page-content .competence-section .right-competence .list-competence li:hover:after {
             visibility: visible;
             opacity: 1; }
@@ -5611,7 +5612,7 @@ html .ui-button.ui-state-disabled:active {
     bottom: 31px;
     visibility: hidden;
     width: 290px;
-    background-color: white;
+    background-color: #eee;
     box-shadow: 0px 9px 24px 0px rgba(230, 234, 248, 0.4);
     opacity: 0; }
     .personal-page .page-content .right-competence .title {
@@ -5655,12 +5656,13 @@ html .ui-button.ui-state-disabled:active {
           margin-top: -9px;
           width: 18px;
           height: 18px;
-          background: url(../images/icons/info-icon.svg) no-repeat center;
+          background: url(../images/icons/info-icon-white.svg) no-repeat center/cover;
           content: "";
           opacity: 0; }
         .personal-page .page-content .right-competence .list-competence li:hover {
-          background-color: #eff4f7;
-          cursor: pointer; }
+          background-color: #4a72f5;
+          cursor: pointer;
+          color: white; }
           .personal-page .page-content .right-competence .list-competence li:hover:after {
             visibility: visible;
             opacity: 1; }
