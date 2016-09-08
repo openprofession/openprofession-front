@@ -6236,11 +6236,14 @@ $('#scroll-wrap1').slimScroll({
 $('.competence').on('click', '.js-toggle-menu', function (el) {
     el.preventDefault();
     $(this).parents('.competence').addClass('js-open');
+    $('.competence .skill li').removeClass('active');
+    $(this).parents('.skill-nav').parent('li').addClass('active');
 
 });
 
 $('.competence').on('click', '.js-toggle-close', function (el) {
     el.preventDefault();
+    $('.competence .skill li').removeClass('active');
     $(this).parents('.competence').removeClass('js-open');
 });
 
@@ -6454,4 +6457,3 @@ $(document).on('click', '.toggle-variant-wrap input[type=radio]', function () {
 $(document).on('click', '.pick-schedule-group input[type=checkbox]', function () {
     $('input[type=radio]:not(.js-other-btn-name)').click();
 });
-

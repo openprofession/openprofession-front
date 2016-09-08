@@ -83,6 +83,16 @@
         @extend %clear-fix
         padding: 15px 30px
         transition: all .12s ease
+        &.active
+          background-color: #4a72f5
+          .skill-nav
+            opacity: 1
+            visibility: visible
+          .name
+            color: white
+          .el-progress-wrap .prosent
+            color: white
+
         &:hover
           background-color: #4a72f5
           cursor: pointer
@@ -303,15 +313,24 @@
       margin-top: 28px
       margin-bottom: 10px
       padding: 25px 30px
-      border: 1px solid #4a72f5
+      border: 1px solid rgba(#4a72f5, .1)
       box-sizing: border-box
-      &.css-gren
-        border-color: rgba(#4a72f5, .1)
+      &:hover
+        border-color: #4a72f5
+        .el-btn
+          visibility: visible
+          opacity: 1
+
 
       &.css-pur
         border-color: #fb5570
+        &:hover
+          border-color: #fb5570
+
       .el-btn
         float: right
+        visibility: hidden
+        opacity: 0
         &.delete
           margin-top: 14px
 
@@ -454,6 +473,7 @@
           max-width: 170px
         li
           padding: 15px 30px
+
           &:hover
             .skill-nav
               opacity: 1
