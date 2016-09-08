@@ -307,9 +307,6 @@ $(document).on('click', '.js-pass', function (el) {
     showHidePassword('js-pass');
 });
 
-// Validation init
-//-----------------------------------------------------------------------------------
-validator.init();
 
 
 // js-toggle-menu

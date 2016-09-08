@@ -155,14 +155,14 @@
 
   label
     display: inline-block
-    margin: 22px 0 6px
+    margin: 25px 0 10px
     color: black
     font: 400 14px/1.2 $open
     span
       color: #fb5570
 
   .form-buttons
-    margin-top: 22px
+    margin-top: 20px
 
 .sign-in-content
   .el-btn
@@ -337,7 +337,7 @@
   cursor: pointer
 
 .pick-schedule
-  padding: 53px 54px 58px
+  padding: 53px 54px 30px
   width: 838px
   text-align: left
 
@@ -361,7 +361,7 @@
       margin-bottom: 12px
 
     .el-btn.pur-style.gross
-      width: 211px
+      width: 186px
       height: 60px
       padding: 18px 20px
       font: 700 14px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif
@@ -373,7 +373,7 @@
       font: 400 18px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif
 
   .el-btn.pur-style.gross
-    margin: 24px auto 0
+    margin: 29px auto 0
     display: block
     width: 267px
     height: 80px
@@ -386,7 +386,7 @@
   .pick-schedule-group
     margin: 20px 0
   .pick-schedule-content
-    margin: 23px 0 24px 0
+    margin: 23px 0 29px 0
     .pick-schedule-content-bottom
       label
         font: 400 13px/1 "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif
@@ -406,7 +406,7 @@
         font: 400 16px/20px $open
       .pick-schedule-content-frame-title
         color: #000
-        margin-bottom: 8px
+        margin-bottom: 16px
         font: 400 16px/20px $open
       p
         color: #9b9b9b
@@ -524,7 +524,11 @@
     .pick-schedule-content-frame
       padding: 14px 80px 15px 30px
 
+      @media (max-width: $screen-sm-max)
+        padding-right: 30px
+
       @media (max-width: $screen-xs-max)
+        padding-right: 10px
         padding-left: 10px
 
     .select-check
@@ -540,8 +544,10 @@
           bottom: 16px
 
     .mod-small
-      margin-left: -1px
       margin-top: -1px
+
+      @media (min-width: $screen-md)
+        margin-left: -1px
 
   input[type="radio"],
   input[type="checkbox"]
@@ -578,5 +584,10 @@
         display: none
       &:last-child
         display: inline
+
+.discount
+  margin-left: 16px
+  font: 400 12px/1 $open
+  color: $color-pure
 
   
