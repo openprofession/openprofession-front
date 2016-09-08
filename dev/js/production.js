@@ -5975,6 +5975,11 @@ $.validator.addMethod("email", function (value) {
   var regexp = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
   return regexp.test(value);
 });
+
+// Validation init
+//-----------------------------------------------------------------------------------
+validator.init();
+
 // Debounce custom function
 //-----------------------------------------------------------------------------------
 !function(e){var n,t,i=e.event;n=i.special.debounce={setup:function(){e(this).on("resize",n.handler)},teardown:function(){e(this).off("resize",n.handler)},handler:function(e,o){var r=this,s=arguments,u=function(){e.type="debounce",i.dispatch.apply(r,s)};t&&clearTimeout(t),o?u():t=setTimeout(u,n.threshold)},threshold:150}}(jQuery);
@@ -6287,9 +6292,6 @@ $(document).on('click', '.js-pass', function (el) {
     showHidePassword('js-pass');
 });
 
-// Validation init
-//-----------------------------------------------------------------------------------
-validator.init();
 
 
 // js-toggle-menu
