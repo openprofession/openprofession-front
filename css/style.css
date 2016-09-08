@@ -6448,7 +6448,7 @@ html .ui-button.ui-state-disabled:active {
         top: 0;
         right: 0;
         bottom: 0;
-        width: 40%;
+        width: 41%;
         background-color: rgba(23, 27, 45, 0.7);
         content: ""; }
       @media (max-width: 991px) {
@@ -6473,7 +6473,7 @@ html .ui-button.ui-state-disabled:active {
         text-align: center;
         text-decoration: none; }
         .home-page.css-home .section-tabs .tabgroup .style-text-tab a:hover {
-          color: #fb5570; }
+          color: white; }
     .home-page.css-home .section-tabs .tabgroup .img-wrap {
       position: relative;
       box-sizing: border-box;
