@@ -74,8 +74,8 @@
       position: relative
       &.js-open
         .right-competence
-          opacity: 1
           visibility: visible
+          opacity: 1
 
     .skill
       margin: 0 -30px
@@ -86,8 +86,8 @@
         &.active
           background-color: #4a72f5
           .skill-nav
-            opacity: 1
             visibility: visible
+            opacity: 1
           .name
             color: white
           .el-progress-wrap .prosent
@@ -97,8 +97,8 @@
           background-color: #4a72f5
           cursor: pointer
           .skill-nav
-            opacity: 1
             visibility: visible
+            opacity: 1
           .name
             color: white
           .el-progress-wrap .prosent
@@ -115,15 +115,15 @@
         float: right
 
     .skill-nav
-      opacity: 0
+      display: inline-block
       visibility: hidden
       @extend %clear-fix
-      display: inline-block
       float: right
       overflow: hidden
       margin: -15px -30px -15px 20px
       width: 280px
       height: 48px
+      opacity: 0
       transition: all .12s ease
       li
         float: left
@@ -142,14 +142,15 @@
         font: 400 13px $open
 
     .right-competence
-      opacity: 0
-      visibility: hidden
       position: absolute
       top: -35px
       right: -15px
       bottom: 31px
+      visibility: hidden
       width: 290px
       background-color: white
+      box-shadow: 0px 9px 24px 0px rgba(230, 234, 248, 0.4)
+      opacity: 0
       .title
         @extend %clear-fix
         margin-bottom: 10px
@@ -170,9 +171,9 @@
           i:before
             margin: 0
             color: white
+            vertical-align: sub
             text-decoration: none
             font-size: 22px
-            vertical-align: sub
 
           img
             vertical-align: middle
@@ -223,51 +224,44 @@
       &:hover
         text-decoration: underline
       i
-        text-decoration: none
         vertical-align: baseline
+        text-decoration: none
         font-size: 18px
 
 
     // academic-plan
     //-----------------------------------------------------------------------------------
     .academic-plan
-      li
-        padding-right: 300px
-        @media (max-width: $screen-xs-max)
-          padding-right: 25px
 
-        &:after
-          right: 230px
+      & > li
+        &:hover
+          border-left: 4px solid #4a72f5
+          .wrap-btn-list
+            li
+              background: #f7fafc
+              &:last-child
+                background: #f7fafc !important
+            .el-btn
+              visibility: visible
+              opacity: 1
 
-      .list-buttons
-        position: absolute
-        right: 0
-        top: 0
-        li
-          display: inline-block
-          padding: 0
-          float: left
-          max-width: 105px
-          min-width: 66px
-          height: 66px
-          line-height: 66px
-          text-align: center
-          background-color: #dce1e7
-          border-left: 1px solid white
-          &:first-child
-            border-left: none
-          &:after
-            display: none
-          &:before
-            display: none
-          a
-            display: inline-block
-            color: black
-            text-decoration: none
-            padding: 15px 10px
-            font: 400 13px/18px $open
-            img
-              display: inline-block
+        &.active-complite .wrap-btn-list li
+          background: #f7fafc !important
+
+        &.js-open .wrap-btn-list li
+          background: #f7fafc !important
+
+        .wrap-text-info
+          margin-right: 270px
+        .wrap-btn-list
+          li
+            .btn-inf
+              width: 80px
+
+            &:last-child
+              width: 155px
+              position: relative
+              background: white
 
       .wrap-btn
         position: absolute
@@ -279,19 +273,7 @@
         width: 185px
         height: 106px
 
-      .link
-        display: inline-block
-        padding: 44px 0
-        width: 100%
-        background-color: #f7fafc
-        color: #c6d1d8
-        text-align: center
-        text-decoration: none
-        font: 400 16px $open
-        transition: all .12s ease
-        &:hover
-          background-color: #fb5570
-          color: white
+
 
     .style-text-5
       margin-top: 20px
@@ -310,11 +292,11 @@
 
     .border-block
       @extend %clear-fix
+      box-sizing: border-box
       margin-top: 28px
       margin-bottom: 10px
       padding: 25px 30px
       border: 1px solid rgba(#4a72f5, .1)
-      box-sizing: border-box
       &:hover
         border-color: #4a72f5
         .el-btn
@@ -328,8 +310,8 @@
           border-color: #fb5570
 
       .el-btn
-        float: right
         visibility: hidden
+        float: right
         opacity: 0
         &.delete
           margin-top: 14px
@@ -337,16 +319,16 @@
         &.give
           margin-top: 11px
       p
-        font: 400 13px $open
         margin-bottom: 5px
+        font: 400 13px $open
 
       .el-progress-wrap
         margin-top: 5px
         margin-bottom: 5px
 
     .text-wrap
-      width: 170px
       float: left
+      width: 170px
 
     .title
       color: black
@@ -408,16 +390,16 @@
 
     .wrap-img
       float: left
+      overflow: hidden
+      //margin-bottom: 30px
+      box-sizing: border-box
       margin-right: 25px
-      margin-bottom: 30px
       width: 140px
       height: 140px
       border: 2px solid #eff4f7
       border-radius: 70px
-      overflow: hidden
       text-align: center
       line-height: 136px
-      box-sizing: border-box
       @media (max-width: $screen-sm-max)
         width: 100px
         height: 100px
@@ -427,8 +409,8 @@
         vertical-align: middle
 
     .wrap-info
-      margin: 10px 0 30px 165px
       display: block
+      margin: 10px 0 30px 165px
 
       @media (max-width: $screen-sm-max)
         margin-left: 120px
@@ -444,12 +426,12 @@
       padding-left: 80px
       &:before
         position: absolute
-        left: 0
         top: 0
-        content: ''
-        background: url(../images/profile-arrow.svg) no-repeat center
+        left: 0
         width: 40px
         height: 70px
+        background: url(../images/profile-arrow.svg) no-repeat center
+        content: ''
 
     // section-2
     //-----------------------------------------------------------------------------------
@@ -461,6 +443,7 @@
       .right-competence
         top: 50px
         bottom: 40px
+        box-shadow: 0px 9px 24px 0px rgba(230, 234, 248, 0.4)
         .scroll-wrap
           height: 260px
       .item
@@ -476,20 +459,20 @@
 
           &:hover
             .skill-nav
-              opacity: 1
               visibility: visible
+              opacity: 1
 
       .skill-nav
         @extend %clear-fix
         display: inline-block
+        visibility: hidden
         float: right
         overflow: hidden
         margin: -15px -30px -15px 20px
         width: 150px
         height: 48px
-        transition: all .12s ease
         opacity: 0
-        visibility: hidden
+        transition: all .12s ease
         li
           float: left
           padding: 13px 24px
@@ -498,32 +481,40 @@
           &:first-child
             border-left: none
         a
-          text-decoration: none
           color: white
+          text-decoration: none
           font: 400 13px $open
           i:before
             margin: 0
             color: white
+            vertical-align: sub
             text-decoration: none
             font-size: 22px
-            vertical-align: sub
 
       .this-course
         margin-top: 20px
 
       .head
-        background-color: #61e7d6
+        padding: 9px 30px
         border-radius: 3px 3px 0 0
+        background-color: #61e7d6
         color: white
         font: 700 12px $open
-        padding: 9px 30px
 
       .cont-course
         position: relative
-        height: 375px
-        padding: 30px
         box-sizing: border-box
+        padding: 30px 0 30px 30px
+        height: 375px
         background: no-repeat center/cover
+        &.btn-mod
+          .tags
+            position: relative
+            z-index: 1
+            margin-top: 140px
+          .el-btn
+            position: relative
+            z-index: 1
 
         &:after
           position: absolute
@@ -541,34 +532,34 @@
             color: white
 
         .title
-          margin-top: 20px
           position: relative
           z-index: 1
+          margin-top: 20px
           color: white
           font: 400 18px $open
 
         .course-change
           position: relative
-          margin-top: 15px
           z-index: 1
+          margin-top: 15px
           color: white
           > span
-            font: 400 13px/44px $open
             display: inline-block
             float: left
             margin-right: 10px
+            font: 400 13px/44px $open
 
       .chart
         position: relative
         display: inline-block
         span
           position: absolute
-          left: 0
           top: 0
-          width: 100%
+          left: 0
           display: inline-block
-          text-align: center
+          width: 100%
           color: #61e7d6
+          text-align: center
           font: 700 13px/42px $open
 
     // .section-5
@@ -578,8 +569,8 @@
         @extend %clear-fix
         margin-top: 15px
         li
-          margin-bottom: 5px
           float: left
+          margin-bottom: 5px
 
     .academic-plan.no-info > li
       padding-right: 170px
@@ -588,20 +579,23 @@
       &:after
         display: none
 
+
     .wrap-list-process
-      position: relative
-      display: block
-      width: 100%
-      margin-top: 20px
       @extend %clear-fix
+      position: relative
+      display: none
+      box-sizing: border-box
+      margin-top: 20px
+      padding-right: 140px
+      width: 100%
 
       a
         position: absolute
-        bottom: 0px
-        right: -140px
+        right: 0
+        bottom: 0
         color: #9b9b9b
-        font: 400 13px $open
         text-decoration: none
+        font: 400 13px $open
         @media (max-width: $screen-xs-max)
           position: static
 
@@ -611,10 +605,10 @@
       .item-list-process
         @extend %clear-fix
         float: left
-        width: 50%
-        padding-right: 20px
         box-sizing: border-box
         margin-top: 30px
+        padding-right: 20px
+        width: 50%
 
         @media (max-width: $screen-xs-max)
           width: 100%

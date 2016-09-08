@@ -5,7 +5,7 @@
   <title>Title</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/style.css?timestamp=1473265715615"/>
+  <link rel="stylesheet" href="css/style.min.css"/>
   <script src="js/ie-detector.js"></script>
   <script src="js/modernizr.js"></script>
   <!--[if lte IE 9]><meta http-equiv="X-UA-Compatible" content="IE=edge"/><![endif]-->
@@ -95,13 +95,13 @@
                                     <fieldset class="rating">
                                         <input type="radio" id="star5" name="rating4" value="5"/>
                                         <label class="full" for="star5" title="Awesome - 5 stars"></label>
-                                        <input type="radio" id="star4half"  name="rating4" value="4 and a half"/>
+                                        <input type="radio" id="star4half" name="rating4" value="4 and a half"/>
                                         <label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
                                         <input type="radio" id="star4" name="rating4" value="4"/>
                                         <label class="full" for="star4" title="Pretty good - 4 stars"></label>
                                         <input type="radio" id="star3half" checked name="rating4" value="3 and a half"/>
                                         <label class="half" for="star3half" title="Meh - 3.5 stars"></label>
-                                        <input type="radio" id="star3"  name="rating4" value="3"/>
+                                        <input type="radio" id="star3" name="rating4" value="3"/>
                                         <label class="full" for="star3" title="Meh - 3 stars"></label>
                                         <input type="radio" id="star2half" name="rating4" value="2 and a half"/>
                                         <label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
@@ -129,8 +129,10 @@
                                 <span>6 500 </span>рублей
                             </div>
                             <div class="wrap-btn">
-                                <a href="#" class="el-btn pur-style">Записаться
+                                <a href="#" class="el-btn pur-style js-toggle">Записаться
                                     <span>начало 5 сентября <img src="images/icons/arrow-down-pure-o.svg" alt="icon"></span>
+                                    <span class="item-time border">с 25 сентября <span class="status">уже идет</span></span>
+                                    <span class="item-time">с 15 апреля</span>
                                 </a>
                             </div>
                             <ul class="list-nav">
@@ -278,7 +280,8 @@
                                     <ul>
                                         <li class="time">
 
-                                            <svg  xmlns="http://www.w3.org/2000/svg" version="1.1"width="32" height="32">
+                                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="32"
+                                                 height="32">
                                                 <path d="M797 1822C805.843 1822 813 1814.82 813 1806C813 1797.16 805.815 1790 797 1790C788.185 1790 781 1797.16 781 1806C781 1814.82 788.157 1822 797 1822ZM797 1792.24C804.599 1792.24 810.762 1798.4 810.762 1806C810.762 1813.6 804.5989999999999 1819.76 797 1819.76C789.401 1819.76 783.238 1813.57 783.238 1806C783.238 1798.4 789.4010000000001 1792.24 797 1792.24ZM796.041 1808L800.9570000000001 1808C801.5430000000001 1808 802.0010000000001 1807.55 802.0010000000001 1806.98C802.0010000000001 1806.41 801.5430000000001 1805.96 800.9570000000001 1805.96L797.0850000000002 1805.96L797.0850000000002 1800.02C797.0850000000002 1799.45 796.6270000000002 1799 796.0410000000002 1799C795.4550000000002 1799 794.9960000000002 1799.45 794.9960000000002 1800.02L794.9960000000002 1806.98C794.9960000000002 1807.55 795.4550000000002 1808 796.0410000000002 1808Z "
                                                       transform="matrix(1,0,0,1,-781,-1790)"></path>
                                             </svg>
@@ -287,7 +290,8 @@
                                                 по 8 часов в неделю.</p>
                                         </li>
                                         <li class="doc">
-                                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="28" height="29">
+                                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="28"
+                                                 height="29">
                                                 <path d="M811.022 1849.01L803.4530000000001 1849.01L803.7610000000001 1850.44C803.7990000000001 1850.6200000000001 803.797 1850.79 803.777 1850.97L810.043 1850.97L810.043 1874.04L785.954 1874.04L785.954 1850.97L792.222 1850.97C792.202 1850.79 792.201 1850.6200000000001 792.239 1850.44L792.547 1849.01L784.977 1849.01C784.437 1849.01 784 1849.45 784 1849.99L784 1875.02C784 1875.56 784.437 1876 784.977 1876L811.0219999999999 1876C811.5619999999999 1876 811.9999999999999 1875.56 811.9999999999999 1875.02L811.9999999999999 1849.99C811.9999999999999 1849.45 811.5619999999999 1849.01 811.0219999999999 1849.01ZM788.349 1856.63C787.932 1856.98 787.879 1857.5800000000002 788.231 1857.99L789.672 1859.65C789.861 1859.8700000000001 790.1370000000001 1859.99 790.427 1859.99C790.451 1859.99 790.475 1859.99 790.5 1859.99C790.815 1859.97 791.101 1859.8 791.268 1859.53L793.861 1855.45C794.148 1855 794.005 1854.41 793.54 1854.13C793.0749999999999 1853.8500000000001 792.467 1853.99 792.1809999999999 1854.44L790.3029999999999 1857.4L789.7409999999999 1856.75C789.3889999999999 1856.34 788.7669999999998 1856.29 788.3489999999998 1856.63ZM806.413 1863L795.569 1863C794.6909999999999 1863 793.982 1863.45 793.982 1864C793.982 1864.56 794.6909999999999 1865.01 795.569 1865.01L806.413 1865.01C807.291 1865.01 808.001 1864.56 808.001 1864C808.001 1863.45 807.2909999999999 1863 806.413 1863ZM806.413 1858.01L795.569 1858.01C794.6909999999999 1858.01 793.982 1858.45 793.982 1859C793.982 1859.55 794.6909999999999 1859.99 795.569 1859.99L806.413 1859.99C807.291 1859.99 808.001 1859.55 808.001 1859C808.001 1858.45 807.2909999999999 1858.01 806.413 1858.01ZM806.413 1868.01L795.569 1868.01C794.6909999999999 1868.01 793.982 1868.45 793.982 1869C793.982 1869.55 794.6909999999999 1869.99 795.569 1869.99L806.413 1869.99C807.291 1869.99 808.001 1869.55 808.001 1869C808.001 1868.45 807.2909999999999 1868.01 806.413 1868.01ZM790.5 1866.99C789.673 1866.99 789.002 1867.67 789.002 1868.5C789.002 1869.34 789.6719999999999 1870.01 790.5 1870.01C791.327 1870.01 791.998 1869.34 791.998 1868.5C791.998 1867.67 791.327 1866.99 790.5 1866.99ZM790.5 1862.01C789.673 1862.01 789.002 1862.68 789.002 1863.5C789.002 1864.33 789.6719999999999 1865 790.5 1865C791.327 1865 791.998 1864.33 791.998 1863.5C791.998 1862.68 791.327 1862.01 790.5 1862.01ZM793.689 1852.02L802.309 1852.02C802.52 1852.02 802.7199999999999 1851.92 802.852 1851.74C802.985 1851.57 803.036 1851.33 802.991 1851.11L802.2769999999999 1847.59C802.2069999999999 1847.24 801.924 1847 801.5949999999999 1847L794.4039999999999 1847C794.0749999999999 1847 793.7919999999999 1847.24 793.7219999999999 1847.59L793.0069999999998 1851.11C792.9639999999998 1851.33 793.0149999999999 1851.57 793.1469999999998 1851.74C793.2789999999998 1851.92 793.4789999999998 1852.02 793.6889999999999 1852.02Z "
                                                       transform="matrix(1,0,0,1,-784,-1847)"></path>
                                             </svg>
@@ -416,13 +420,14 @@
                                         <fieldset class="rating">
                                             <input type="radio" id="star5" name="rating" value="5"/>
                                             <label class="full" for="star5" title="Awesome - 5 stars"></label>
-                                            <input type="radio" id="star4half"  name="rating" value="4 and a half"/>
+                                            <input type="radio" id="star4half" name="rating" value="4 and a half"/>
                                             <label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
                                             <input type="radio" id="star4" name="rating" value="4"/>
                                             <label class="full" for="star4" title="Pretty good - 4 stars"></label>
-                                            <input type="radio" id="star3half" checked name="rating" value="3 and a half"/>
+                                            <input type="radio" id="star3half" checked name="rating"
+                                                   value="3 and a half"/>
                                             <label class="half" for="star3half" title="Meh - 3.5 stars"></label>
-                                            <input type="radio" id="star3"  name="rating" value="3"/>
+                                            <input type="radio" id="star3" name="rating" value="3"/>
                                             <label class="full" for="star3" title="Meh - 3 stars"></label>
                                             <input type="radio" id="star2half" name="rating" value="2 and a half"/>
                                             <label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
@@ -433,7 +438,8 @@
                                             <input type="radio" id="star1" name="rating" value="1"/>
                                             <label class="full" for="star1" title="Sucks big time - 1 star"></label>
                                             <input type="radio" id="starhalf" name="rating" value="half"/>
-                                            <label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                                            <label class="half" for="starhalf"
+                                                   title="Sucks big time - 0.5 stars"></label>
                                         </fieldset>
                                     </div>
                                     <div class="rating-text">3.67</div>
@@ -447,31 +453,46 @@
                                                 <fieldset class="rating">
                                                     <input type="radio" id="star5" name="rating2" value="5"/>
                                                     <label class="full" for="star5" title="Awesome - 5 stars"></label>
-                                                    <input type="radio" id="star4half" name="rating2" value="4 and a half"/>
-                                                    <label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                                    <input type="radio" id="star4half" name="rating2"
+                                                           value="4 and a half"/>
+                                                    <label class="half" for="star4half"
+                                                           title="Pretty good - 4.5 stars"></label>
                                                     <input type="radio" id="star4" name="rating2" value="4"/>
-                                                    <label class="full" for="star4" title="Pretty good - 4 stars"></label>
-                                                    <input type="radio" id="star3half"  name="rating2" value="3 and a half"/>
+                                                    <label class="full" for="star4"
+                                                           title="Pretty good - 4 stars"></label>
+                                                    <input type="radio" id="star3half" name="rating2"
+                                                           value="3 and a half"/>
                                                     <label class="half" for="star3half" title="Meh - 3.5 stars"></label>
                                                     <input type="radio" id="star3" checked name="rating2" value="3"/>
                                                     <label class="full" for="star3" title="Meh - 3 stars"></label>
-                                                    <input type="radio" id="star2half" name="rating2" value="2 and a half"/>
-                                                    <label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                                    <input type="radio" id="star2half" name="rating2"
+                                                           value="2 and a half"/>
+                                                    <label class="half" for="star2half"
+                                                           title="Kinda bad - 2.5 stars"></label>
                                                     <input type="radio" id="star2" name="rating2" value="2"/>
                                                     <label class="full" for="star2" title="Kinda bad - 2 stars"></label>
-                                                    <input type="radio" id="star1half" name="rating2" value="1 and a half"/>
+                                                    <input type="radio" id="star1half" name="rating2"
+                                                           value="1 and a half"/>
                                                     <label class="half" for="star1half" title="Meh - 1.5 stars"></label>
                                                     <input type="radio" id="star1" name="rating2" value="1"/>
-                                                    <label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                                                    <label class="full" for="star1"
+                                                           title="Sucks big time - 1 star"></label>
                                                     <input type="radio" id="starhalf" name="rating2" value="half"/>
-                                                    <label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                                                    <label class="half" for="starhalf"
+                                                           title="Sucks big time - 0.5 stars"></label>
                                                 </fieldset>
                                             </div>
                                             <span class="name">Мария</span>
                                             <span class="data">2 недели назад</span>
                                         </div>
                                         <div class="comment-text">
-                                            I believe this course will be very helpful and useful to anyone who wants to improve or revise their English skills. I'm very much waiting to hear more from Geoffrey Pullum and David Crystal. I hate to point this out, but I very muI believe this course will be very helpful and useful to anyone who wants to improve or revise their English skills. I'm very much waiting to hear more from Geoffrey Pullum and David Crystal. I hate to point this out, but I very muI believe this course will be very helpful and useful.
+                                            I believe this course will be very helpful and useful to anyone who wants to
+                                            improve or revise their English skills. I'm very much waiting to hear more
+                                            from Geoffrey Pullum and David Crystal. I hate to point this out, but I very
+                                            muI believe this course will be very helpful and useful to anyone who wants
+                                            to improve or revise their English skills. I'm very much waiting to hear
+                                            more from Geoffrey Pullum and David Crystal. I hate to point this out, but I
+                                            very muI believe this course will be very helpful and useful.
                                         </div>
                                         <p><a href="#">Читать весь отзыв</a></p>
                                     </div>
@@ -481,31 +502,43 @@
                                                 <fieldset class="rating">
                                                     <input type="radio" id="star5" name="rating1" value="5"/>
                                                     <label class="full" for="star5" title="Awesome - 5 stars"></label>
-                                                    <input type="radio" id="star4half" name="rating1" value="4 and a half"/>
-                                                    <label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                                    <input type="radio" id="star4half" name="rating1"
+                                                           value="4 and a half"/>
+                                                    <label class="half" for="star4half"
+                                                           title="Pretty good - 4.5 stars"></label>
                                                     <input type="radio" id="star4" name="rating1" value="4"/>
-                                                    <label class="full" for="star4" title="Pretty good - 4 stars"></label>
-                                                    <input type="radio" id="star3half" checked  name="rating1" value="3 and a half"/>
+                                                    <label class="full" for="star4"
+                                                           title="Pretty good - 4 stars"></label>
+                                                    <input type="radio" id="star3half" checked name="rating1"
+                                                           value="3 and a half"/>
                                                     <label class="half" for="star3half" title="Meh - 3.5 stars"></label>
-                                                    <input type="radio" id="star3"  name="rating1" value="3"/>
+                                                    <input type="radio" id="star3" name="rating1" value="3"/>
                                                     <label class="full" for="star3" title="Meh - 3 stars"></label>
-                                                    <input type="radio" id="star2half" name="rating1" value="2 and a half"/>
-                                                    <label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                                    <input type="radio" id="star2half" name="rating1"
+                                                           value="2 and a half"/>
+                                                    <label class="half" for="star2half"
+                                                           title="Kinda bad - 2.5 stars"></label>
                                                     <input type="radio" id="star2" name="rating1" value="2"/>
                                                     <label class="full" for="star2" title="Kinda bad - 2 stars"></label>
-                                                    <input type="radio" id="star1half" name="rating1" value="1 and a half"/>
+                                                    <input type="radio" id="star1half" name="rating1"
+                                                           value="1 and a half"/>
                                                     <label class="half" for="star1half" title="Meh - 1.5 stars"></label>
                                                     <input type="radio" id="star1" name="rating1" value="1"/>
-                                                    <label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                                                    <label class="full" for="star1"
+                                                           title="Sucks big time - 1 star"></label>
                                                     <input type="radio" id="starhalf" name="rating1" value="half"/>
-                                                    <label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                                                    <label class="half" for="starhalf"
+                                                           title="Sucks big time - 0.5 stars"></label>
                                                 </fieldset>
                                             </div>
                                             <span class="name">Мария</span>
                                             <span class="data">2 недели назад</span>
                                         </div>
                                         <div class="comment-text">
-                                            I believe this course will be very helpful and useful to anyone who wants to improve or revise their English skills. I'm very much waiting to hear more from Geoffrey Pullum and David Crystal. I hate to point this out, but I very muI believe this course will be very helpful and useful to anyone who wants.
+                                            I believe this course will be very helpful and useful to anyone who wants to
+                                            improve or revise their English skills. I'm very much waiting to hear more
+                                            from Geoffrey Pullum and David Crystal. I hate to point this out, but I very
+                                            muI believe this course will be very helpful and useful to anyone who wants.
                                         </div>
                                     </div>
                                 </div>
@@ -535,10 +568,12 @@
                                                 <li><a href="#">МФТИ</a></li>
                                             </ul>
                                         </div>
-                                        <a href="#" class="name">Управление проектами в условиях динамично развивающегося
+                                        <a href="#" class="name">Управление проектами в условиях динамично
+                                            развивающегося
                                             продукта. </a>
                                         <div class="announce">
-                                            Вы научитесь сегментировать изображения, выделять на них информативные области.
+                                            Вы научитесь сегментировать изображения, выделять на них информативные
+                                            области.
                                         </div>
                                         <div class="bottom-item">
                                             <div class="data">Начало 28 ноября</div>
@@ -552,7 +587,8 @@
                                                 <li><a href="#">МФТИ</a></li>
                                             </ul>
                                         </div>
-                                        <a href="#" class="name">Управление проектами в условиях динамично развивающегося
+                                        <a href="#" class="name">Управление проектами в условиях динамично
+                                            развивающегося
                                             продукта. Роль инвестиций
                                             в разработке инноваций.</a>
                                         <div class="bottom-item">
@@ -654,8 +690,8 @@
 
 <!-- scripts -->
 <script src="js/libs.js"></script>
-<script src="js/core.js"></script>
-<script src="js/common.js?timestamp=1473265715615"></script>
-<script src="//localhost:35729/livereload.js"></script>
+
+<script src="js/common.js"></script>
+
 </body>
 </html>

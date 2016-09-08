@@ -892,7 +892,7 @@ body, input, button, select, textarea {
 .clear {
   clear: both; }
 
-.container:after, .container-fluid:after, .row:after, .el-check-group.mod-horizontal:after, .el-progress-wrap:after, .tag-filter-wrap:after, .sign-social:after, .header .user-page-link:after, .footer .contact-link:after, .footer .contact-link a.css-color:after, .footer .navigation-list:after, .home-page .section-1 .tab-catalog:after, .home-page .section-1 .wrap-drop:after, .home-page .section-4 .wrap-banner:after, .home-page .carousel .owl-nav:after, .page-content.right-sidebar .content-wrap .sidebar:after, .page-content .sidebar .title-rating:after, .page-content .partner:after, .page-content .list-style-1:after, .page-content .colon-section:after, .page-content .col-center .list-style-2 > li:after, .page-content .course-section:after, .page-content .rating-section:after, .page-content .comment-wrap:after, .page-content .partner-section .owl-nav:after, .page-content .branches-section ul:after, .page-content .branches-section li:after, .page-content .necessary-section:after, .page-content .necessary-section .necessary ul:after, .page-content .competence-section .skill li:after, .page-content .competence-section .skill-nav:after, .page-content .competence-section .right-competence .title:after, .page-content .academic-plan .progress-wrap:after, .page-content .academic-plan .specialization:after, .tabs:after, .carts-section:after, .carts-section .skill li:after, .carts-section .skill .progress-wrap:after, .carts-section .necessary ul:after, .certificate-section .certificate .all-courses:after, .certificate-section .certificate li:after, .personal-page .page-content.left-sidebar .content-wrap .sidebar:after, .personal-page .page-content .skill li:after, .personal-page .page-content .skill-nav:after, .personal-page .page-content .right-competence .title:after, .personal-page .page-content .border-block:after, .personal-page .page-content .section-2 .skill-nav:after, .personal-page .page-content .section-5 .partner-lists:after, .personal-page .page-content .wrap-list-process:after, .personal-page .page-content .wrap-list-process .item-list-process:after, .static-page .lecturer-wrap .owl-nav:after, .home-page.css-home .section-subscribe .wrap-banner:after, .home-page.css-home .section-tabs .tabs:after, .home-page.css-home .section-tabs .tabgroup .wrapper-tabs-item:after, .clear-fix:after {
+.container:after, .container-fluid:after, .row:after, .el-check-group.mod-horizontal:after, .el-progress-wrap:after, .tag-filter-wrap:after, .sign-social:after, .header .user-page-link:after, .footer .contact-link:after, .footer .contact-link a.css-color:after, .footer .navigation-list:after, .home-page .section-1 .tab-catalog:after, .home-page .section-1 .wrap-drop:after, .home-page .section-4 .wrap-banner:after, .home-page .carousel .owl-nav:after, .page-content.right-sidebar .content-wrap .sidebar:after, .page-content .sidebar .title-rating:after, .page-content .partner:after, .page-content .list-style-1:after, .page-content .colon-section:after, .page-content .col-center .list-style-2 > li:after, .page-content .course-section:after, .page-content .rating-section:after, .page-content .comment-wrap:after, .page-content .partner-section .owl-nav:after, .page-content .branches-section ul:after, .page-content .branches-section li:after, .page-content .necessary-section:after, .page-content .necessary-section .necessary ul:after, .page-content .competence-section .skill li:after, .page-content .competence-section .skill-nav:after, .page-content .competence-section .right-competence .title:after, .page-content .academic-plan > li:after, .page-content .academic-plan .wrap-btn-list:after, .page-content .academic-plan .progress-wrap:after, .page-content .academic-plan .specialization:after, .page-content .academic-plan .wrap-list-process:after, .page-content .academic-plan .wrap-list-process .item-list-process:after, .tabs:after, .carts-section:after, .carts-section .skill li:after, .carts-section .skill .progress-wrap:after, .carts-section .necessary ul:after, .certificate-section .certificate .all-courses:after, .certificate-section .certificate li:after, .personal-page .page-content.left-sidebar .content-wrap .sidebar:after, .personal-page .page-content .skill li:after, .personal-page .page-content .skill-nav:after, .personal-page .page-content .right-competence .title:after, .personal-page .page-content .border-block:after, .personal-page .page-content .section-2 .skill-nav:after, .personal-page .page-content .section-5 .partner-lists:after, .personal-page .page-content .wrap-list-process:after, .personal-page .page-content .wrap-list-process .item-list-process:after, .static-page .lecturer-wrap .owl-nav:after, .home-page.css-home .section-subscribe .wrap-banner:after, .home-page.css-home .section-tabs .tabs:after, .home-page.css-home .section-tabs .tabgroup .wrapper-tabs-item:after, .clear-fix:after {
   content: "";
   clear: both;
   display: table;
@@ -2144,12 +2144,14 @@ html {
     border-color: #4a72f5;
     background-color: #4a72f5; }
     .el-btn.blue-style:hover {
-      background: none;
-      color: #4a72f5; }
+      border-color: #3f62d4;
+      background: #3f62d4;
+      color: white; }
     .el-btn.blue-style.inverse {
       background: none;
       color: #4a72f5; }
       .el-btn.blue-style.inverse:hover {
+        border-color: #4a72f5;
         background: #4a72f5;
         color: white; }
   .el-btn.fiol-style {
@@ -2163,8 +2165,16 @@ html {
     border-color: #fb5570;
     background-color: #fb5570; }
     .el-btn.pur-style:hover {
+      border-color: #db4b63;
+      background: #db4b63;
+      color: white; }
+    .el-btn.pur-style.inverse {
       background: none;
       color: #fb5570; }
+      .el-btn.pur-style.inverse:hover {
+        border-color: #fb5570;
+        background: #fb5570;
+        color: white; }
   .el-btn.grey-style {
     border-color: #9b9b9b;
     background-color: #9b9b9b; }
@@ -3730,6 +3740,8 @@ html .ui-button.ui-state-disabled:active {
       color: #9b9b9b; }
   .home-page [class*="section"] .title-section .el-btn {
     float: right; }
+    .home-page [class*="section"] .title-section .el-btn:hover {
+      text-decoration: none; }
     @media (max-width: 767px) {
       .home-page [class*="section"] .title-section .el-btn {
         float: none;
@@ -4163,23 +4175,48 @@ html .ui-button.ui-state-disabled:active {
       .page-content .sidebar .wrap-btn .el-btn {
         padding: 35px 15px 30px;
         width: 100%;
-        height: 100px;
+        height: auto;
         border: none;
         border-radius: 5px;
         font-weight: 400;
         font-size: 24px; }
         .page-content .sidebar .wrap-btn .el-btn.center {
           padding: 40px 15px; }
+        .page-content .sidebar .wrap-btn .el-btn.js-open {
+          padding-bottom: 15px; }
+          .page-content .sidebar .wrap-btn .el-btn.js-open .item-time {
+            display: block;
+            margin: 10px -15px 0; }
+          .page-content .sidebar .wrap-btn .el-btn.js-open span {
+            margin-bottom: 30px; }
+            .page-content .sidebar .wrap-btn .el-btn.js-open span img {
+              -webkit-transform: rotate(180deg);
+                  -ms-transform: rotate(180deg);
+                      transform: rotate(180deg); }
         .page-content .sidebar .wrap-btn .el-btn:hover {
           background-color: #CC455C;
           color: white; }
         .page-content .sidebar .wrap-btn .el-btn span {
           display: block;
           margin-top: 6px;
+          margin-bottom: 10px;
           color: white;
-          font-size: 12px; }
+          font-size: 14px; }
           .page-content .sidebar .wrap-btn .el-btn span img {
             vertical-align: middle; }
+        .page-content .sidebar .wrap-btn .el-btn .item-time {
+          display: none;
+          text-align: left;
+          font-size: 14px;
+          padding: 0 20px;
+          margin: 10px -15px 0; }
+          .page-content .sidebar .wrap-btn .el-btn .item-time.border {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            padding-bottom: 10px; }
+          .page-content .sidebar .wrap-btn .el-btn .item-time .status {
+            float: right;
+            margin-top: 0;
+            opacity: 0.7; }
     .page-content .sidebar .price {
       margin: 20px 0;
       color: black;
@@ -4886,7 +4923,8 @@ html .ui-button.ui-state-disabled:active {
     right: -30px;
     bottom: 31px;
     width: 290px;
-    background-color: white; }
+    background-color: white;
+    box-shadow: 0px 9px 24px 0px rgba(230, 234, 248, 0.4); }
     .page-content .competence-section .right-competence .title {
       margin-bottom: 10px;
       padding-left: 30px;
@@ -4989,24 +5027,34 @@ html .ui-button.ui-state-disabled:active {
     @media (max-width: 767px) {
       .page-content .academic-plan:after {
         display: none; } }
-  .page-content .academic-plan li {
+  .page-content .academic-plan > li {
     position: relative;
     margin-bottom: 30px;
-    padding: 25px 100px 25px 27px;
+    padding: 25px 25px 25px 27px;
     border-left: 4px solid #f7fafc;
     background-color: #f7fafc; }
+    .page-content .academic-plan > li.active-complite .wrap-btn-list li {
+      background: #f7fafc; }
+    .page-content .academic-plan > li.js-open .wrap-list-process {
+      display: block; }
+    .page-content .academic-plan > li.js-open .wrap-btn-list li {
+      background: #f7fafc; }
+    .page-content .academic-plan > li.js-open .wrap-btn-list .el-btn {
+      visibility: visible;
+      opacity: 1; }
     @media (max-width: 767px) {
-      .page-content .academic-plan li {
+      .page-content .academic-plan > li {
         padding-right: 25px; } }
-    .page-content .academic-plan li.complete {
-      border-left: 4px solid #61e7d6; }
-    .page-content .academic-plan li.active {
+    .page-content .academic-plan > li.active:before {
+      background: url(../images/academic-before-active.svg) no-repeat left center; }
+    .page-content .academic-plan > li:hover {
       border-left: 4px solid #4a72f5; }
-      .page-content .academic-plan li.active:before {
-        background: url(../images/academic-before-active.svg) no-repeat left center; }
-    .page-content .academic-plan li.hover {
-      border-left: 4px solid #4a72f5; }
-    .page-content .academic-plan li:before {
+      .page-content .academic-plan > li:hover .wrap-btn-list li {
+        background: #f7fafc; }
+      .page-content .academic-plan > li:hover .wrap-btn-list .el-btn {
+        visibility: visible;
+        opacity: 1; }
+    .page-content .academic-plan > li:before {
       position: absolute;
       top: 50%;
       left: -71px;
@@ -5017,21 +5065,72 @@ html .ui-button.ui-state-disabled:active {
       background: url(../images/academic-before.svg) no-repeat left center;
       content: ""; }
       @media (max-width: 767px) {
-        .page-content .academic-plan li:before {
+        .page-content .academic-plan > li:before {
           display: none; } }
-    .page-content .academic-plan li:after {
-      position: absolute;
-      top: 50%;
-      right: 40px;
-      margin-top: -13px;
-      width: 26px;
-      height: 26px;
-      background: url(../images/icons/info-icon.svg) no-repeat center/cover;
-      content: "";
-      opacity: 0.8; }
-      @media (max-width: 767px) {
-        .page-content .academic-plan li:after {
-          display: none; } }
+  .page-content .academic-plan .wrap-relative {
+    position: relative;
+    margin: -25px -25px -25px 0;
+    padding: 25px 25px 25px 0;
+    box-sizing: border-box; }
+  .page-content .academic-plan .wrap-text-info {
+    margin-right: 100px; }
+  .page-content .academic-plan .wrap-btn-list {
+    position: absolute;
+    display: inline-block;
+    height: 100%;
+    right: 0;
+    top: 0;
+    bottom: 0; }
+    .page-content .academic-plan .wrap-btn-list li {
+      height: 100%;
+      line-height: 100%;
+      float: left;
+      margin-left: 35px; }
+      .page-content .academic-plan .wrap-btn-list li:first-child {
+        margin-left: 0; }
+      .page-content .academic-plan .wrap-btn-list li:last-child {
+        position: relative; }
+      .page-content .academic-plan .wrap-btn-list li .btn-inf {
+        position: relative;
+        display: inline-block;
+        width: 130px;
+        height: 100%; }
+        .page-content .academic-plan .wrap-btn-list li .btn-inf:after {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          content: "";
+          width: 28px;
+          height: 28px;
+          margin-top: -14px;
+          margin-left: -14px;
+          background: url(../images/icons/info-icon.svg) no-repeat center/cover; }
+      .page-content .academic-plan .wrap-btn-list li .el-btn {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-top: -24px;
+        visibility: hidden;
+        opacity: 0;
+        border-color: #cad4db;
+        color: #cad4db;
+        padding: 16px 24px;
+        height: auto; }
+        .page-content .academic-plan .wrap-btn-list li .el-btn:hover {
+          color: white;
+          border-color: #fb5570;
+          background: #fb5570; }
+      .page-content .academic-plan .wrap-btn-list li .complite-zapis {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-top: -24px;
+        padding: 8px 0px;
+        width: 130px;
+        display: inline-block;
+        text-align: center;
+        font-size: 13px;
+        background: #dce1e7; }
   .page-content .academic-plan .title-name {
     margin-bottom: 13px;
     color: #4a72f5;
@@ -5078,6 +5177,44 @@ html .ui-button.ui-state-disabled:active {
       float: right;
       margin-right: 30px;
       color: #9b9b9b; }
+  .page-content .academic-plan .wrap-list-process {
+    position: relative;
+    display: none;
+    box-sizing: border-box;
+    margin-top: 20px;
+    padding-right: 140px;
+    width: 100%; }
+    .page-content .academic-plan .wrap-list-process a {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      color: #9b9b9b;
+      text-decoration: none;
+      font: 400 13px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+      @media (max-width: 767px) {
+        .page-content .academic-plan .wrap-list-process a {
+          position: static; } }
+      .page-content .academic-plan .wrap-list-process a:hover {
+        text-decoration: underline; }
+    .page-content .academic-plan .wrap-list-process .item-list-process {
+      float: left;
+      box-sizing: border-box;
+      margin-top: 30px;
+      padding-right: 20px;
+      width: 50%; }
+      @media (max-width: 767px) {
+        .page-content .academic-plan .wrap-list-process .item-list-process {
+          width: 100%; } }
+      .page-content .academic-plan .wrap-list-process .item-list-process .name {
+        display: block;
+        float: left;
+        color: black;
+        font: 400 13px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+      .page-content .academic-plan .wrap-list-process .item-list-process .el-progress-wrap {
+        float: right;
+        width: 110px; }
+        .page-content .academic-plan .wrap-list-process .item-list-process .el-progress-wrap .progress {
+          width: 70px; }
 
 .dropdown-item-strong {
   position: relative;
@@ -5398,8 +5535,8 @@ html .ui-button.ui-state-disabled:active {
   .personal-page .page-content .competence {
     position: relative; }
     .personal-page .page-content .competence.js-open .right-competence {
-      opacity: 1;
-      visibility: visible; }
+      visibility: visible;
+      opacity: 1; }
   .personal-page .page-content .skill {
     margin: 0 -30px; }
     .personal-page .page-content .skill li {
@@ -5408,8 +5545,8 @@ html .ui-button.ui-state-disabled:active {
       .personal-page .page-content .skill li.active {
         background-color: #4a72f5; }
         .personal-page .page-content .skill li.active .skill-nav {
-          opacity: 1;
-          visibility: visible; }
+          visibility: visible;
+          opacity: 1; }
         .personal-page .page-content .skill li.active .name {
           color: white; }
         .personal-page .page-content .skill li.active .el-progress-wrap .prosent {
@@ -5418,8 +5555,8 @@ html .ui-button.ui-state-disabled:active {
         background-color: #4a72f5;
         cursor: pointer; }
         .personal-page .page-content .skill li:hover .skill-nav {
-          opacity: 1;
-          visibility: visible; }
+          visibility: visible;
+          opacity: 1; }
         .personal-page .page-content .skill li:hover .name {
           color: white; }
         .personal-page .page-content .skill li:hover .el-progress-wrap .prosent {
@@ -5432,14 +5569,14 @@ html .ui-button.ui-state-disabled:active {
     .personal-page .page-content .skill .el-progress-wrap {
       float: right; }
   .personal-page .page-content .skill-nav {
-    opacity: 0;
-    visibility: hidden;
     display: inline-block;
+    visibility: hidden;
     float: right;
     overflow: hidden;
     margin: -15px -30px -15px 20px;
     width: 280px;
     height: 48px;
+    opacity: 0;
     transition: all 0.12s ease; }
     .personal-page .page-content .skill-nav li {
       float: left;
@@ -5457,14 +5594,15 @@ html .ui-button.ui-state-disabled:active {
       color: white;
       font: 400 13px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
   .personal-page .page-content .right-competence {
-    opacity: 0;
-    visibility: hidden;
     position: absolute;
     top: -35px;
     right: -15px;
     bottom: 31px;
+    visibility: hidden;
     width: 290px;
-    background-color: white; }
+    background-color: white;
+    box-shadow: 0px 9px 24px 0px rgba(230, 234, 248, 0.4);
+    opacity: 0; }
     .personal-page .page-content .right-competence .title {
       margin-bottom: 10px;
       padding-left: 30px;
@@ -5482,9 +5620,9 @@ html .ui-button.ui-state-disabled:active {
         .personal-page .page-content .right-competence .title button i:before {
           margin: 0;
           color: white;
+          vertical-align: sub;
           text-decoration: none;
-          font-size: 22px;
-          vertical-align: sub; }
+          font-size: 22px; }
         .personal-page .page-content .right-competence .title button img {
           vertical-align: middle; }
     .personal-page .page-content .right-competence .list-competence {
@@ -5528,45 +5666,30 @@ html .ui-button.ui-state-disabled:active {
     .personal-page .page-content .more-link:hover {
       text-decoration: underline; }
     .personal-page .page-content .more-link i {
-      text-decoration: none;
       vertical-align: baseline;
+      text-decoration: none;
       font-size: 18px; }
-  .personal-page .page-content .academic-plan li {
-    padding-right: 300px; }
-    @media (max-width: 767px) {
-      .personal-page .page-content .academic-plan li {
-        padding-right: 25px; } }
-    .personal-page .page-content .academic-plan li:after {
-      right: 230px; }
-  .personal-page .page-content .academic-plan .list-buttons {
-    position: absolute;
-    right: 0;
-    top: 0; }
-    .personal-page .page-content .academic-plan .list-buttons li {
-      display: inline-block;
-      padding: 0;
-      float: left;
-      max-width: 105px;
-      min-width: 66px;
-      height: 66px;
-      line-height: 66px;
-      text-align: center;
-      background-color: #dce1e7;
-      border-left: 1px solid white; }
-      .personal-page .page-content .academic-plan .list-buttons li:first-child {
-        border-left: none; }
-      .personal-page .page-content .academic-plan .list-buttons li:after {
-        display: none; }
-      .personal-page .page-content .academic-plan .list-buttons li:before {
-        display: none; }
-      .personal-page .page-content .academic-plan .list-buttons li a {
-        display: inline-block;
-        color: black;
-        text-decoration: none;
-        padding: 15px 10px;
-        font: 400 13px/18px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
-        .personal-page .page-content .academic-plan .list-buttons li a img {
-          display: inline-block; }
+  .personal-page .page-content .academic-plan > li:hover {
+    border-left: 4px solid #4a72f5; }
+    .personal-page .page-content .academic-plan > li:hover .wrap-btn-list li {
+      background: #f7fafc; }
+      .personal-page .page-content .academic-plan > li:hover .wrap-btn-list li:last-child {
+        background: #f7fafc !important; }
+    .personal-page .page-content .academic-plan > li:hover .wrap-btn-list .el-btn {
+      visibility: visible;
+      opacity: 1; }
+  .personal-page .page-content .academic-plan > li.active-complite .wrap-btn-list li {
+    background: #f7fafc !important; }
+  .personal-page .page-content .academic-plan > li.js-open .wrap-btn-list li {
+    background: #f7fafc !important; }
+  .personal-page .page-content .academic-plan > li .wrap-text-info {
+    margin-right: 270px; }
+  .personal-page .page-content .academic-plan > li .wrap-btn-list li .btn-inf {
+    width: 80px; }
+  .personal-page .page-content .academic-plan > li .wrap-btn-list li:last-child {
+    width: 155px;
+    position: relative;
+    background: white; }
   .personal-page .page-content .academic-plan .wrap-btn {
     position: absolute;
     top: 50%;
@@ -5576,19 +5699,6 @@ html .ui-button.ui-state-disabled:active {
     margin-top: -53px;
     width: 185px;
     height: 106px; }
-  .personal-page .page-content .academic-plan .link {
-    display: inline-block;
-    padding: 44px 0;
-    width: 100%;
-    background-color: #f7fafc;
-    color: #c6d1d8;
-    text-align: center;
-    text-decoration: none;
-    font: 400 16px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
-    transition: all 0.12s ease; }
-    .personal-page .page-content .academic-plan .link:hover {
-      background-color: #fb5570;
-      color: white; }
   .personal-page .page-content .style-text-5 {
     margin-top: 20px;
     color: black;
@@ -5603,11 +5713,11 @@ html .ui-button.ui-state-disabled:active {
     .personal-page .page-content .el-progress-wrap.all-progress .progress {
       width: 170px; }
   .personal-page .page-content .border-block {
+    box-sizing: border-box;
     margin-top: 28px;
     margin-bottom: 10px;
     padding: 25px 30px;
-    border: 1px solid rgba(74, 114, 245, 0.1);
-    box-sizing: border-box; }
+    border: 1px solid rgba(74, 114, 245, 0.1); }
     .personal-page .page-content .border-block:hover {
       border-color: #4a72f5; }
       .personal-page .page-content .border-block:hover .el-btn {
@@ -5618,22 +5728,22 @@ html .ui-button.ui-state-disabled:active {
       .personal-page .page-content .border-block.css-pur:hover {
         border-color: #fb5570; }
     .personal-page .page-content .border-block .el-btn {
-      float: right;
       visibility: hidden;
+      float: right;
       opacity: 0; }
       .personal-page .page-content .border-block .el-btn.delete {
         margin-top: 14px; }
       .personal-page .page-content .border-block .el-btn.give {
         margin-top: 11px; }
     .personal-page .page-content .border-block p {
-      font: 400 13px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
-      margin-bottom: 5px; }
+      margin-bottom: 5px;
+      font: 400 13px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
     .personal-page .page-content .border-block .el-progress-wrap {
       margin-top: 5px;
       margin-bottom: 5px; }
   .personal-page .page-content .text-wrap {
-    width: 170px;
-    float: left; }
+    float: left;
+    width: 170px; }
   .personal-page .page-content .title {
     color: black;
     font: 400 16px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
@@ -5680,16 +5790,15 @@ html .ui-button.ui-state-disabled:active {
         font-size: 13px; }
   .personal-page .page-content .wrap-img {
     float: left;
+    overflow: hidden;
+    box-sizing: border-box;
     margin-right: 25px;
-    margin-bottom: 30px;
     width: 140px;
     height: 140px;
     border: 2px solid #eff4f7;
     border-radius: 70px;
-    overflow: hidden;
     text-align: center;
-    line-height: 136px;
-    box-sizing: border-box; }
+    line-height: 136px; }
     @media (max-width: 991px) {
       .personal-page .page-content .wrap-img {
         width: 100px;
@@ -5698,8 +5807,8 @@ html .ui-button.ui-state-disabled:active {
     .personal-page .page-content .wrap-img img {
       vertical-align: middle; }
   .personal-page .page-content .wrap-info {
-    margin: 10px 0 30px 165px;
-    display: block; }
+    display: block;
+    margin: 10px 0 30px 165px; }
     @media (max-width: 991px) {
       .personal-page .page-content .wrap-info {
         margin-left: 120px; } }
@@ -5713,18 +5822,19 @@ html .ui-button.ui-state-disabled:active {
     padding-left: 80px; }
     .personal-page .page-content .profile-arrow:before {
       position: absolute;
-      left: 0;
       top: 0;
-      content: "";
-      background: url(../images/profile-arrow.svg) no-repeat center;
+      left: 0;
       width: 40px;
-      height: 70px; }
+      height: 70px;
+      background: url(../images/profile-arrow.svg) no-repeat center;
+      content: ""; }
   .personal-page .page-content .section-2 .small {
     color: #9b9b9b;
     font: 400 13px/20px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
   .personal-page .page-content .section-2 .right-competence {
     top: 50px;
-    bottom: 40px; }
+    bottom: 40px;
+    box-shadow: 0px 9px 24px 0px rgba(230, 234, 248, 0.4); }
     .personal-page .page-content .section-2 .right-competence .scroll-wrap {
       height: 260px; }
   .personal-page .page-content .section-2 .item {
@@ -5736,18 +5846,18 @@ html .ui-button.ui-state-disabled:active {
   .personal-page .page-content .section-2 .skill li {
     padding: 15px 30px; }
     .personal-page .page-content .section-2 .skill li:hover .skill-nav {
-      opacity: 1;
-      visibility: visible; }
+      visibility: visible;
+      opacity: 1; }
   .personal-page .page-content .section-2 .skill-nav {
     display: inline-block;
+    visibility: hidden;
     float: right;
     overflow: hidden;
     margin: -15px -30px -15px 20px;
     width: 150px;
     height: 48px;
-    transition: all 0.12s ease;
     opacity: 0;
-    visibility: hidden; }
+    transition: all 0.12s ease; }
     .personal-page .page-content .section-2 .skill-nav li {
       float: left;
       padding: 13px 24px;
@@ -5756,29 +5866,36 @@ html .ui-button.ui-state-disabled:active {
       .personal-page .page-content .section-2 .skill-nav li:first-child {
         border-left: none; }
     .personal-page .page-content .section-2 .skill-nav a {
-      text-decoration: none;
       color: white;
+      text-decoration: none;
       font: 400 13px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
       .personal-page .page-content .section-2 .skill-nav a i:before {
         margin: 0;
         color: white;
+        vertical-align: sub;
         text-decoration: none;
-        font-size: 22px;
-        vertical-align: sub; }
+        font-size: 22px; }
   .personal-page .page-content .section-2 .this-course {
     margin-top: 20px; }
   .personal-page .page-content .section-2 .head {
-    background-color: #61e7d6;
+    padding: 9px 30px;
     border-radius: 3px 3px 0 0;
+    background-color: #61e7d6;
     color: white;
-    font: 700 12px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
-    padding: 9px 30px; }
+    font: 700 12px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
   .personal-page .page-content .section-2 .cont-course {
     position: relative;
-    height: 375px;
-    padding: 30px;
     box-sizing: border-box;
+    padding: 30px 0 30px 30px;
+    height: 375px;
     background: no-repeat center/cover; }
+    .personal-page .page-content .section-2 .cont-course.btn-mod .tags {
+      position: relative;
+      z-index: 1;
+      margin-top: 140px; }
+    .personal-page .page-content .section-2 .cont-course.btn-mod .el-btn {
+      position: relative;
+      z-index: 1; }
     .personal-page .page-content .section-2 .cont-course:after {
       position: absolute;
       top: 0;
@@ -5794,38 +5911,38 @@ html .ui-button.ui-state-disabled:active {
       .personal-page .page-content .section-2 .cont-course .tags a {
         color: white; }
     .personal-page .page-content .section-2 .cont-course .title {
-      margin-top: 20px;
       position: relative;
       z-index: 1;
+      margin-top: 20px;
       color: white;
       font: 400 18px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
     .personal-page .page-content .section-2 .cont-course .course-change {
       position: relative;
-      margin-top: 15px;
       z-index: 1;
+      margin-top: 15px;
       color: white; }
       .personal-page .page-content .section-2 .cont-course .course-change > span {
-        font: 400 13px/44px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
         display: inline-block;
         float: left;
-        margin-right: 10px; }
+        margin-right: 10px;
+        font: 400 13px/44px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
   .personal-page .page-content .section-2 .chart {
     position: relative;
     display: inline-block; }
     .personal-page .page-content .section-2 .chart span {
       position: absolute;
-      left: 0;
       top: 0;
-      width: 100%;
+      left: 0;
       display: inline-block;
-      text-align: center;
+      width: 100%;
       color: #61e7d6;
+      text-align: center;
       font: 700 13px/42px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
   .personal-page .page-content .section-5 .partner-lists {
     margin-top: 15px; }
     .personal-page .page-content .section-5 .partner-lists li {
-      margin-bottom: 5px;
-      float: left; }
+      float: left;
+      margin-bottom: 5px; }
   .personal-page .page-content .academic-plan.no-info > li {
     padding-right: 170px; }
     @media (max-width: 767px) {
@@ -5835,16 +5952,18 @@ html .ui-button.ui-state-disabled:active {
       display: none; }
   .personal-page .page-content .wrap-list-process {
     position: relative;
-    display: block;
-    width: 100%;
-    margin-top: 20px; }
+    display: none;
+    box-sizing: border-box;
+    margin-top: 20px;
+    padding-right: 140px;
+    width: 100%; }
     .personal-page .page-content .wrap-list-process a {
       position: absolute;
-      bottom: 0px;
-      right: -140px;
+      right: 0;
+      bottom: 0;
       color: #9b9b9b;
-      font: 400 13px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
-      text-decoration: none; }
+      text-decoration: none;
+      font: 400 13px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
       @media (max-width: 767px) {
         .personal-page .page-content .wrap-list-process a {
           position: static; } }
@@ -5852,10 +5971,10 @@ html .ui-button.ui-state-disabled:active {
         text-decoration: underline; }
     .personal-page .page-content .wrap-list-process .item-list-process {
       float: left;
-      width: 50%;
-      padding-right: 20px;
       box-sizing: border-box;
-      margin-top: 30px; }
+      margin-top: 30px;
+      padding-right: 20px;
+      width: 50%; }
       @media (max-width: 767px) {
         .personal-page .page-content .wrap-list-process .item-list-process {
           width: 100%; } }

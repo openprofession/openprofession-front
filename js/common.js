@@ -198,6 +198,16 @@ if (isOnPage($('.js-list-dropdown'))) {
 }
 
 
+$(document).on('click', '.js-toggle', function (el) {
+    el.preventDefault();
+    $(this).toggleClass('js-open');
+});
+
+$(document).on('click', '.btn-inf', function (el) {
+    el.preventDefault();
+    $(this).parents('.wrap-btn-list').parents('li').toggleClass('js-open');
+});
+
 // js-partner
 //-----------------------------------------------------------------------------------
 if (isOnPage($('.js-partner'))) {

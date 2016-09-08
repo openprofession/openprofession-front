@@ -142,7 +142,6 @@
         color: black
         font: 400 14px/20px $open
 
-
     .salary
       padding-left: 15px
       @media (max-width: $screen-xs-max)
@@ -287,6 +286,7 @@
       bottom: 31px
       width: 290px
       background-color: white
+      box-shadow: 0px 9px 24px 0px rgba(230, 234, 248, 0.4)
       .title
         @extend %clear-fix
         margin-bottom: 10px
@@ -363,7 +363,6 @@
         vertical-align: baseline
         font-size: 18px
 
-
   .academic-plan-section
     .style-text-6
       color: black
@@ -404,25 +403,45 @@
       @media (max-width: $screen-xs-max)
         display: none
 
-    li
+    & > li
+      @extend %clear-fix
       position: relative
       margin-bottom: 30px
-      padding: 25px 100px 25px 27px
+      padding: 25px 25px 25px 27px
       border-left: 4px solid #f7fafc
       background-color: #f7fafc
+      &.active-complite
+        .wrap-btn-list
+          li
+            background: #f7fafc
+      &.js-open
+        .wrap-list-process
+          display: block
+
+        .wrap-btn-list
+          li
+            background: #f7fafc
+          .el-btn
+            visibility: visible
+            opacity: 1
+
       @media (max-width: $screen-xs-max)
         padding-right: 25px
 
-      &.complete
-        border-left: 4px solid #61e7d6
-
       &.active
-        border-left: 4px solid #4a72f5
         &:before
           background: url(../images/academic-before-active.svg) no-repeat left center
 
-      &.hover
+      &:hover
         border-left: 4px solid #4a72f5
+
+        .wrap-btn-list
+          li
+            background: #f7fafc
+          .el-btn
+            visibility: visible
+            opacity: 1
+
       &:before
         position: absolute
         top: 50%
@@ -436,18 +455,80 @@
         @media (max-width: $screen-xs-max)
           display: none
 
-      &:after
-        position: absolute
-        top: 50%
-        right: 40px
-        margin-top: -13px
-        width: 26px
-        height: 26px
-        background: url(../images/icons/info-icon.svg) no-repeat center/cover
-        content: ''
-        opacity: .8
-        @media (max-width: $screen-xs-max)
-          display: none
+    .wrap-relative
+      position: relative
+      margin: -25px -25px -25px 0
+      padding: 25px 25px 25px 0
+      box-sizing: border-box
+
+    .wrap-text-info
+      margin-right: 100px
+
+    .wrap-btn-list
+      @extend %clear-fix
+      position: absolute
+      display: inline-block
+      height: 100%
+      right: 0
+      top: 0
+      bottom: 0
+
+      li
+        height: 100%
+        line-height: 100%
+        float: left
+        margin-left: 35px
+        &:first-child
+          margin-left: 0
+
+        &:last-child
+          position: relative
+
+        .btn-inf
+          position: relative
+          display: inline-block
+          width: 130px
+          height: 100%
+          &:after
+            position: absolute
+            top: 50%
+            left: 50%
+            content: ''
+            width: 28px
+            height: 28px
+            margin-top: -14px
+            margin-left: -14px
+            background: url(../images/icons/info-icon.svg) no-repeat center/cover
+
+        .el-btn
+          position: absolute
+          left: 0
+          top: 50%
+          margin-top: -24px
+          visibility: hidden
+          opacity: 0
+          border-color: #cad4db
+          color: #cad4db
+          padding: 16px 24px
+          height: auto
+
+          &:hover
+            color: white
+            border-color: #fb5570
+            background: #fb5570
+
+        .complite-zapis
+          position: absolute
+          left: 0
+          top: 50%
+          margin-top: -24px
+          padding: 8px 0px
+          width: 130px
+          display: inline-block
+          text-align: center
+          font-size: 13px
+          background: #dce1e7
+
 
     .title-name
       margin-bottom: 13px
@@ -464,7 +545,6 @@
       margin-top: 1px
       width: 140px
       line-height: 17px
-
 
       .progress
         display: block
@@ -505,3 +585,48 @@
         margin-right: 30px
         color: #9b9b9b
 
+    .wrap-list-process
+      @extend %clear-fix
+      position: relative
+      display: none
+      box-sizing: border-box
+      margin-top: 20px
+      padding-right: 140px
+      width: 100%
+
+      a
+        position: absolute
+        right: 0
+        bottom: 0
+        color: #9b9b9b
+        text-decoration: none
+        font: 400 13px $open
+        @media (max-width: $screen-xs-max)
+          position: static
+
+        &:hover
+          text-decoration: underline
+
+      .item-list-process
+        @extend %clear-fix
+        float: left
+        box-sizing: border-box
+        margin-top: 30px
+        padding-right: 20px
+        width: 50%
+
+        @media (max-width: $screen-xs-max)
+          width: 100%
+
+        .name
+          display: block
+          float: left
+          color: black
+          font: 400 13px $open
+
+        .el-progress-wrap
+          float: right
+          width: 110px
+
+          .progress
+            width: 70px

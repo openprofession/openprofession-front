@@ -117,13 +117,16 @@
     border-color: $color-blue
     background-color: $color-blue
     &:hover
-      background: none
-      color: $color-blue
+      border-color: #3f62d4
+      background: #3f62d4
+      color: white
 
     &.inverse
       background: none
       color: $color-blue
+
       &:hover
+        border-color: $color-blue
         background: $color-blue
         color: white
 
@@ -139,8 +142,17 @@
     border-color: $color-pure
     background-color: $color-pure
     &:hover
+      border-color: #db4b63
+      background: #db4b63
+      color: white
+
+    &.inverse
       background: none
       color: $color-pure
+      &:hover
+        border-color: $color-pure
+        background: $color-pure
+        color: white
 
   &.grey-style
     border-color: $color-grey
