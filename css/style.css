@@ -2963,7 +2963,7 @@ section.css-shadow {
   .sign-in-content label,
   .sign-up-content label {
     display: inline-block;
-    margin: 22px 0 6px;
+    margin: 25px 0 10px;
     color: black;
     font: 400 14px/1.2 "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
     .sign-in-content label span,
@@ -2971,7 +2971,7 @@ section.css-shadow {
       color: #fb5570; }
   .sign-in-content .form-buttons,
   .sign-up-content .form-buttons {
-    margin-top: 22px; }
+    margin-top: 20px; }
 
 .sign-in-content .el-btn {
   width: 180px;
@@ -3140,7 +3140,7 @@ section.css-shadow {
   cursor: pointer; }
 
 .pick-schedule {
-  padding: 53px 54px 58px;
+  padding: 53px 54px 30px;
   width: 838px;
   text-align: left; }
   @media (max-width: 991px) {
@@ -3158,7 +3158,7 @@ section.css-shadow {
     .pick-schedule.smoll .marg {
       margin-bottom: 12px; }
     .pick-schedule.smoll .el-btn.pur-style.gross {
-      width: 211px;
+      width: 186px;
       height: 60px;
       padding: 18px 20px;
       font: 700 14px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
@@ -3168,7 +3168,7 @@ section.css-shadow {
       display: block;
       font: 400 18px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
   .pick-schedule .el-btn.pur-style.gross {
-    margin: 24px auto 0;
+    margin: 29px auto 0;
     display: block;
     width: 267px;
     height: 80px;
@@ -3180,7 +3180,7 @@ section.css-shadow {
   .pick-schedule .pick-schedule-group {
     margin: 20px 0; }
   .pick-schedule .pick-schedule-content {
-    margin: 23px 0 24px 0; }
+    margin: 23px 0 29px 0; }
     .pick-schedule .pick-schedule-content .pick-schedule-content-bottom label {
       font: 400 13px/1 "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
       .pick-schedule .pick-schedule-content .pick-schedule-content-bottom label a {
@@ -3198,7 +3198,7 @@ section.css-shadow {
         font: 400 16px/20px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
       .pick-schedule .pick-schedule-content .pick-schedule-content-frame .pick-schedule-content-frame-title {
         color: #000;
-        margin-bottom: 8px;
+        margin-bottom: 16px;
         font: 400 16px/20px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
       .pick-schedule .pick-schedule-content .pick-schedule-content-frame p {
         color: #9b9b9b;
@@ -3298,8 +3298,12 @@ section.css-shadow {
         width: 100%; } }
     .toggle-variant-wrap.mod-half .pick-schedule-content-frame {
       padding: 14px 80px 15px 30px; }
+      @media (max-width: 991px) {
+        .toggle-variant-wrap.mod-half .pick-schedule-content-frame {
+          padding-right: 30px; } }
       @media (max-width: 767px) {
         .toggle-variant-wrap.mod-half .pick-schedule-content-frame {
+          padding-right: 10px;
           padding-left: 10px; } }
     .toggle-variant-wrap.mod-half .select-check {
       bottom: 16px; }
@@ -3311,8 +3315,10 @@ section.css-shadow {
           .toggle-variant-wrap.mod-half .mod-large ~ .select-check {
             bottom: 16px; } }
     .toggle-variant-wrap.mod-half .mod-small {
-      margin-left: -1px;
       margin-top: -1px; }
+      @media (min-width: 992px) {
+        .toggle-variant-wrap.mod-half .mod-small {
+          margin-left: -1px; } }
   .toggle-variant-wrap input[type="radio"],
   .toggle-variant-wrap input[type="checkbox"] {
     position: absolute;
@@ -3341,6 +3347,11 @@ section.css-shadow {
   display: none; }
 .toggle-name.mod-second-name span:last-child {
   display: inline; }
+
+.discount {
+  margin-left: 16px;
+  font: 400 12px/1 "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: #fb5570; }
 
 .header {
   padding: 20px 0;
